@@ -506,29 +506,29 @@ const Index = () => {
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <a href="https://blog.odontoresults.com.br/agencia-de-marketing-odontologico/" target="_blank" rel="noopener noreferrer" className="block group">
+              <a href="https://blog.odontoresults.com.br/post/metodo-paciente-previsivel-odonto-results" target="_blank" rel="noopener noreferrer" className="block group">
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
                     <img 
-                      src="https://blog.odontoresults.com.br/wp-content/uploads/2024/10/Agencia-de-Marketing-Odontologico_-Como-Atrair-Mais-Pacientes.jpg" 
-                      alt="Agência de Marketing Odontológico"
+                      src="https://static.wixstatic.com/media/e348fe_c7e8f9c6f2a24b1cadb04eddc6a3bcad~mv2.png" 
+                      alt="Método Paciente Previsível"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                     />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-2 group-hover:text-accent transition-colors">
-                      Agência de Marketing Odontológico: Como Atrair Mais Pacientes
+                      Conheça o Método Paciente Previsível da Odonto Results
                     </h3>
                     <p className="text-sm text-muted-foreground mb-3">2025-10-27</p>
                     <p className="text-muted-foreground">
-                      Conheça estratégias de anúncios, CRM, Google Maps e follow-up para aumentar agendamentos e faturamento em clínicas odontológicas.
+                      Descubra como o Método Paciente Previsível da Odonto Results potencializa captação, agendamento e faturamento em clínicas.
                     </p>
                   </div>
                 </Card>
               </a>
 
-              <a href="https://blog.odontoresults.com.br/calculadora-de-marketing-odontologico/" target="_blank" rel="noopener noreferrer" className="block group">
+              <a href="https://blog.odontoresults.com.br/post/calculadora-de-marketing-odontologico-como-definir-investimentos" target="_blank" rel="noopener noreferrer" className="block group">
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
                     <img 
@@ -550,7 +550,7 @@ const Index = () => {
                 </Card>
               </a>
 
-              <a href="https://blog.odontoresults.com.br/marketing-odontologico/" target="_blank" rel="noopener noreferrer" className="block group">
+              <a href="https://blog.odontoresults.com.br/post/marketing-odontologico-2025-guia-completo-atrair-pacientes" target="_blank" rel="noopener noreferrer" className="block group">
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
                     <img 
