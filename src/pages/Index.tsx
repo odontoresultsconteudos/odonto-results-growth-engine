@@ -520,10 +520,9 @@ const Index = () => {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2 group-hover:text-accent transition-colors">
+                    <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
                       Conheça o Método Paciente Previsível da Odonto Results
                     </h3>
-                    <p className="text-sm text-muted-foreground mb-3">2025-10-27</p>
                     <p className="text-muted-foreground">
                       Descubra como o Método Paciente Previsível da Odonto Results potencializa captação, agendamento e faturamento em clínicas.
                     </p>
@@ -542,10 +541,9 @@ const Index = () => {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2 group-hover:text-accent transition-colors">
+                    <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
                       Calculadora de marketing odontológico: como definir investimentos?
                     </h3>
-                    <p className="text-sm text-muted-foreground mb-3">2025-10-27</p>
                     <p className="text-muted-foreground">
                       Use a calculadora de marketing odontológico para estimar leads, conversões e investimentos ideais para sua clínica dental.
                     </p>
@@ -564,10 +562,9 @@ const Index = () => {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2 group-hover:text-accent transition-colors">
+                    <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
                       Marketing Odontológico em 2025: Guia Completo para Atrair Pacientes
                     </h3>
-                    <p className="text-sm text-muted-foreground mb-3">2025-10-27</p>
                     <p className="text-muted-foreground">
                       Entenda as estratégias, regras do CFO, SEO Local, inbound e automação para crescer sua clínica odontológica em 2025.
                     </p>
