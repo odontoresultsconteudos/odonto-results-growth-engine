@@ -75,20 +75,27 @@ const Index = () => {
         </section>
 
         {/* 3) Prova Social - Contadores */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/50">
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 text-center">
-              <Card className="p-12">
-                <div className="text-5xl sm:text-6xl font-bold text-accent mb-4">1500+</div>
-                <div className="text-xl font-semibold mb-2">Clínicas atendidas</div>
-              </Card>
-              <Card className="p-12">
-                <div className="text-5xl sm:text-6xl font-bold text-accent mb-4">3 milhões+</div>
-                <div className="text-xl font-semibold mb-2">Gerenciados em tráfego pago</div>
-              </Card>
+        <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/30">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-center">
+              <div className="flex items-center gap-3">
+                <div className="text-3xl sm:text-4xl font-bold text-accent">1500+</div>
+                <div className="text-left">
+                  <div className="text-base font-semibold">Clínicas</div>
+                  <div className="text-sm text-muted-foreground">atendidas</div>
+                </div>
+              </div>
+              <div className="hidden md:block h-12 w-px bg-border"></div>
+              <div className="flex items-center gap-3">
+                <div className="text-3xl sm:text-4xl font-bold text-accent">3 milhões+</div>
+                <div className="text-left">
+                  <div className="text-base font-semibold">Gerenciados em</div>
+                  <div className="text-sm text-muted-foreground">tráfego pago</div>
+                </div>
+              </div>
             </div>
-            <p className="text-center text-sm text-muted-foreground mt-6">
-              Experiência consolidada em diferentes regiões e especialidades.
+            <p className="text-center text-xs text-muted-foreground mt-4">
+              Experiência consolidada em diferentes regiões e especialidades
             </p>
           </div>
         </section>
