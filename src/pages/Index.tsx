@@ -2,8 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Target, Star, TrendingUp, Calendar, BarChart3, MessageSquare, Users, Zap, Clock, CheckCircle, TrendingDown, FileText, Shield } from "lucide-react";
 import logoSvg from "@/assets/logo.svg";
-import alexGurraoCeo from "@/assets/alex-gurrao-ceo.png";
-import viniciusRagazziCoo from "@/assets/vinicius-ragazzi-coo.png";
 import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -391,57 +389,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Sobre - Team Section */}
-        <section id="sobre" className="py-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-                Quem está por trás da Odonto Results
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Nossa equipe combina experiência clínica e expertise em marketing digital para transformar clínicas odontológicas.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              <Card className="p-8">
-                <div className="flex flex-col items-center text-center">
-                  <div className="w-full max-w-sm mb-6 overflow-hidden rounded-lg">
-                    <img src={alexGurraoCeo} alt="Dr Alex Gurrão" className="w-full h-auto object-cover" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-2">Dr Alex Gurrão</h3>
-                  <p className="text-accent font-semibold mb-4">CEO</p>
-                  <p className="text-muted-foreground">
-                    Dentista e dono de clínica, com vivência de resultado nas suas clínicas próprias. Aplica estratégias validadas na prática para transformar clínicas odontológicas.
-                  </p>
-                </div>
-              </Card>
-
-              <Card className="p-8">
-                <div className="flex flex-col items-center text-center">
-                  <div className="w-full max-w-sm mb-6 overflow-hidden rounded-lg">
-                    <img src={viniciusRagazziCoo} alt="Vinícius Ragazzi" className="w-full h-auto object-cover" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-2">Vinícius Ragazzi</h3>
-                  <p className="text-accent font-semibold mb-4">CMO</p>
-                  <p className="text-muted-foreground">
-                    Com 12 anos de experiência em marketing digital, lidera as estratégias de captação e crescimento de clínicas odontológicas em todo Brasil.
-                  </p>
-                </div>
-              </Card>
-            </div>
-
-            <div className="text-center mt-12">
-              <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
-                <Button variant="cta" size="lg">
-                  Fale com nossa equipe
-                  <ArrowRight className="ml-2" />
-                </Button>
-              </a>
-            </div>
-          </div>
-        </section>
-
         {/* 9) CTA Final */}
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
@@ -484,7 +431,7 @@ const Index = () => {
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li><a href="#metodo" className="hover:text-accent transition-colors">Método</a></li>
                   <li><a href="http://blog.odontoresults.com.br/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Blog</a></li>
-                  <li><a href="#sobre" className="hover:text-accent transition-colors">Sobre</a></li>
+                  <li><a href="/sobre" className="hover:text-accent transition-colors">Sobre</a></li>
                   <li><a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Contato</a></li>
                 </ul>
               </div>

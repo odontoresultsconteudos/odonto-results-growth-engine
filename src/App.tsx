@@ -9,6 +9,7 @@ import Autoridade from "./pages/Autoridade";
 import GoogleTop1 from "./pages/GoogleTop1";
 import Agendamento from "./pages/Agendamento";
 import CRM from "./pages/CRM";
+import Sobre from "./pages/Sobre";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/google-top-1" element={<GoogleTop1 />} />
           <Route path="/agendamento" element={<Agendamento />} />
           <Route path="/crm" element={<CRM />} />
+          <Route path="/sobre" element={<Sobre />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
