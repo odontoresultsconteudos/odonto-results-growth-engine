@@ -4,13 +4,11 @@ import { ArrowRight } from "lucide-react";
 import alexGurraoCeo from "@/assets/alex-gurrao-ceo.png";
 import viniciusRagazziCoo from "@/assets/vinicius-ragazzi-coo.png";
 import Header from "@/components/Header";
-import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Sobre = () => {
   return (
     <>
       <Header />
-      <WhatsAppButton />
       
       <main className="min-h-screen">
         {/* Hero Section */}

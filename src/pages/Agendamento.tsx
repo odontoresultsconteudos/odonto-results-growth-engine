@@ -1,13 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
-import WhatsAppButton from "@/components/WhatsAppButton";
 import { Bot, Calendar, Clock, PhoneCall } from "lucide-react";
 import { Link } from "react-router-dom";
 const Agendamento = () => {
   return <div className="min-h-screen bg-background">
       <Header />
-      <WhatsAppButton />
       
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">

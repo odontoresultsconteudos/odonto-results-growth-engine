@@ -6,12 +6,10 @@ import blogPost1 from "@/assets/blog-post-1.png";
 import blogPost2 from "@/assets/blog-post-2.png";
 import blogPost3 from "@/assets/blog-post-3.png";
 import Header from "@/components/Header";
-import WhatsAppButton from "@/components/WhatsAppButton";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 const Index = () => {
   return <>
       <Header />
-      <WhatsAppButton />
       
       {/* Mobile Sticky CTA */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 p-4 bg-background/95 backdrop-blur border-t border-border/40">
