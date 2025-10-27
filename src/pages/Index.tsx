@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Target, Star, TrendingUp, Calendar, BarChart3, MessageSquare, Users, Zap, Clock, CheckCircle, TrendingDown, FileText, Shield } from "lucide-react";
 import logoSvg from "@/assets/logo.svg";
+import alexGurraoCeo from "@/assets/alex-gurrao-ceo.png";
+import viniciusRagazziCoo from "@/assets/vinicius-ragazzi-coo.png";
 import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -49,6 +51,24 @@ const Index = () => {
             <p className="text-sm text-muted-foreground">
               Sem compromisso • Apresentação personalizada • Plano claro para 90 dias
             </p>
+
+            {/* Team Photos */}
+            <div className="flex justify-center gap-8 mt-12">
+              <div className="flex flex-col items-center">
+                <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-white/20 mb-3">
+                  <img src={alexGurraoCeo} alt="Dr Alex Gurrão" className="w-full h-full object-cover" />
+                </div>
+                <p className="text-sm font-semibold">Dr Alex Gurrão</p>
+                <p className="text-xs text-muted-foreground">CEO</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-white/20 mb-3">
+                  <img src={viniciusRagazziCoo} alt="Vinícius Ragazzi" className="w-full h-full object-cover" />
+                </div>
+                <p className="text-sm font-semibold">Vinícius Ragazzi</p>
+                <p className="text-xs text-muted-foreground">COO</p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -386,6 +406,57 @@ const Index = () => {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+          </div>
+        </section>
+
+        {/* Sobre - Team Section */}
+        <section id="sobre" className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+                Quem está por trás da Odonto Results
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Nossa equipe combina experiência clínica e expertise em marketing digital para transformar clínicas odontológicas.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <Card className="p-8">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-4 border-accent/20">
+                    <img src={alexGurraoCeo} alt="Dr Alex Gurrão" className="w-full h-full object-cover" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">Dr Alex Gurrão</h3>
+                  <p className="text-accent font-semibold mb-4">CEO</p>
+                  <p className="text-muted-foreground">
+                    Com vasta experiência em marketing digital para odontologia, lidera a estratégia de crescimento e captação de pacientes para clínicas em todo Brasil.
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="p-8">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-4 border-accent/20">
+                    <img src={viniciusRagazziCoo} alt="Vinícius Ragazzi" className="w-full h-full object-cover" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">Vinícius Ragazzi</h3>
+                  <p className="text-accent font-semibold mb-4">COO</p>
+                  <p className="text-muted-foreground">
+                    Especialista em operações e processos, garante a excelência na execução do método e no atendimento aos clientes parceiros.
+                  </p>
+                </div>
+              </Card>
+            </div>
+
+            <div className="text-center mt-12">
+              <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
+                <Button variant="cta" size="lg">
+                  Fale com nossa equipe
+                  <ArrowRight className="ml-2" />
+                </Button>
+              </a>
+            </div>
           </div>
         </section>
 
