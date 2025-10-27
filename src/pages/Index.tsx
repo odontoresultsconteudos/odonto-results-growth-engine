@@ -86,136 +86,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Projeção de Resultados */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-secondary/20">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-                Projeção de Resultados
-              </h2>
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-                Exemplo de resultado possível em fases mais avançadas do projeto
-              </p>
-            </div>
-
-            {/* Funil de Marketing */}
-            <div className="space-y-3 sm:space-y-4 mb-12">
-              <Card className="p-4 sm:p-6 bg-card/80 backdrop-blur border-primary/20">
-                <div className="flex items-center justify-between flex-wrap gap-3 sm:gap-4">
-                  <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                      <Users className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-base sm:text-lg mb-1">Leads Gerados</h3>
-                      <p className="text-2xl sm:text-3xl font-bold text-primary">588</p>
-                    </div>
-                  </div>
-                  <div className="text-right text-xs sm:text-sm ml-auto">
-                    <p className="font-semibold">Investimento: R$ 10.000,00</p>
-                    <p className="text-muted-foreground">Custo por Lead: R$ 17,00</p>
-                  </div>
-                </div>
-              </Card>
-
-              <div className="flex justify-center">
-                <div className="w-0.5 h-6 sm:h-8 bg-gradient-to-b from-primary to-accent"></div>
-              </div>
-
-              <Card className="p-4 sm:p-6 bg-card/80 backdrop-blur border-accent/20">
-                <div className="flex items-center justify-between flex-wrap gap-3 sm:gap-4">
-                  <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                      <Calendar className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-base sm:text-lg mb-1">Agendamentos</h3>
-                      <p className="text-2xl sm:text-3xl font-bold text-accent">176</p>
-                    </div>
-                  </div>
-                  <div className="text-right text-xs sm:text-sm ml-auto">
-                    <p className="font-semibold text-accent">Taxa: 30%</p>
-                    <p className="text-muted-foreground">Custo: R$ 56,82</p>
-                  </div>
-                </div>
-              </Card>
-
-              <div className="flex justify-center">
-                <div className="w-0.5 h-6 sm:h-8 bg-gradient-to-b from-accent to-primary"></div>
-              </div>
-
-              <Card className="p-4 sm:p-6 bg-card/80 backdrop-blur border-primary/20">
-                <div className="flex items-center justify-between flex-wrap gap-3 sm:gap-4">
-                  <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-base sm:text-lg mb-1">Comparecimentos</h3>
-                      <p className="text-2xl sm:text-3xl font-bold text-primary">58</p>
-                    </div>
-                  </div>
-                  <div className="text-right text-xs sm:text-sm ml-auto">
-                    <p className="font-semibold text-primary">Taxa: 33%</p>
-                    <p className="text-muted-foreground">Custo: R$ 172,41</p>
-                  </div>
-                </div>
-              </Card>
-
-              <div className="flex justify-center">
-                <div className="w-0.5 h-6 sm:h-8 bg-gradient-to-b from-primary to-accent"></div>
-              </div>
-
-              <Card className="p-4 sm:p-6 bg-card/80 backdrop-blur border-accent/20">
-                <div className="flex items-center justify-between flex-wrap gap-3 sm:gap-4">
-                  <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                      <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-base sm:text-lg mb-1">Fechamentos</h3>
-                      <p className="text-2xl sm:text-3xl font-bold text-accent">19</p>
-                    </div>
-                  </div>
-                  <div className="text-right text-xs sm:text-sm ml-auto">
-                    <p className="font-semibold text-accent">Taxa: 33%</p>
-                    <p className="text-muted-foreground">Custo: R$ 526,32</p>
-                  </div>
-                </div>
-              </Card>
-            </div>
-
-            {/* Cards de Métricas - Abaixo do Funil */}
-            <div className="grid sm:grid-cols-3 gap-4 sm:gap-6 mb-12">
-              <Card className="p-6 sm:p-8 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
-                <p className="text-sm sm:text-base text-muted-foreground mb-2">Ticket Médio</p>
-                <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">R$ 5.000,00</p>
-              </Card>
-              
-              <Card className="p-6 sm:p-8 text-center bg-gradient-to-br from-accent/20 to-accent/10 border-accent/30">
-                <p className="text-sm sm:text-base text-muted-foreground mb-2">Faturamento</p>
-                <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-accent">R$ 95.000,00</p>
-              </Card>
-              
-              <Card className="p-6 sm:p-8 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
-                <p className="text-sm sm:text-base text-muted-foreground mb-2">ROI</p>
-                <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">9.50x</p>
-              </Card>
-            </div>
-
-            <div className="text-center">
-              <p className="text-xs sm:text-sm text-muted-foreground mb-6">
-                *Projeção baseada em dados reais de clientes em fases avançadas. Resultados podem variar.
-              </p>
-              <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
-                <Button variant="cta" size="lg" className="w-full sm:w-auto">
-                  Quero resultados como esses
-                  <ArrowRight className="ml-2" />
-                </Button>
-              </a>
-            </div>
-          </div>
-        </section>
 
         {/* 4) O Método - 5 Pilares (SEM IMAGENS) */}
         <section id="metodo" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -449,6 +319,184 @@ const Index = () => {
                   Do plano ao início das campanhas em poucos dias.
                 </p>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Projeção de Resultados */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-secondary/20">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
+                <span className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs">03</span>
+                Seu Funil de Marketing
+              </div>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+                Projeção de Resultados
+              </h2>
+              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+                Exemplo de resultado possível em fases mais avançadas do projeto
+              </p>
+            </div>
+
+            {/* Funil de Marketing - Formato de Funil */}
+            <div className="space-y-6 mb-12">
+              {/* Leads Gerados - 100% largura */}
+              <div className="w-full mx-auto">
+                <Card className="p-6 sm:p-8 bg-card border-primary/30 shadow-lg">
+                  <div className="flex items-center justify-between flex-wrap gap-4">
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                        <Users className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-lg sm:text-xl mb-1 text-foreground">Leads Gerados</h3>
+                        <p className="text-3xl sm:text-4xl font-bold text-primary">588</p>
+                      </div>
+                    </div>
+                    <div className="text-right ml-auto">
+                      <p className="font-semibold text-primary text-base sm:text-lg">Investimento: R$ 10.000,00</p>
+                      <p className="text-muted-foreground text-sm sm:text-base">Custo por Lead: R$ 17,00</p>
+                    </div>
+                  </div>
+                  {/* Barra de progresso completa */}
+                  <div className="mt-4 h-2 bg-secondary/30 rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-primary to-primary w-full"></div>
+                  </div>
+                </Card>
+              </div>
+
+              {/* Conector */}
+              <div className="flex justify-center">
+                <div className="relative w-0 h-8 border-l-2 border-dashed border-primary/40">
+                  <div className="absolute left-1/2 -translate-x-1/2 top-full">
+                    <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-primary/40"></div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Agendamentos - 85% largura */}
+              <div className="w-[90%] mx-auto">
+                <Card className="p-6 sm:p-8 bg-card border-accent/30 shadow-lg">
+                  <div className="flex items-center justify-between flex-wrap gap-4">
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                        <Calendar className="w-6 h-6 sm:w-7 sm:h-7 text-accent" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-lg sm:text-xl mb-1 text-foreground">Agendamentos</h3>
+                        <p className="text-3xl sm:text-4xl font-bold text-accent">176</p>
+                      </div>
+                    </div>
+                    <div className="text-right ml-auto">
+                      <p className="font-semibold text-accent text-base sm:text-lg">Taxa: 30%</p>
+                      <p className="text-muted-foreground text-sm sm:text-base">Custo: R$ 56,82</p>
+                    </div>
+                  </div>
+                  {/* Barra de progresso 30% */}
+                  <div className="mt-4 h-2 bg-secondary/30 rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-accent to-accent w-[30%]"></div>
+                  </div>
+                </Card>
+              </div>
+
+              {/* Conector */}
+              <div className="flex justify-center">
+                <div className="relative w-0 h-8 border-l-2 border-dashed border-accent/40">
+                  <div className="absolute left-1/2 -translate-x-1/2 top-full">
+                    <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-accent/40"></div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Comparecimentos - 70% largura */}
+              <div className="w-[75%] mx-auto">
+                <Card className="p-6 sm:p-8 bg-card border-primary/30 shadow-lg">
+                  <div className="flex items-center justify-between flex-wrap gap-4">
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                        <CheckCircle className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-lg sm:text-xl mb-1 text-foreground">Comparecimentos</h3>
+                        <p className="text-3xl sm:text-4xl font-bold text-primary">58</p>
+                      </div>
+                    </div>
+                    <div className="text-right ml-auto">
+                      <p className="font-semibold text-primary text-base sm:text-lg">Taxa: 33%</p>
+                      <p className="text-muted-foreground text-sm sm:text-base">Custo: R$ 172,41</p>
+                    </div>
+                  </div>
+                  {/* Barra de progresso 33% de 30% = ~10% */}
+                  <div className="mt-4 h-2 bg-secondary/30 rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-primary to-primary w-[10%]"></div>
+                  </div>
+                </Card>
+              </div>
+
+              {/* Conector */}
+              <div className="flex justify-center">
+                <div className="relative w-0 h-8 border-l-2 border-dashed border-primary/40">
+                  <div className="absolute left-1/2 -translate-x-1/2 top-full">
+                    <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-accent/40"></div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Fechamentos - 55% largura */}
+              <div className="w-[60%] mx-auto">
+                <Card className="p-6 sm:p-8 bg-card border-accent/30 shadow-lg">
+                  <div className="flex items-center justify-between flex-wrap gap-4">
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                        <TrendingUp className="w-6 h-6 sm:w-7 sm:h-7 text-accent" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-lg sm:text-xl mb-1 text-foreground">Fechamentos</h3>
+                        <p className="text-3xl sm:text-4xl font-bold text-accent">19</p>
+                      </div>
+                    </div>
+                    <div className="text-right ml-auto">
+                      <p className="font-semibold text-accent text-base sm:text-lg">Taxa: 33%</p>
+                      <p className="text-muted-foreground text-sm sm:text-base">Custo: R$ 526,32</p>
+                    </div>
+                  </div>
+                  {/* Barra de progresso 33% de 10% = ~3% */}
+                  <div className="mt-4 h-2 bg-secondary/30 rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-accent to-accent w-[3%]"></div>
+                  </div>
+                </Card>
+              </div>
+            </div>
+
+            {/* Cards de Métricas - Abaixo do Funil */}
+            <div className="grid sm:grid-cols-3 gap-4 sm:gap-6 mb-12">
+              <Card className="p-6 sm:p-8 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
+                <p className="text-sm sm:text-base text-muted-foreground mb-2">Ticket Médio</p>
+                <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">R$ 5.000,00</p>
+              </Card>
+              
+              <Card className="p-6 sm:p-8 text-center bg-gradient-to-br from-accent/20 to-accent/10 border-accent/30">
+                <p className="text-sm sm:text-base text-muted-foreground mb-2">Faturamento</p>
+                <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-accent">R$ 95.000,00</p>
+              </Card>
+              
+              <Card className="p-6 sm:p-8 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
+                <p className="text-sm sm:text-base text-muted-foreground mb-2">ROI</p>
+                <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">9.50x</p>
+              </Card>
+            </div>
+
+            <div className="text-center">
+              <p className="text-xs sm:text-sm text-muted-foreground mb-6">
+                *Projeção baseada em dados reais de clientes em fases avançadas. Resultados podem variar.
+              </p>
+              <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
+                <Button variant="cta" size="lg" className="w-full sm:w-auto">
+                  Quero resultados como esses
+                  <ArrowRight className="ml-2" />
+                </Button>
+              </a>
             </div>
           </div>
         </section>
