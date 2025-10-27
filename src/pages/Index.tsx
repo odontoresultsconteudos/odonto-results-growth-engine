@@ -7,6 +7,8 @@ import blogPost2 from "@/assets/blog-post-2.png";
 import blogPost3 from "@/assets/blog-post-3.png";
 import Header from "@/components/Header";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { BeamsBackground } from "@/components/ui/beams-background";
+import { motion } from "motion/react";
 const Index = () => {
   return <>
       <Header />
@@ -22,18 +24,32 @@ const Index = () => {
       </div>
 
       <main className="min-h-screen pb-20 md:pb-0">
-        {/* 2) Hero Section - Sem Imagens */}
-        <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-secondary opacity-90" />
-          <div className="relative max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+        {/* 2) Hero Section - Com Beams Background */}
+        <BeamsBackground className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary via-primary to-secondary" intensity="medium">
+          <div className="relative z-10 max-w-4xl mx-auto text-center py-20">
+            <motion.h1 
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
               Bata recorde de faturamento com pacientes certos na sua agenda
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            </motion.h1>
+            <motion.p 
+              className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
               Captação de Leads Qualificados, Vitrine de Autoridade, Google Top 1, Agendamento Profissional (CRC + IA) e CRM inteligente para transformar leads em pacientes.
-            </p>
+            </motion.p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
               <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
                 <Button variant="cta" size="lg" className="text-lg w-full sm:w-auto">
                   Agende uma Apresentação
@@ -45,13 +61,18 @@ const Index = () => {
                   Ver como funciona
                 </Button>
               </a>
-            </div>
+            </motion.div>
 
-            <p className="text-sm text-muted-foreground">
+            <motion.p 
+              className="text-sm text-muted-foreground"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
               Sem compromisso • Apresentação personalizada • Plano claro para 90 dias
-            </p>
+            </motion.p>
           </div>
-        </section>
+        </BeamsBackground>
 
         {/* 3) Prova Social - Contadores */}
         <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/30">
