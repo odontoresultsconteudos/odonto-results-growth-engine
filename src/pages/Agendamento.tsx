@@ -40,9 +40,7 @@ const Agendamento = () => {
             <h2 className="text-3xl lg:text-5xl font-bold mb-4">
               Dois Sistemas Trabalhando por Você
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Combinamos equipe humana treinada com inteligência artificial para garantir 100% de aproveitamento dos leads.
-            </p>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Combinamos equipe humana profissional + inteligência artificial para buscarmos o máximo de aproveitamento de cada lead.</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
@@ -234,9 +232,7 @@ const Agendamento = () => {
       {/* CTA Final */}
       <section id="contato" className="py-20 bg-gradient-to-br from-primary via-primary/95 to-accent/20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-5xl font-bold mb-6 text-primary-foreground">
-            Nunca Mais Perca um Paciente
-          </h2>
+          <h2 className="text-3xl lg:text-5xl font-bold mb-6 text-primary-foreground">Nunca Mais Perca um Paciente por Falta de Tentativa</h2>
           <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
             Tenha uma máquina de agendamento profissional trabalhando 24/7 para sua clínica.
           </p>
