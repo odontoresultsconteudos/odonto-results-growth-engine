@@ -145,9 +145,9 @@ const Captacao = () => {
             <div className="relative">
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 p-8 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-6xl font-bold text-accent mb-4">+500</div>
-                  <p className="text-xl font-semibold mb-2">Leads Qualificados</p>
-                  <p className="text-muted-foreground">gerados mensalmente para clínicas parceiras</p>
+                  <div className="text-6xl font-bold text-accent mb-4">+500 mil</div>
+                  <p className="text-xl font-semibold mb-2">Leads Gerados</p>
+                  <p className="text-muted-foreground">para clínicas parceiras</p>
                 </div>
               </div>
             </div>
