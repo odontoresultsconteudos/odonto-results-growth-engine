@@ -340,61 +340,61 @@ const Index = () => {
             </div>
 
             {/* Funil de Marketing - Formato de Funil */}
-            <div className="space-y-4 mb-8">
-              {/* Leads Gerados - 100% largura */}
-              <div className="w-full mx-auto">
-                <Card className="p-4 sm:p-6 bg-card/95 backdrop-blur border-primary/40 shadow-md">
-                  <div className="flex items-center justify-between flex-wrap gap-3">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                        <Users className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+            <div className="space-y-3 mb-8 max-w-2xl mx-auto">
+              {/* Leads Gerados - 70% largura */}
+              <div className="w-[70%] mx-auto">
+                <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm">
+                  <div className="flex items-center justify-between flex-wrap gap-2">
+                    <div className="flex items-center gap-2">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                        <Users className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
                       </div>
                       <div>
-                        <h3 className="font-bold text-base sm:text-lg mb-0.5 text-foreground">Leads Gerados</h3>
-                        <p className="text-2xl sm:text-3xl font-bold text-foreground">588</p>
+                        <h3 className="font-bold text-sm sm:text-base mb-0.5 text-foreground">Leads Gerados</h3>
+                        <p className="text-xl sm:text-2xl font-bold text-accent">588</p>
                       </div>
                     </div>
                     <div className="text-right ml-auto">
-                      <p className="font-semibold text-foreground text-sm sm:text-base">Investimento: R$ 10.000,00</p>
-                      <p className="text-muted-foreground text-xs sm:text-sm">Custo por Lead: R$ 17,00</p>
+                      <p className="font-semibold text-accent text-xs sm:text-sm">Investimento: R$ 10.000,00</p>
+                      <p className="text-muted-foreground text-xs">Custo por Lead: R$ 17,00</p>
                     </div>
                   </div>
                   {/* Barra de progresso completa */}
-                  <div className="mt-3 h-1.5 bg-secondary/30 rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-primary to-primary w-full"></div>
+                  <div className="mt-2 h-1 bg-secondary/30 rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-accent to-accent w-full"></div>
                   </div>
                 </Card>
               </div>
 
               {/* Conector */}
               <div className="flex justify-center">
-                <div className="relative w-0 h-6 border-l-2 border-dashed border-primary/30">
+                <div className="relative w-0 h-4 border-l-2 border-dashed border-accent/30">
                   <div className="absolute left-1/2 -translate-x-1/2 top-full">
-                    <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[10px] border-t-primary/30"></div>
+                    <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[8px] border-t-accent/30"></div>
                   </div>
                 </div>
               </div>
 
-              {/* Agendamentos - 85% largura */}
-              <div className="w-[90%] mx-auto">
-                <Card className="p-4 sm:p-6 bg-card/95 backdrop-blur border-accent/40 shadow-md">
-                  <div className="flex items-center justify-between flex-wrap gap-3">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                        <Calendar className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
+              {/* Agendamentos - 60% largura */}
+              <div className="w-[60%] mx-auto">
+                <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm">
+                  <div className="flex items-center justify-between flex-wrap gap-2">
+                    <div className="flex items-center gap-2">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                        <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
                       </div>
                       <div>
-                        <h3 className="font-bold text-base sm:text-lg mb-0.5 text-foreground">Agendamentos</h3>
-                        <p className="text-2xl sm:text-3xl font-bold text-accent">176</p>
+                        <h3 className="font-bold text-sm sm:text-base mb-0.5 text-foreground">Agendamentos</h3>
+                        <p className="text-xl sm:text-2xl font-bold text-accent">176</p>
                       </div>
                     </div>
                     <div className="text-right ml-auto">
-                      <p className="font-semibold text-accent text-sm sm:text-base">Taxa: 30%</p>
-                      <p className="text-muted-foreground text-xs sm:text-sm">Custo: R$ 56,82</p>
+                      <p className="font-semibold text-accent text-xs sm:text-sm">Taxa: 30%</p>
+                      <p className="text-muted-foreground text-xs">Custo: R$ 56,82</p>
                     </div>
                   </div>
                   {/* Barra de progresso 30% */}
-                  <div className="mt-3 h-1.5 bg-secondary/30 rounded-full overflow-hidden">
+                  <div className="mt-2 h-1 bg-secondary/30 rounded-full overflow-hidden">
                     <div className="h-full bg-gradient-to-r from-accent to-accent w-[30%]"></div>
                   </div>
                 </Card>
@@ -402,67 +402,67 @@ const Index = () => {
 
               {/* Conector */}
               <div className="flex justify-center">
-                <div className="relative w-0 h-6 border-l-2 border-dashed border-accent/30">
+                <div className="relative w-0 h-4 border-l-2 border-dashed border-accent/30">
                   <div className="absolute left-1/2 -translate-x-1/2 top-full">
-                    <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[10px] border-t-accent/30"></div>
+                    <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[8px] border-t-accent/30"></div>
                   </div>
                 </div>
               </div>
 
-              {/* Comparecimentos - 70% largura */}
-              <div className="w-[75%] mx-auto">
-                <Card className="p-4 sm:p-6 bg-card/95 backdrop-blur border-primary/40 shadow-md">
-                  <div className="flex items-center justify-between flex-wrap gap-3">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                        <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+              {/* Comparecimentos - 50% largura */}
+              <div className="w-[50%] mx-auto">
+                <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm">
+                  <div className="flex items-center justify-between flex-wrap gap-2">
+                    <div className="flex items-center gap-2">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
                       </div>
                       <div>
-                        <h3 className="font-bold text-base sm:text-lg mb-0.5 text-foreground">Comparecimentos</h3>
-                        <p className="text-2xl sm:text-3xl font-bold text-foreground">58</p>
+                        <h3 className="font-bold text-sm sm:text-base mb-0.5 text-foreground">Comparecimentos</h3>
+                        <p className="text-xl sm:text-2xl font-bold text-accent">58</p>
                       </div>
                     </div>
                     <div className="text-right ml-auto">
-                      <p className="font-semibold text-primary text-sm sm:text-base">Taxa: 33%</p>
-                      <p className="text-muted-foreground text-xs sm:text-sm">Custo: R$ 172,41</p>
+                      <p className="font-semibold text-accent text-xs sm:text-sm">Taxa: 33%</p>
+                      <p className="text-muted-foreground text-xs">Custo: R$ 172,41</p>
                     </div>
                   </div>
                   {/* Barra de progresso 33% de 30% = ~10% */}
-                  <div className="mt-3 h-1.5 bg-secondary/30 rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-primary to-primary w-[10%]"></div>
+                  <div className="mt-2 h-1 bg-secondary/30 rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-accent to-accent w-[10%]"></div>
                   </div>
                 </Card>
               </div>
 
               {/* Conector */}
               <div className="flex justify-center">
-                <div className="relative w-0 h-6 border-l-2 border-dashed border-primary/30">
+                <div className="relative w-0 h-4 border-l-2 border-dashed border-accent/30">
                   <div className="absolute left-1/2 -translate-x-1/2 top-full">
-                    <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[10px] border-t-accent/30"></div>
+                    <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[8px] border-t-accent/30"></div>
                   </div>
                 </div>
               </div>
 
-              {/* Fechamentos - 55% largura */}
-              <div className="w-[60%] mx-auto">
-                <Card className="p-4 sm:p-6 bg-card/95 backdrop-blur border-accent/40 shadow-md">
-                  <div className="flex items-center justify-between flex-wrap gap-3">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                        <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
+              {/* Fechamentos - 40% largura */}
+              <div className="w-[40%] mx-auto">
+                <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm">
+                  <div className="flex items-center justify-between flex-wrap gap-2">
+                    <div className="flex items-center gap-2">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                        <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
                       </div>
                       <div>
-                        <h3 className="font-bold text-base sm:text-lg mb-0.5 text-foreground">Fechamentos</h3>
-                        <p className="text-2xl sm:text-3xl font-bold text-accent">19</p>
+                        <h3 className="font-bold text-sm sm:text-base mb-0.5 text-foreground">Fechamentos</h3>
+                        <p className="text-xl sm:text-2xl font-bold text-accent">19</p>
                       </div>
                     </div>
                     <div className="text-right ml-auto">
-                      <p className="font-semibold text-accent text-sm sm:text-base">Taxa: 33%</p>
-                      <p className="text-muted-foreground text-xs sm:text-sm">Custo: R$ 526,32</p>
+                      <p className="font-semibold text-accent text-xs sm:text-sm">Taxa: 33%</p>
+                      <p className="text-muted-foreground text-xs">Custo: R$ 526,32</p>
                     </div>
                   </div>
                   {/* Barra de progresso 33% de 10% = ~3% */}
-                  <div className="mt-3 h-1.5 bg-secondary/30 rounded-full overflow-hidden">
+                  <div className="mt-2 h-1 bg-secondary/30 rounded-full overflow-hidden">
                     <div className="h-full bg-gradient-to-r from-accent to-accent w-[3%]"></div>
                   </div>
                 </Card>
