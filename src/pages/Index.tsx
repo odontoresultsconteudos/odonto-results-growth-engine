@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Target, Star, TrendingUp, Calendar, BarChart3, MessageSquare, Users, Zap, Clock, CheckCircle, TrendingDown, FileText, Shield } from "lucide-react";
-import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import logoSvg from "@/assets/logo.svg";
 import blogPost1 from "@/assets/blog-post-1.png";
 import blogPost2 from "@/assets/blog-post-2.png";
@@ -110,7 +109,7 @@ const Index = () => {
         </section>
 
 
-        {/* 4) O Método - 5 Pilares com Bento Grid */}
+        {/* 4) O Método - 5 Pilares (SEM IMAGENS) */}
         <section id="metodo" className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
@@ -122,53 +121,67 @@ const Index = () => {
               </p>
             </div>
 
-            <BentoGrid className="lg:grid-rows-3 max-w-6xl mx-auto">
-              <BentoCard
-                name="Captação de Leads Qualificados"
-                className="lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3"
-                background={<div className="absolute inset-0 bg-gradient-to-br from-accent/20 via-accent/10 to-transparent" />}
-                Icon={Target}
-                description="Anúncios segmentados por tratamento e localização no Facebook, Instagram e Google."
-                href="/captacao"
-                cta="Saiba mais"
-              />
-              <BentoCard
-                name="Vitrine de Autoridade"
-                className="lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3"
-                background={<div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent" />}
-                Icon={Star}
-                description="Conteúdo estratégico que reduz o risco percebido e aumenta a confiança."
-                href="/autoridade"
-                cta="Saiba mais"
-              />
-              <BentoCard
-                name="Google Top 1"
-                className="lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4"
-                background={<div className="absolute inset-0 bg-gradient-to-br from-secondary/20 via-secondary/10 to-transparent" />}
-                Icon={TrendingUp}
-                description="Otimização de Google Maps e SEO local para alcançar Top 3, em média, nas buscas da sua região."
-                href="/google-top-1"
-                cta="Saiba mais"
-              />
-              <BentoCard
-                name="Agendamento Profissional"
-                className="lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2"
-                background={<div className="absolute inset-0 bg-gradient-to-br from-accent/20 via-accent/10 to-transparent" />}
-                Icon={Calendar}
-                description="CRC treinada + IA 24h no WhatsApp para garantir velocidade e consistência no atendimento."
-                href="/agendamento"
-                cta="Saiba mais"
-              />
-              <BentoCard
-                name="CRM Inteligente"
-                className="lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4"
-                background={<div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent" />}
-                Icon={BarChart3}
-                description="Funil claro com foco em Agendamento e Comparecimento, tarefas e automações que aumentam aproveitamento."
-                href="/crm"
-                cta="Saiba mais"
-              />
-            </BentoGrid>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <a href="/captacao" className="block">
+                <Card className="p-8 hover:shadow-xl transition-shadow hover:border-accent/50 h-full">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                    <Target className="w-6 h-6 text-accent" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">Captação de Leads Qualificados</h3>
+                  <p className="text-muted-foreground">
+                    Anúncios segmentados por tratamento e localização no Facebook, Instagram e Google.
+                  </p>
+                </Card>
+              </a>
+
+              <a href="/autoridade" className="block">
+                <Card className="p-8 hover:shadow-xl transition-shadow hover:border-accent/50 h-full">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                    <Star className="w-6 h-6 text-accent" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">Vitrine de Autoridade</h3>
+                  <p className="text-muted-foreground">
+                    Conteúdo estratégico que reduz o risco percebido e aumenta a confiança.
+                  </p>
+                </Card>
+              </a>
+
+              <a href="/google-top-1" className="block">
+                <Card className="p-8 hover:shadow-xl transition-shadow hover:border-accent/50 h-full">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                    <TrendingUp className="w-6 h-6 text-accent" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">Google Top 1</h3>
+                  <p className="text-muted-foreground">
+                    Otimização de Google Maps e SEO local para alcançar Top 3, em média, nas buscas da sua região.
+                  </p>
+                </Card>
+              </a>
+
+              <a href="/agendamento" className="block">
+                <Card className="p-8 hover:shadow-xl transition-shadow hover:border-accent/50 h-full">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                    <Calendar className="w-6 h-6 text-accent" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">Agendamento Profissional</h3>
+                  <p className="text-muted-foreground">
+                    CRC treinada + IA 24h no WhatsApp para garantir velocidade e consistência no atendimento.
+                  </p>
+                </Card>
+              </a>
+
+              <a href="/crm" className="block">
+                <Card className="p-8 hover:shadow-xl transition-shadow hover:border-accent/50 h-full">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                    <BarChart3 className="w-6 h-6 text-accent" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">CRM Inteligente</h3>
+                  <p className="text-muted-foreground">
+                    Funil claro com foco em Agendamento e Comparecimento, tarefas e automações que aumentam aproveitamento.
+                  </p>
+                </Card>
+              </a>
+            </div>
 
             <div className="text-center mt-12">
               <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
