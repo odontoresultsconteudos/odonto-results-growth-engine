@@ -51,24 +51,6 @@ const Index = () => {
             <p className="text-sm text-muted-foreground">
               Sem compromisso • Apresentação personalizada • Plano claro para 90 dias
             </p>
-
-            {/* Team Photos */}
-            <div className="flex justify-center gap-8 mt-12">
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-white/20 mb-3">
-                  <img src={alexGurraoCeo} alt="Dr Alex Gurrão" className="w-full h-full object-cover" />
-                </div>
-                <p className="text-sm font-semibold">Dr Alex Gurrão</p>
-                <p className="text-xs text-muted-foreground">CEO</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-white/20 mb-3">
-                  <img src={viniciusRagazziCoo} alt="Vinícius Ragazzi" className="w-full h-full object-cover" />
-                </div>
-                <p className="text-sm font-semibold">Vinícius Ragazzi</p>
-                <p className="text-xs text-muted-foreground">COO</p>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -421,29 +403,29 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               <Card className="p-8">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-4 border-accent/20">
-                    <img src={alexGurraoCeo} alt="Dr Alex Gurrão" className="w-full h-full object-cover" />
+                  <div className="w-full max-w-sm mb-6 overflow-hidden rounded-lg">
+                    <img src={alexGurraoCeo} alt="Dr Alex Gurrão" className="w-full h-auto object-cover" />
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Dr Alex Gurrão</h3>
                   <p className="text-accent font-semibold mb-4">CEO</p>
                   <p className="text-muted-foreground">
-                    Com vasta experiência em marketing digital para odontologia, lidera a estratégia de crescimento e captação de pacientes para clínicas em todo Brasil.
+                    Dentista e dono de clínica, com vivência de resultado nas suas clínicas próprias. Aplica estratégias validadas na prática para transformar clínicas odontológicas.
                   </p>
                 </div>
               </Card>
 
               <Card className="p-8">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-4 border-accent/20">
-                    <img src={viniciusRagazziCoo} alt="Vinícius Ragazzi" className="w-full h-full object-cover" />
+                  <div className="w-full max-w-sm mb-6 overflow-hidden rounded-lg">
+                    <img src={viniciusRagazziCoo} alt="Vinícius Ragazzi" className="w-full h-auto object-cover" />
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Vinícius Ragazzi</h3>
-                  <p className="text-accent font-semibold mb-4">COO</p>
+                  <p className="text-accent font-semibold mb-4">CMO</p>
                   <p className="text-muted-foreground">
-                    Especialista em operações e processos, garante a excelência na execução do método e no atendimento aos clientes parceiros.
+                    Com 12 anos de experiência em marketing digital, lidera as estratégias de captação e crescimento de clínicas odontológicas em todo Brasil.
                   </p>
                 </div>
               </Card>
