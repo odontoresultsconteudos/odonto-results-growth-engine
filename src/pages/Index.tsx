@@ -9,6 +9,7 @@ import Header from "@/components/Header";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { BeamsBackground } from "@/components/ui/beams-background";
 import { motion } from "motion/react";
+import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 const Index = () => {
   return <>
       <Header />
@@ -519,91 +520,95 @@ const Index = () => {
 
 
         {/* Últimos Posts do Blog */}
-        <section id="ultimos-posts" className="py-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-                Blog da Odonto Results
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Confira nossas dicas, estratégias e insights para clínicas odontológicas crescerem mais com marketing digital.
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <a href="https://blog.odontoresults.com.br/post/metodo-paciente-previsivel-odonto-results" target="_blank" rel="noopener noreferrer" className="block group">
-                <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
-                  <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
-                    <img 
-                      src={blogPost1}
-                      alt="Método Paciente Previsível"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
-                      Conheça o Método Paciente Previsível da Odonto Results
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Descubra como o Método Paciente Previsível da Odonto Results potencializa captação, agendamento e faturamento em clínicas.
-                    </p>
-                  </div>
-                </Card>
-              </a>
+        <section id="ultimos-posts" className="overflow-hidden">
+          <ContainerScroll
+            titleComponent={
+              <>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+                  Blog da Odonto Results
+                </h2>
+                <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                  Confira nossas dicas, estratégias e insights para clínicas odontológicas crescerem mais com marketing digital.
+                </p>
+              </>
+            }
+          >
+            <div className="h-full w-full overflow-y-auto px-4">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pb-6">
+                <a href="https://blog.odontoresults.com.br/post/metodo-paciente-previsivel-odonto-results" target="_blank" rel="noopener noreferrer" className="block group">
+                  <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
+                    <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
+                      <img 
+                        src={blogPost1}
+                        alt="Método Paciente Previsível"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
+                        Conheça o Método Paciente Previsível da Odonto Results
+                      </h3>
+                      <p className="text-muted-foreground">
+                        Descubra como o Método Paciente Previsível da Odonto Results potencializa captação, agendamento e faturamento em clínicas.
+                      </p>
+                    </div>
+                  </Card>
+                </a>
 
-              <a href="https://blog.odontoresults.com.br/post/calculadora-de-marketing-odontologico-como-definir-investimentos" target="_blank" rel="noopener noreferrer" className="block group">
-                <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
-                  <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
-                    <img 
-                      src={blogPost2}
-                      alt="Calculadora de marketing odontológico"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
-                      Calculadora de marketing odontológico: como definir investimentos?
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Use a calculadora de marketing odontológico para estimar leads, conversões e investimentos ideais para sua clínica dental.
-                    </p>
-                  </div>
-                </Card>
-              </a>
+                <a href="https://blog.odontoresults.com.br/post/calculadora-de-marketing-odontologico-como-definir-investimentos" target="_blank" rel="noopener noreferrer" className="block group">
+                  <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
+                    <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
+                      <img 
+                        src={blogPost2}
+                        alt="Calculadora de marketing odontológico"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
+                        Calculadora de marketing odontológico: como definir investimentos?
+                      </h3>
+                      <p className="text-muted-foreground">
+                        Use a calculadora de marketing odontológico para estimar leads, conversões e investimentos ideais para sua clínica dental.
+                      </p>
+                    </div>
+                  </Card>
+                </a>
 
-              <a href="https://blog.odontoresults.com.br/post/marketing-odontologico-2025-guia-completo-atrair-pacientes" target="_blank" rel="noopener noreferrer" className="block group">
-                <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
-                  <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
-                    <img 
-                      src={blogPost3}
-                      alt="Marketing Odontológico em 2025"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
-                      Marketing Odontológico em 2025: Guia Completo para Atrair Pacientes
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Entenda as estratégias, regras do CFO, SEO Local, inbound e automação para crescer sua clínica odontológica em 2025.
-                    </p>
-                  </div>
-                </Card>
-              </a>
-            </div>
+                <a href="https://blog.odontoresults.com.br/post/marketing-odontologico-2025-guia-completo-atrair-pacientes" target="_blank" rel="noopener noreferrer" className="block group">
+                  <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
+                    <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
+                      <img 
+                        src={blogPost3}
+                        alt="Marketing Odontológico em 2025"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
+                        Marketing Odontológico em 2025: Guia Completo para Atrair Pacientes
+                      </h3>
+                      <p className="text-muted-foreground">
+                        Entenda as estratégias, regras do CFO, SEO Local, inbound e automação para crescer sua clínica odontológica em 2025.
+                      </p>
+                    </div>
+                  </Card>
+                </a>
+              </div>
 
-            <div className="text-center mt-8">
-              <a href="https://blog.odontoresults.com.br/" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="lg">
-                  Ver todos os artigos
-                  <ArrowRight className="ml-2" />
-                </Button>
-              </a>
+              <div className="text-center mt-4">
+                <a href="https://blog.odontoresults.com.br/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="lg">
+                    Ver todos os artigos
+                    <ArrowRight className="ml-2" />
+                  </Button>
+                </a>
+              </div>
             </div>
-          </div>
+          </ContainerScroll>
         </section>
 
         {/* 8) FAQ - 6 Perguntas */}
