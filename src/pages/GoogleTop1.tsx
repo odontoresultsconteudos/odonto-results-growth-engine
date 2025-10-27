@@ -123,20 +123,6 @@ const GoogleTop1 = () => {
                   <span className="text-accent font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-3">Posts Regulares</h3>
-                  <p className="text-muted-foreground">
-                    Publicações semanais no Google com promoções, novidades e conteúdo relevante para manter o perfil ativo.
-                  </p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-8 border-border/40">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <span className="text-accent font-bold text-xl">4</span>
-                </div>
-                <div>
                   <h3 className="text-xl font-semibold mb-3">SEO Local</h3>
                   <p className="text-muted-foreground">
                     Otimização de palavras-chave locais, citações em diretórios e estratégias para dominar buscas da região.
@@ -148,21 +134,7 @@ const GoogleTop1 = () => {
             <Card className="p-8 border-border/40">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <span className="text-accent font-bold text-xl">5</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3">Perguntas e Respostas</h3>
-                  <p className="text-muted-foreground">
-                    Gestão da seção de Q&A para responder dúvidas comuns e reforçar autoridade.
-                  </p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-8 border-border/40">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <span className="text-accent font-bold text-xl">6</span>
+                  <span className="text-accent font-bold text-xl">4</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-3">Monitoramento 24/7</h3>
