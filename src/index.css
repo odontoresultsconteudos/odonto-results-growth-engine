@@ -92,3 +92,82 @@ All colors MUST be HSL.
     scroll-behavior: smooth;
   }
 }
+
+/* Cybernetic Bento Grid Styles */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bento-item {
+  position: relative;
+  background: hsl(var(--card));
+  border-radius: var(--radius);
+  padding: 2rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 1px solid hsl(var(--border));
+}
+
+.bento-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    hsl(var(--accent) / 0.15),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bento-item:hover::before {
+  opacity: 1;
+}
+
+.bento-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    400px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    hsl(var(--accent) / 0.4),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(20px);
+}
+
+.bento-item:hover::after {
+  opacity: 1;
+}
+
+.bento-item > * {
+  position: relative;
+  z-index: 2;
+}
+
+.bento-item:hover {
+  transform: translateY(-4px);
+  border-color: hsl(var(--accent) / 0.5);
+}
