@@ -106,9 +106,15 @@ const Header = () => {
             Sobre
           </Link>
 
-          <a href="#contato" className="text-sm font-medium transition-colors hover:text-accent">
+          <Link
+            to="/contato"
+            className={cn(
+              "text-sm font-medium transition-colors hover:text-accent",
+              isActive("/contato") && "text-accent"
+            )}
+          >
             Contato
-          </a>
+          </Link>
         </nav>
 
         {/* CTA Desktop */}
@@ -190,13 +196,16 @@ const Header = () => {
                 Sobre
               </Link>
 
-              <a
-                href="#contato"
+              <Link
+                to="/contato"
                 onClick={() => setMobileOpen(false)}
-                className="text-sm font-medium transition-colors hover:text-accent py-2"
+                className={cn(
+                  "text-sm font-medium transition-colors hover:text-accent py-2",
+                  isActive("/contato") && "text-accent"
+                )}
               >
                 Contato
-              </a>
+              </Link>
 
               <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)} className="mt-4">
                 <Button variant="cta" className="w-full">
