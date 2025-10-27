@@ -439,12 +439,7 @@ const Index = () => {
               <div>
                 <h4 className="font-bold mb-4">Contato</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>contato@odontoresults.com.br</li>
-                  <li>WhatsApp: (11) 99999-9999</li>
-                  <li className="pt-2">
-                    <div className="text-xs">CNPJ: 00.000.000/0001-00</div>
-                    <div className="text-xs">São Paulo, SP</div>
-                  </li>
+                  <li>faleconosco@odontoresults.com.br</li>
                 </ul>
               </div>
             </div>
