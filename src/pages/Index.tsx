@@ -8,6 +8,8 @@ import blogPost3 from "@/assets/blog-post-3.png";
 import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { AuroraBackground } from "@/components/ui/aurora-background";
+import { motion } from "framer-motion";
 const Index = () => {
   return <>
       <Header />
@@ -24,14 +26,22 @@ const Index = () => {
       </div>
 
       <main className="min-h-screen pb-20 md:pb-0">
-        {/* 2) Hero Section - Sem Imagens */}
-        <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-secondary opacity-90" />
-          <div className="relative max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+        {/* 2) Hero Section - Com Aurora Background */}
+        <AuroraBackground className="h-auto min-h-screen py-20">
+          <motion.div
+            initial={{ opacity: 0.0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.8,
+              ease: "easeInOut",
+            }}
+            className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8"
+          >
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 dark:text-white">
               Bata recorde de faturamento com pacientes certos na sua agenda
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto dark:text-neutral-200">
               Captação de Leads Qualificados, Vitrine de Autoridade, Google Top 1, Agendamento Profissional (CRC + IA) e CRM inteligente para transformar leads em pacientes.
             </p>
             
@@ -43,17 +53,17 @@ const Index = () => {
                 </Button>
               </a>
               <a href="#como-trabalhamos">
-                <Button variant="outline" size="lg" className="text-lg w-full sm:w-auto bg-white/10 border-white/20 hover:bg-white/20 text-foreground">
+                <Button variant="outline" size="lg" className="text-lg w-full sm:w-auto bg-white/10 border-white/20 hover:bg-white/20 text-foreground dark:text-white">
                   Ver como funciona
                 </Button>
               </a>
             </div>
 
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground dark:text-neutral-300">
               Sem compromisso • Apresentação personalizada • Plano claro para 90 dias
             </p>
-          </div>
-        </section>
+          </motion.div>
+        </AuroraBackground>
 
         {/* 3) Prova Social - Contadores */}
         <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/30">
