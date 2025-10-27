@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Mail, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -43,26 +43,12 @@ const Contato = () => {
                   <Card className="p-6">
                     <div className="flex items-start gap-4">
                       <div className="p-3 rounded-lg bg-accent/10">
-                        <Phone className="h-6 w-6 text-accent" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold mb-1">Telefone / WhatsApp</h3>
-                        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
-                          (11) 99999-9999
-                        </a>
-                      </div>
-                    </div>
-                  </Card>
-
-                  <Card className="p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="p-3 rounded-lg bg-accent/10">
                         <Mail className="h-6 w-6 text-accent" />
                       </div>
                       <div>
                         <h3 className="font-semibold mb-1">E-mail</h3>
-                        <a href="mailto:contato@odontoresults.com.br" className="text-muted-foreground hover:text-accent transition-colors">
-                          contato@odontoresults.com.br
+                        <a href="mailto:faleconosco@odontoresults.com.br" className="text-muted-foreground hover:text-accent transition-colors">
+                          faleconosco@odontoresults.com.br
                         </a>
                       </div>
                     </div>
@@ -76,8 +62,8 @@ const Contato = () => {
                       <div>
                         <h3 className="font-semibold mb-1">Endereço</h3>
                         <p className="text-muted-foreground">
-                          São Paulo, SP<br />
-                          Brasil
+                          R. João Francisco Ferreira, 259<br />
+                          Bandeirantes, PR, 86362-003
                         </p>
                       </div>
                     </div>
