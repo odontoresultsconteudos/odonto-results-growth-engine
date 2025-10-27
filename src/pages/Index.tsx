@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Users, TrendingUp, Calendar, CreditCard, Star, Target, MessageSquare, BarChart3 } from "lucide-react";
+import { Link } from "react-router-dom";
 import alexImage from "@/assets/alex-gurrao.png";
 import viniciusImage from "@/assets/vinicius-ragazzi.png";
 import financingImage from "@/assets/financing.jpg";
@@ -69,55 +70,65 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="p-6 hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <Target className="w-6 h-6 text-accent" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Captação de Leads</h3>
-              <p className="text-muted-foreground">
-                Anúncios qualificados no Facebook, Instagram e Google com segmentação precisa por tratamento e localização.
-              </p>
-            </Card>
+            <Link to="/captacao" className="block">
+              <Card className="p-6 hover:shadow-xl transition-shadow h-full hover:border-accent/50">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                  <Target className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Captação de Leads</h3>
+                <p className="text-muted-foreground">
+                  Anúncios qualificados no Facebook, Instagram e Google com segmentação precisa por tratamento e localização.
+                </p>
+              </Card>
+            </Link>
 
-            <Card className="p-6 hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <Star className="w-6 h-6 text-accent" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Vitrine de Autoridade</h3>
-              <p className="text-muted-foreground">
-                Conteúdo estratégico que prova sua competência e reduz o risco percebido pelos pacientes.
-              </p>
-            </Card>
+            <Link to="/autoridade" className="block">
+              <Card className="p-6 hover:shadow-xl transition-shadow h-full hover:border-accent/50">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                  <Star className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Vitrine de Autoridade</h3>
+                <p className="text-muted-foreground">
+                  Conteúdo estratégico que prova sua competência e reduz o risco percebido pelos pacientes.
+                </p>
+              </Card>
+            </Link>
 
-            <Card className="p-6 hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <TrendingUp className="w-6 h-6 text-accent" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Google Top 1</h3>
-              <p className="text-muted-foreground">
-                Método exclusivo para ocupar o topo das buscas locais com otimização de Google Maps e SEO local.
-              </p>
-            </Card>
+            <Link to="/google-top-1" className="block">
+              <Card className="p-6 hover:shadow-xl transition-shadow h-full hover:border-accent/50">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                  <TrendingUp className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Google Top 1</h3>
+                <p className="text-muted-foreground">
+                  Método exclusivo para ocupar o topo das buscas locais com otimização de Google Maps e SEO local.
+                </p>
+              </Card>
+            </Link>
 
-            <Card className="p-6 hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <Calendar className="w-6 h-6 text-accent" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Agendamento Estruturado</h3>
-              <p className="text-muted-foreground">
-                CRC profissional e IA 24/7 no WhatsApp para converter leads em consultas agendadas com alta taxa de comparecimento.
-              </p>
-            </Card>
+            <Link to="/agendamento" className="block">
+              <Card className="p-6 hover:shadow-xl transition-shadow h-full hover:border-accent/50">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                  <Calendar className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Agendamento Estruturado</h3>
+                <p className="text-muted-foreground">
+                  CRC profissional e IA 24/7 no WhatsApp para converter leads em consultas agendadas com alta taxa de comparecimento.
+                </p>
+              </Card>
+            </Link>
 
-            <Card className="p-6 hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <BarChart3 className="w-6 h-6 text-accent" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">CRM Inteligente</h3>
-              <p className="text-muted-foreground">
-                Gestão completa do funil com dashboards em tempo real e automações que aumentam aproveitamento.
-              </p>
-            </Card>
+            <Link to="/crm" className="block">
+              <Card className="p-6 hover:shadow-xl transition-shadow h-full hover:border-accent/50">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                  <BarChart3 className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">CRM Inteligente</h3>
+                <p className="text-muted-foreground">
+                  Gestão completa do funil com dashboards em tempo real e automações que aumentam aproveitamento.
+                </p>
+              </Card>
+            </Link>
 
             <Card className="p-6 hover:shadow-xl transition-shadow">
               <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
@@ -362,6 +373,84 @@ const Index = () => {
                 <p className="text-lg">Presença Infinita: Posts e atualizações constantes para máxima relevância</p>
               </div>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Sobre Section */}
+      <section id="sobre" className="py-24 px-4 bg-muted/30">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Sobre a Odonto Results
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Fundada em fevereiro de 2020, somos especialistas em transformar audiência em faturamento real para clínicas odontológicas
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold mb-4 text-accent">Nossa Missão</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Capacitar clínicas odontológicas com um sistema estruturado de marketing digital que integra captação, gestão de leads e agendamento, gerando resultados previsíveis e faturamento recorde.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-4 text-accent">Nossa Visão</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Ser a referência nacional em marketing digital para odontologia, reconhecida pela excelência operacional e resultados comprovados.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-8">
+              <div className="text-center">
+                <div className="text-5xl font-bold text-accent mb-2">5+</div>
+                <div className="text-sm text-muted-foreground">Anos de Mercado</div>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl font-bold text-accent mb-2">500+</div>
+                <div className="text-sm text-muted-foreground">Clínicas Atendidas</div>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl font-bold text-accent mb-2">10k+</div>
+                <div className="text-sm text-muted-foreground">Consultas Agendadas</div>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl font-bold text-accent mb-2">98%</div>
+                <div className="text-sm text-muted-foreground">Taxa de Satisfação</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-card border border-border rounded-lg p-8 text-center">
+              <img
+                src={alexImage}
+                alt="Alex Gurrão - CEO"
+                className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-accent/20"
+              />
+              <h3 className="text-xl font-bold mb-2">Alex Gurrão</h3>
+              <p className="text-accent font-medium mb-3">CEO & Co-Fundador</p>
+              <p className="text-sm text-muted-foreground">
+                Especialista em estratégias de captação e conversão para alto ticket no mercado odontológico
+              </p>
+            </div>
+
+            <div className="bg-card border border-border rounded-lg p-8 text-center">
+              <img
+                src={viniciusImage}
+                alt="Vinícius Ragazzi - COO"
+                className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-accent/20"
+              />
+              <h3 className="text-xl font-bold mb-2">Vinícius Ragazzi</h3>
+              <p className="text-accent font-medium mb-3">COO & Co-Fundador</p>
+              <p className="text-sm text-muted-foreground">
+                Expert em automação, CRM e processos estruturados para maximizar resultados operacionais
+              </p>
+            </div>
           </div>
         </div>
       </section>
