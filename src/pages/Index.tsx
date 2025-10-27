@@ -8,7 +8,8 @@ import blogPost3 from "@/assets/blog-post-3.png";
 import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Spotlight } from "@/components/ui/spotlight";
+import { AuroraBackground } from "@/components/ui/aurora-background";
+import { motion } from "framer-motion";
 const Index = () => {
   return <>
       <Header />
@@ -25,15 +26,19 @@ const Index = () => {
       </div>
 
       <main className="min-h-screen pb-20 md:pb-0">
-        {/* 2) Hero Section - Com Spotlight */}
-        <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8 min-h-[600px] flex items-center">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-secondary" />
-          <Spotlight
-            className="-top-40 left-0 md:left-60 md:-top-20"
-            fill="hsl(45, 100%, 51%)"
-          />
-          <div className="relative max-w-4xl mx-auto text-center z-10">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+        {/* 2) Hero Section - Com Aurora Background */}
+        <AuroraBackground className="!h-auto min-h-[600px] py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary via-primary to-secondary dark:bg-gradient-to-br dark:from-primary dark:via-primary dark:to-secondary">
+          <motion.div
+            initial={{ opacity: 0.0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.8,
+              ease: "easeInOut",
+            }}
+            className="relative max-w-4xl mx-auto text-center z-10"
+          >
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground">
               Bata recorde de faturamento com pacientes certos na sua agenda
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
@@ -57,8 +62,8 @@ const Index = () => {
             <p className="text-sm text-muted-foreground">
               Sem compromisso • Apresentação personalizada • Plano claro para 90 dias
             </p>
-          </div>
-        </section>
+          </motion.div>
+        </AuroraBackground>
 
         {/* 3) Prova Social - Contadores */}
         <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/30">
