@@ -4,10 +4,8 @@ import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Award, Eye, Star, Video } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Autoridade = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       <WhatsAppButton />
       
@@ -95,16 +93,12 @@ const Autoridade = () => {
               <div className="space-y-6">
                 <div className="border-l-4 border-accent pl-6 py-2">
                   <h3 className="font-semibold text-xl mb-2">Gestão de Redes Sociais</h3>
-                  <p className="text-muted-foreground">
-                    Posts, stories e reels planejados para engajar e educar sua audiência.
-                  </p>
+                  <p className="text-muted-foreground">Posts e reels planejados para engajar e educar sua audiência.</p>
                 </div>
 
                 <div className="border-l-4 border-accent pl-6 py-2">
                   <h3 className="font-semibold text-xl mb-2">Produção de Conteúdo</h3>
-                  <p className="text-muted-foreground">
-                    Vídeos, carrosséis e artes que destacam seus diferenciais e tratamentos.
-                  </p>
+                  <p className="text-muted-foreground">Vídeos e artes que destacam seus diferenciais e tratamentos.</p>
                 </div>
 
                 <div className="border-l-4 border-accent pl-6 py-2">
@@ -172,8 +166,6 @@ const Autoridade = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Autoridade;
