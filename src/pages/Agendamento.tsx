@@ -4,10 +4,8 @@ import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Bot, Calendar, Clock, PhoneCall } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Agendamento = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       <WhatsAppButton />
       
@@ -119,7 +117,7 @@ const Agendamento = () => {
                   <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-accent text-xs">✓</span>
                   </div>
-                  <p className="text-muted-foreground">Agendamento direto na agenda da clínica</p>
+                  <p className="text-muted-foreground">Agendamento direto na agenda</p>
                 </div>
                 <div className="flex gap-3">
                   <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
@@ -264,8 +262,6 @@ const Agendamento = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Agendamento;
