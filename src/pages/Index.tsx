@@ -484,9 +484,7 @@ const Index = () => {
             </div>
 
             <div className="text-center">
-              <p className="text-xs sm:text-sm text-muted-foreground mb-6">
-                *Projeção baseada em dados reais de clientes em fases avançadas. Resultados podem variar.
-              </p>
+              <p className="text-xs sm:text-sm text-muted-foreground mb-6">*Projeção baseada em dados de clientes em fases avançadas. Resultados podem variar.</p>
               <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
                 <Button variant="cta" size="lg" className="w-full sm:w-auto">
                   Quero resultados como esses
