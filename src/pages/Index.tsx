@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Target, Star, TrendingUp, Calendar, BarChart3, MessageSquare, Users, Zap, Clock, CheckCircle, TrendingDown, FileText, Shield } from "lucide-react";
 import logoSvg from "@/assets/logo.svg";
+import blogPost1 from "@/assets/blog-post-1.png";
+import blogPost2 from "@/assets/blog-post-2.png";
+import blogPost3 from "@/assets/blog-post-3.png";
 import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -510,7 +513,7 @@ const Index = () => {
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
                     <img 
-                      src="https://static.wixstatic.com/media/e348fe_c7e8f9c6f2a24b1cadb04eddc6a3bcad~mv2.png" 
+                      src={blogPost1}
                       alt="Método Paciente Previsível"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
@@ -532,7 +535,7 @@ const Index = () => {
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
                     <img 
-                      src="https://blog.odontoresults.com.br/wp-content/uploads/2024/10/Calculadora-de-marketing-odontologico_-como-definir-investimentos.jpg" 
+                      src={blogPost2}
                       alt="Calculadora de marketing odontológico"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
@@ -554,7 +557,7 @@ const Index = () => {
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
                     <img 
-                      src="https://blog.odontoresults.com.br/wp-content/uploads/2024/10/Marketing-Odontologico-em-2025_-Guia-Completo-para-Atrair-Pacientes.jpg" 
+                      src={blogPost3}
                       alt="Marketing Odontológico em 2025"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
