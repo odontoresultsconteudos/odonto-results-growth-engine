@@ -467,19 +467,19 @@ const Index = () => {
 
             {/* Cards de Métricas - Abaixo do Funil */}
             <div className="grid sm:grid-cols-3 gap-4 mb-8">
-              <Card className="p-6 sm:p-8 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
-                <p className="text-sm sm:text-base text-muted-foreground mb-2">Ticket Médio</p>
-                <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">R$ 5.000,00</p>
+              <Card className="p-4 sm:p-6 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
+                <p className="text-xs sm:text-sm text-muted-foreground mb-2">Ticket Médio</p>
+                <p className="text-xl sm:text-2xl font-bold text-foreground">R$ 5.000,00</p>
               </Card>
               
-              <Card className="p-6 sm:p-8 text-center bg-gradient-to-br from-accent/20 to-accent/10 border-accent/30">
-                <p className="text-sm sm:text-base text-muted-foreground mb-2">Faturamento</p>
-                <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-accent">R$ 95.000,00</p>
+              <Card className="p-4 sm:p-6 text-center bg-gradient-to-br from-accent/20 to-accent/10 border-accent/30">
+                <p className="text-xs sm:text-sm text-muted-foreground mb-2">Faturamento</p>
+                <p className="text-xl sm:text-2xl font-bold text-accent">R$ 95.000,00</p>
               </Card>
               
-              <Card className="p-6 sm:p-8 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
-                <p className="text-sm sm:text-base text-muted-foreground mb-2">ROI</p>
-                <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">9.50x</p>
+              <Card className="p-4 sm:p-6 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
+                <p className="text-xs sm:text-sm text-muted-foreground mb-2">ROI</p>
+                <p className="text-xl sm:text-2xl font-bold text-foreground">9.50x</p>
               </Card>
             </div>
 
