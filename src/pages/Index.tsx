@@ -77,12 +77,20 @@ const Index = () => {
         {/* 3) Prova Social - Contadores */}
         <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/30">
           <div className="max-w-6xl mx-auto">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-center">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 text-center">
               <div className="flex items-center gap-3">
                 <div className="text-3xl sm:text-4xl font-bold text-accent">1500+</div>
                 <div className="text-left">
                   <div className="text-base font-semibold">Clínicas</div>
                   <div className="text-sm text-muted-foreground">atendidas</div>
+                </div>
+              </div>
+              <div className="hidden md:block h-12 w-px bg-border"></div>
+              <div className="flex items-center gap-3">
+                <div className="text-3xl sm:text-4xl font-bold text-accent">500 mil+</div>
+                <div className="text-left">
+                  <div className="text-base font-semibold">Leads</div>
+                  <div className="text-sm text-muted-foreground">gerados</div>
                 </div>
               </div>
               <div className="hidden md:block h-12 w-px bg-border"></div>
