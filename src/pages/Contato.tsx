@@ -4,13 +4,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Mail, Clock } from "lucide-react";
 import Header from "@/components/Header";
-import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Contato = () => {
   return (
     <>
       <Header />
-      <WhatsAppButton />
       
       <main className="min-h-screen">
         {/* Hero Section */}
