@@ -2,11 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Users, TrendingUp, Calendar, CreditCard, Star, Target, MessageSquare, BarChart3 } from "lucide-react";
 import { Link } from "react-router-dom";
+import logoSvg from "@/assets/logo.svg";
 import alexImage from "@/assets/alex-gurrao.png";
 import viniciusImage from "@/assets/vinicius-ragazzi.png";
 import financingImage from "@/assets/financing.jpg";
 import crmLeadsImage from "@/assets/crm-leads.jpg";
-import logoImage from "@/assets/logo.png";
 import meetingImage from "@/assets/meeting.jpg";
 import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -22,10 +22,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-secondary opacity-90" />
         <div className="relative max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="inline-block">
-                <img src={logoImage} alt="Odonto Results Logo" className="h-12" />
-              </div>
+            <div className="space-y-8 order-2 lg:order-1">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                 Fazemos a sua Clínica bater Recorde de Faturamento
               </h1>
@@ -39,17 +36,17 @@ const Index = () => {
                 </Button>
               </a>
             </div>
-            <div className="relative">
-              <div className="grid grid-cols-2 gap-4">
+            <div className="relative order-1 lg:order-2">
+              <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:max-w-none">
                 <img 
                   src={alexImage} 
                   alt="Alex Gurrão - CEO" 
-                  className="rounded-lg shadow-2xl w-full h-auto"
+                  className="rounded-lg shadow-2xl w-full aspect-[3/4] object-cover"
                 />
                 <img 
                   src={viniciusImage} 
                   alt="Vinícius Ragazzi - COO" 
-                  className="rounded-lg shadow-2xl w-full h-auto mt-8"
+                  className="rounded-lg shadow-2xl w-full aspect-[3/4] object-cover mt-8"
                 />
               </div>
             </div>
@@ -378,7 +375,7 @@ const Index = () => {
       </section>
 
       {/* Sobre Section */}
-      <section id="sobre" className="py-24 px-4 bg-muted/30">
+      <section id="sobre" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -488,7 +485,7 @@ const Index = () => {
       <footer className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/50 border-t border-border">
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-6">
-            <img src={logoImage} alt="Odonto Results" className="h-10 mx-auto" />
+            <img src={logoSvg} alt="Odonto Results" className="h-10 mx-auto" />
           </div>
           <p className="text-muted-foreground mb-2">
             © 2025 Odonto Results. Fundada em fevereiro de 2020.
