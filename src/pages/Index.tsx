@@ -195,7 +195,7 @@ const Index = () => {
             </div>
 
             <div className="space-y-6">
-              <Card className="p-8">
+              <BentoItem>
                 <div className="flex items-start gap-6">
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
                     1
@@ -207,9 +207,9 @@ const Index = () => {
                     </p>
                   </div>
                 </div>
-              </Card>
+              </BentoItem>
 
-              <Card className="p-8">
+              <BentoItem>
                 <div className="flex items-start gap-6">
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
                     2
@@ -221,9 +221,9 @@ const Index = () => {
                     </p>
                   </div>
                 </div>
-              </Card>
+              </BentoItem>
 
-              <Card className="p-8">
+              <BentoItem>
                 <div className="flex items-start gap-6">
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
                     3
@@ -235,9 +235,9 @@ const Index = () => {
                     </p>
                   </div>
                 </div>
-              </Card>
+              </BentoItem>
 
-              <Card className="p-8">
+              <BentoItem>
                 <div className="flex items-start gap-6">
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
                     4
@@ -249,7 +249,7 @@ const Index = () => {
                     </p>
                   </div>
                 </div>
-              </Card>
+              </BentoItem>
             </div>
 
             <div className="text-center mt-12">
@@ -272,8 +272,8 @@ const Index = () => {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <Card className="p-8">
+            <div className="bento-grid">
+              <BentoItem>
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                   <MessageSquare className="w-6 h-6 text-accent" />
                 </div>
@@ -281,9 +281,9 @@ const Index = () => {
                 <p className="text-muted-foreground">
                   Rapidez e consistência no primeiro contato.
                 </p>
-              </Card>
+              </BentoItem>
 
-              <Card className="p-8">
+              <BentoItem>
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                   <TrendingUp className="w-6 h-6 text-accent" />
                 </div>
@@ -291,9 +291,9 @@ const Index = () => {
                 <p className="text-muted-foreground">
                   Método focado em buscas da sua região (Top 3, em média).
                 </p>
-              </Card>
+              </BentoItem>
 
-              <Card className="p-8">
+              <BentoItem>
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                   <Target className="w-6 h-6 text-accent" />
                 </div>
@@ -301,9 +301,9 @@ const Index = () => {
                 <p className="text-muted-foreground">
                   Linguagem e intenção que viram consulta.
                 </p>
-              </Card>
+              </BentoItem>
 
-              <Card className="p-8">
+              <BentoItem>
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                   <BarChart3 className="w-6 h-6 text-accent" />
                 </div>
@@ -311,9 +311,9 @@ const Index = () => {
                 <p className="text-muted-foreground">
                   Prioridade por valor/urgência e follow-up estruturado.
                 </p>
-              </Card>
+              </BentoItem>
 
-              <Card className="p-8">
+              <BentoItem>
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                   <FileText className="w-6 h-6 text-accent" />
                 </div>
@@ -321,9 +321,9 @@ const Index = () => {
                 <p className="text-muted-foreground">
                   Visão por Agendamento e Comparecimento.
                 </p>
-              </Card>
+              </BentoItem>
 
-              <Card className="p-8">
+              <BentoItem>
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                   <Zap className="w-6 h-6 text-accent" />
                 </div>
@@ -331,7 +331,7 @@ const Index = () => {
                 <p className="text-muted-foreground">
                   Do plano ao início das campanhas em poucos dias.
                 </p>
-              </Card>
+              </BentoItem>
             </div>
           </div>
         </section>
