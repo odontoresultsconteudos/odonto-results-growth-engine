@@ -1,34 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { 
-  ArrowRight, 
-  Target, 
-  Star, 
-  TrendingUp, 
-  Calendar, 
-  BarChart3,
-  MessageSquare,
-  Users,
-  Zap,
-  Clock,
-  CheckCircle,
-  TrendingDown,
-  FileText,
-  Shield
-} from "lucide-react";
+import { ArrowRight, Target, Star, TrendingUp, Calendar, BarChart3, MessageSquare, Users, Zap, Clock, CheckCircle, TrendingDown, FileText, Shield } from "lucide-react";
 import logoSvg from "@/assets/logo.svg";
 import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 const Index = () => {
-  return (
-    <>
+  return <>
       <Header />
       <WhatsAppButton />
       
@@ -95,7 +73,7 @@ const Index = () => {
               </div>
               <div className="hidden md:block h-12 w-px bg-border"></div>
               <div className="flex items-center gap-3">
-                <div className="text-3xl sm:text-4xl font-bold text-accent">3 milhões+</div>
+                <div className="text-3xl sm:text-4xl font-bold text-accent">10 milhões+</div>
                 <div className="text-left">
                   <div className="text-base font-semibold">Gerenciados em</div>
                   <div className="text-sm text-muted-foreground">tráfego pago</div>
@@ -483,8 +461,6 @@ const Index = () => {
           </div>
         </footer>
       </main>
-    </>
-  );
+    </>;
 };
-
 export default Index;
