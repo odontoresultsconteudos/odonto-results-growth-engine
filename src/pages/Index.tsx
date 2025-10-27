@@ -29,7 +29,7 @@ const Index = () => {
               <p className="text-xl text-muted-foreground">
                 Com o Método Paciente Previsível, sua clínica odontológica terá leads qualificados e agendamentos estruturados para crescer com previsibilidade.
               </p>
-              <a href="#contato">
+              <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
                 <Button variant="cta" size="lg" className="text-lg">
                   Solicitar Diagnóstico
                   <ArrowRight className="ml-2" />
@@ -470,7 +470,7 @@ const Index = () => {
               <p className="text-xl text-muted-foreground">
                 Descubra como podemos transformar sua clínica com o Método Paciente Previsível. Agende uma videochamada e receba uma proposta personalizada.
               </p>
-              <a href="#contato">
+              <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
                 <Button variant="cta" size="lg" className="text-lg">
                   Solicitar Apresentação
                   <ArrowRight className="ml-2" />
