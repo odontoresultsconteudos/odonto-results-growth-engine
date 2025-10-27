@@ -504,13 +504,82 @@ const Index = () => {
                 Do nosso blog
               </h2>
             </div>
-            <div className="w-full rounded-lg overflow-hidden shadow-lg border border-border">
-              <iframe
-                src="https://blog.odontoresults.com.br/"
-                style={{ width: '100%', height: '900px', border: 0 }}
-                loading="lazy"
-                title="Blog Odonto Results"
-              />
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <a href="https://blog.odontoresults.com.br/agencia-de-marketing-odontologico/" target="_blank" rel="noopener noreferrer" className="block group">
+                <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
+                  <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
+                    <img 
+                      src="https://blog.odontoresults.com.br/wp-content/uploads/2024/10/Agencia-de-Marketing-Odontologico_-Como-Atrair-Mais-Pacientes.jpg" 
+                      alt="Agência de Marketing Odontológico"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2 group-hover:text-accent transition-colors">
+                      Agência de Marketing Odontológico: Como Atrair Mais Pacientes
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-3">2025-10-27</p>
+                    <p className="text-muted-foreground">
+                      Conheça estratégias de anúncios, CRM, Google Maps e follow-up para aumentar agendamentos e faturamento em clínicas odontológicas.
+                    </p>
+                  </div>
+                </Card>
+              </a>
+
+              <a href="https://blog.odontoresults.com.br/calculadora-de-marketing-odontologico/" target="_blank" rel="noopener noreferrer" className="block group">
+                <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
+                  <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
+                    <img 
+                      src="https://blog.odontoresults.com.br/wp-content/uploads/2024/10/Calculadora-de-marketing-odontologico_-como-definir-investimentos.jpg" 
+                      alt="Calculadora de marketing odontológico"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2 group-hover:text-accent transition-colors">
+                      Calculadora de marketing odontológico: como definir investimentos?
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-3">2025-10-27</p>
+                    <p className="text-muted-foreground">
+                      Use a calculadora de marketing odontológico para estimar leads, conversões e investimentos ideais para sua clínica dental.
+                    </p>
+                  </div>
+                </Card>
+              </a>
+
+              <a href="https://blog.odontoresults.com.br/marketing-odontologico/" target="_blank" rel="noopener noreferrer" className="block group">
+                <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
+                  <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
+                    <img 
+                      src="https://blog.odontoresults.com.br/wp-content/uploads/2024/10/Marketing-Odontologico-em-2025_-Guia-Completo-para-Atrair-Pacientes.jpg" 
+                      alt="Marketing Odontológico em 2025"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2 group-hover:text-accent transition-colors">
+                      Marketing Odontológico em 2025: Guia Completo para Atrair Pacientes
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-3">2025-10-27</p>
+                    <p className="text-muted-foreground">
+                      Entenda as estratégias, regras do CFO, SEO Local, inbound e automação para crescer sua clínica odontológica em 2025.
+                    </p>
+                  </div>
+                </Card>
+              </a>
+            </div>
+
+            <div className="text-center mt-8">
+              <a href="https://blog.odontoresults.com.br/" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" size="lg">
+                  Ver todos os artigos
+                  <ArrowRight className="ml-2" />
+                </Button>
+              </a>
             </div>
           </div>
         </section>
