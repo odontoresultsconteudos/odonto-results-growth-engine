@@ -504,8 +504,11 @@ const Index = () => {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-                Do nosso blog
+                Blog da Odonto Results
               </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Confira nossas dicas, estratégias e insights para clínicas odontológicas crescerem mais com marketing digital.
+              </p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
