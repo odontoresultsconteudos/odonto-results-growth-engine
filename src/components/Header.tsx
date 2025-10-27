@@ -107,9 +107,9 @@ const Header = () => {
 
         {/* CTA Desktop */}
         <div className="hidden md:block">
-          <a href="#contato">
+          <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
             <Button variant="cta" size="sm">
-              Agendar Consulta
+              Agende uma Apresentação
             </Button>
           </a>
         </div>
@@ -189,9 +189,9 @@ const Header = () => {
                 Contato
               </a>
 
-              <a href="#contato" onClick={() => setMobileOpen(false)} className="mt-4">
+              <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)} className="mt-4">
                 <Button variant="cta" className="w-full">
-                  Agendar Consulta
+                  Agende uma Apresentação
                 </Button>
               </a>
             </nav>
