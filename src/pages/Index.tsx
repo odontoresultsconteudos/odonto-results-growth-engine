@@ -86,6 +86,137 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Projeção de Resultados */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+                Projeção de Resultados
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Exemplo de resultado possível em fases mais avançadas do projeto
+              </p>
+            </div>
+
+            {/* Cards de Projeção */}
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <Card className="p-8 text-center bg-gradient-to-br from-primary/10 to-secondary/10">
+                <p className="text-muted-foreground mb-2">Ticket Médio</p>
+                <p className="text-4xl font-bold">R$ 5.000,00</p>
+              </Card>
+              
+              <Card className="p-8 text-center bg-gradient-to-br from-accent/20 to-primary/20">
+                <p className="text-muted-foreground mb-2">Faturamento</p>
+                <p className="text-4xl font-bold text-accent">R$ 95.000,00</p>
+              </Card>
+              
+              <Card className="p-8 text-center bg-gradient-to-br from-primary/10 to-secondary/10">
+                <p className="text-muted-foreground mb-2">ROI</p>
+                <p className="text-4xl font-bold">9.50x</p>
+              </Card>
+            </div>
+
+            {/* Funil de Marketing */}
+            <div className="max-w-4xl mx-auto space-y-4">
+              <Card className="p-6 bg-primary/5">
+                <div className="flex items-center justify-between flex-wrap gap-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+                      <Users className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-xl">Leads Gerados</h3>
+                      <p className="text-3xl font-bold text-primary">588</p>
+                    </div>
+                  </div>
+                  <div className="text-right text-sm">
+                    <p className="font-semibold">Investimento: R$ 10.000,00</p>
+                    <p className="text-muted-foreground">Custo por Lead: R$ 17,00</p>
+                  </div>
+                </div>
+              </Card>
+
+              <div className="flex justify-center">
+                <div className="w-0.5 h-8 bg-gradient-to-b from-primary to-accent"></div>
+              </div>
+
+              <Card className="p-6 bg-accent/5">
+                <div className="flex items-center justify-between flex-wrap gap-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center">
+                      <Calendar className="w-5 h-5 text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-xl">Agendamentos</h3>
+                      <p className="text-3xl font-bold text-accent">176</p>
+                    </div>
+                  </div>
+                  <div className="text-right text-sm">
+                    <p className="font-semibold text-accent">Taxa: 30%</p>
+                    <p className="text-muted-foreground">Custo: R$ 56,82</p>
+                  </div>
+                </div>
+              </Card>
+
+              <div className="flex justify-center">
+                <div className="w-0.5 h-8 bg-gradient-to-b from-accent to-primary"></div>
+              </div>
+
+              <Card className="p-6 bg-primary/5">
+                <div className="flex items-center justify-between flex-wrap gap-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+                      <CheckCircle className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-xl">Comparecimentos</h3>
+                      <p className="text-3xl font-bold text-primary">58</p>
+                    </div>
+                  </div>
+                  <div className="text-right text-sm">
+                    <p className="font-semibold text-primary">Taxa: 33%</p>
+                    <p className="text-muted-foreground">Custo: R$ 172,41</p>
+                  </div>
+                </div>
+              </Card>
+
+              <div className="flex justify-center">
+                <div className="w-0.5 h-8 bg-gradient-to-b from-primary to-accent"></div>
+              </div>
+
+              <Card className="p-6 bg-accent/5">
+                <div className="flex items-center justify-between flex-wrap gap-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center">
+                      <TrendingUp className="w-5 h-5 text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-xl">Fechamentos</h3>
+                      <p className="text-3xl font-bold text-accent">19</p>
+                    </div>
+                  </div>
+                  <div className="text-right text-sm">
+                    <p className="font-semibold text-accent">Taxa: 33%</p>
+                    <p className="text-muted-foreground">Custo: R$ 526,32</p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-sm text-muted-foreground mb-6">
+                *Projeção baseada em dados reais de clientes em fases avançadas. Resultados podem variar.
+              </p>
+              <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
+                <Button variant="cta" size="lg">
+                  Quero resultados como esses
+                  <ArrowRight className="ml-2" />
+                </Button>
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* 4) O Método - 5 Pilares (SEM IMAGENS) */}
         <section id="metodo" className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
