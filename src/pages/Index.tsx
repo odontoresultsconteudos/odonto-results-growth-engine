@@ -337,8 +337,8 @@ const Index = () => {
 
             {/* Funil de Marketing - Formato de Funil */}
             <div className="space-y-3 mb-8 max-w-2xl mx-auto">
-              {/* Leads Gerados - 70% largura */}
-              <div className="w-[70%] mx-auto">
+              {/* Leads Gerados - 75% largura */}
+              <div className="w-[75%] mx-auto">
                 <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm">
                   <div className="flex items-center justify-between flex-wrap gap-2">
                     <div className="flex items-center gap-2">
@@ -371,8 +371,8 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* Agendamentos - 60% largura */}
-              <div className="w-[60%] mx-auto">
+              {/* Agendamentos - 65% largura */}
+              <div className="w-[65%] mx-auto">
                 <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm">
                   <div className="flex items-center justify-between flex-wrap gap-2">
                     <div className="flex items-center gap-2">
@@ -405,8 +405,8 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* Comparecimentos - 50% largura */}
-              <div className="w-[50%] mx-auto">
+              {/* Comparecimentos - 55% largura */}
+              <div className="w-[55%] mx-auto">
                 <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm">
                   <div className="flex items-center justify-between flex-wrap gap-2">
                     <div className="flex items-center gap-2">
@@ -439,8 +439,8 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* Fechamentos - 40% largura */}
-              <div className="w-[40%] mx-auto">
+              {/* Fechamentos - 45% largura */}
+              <div className="w-[45%] mx-auto">
                 <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm">
                   <div className="flex items-center justify-between flex-wrap gap-2">
                     <div className="flex items-center gap-2">
