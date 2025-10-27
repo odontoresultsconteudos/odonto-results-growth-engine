@@ -8,6 +8,7 @@ import blogPost3 from "@/assets/blog-post-3.png";
 import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Spotlight } from "@/components/ui/spotlight";
 const Index = () => {
   return <>
       <Header />
@@ -24,10 +25,14 @@ const Index = () => {
       </div>
 
       <main className="min-h-screen pb-20 md:pb-0">
-        {/* 2) Hero Section - Sem Imagens */}
-        <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-secondary opacity-90" />
-          <div className="relative max-w-4xl mx-auto text-center">
+        {/* 2) Hero Section - Com Spotlight */}
+        <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8 min-h-[600px] flex items-center">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-secondary" />
+          <Spotlight
+            className="-top-40 left-0 md:left-60 md:-top-20"
+            fill="hsl(45, 100%, 51%)"
+          />
+          <div className="relative max-w-4xl mx-auto text-center z-10">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Bata recorde de faturamento com pacientes certos na sua agenda
             </h1>
