@@ -495,6 +495,26 @@ const Index = () => {
           </div>
         </section>
 
+
+        {/* Últimos Posts do Blog */}
+        <section id="ultimos-posts" className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+                Do nosso blog
+              </h2>
+            </div>
+            <div className="w-full rounded-lg overflow-hidden shadow-lg border border-border">
+              <iframe
+                src="https://blog.odontoresults.com.br/"
+                style={{ width: '100%', height: '900px', border: 0 }}
+                loading="lazy"
+                title="Blog Odonto Results"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* 8) FAQ - 6 Perguntas */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/50">
           <div className="max-w-4xl mx-auto">
