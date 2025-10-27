@@ -184,9 +184,9 @@ const Agendamento = () => {
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-accent">4</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Lembretes</h3>
+                <h3 className="text-xl font-semibold mb-3">Protocolo de Confirmação</h3>
                 <p className="text-muted-foreground">
-                  Mensagens automáticas para reduzir faltas e garantir comparecimento.
+                  Sistema estruturado de confirmação para reduzir faltas e garantir comparecimento.
                 </p>
               </div>
             </div>
