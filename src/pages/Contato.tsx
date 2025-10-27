@@ -26,10 +26,10 @@ const Contato = () => {
           </div>
         </section>
 
-        {/* Contact Info & Form */}
+        {/* Contact Info */}
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="max-w-3xl mx-auto">
               {/* Contact Information */}
               <div>
                 <h2 className="text-3xl font-bold mb-6">
@@ -84,89 +84,6 @@ const Contato = () => {
                     </div>
                   </Card>
                 </div>
-              </div>
-
-              {/* Contact Form */}
-              <div>
-                <Card className="p-8">
-                  <h2 className="text-3xl font-bold mb-6">
-                    Envie uma Mensagem
-                  </h2>
-                  <form className="space-y-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium mb-2">
-                        Nome Completo *
-                      </label>
-                      <Input 
-                        id="name" 
-                        placeholder="Seu nome completo" 
-                        required 
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium mb-2">
-                        E-mail *
-                      </label>
-                      <Input 
-                        id="email" 
-                        type="email" 
-                        placeholder="seu@email.com" 
-                        required 
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                        Telefone / WhatsApp *
-                      </label>
-                      <Input 
-                        id="phone" 
-                        type="tel" 
-                        placeholder="(11) 99999-9999" 
-                        required 
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="clinic" className="block text-sm font-medium mb-2">
-                        Nome da Clínica
-                      </label>
-                      <Input 
-                        id="clinic" 
-                        placeholder="Nome da sua clínica" 
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium mb-2">
-                        Mensagem *
-                      </label>
-                      <Textarea 
-                        id="message" 
-                        placeholder="Como podemos ajudar sua clínica?" 
-                        rows={5}
-                        required 
-                      />
-                    </div>
-
-                    <Button variant="cta" size="lg" className="w-full" type="submit">
-                      Enviar Mensagem
-                    </Button>
-
-                    <p className="text-sm text-muted-foreground text-center">
-                      Ou agende uma apresentação diretamente:{" "}
-                      <a 
-                        href="https://form.odontoresults.com.br/dLTRVKuI" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-accent hover:underline font-medium"
-                      >
-                        Clique aqui
-                      </a>
-                    </p>
-                  </form>
-                </Card>
               </div>
             </div>
           </div>
