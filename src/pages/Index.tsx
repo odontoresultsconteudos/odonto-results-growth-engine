@@ -8,8 +8,6 @@ import blogPost3 from "@/assets/blog-post-3.png";
 import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { BeamsBackground } from "@/components/ui/beams-background";
-import { motion } from "motion/react";
 const Index = () => {
   return <>
       <Header />
@@ -26,32 +24,18 @@ const Index = () => {
       </div>
 
       <main className="min-h-screen pb-20 md:pb-0">
-        {/* 2) Hero Section - With Beams Background */}
-        <BeamsBackground className="relative overflow-hidden" intensity="medium">
-          <div className="flex flex-col items-center justify-center gap-6 px-4 text-center">
-            <motion.h1
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
+        {/* 2) Hero Section - Sem Imagens */}
+        <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-secondary opacity-90" />
+          <div className="relative max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Bata recorde de faturamento com pacientes certos na sua agenda
-            </motion.h1>
-            <motion.p
-              className="text-lg sm:text-xl text-white/80 max-w-3xl"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
+            </h1>
+            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Captação de Leads Qualificados, Vitrine de Autoridade, Google Top 1, Agendamento Profissional (CRC + IA) e CRM inteligente para transformar leads em pacientes.
-            </motion.p>
+            </p>
             
-            <motion.div
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
                 <Button variant="cta" size="lg" className="text-lg w-full sm:w-auto">
                   Agende uma Apresentação
@@ -59,22 +43,17 @@ const Index = () => {
                 </Button>
               </a>
               <a href="#como-trabalhamos">
-                <Button variant="outline" size="lg" className="text-lg w-full sm:w-auto bg-white/10 border-white/20 hover:bg-white/20 text-white">
+                <Button variant="outline" size="lg" className="text-lg w-full sm:w-auto bg-white/10 border-white/20 hover:bg-white/20 text-foreground">
                   Ver como funciona
                 </Button>
               </a>
-            </motion.div>
+            </div>
 
-            <motion.p
-              className="text-sm text-white/70"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
+            <p className="text-sm text-muted-foreground">
               Sem compromisso • Apresentação personalizada • Plano claro para 90 dias
-            </motion.p>
+            </p>
           </div>
-        </BeamsBackground>
+        </section>
 
         {/* 3) Prova Social - Contadores */}
         <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/30">
