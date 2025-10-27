@@ -96,9 +96,15 @@ const Header = () => {
             <ExternalLink className="h-3 w-3" />
           </a>
 
-          <a href="#sobre" className="text-sm font-medium transition-colors hover:text-accent">
+          <Link
+            to="/sobre"
+            className={cn(
+              "text-sm font-medium transition-colors hover:text-accent",
+              isActive("/sobre") && "text-accent"
+            )}
+          >
             Sobre
-          </a>
+          </Link>
 
           <a href="#contato" className="text-sm font-medium transition-colors hover:text-accent">
             Contato
@@ -173,13 +179,16 @@ const Header = () => {
                 <ExternalLink className="h-4 w-4" />
               </a>
 
-              <a
-                href="#sobre"
+              <Link
+                to="/sobre"
                 onClick={() => setMobileOpen(false)}
-                className="text-sm font-medium transition-colors hover:text-accent py-2"
+                className={cn(
+                  "text-sm font-medium transition-colors hover:text-accent py-2",
+                  isActive("/sobre") && "text-accent"
+                )}
               >
                 Sobre
-              </a>
+              </Link>
 
               <a
                 href="#contato"

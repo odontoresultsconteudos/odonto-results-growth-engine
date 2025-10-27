@@ -58,8 +58,38 @@ const Sobre = () => {
           </div>
         </section>
 
-        {/* Mission Section */}
+        {/* History Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/50">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center">
+              Nossa História
+            </h2>
+            <div className="space-y-6 text-lg text-muted-foreground">
+              <p>
+                A Odonto Results foi fundada em <strong className="text-foreground">fevereiro de 2020</strong> por dois amigos 
+                que compartilhavam a visão de transformar o marketing digital odontológico no Brasil.
+              </p>
+              <p>
+                Tudo começou quando Vinícius Ragazzi começou a prestar serviços de marketing digital 
+                para o Dr. Alex Gurrão e suas clínicas. Os resultados foram tão expressivos que 
+                perceberam o potencial de ajudar outros dentistas a alcançarem o mesmo sucesso.
+              </p>
+              <p>
+                Unidos pela experiência prática do Dr. Alex como dentista e dono de clínicas, 
+                e pela expertise de Vinícius com 12 anos em marketing digital, decidiram fundar 
+                a Odonto Results para ajudar outros profissionais a terem resultados reais por meio do digital.
+              </p>
+              <p className="text-center pt-4">
+                <strong className="text-foreground text-xl">
+                  Desde então, já atendemos mais de 1500 clínicas e geramos mais de 500 mil leads qualificados.
+                </strong>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Mission Section */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
               Nossa Missão
