@@ -198,7 +198,7 @@ const Index = () => {
                 </motion.div>
               </a>
 
-              <a href="/agendamento" className="block h-full">
+              <a href="/agendamento" className="block h-full lg:col-start-2">
                 <motion.div whileHover={{
                 scale: 1.05,
                 y: -8
