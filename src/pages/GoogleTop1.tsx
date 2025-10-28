@@ -82,20 +82,23 @@ const GoogleTop1 = () => {
       {/* Nossa Estratégia */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl lg:text-5xl font-bold mb-12 text-center">
-            Como Colocamos Você no <span className="text-accent">Topo</span>
+          <h2 className="text-3xl lg:text-5xl font-bold mb-4 text-center">
+            O método <span className="text-accent">Google Top 1</span>
           </h2>
+          <p className="text-xl text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+            Estratégia para colocar sua clínica no topo das buscas do Google Maps.
+          </p>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-8 border-border/40">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                   <span className="text-accent font-bold text-xl">1</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-3">Otimização do Perfil</h3>
+                  <h3 className="text-xl font-semibold mb-3">Posicionamento de Líder</h3>
                   <p className="text-muted-foreground">
-                    Configuração completa do Google Meu Negócio com fotos profissionais, descrições otimizadas e informações precisas.
+                    Analisamos seus concorrentes e otimizamos o perfil da clínica para ranquear nas principais palavras-chave da sua região.
                   </p>
                 </div>
               </div>
@@ -107,9 +110,9 @@ const GoogleTop1 = () => {
                   <span className="text-accent font-bold text-xl">2</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-3">Gestão de Avaliações</h3>
+                  <h3 className="text-xl font-semibold mb-3">Avaliações Ouro</h3>
                   <p className="text-muted-foreground">
-                    Estratégias para aumentar o volume e a qualidade das avaliações, respondendo a todas de forma profissional.
+                    Criamos um plano estratégico para gerar depoimentos reais, positivos e consistentes que aumentam sua credibilidade e atraem novos pacientes.
                   </p>
                 </div>
               </div>
@@ -121,23 +124,9 @@ const GoogleTop1 = () => {
                   <span className="text-accent font-bold text-xl">3</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-3">SEO Local</h3>
+                  <h3 className="text-xl font-semibold mb-3">Presença Infinita</h3>
                   <p className="text-muted-foreground">
-                    Otimização de palavras-chave locais, citações em diretórios e estratégias para dominar buscas da região.
-                  </p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-8 border-border/40">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <span className="text-accent font-bold text-xl">4</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3">Monitoramento 24/7</h3>
-                  <p className="text-muted-foreground">
-                    Acompanhamento constante do desempenho, insights e ajustes para manter você no topo.
+                    Mantemos sua clínica ativa e relevante no Google com postagens, fotos e atualizações automáticas que fortalecem sua autoridade local.
                   </p>
                 </div>
               </div>
