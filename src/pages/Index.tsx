@@ -895,10 +895,15 @@ const Index = () => {
               <div>
                 <h4 className="font-bold mb-4">Navegação</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><a href="#metodo" className="hover:text-accent transition-colors">Método</a></li>
-                  <li><a href="http://blog.odontoresults.com.br/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Blog</a></li>
+                  <li><a href="/#metodo" className="hover:text-accent transition-colors">Método</a></li>
+                  <li><a href="/captacao" className="hover:text-accent transition-colors">Captação de Leads</a></li>
+                  <li><a href="/autoridade" className="hover:text-accent transition-colors">Vitrine de Autoridade</a></li>
+                  <li><a href="/google-top-1" className="hover:text-accent transition-colors">Google Top 1</a></li>
+                  <li><a href="/agendamento" className="hover:text-accent transition-colors">Agendamento</a></li>
+                  <li><a href="/crm" className="hover:text-accent transition-colors">CRM</a></li>
                   <li><a href="/sobre" className="hover:text-accent transition-colors">Sobre</a></li>
-                  <li><a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Contato</a></li>
+                  <li><a href="http://blog.odontoresults.com.br/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Blog</a></li>
+                  <li><a href="/contato" className="hover:text-accent transition-colors">Contato</a></li>
                 </ul>
               </div>
 
