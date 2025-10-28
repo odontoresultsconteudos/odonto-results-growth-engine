@@ -138,7 +138,7 @@ const Agendamento = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="relative">
-              <div className="bg-card border border-border/40 rounded-xl p-6 h-full">
+              <div className="bg-card border border-border/40 hover:border-accent/50 transition-all hover:shadow-lg rounded-xl p-6 h-full">
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-accent">1</span>
                 </div>
@@ -150,7 +150,7 @@ const Agendamento = () => {
             </div>
 
             <div className="relative">
-              <div className="bg-card border border-border/40 rounded-xl p-6 h-full">
+              <div className="bg-card border border-border/40 hover:border-accent/50 transition-all hover:shadow-lg rounded-xl p-6 h-full">
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-accent">2</span>
                 </div>
@@ -162,7 +162,7 @@ const Agendamento = () => {
             </div>
 
             <div className="relative">
-              <div className="bg-card border border-border/40 rounded-xl p-6 h-full">
+              <div className="bg-card border border-border/40 hover:border-accent/50 transition-all hover:shadow-lg rounded-xl p-6 h-full">
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-accent">3</span>
                 </div>
@@ -174,7 +174,7 @@ const Agendamento = () => {
             </div>
 
             <div className="relative">
-              <div className="bg-card border border-border/40 rounded-xl p-6 h-full">
+              <div className="bg-card border border-border/40 hover:border-accent/50 transition-all hover:shadow-lg rounded-xl p-6 h-full">
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-accent">4</span>
                 </div>
