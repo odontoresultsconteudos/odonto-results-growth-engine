@@ -153,9 +153,7 @@ const Captacao = () => {
           <h2 className="text-3xl lg:text-5xl font-bold mb-6 text-primary-foreground">
             Pronto para Atrair Mais Pacientes?
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Agende uma conversa e descubra como podemos encher sua agenda com pacientes qualificados.
-          </p>
+          
           <Button variant="cta" size="lg" className="text-lg">
             Agendar Diagnóstico Gratuito
           </Button>
