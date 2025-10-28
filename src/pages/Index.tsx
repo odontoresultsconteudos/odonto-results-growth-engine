@@ -27,29 +27,40 @@ const Index = () => {
         {/* 2) Hero Section - Com Beams Background */}
         <BeamsBackground className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary via-primary to-secondary" intensity="medium">
           <div className="relative z-10 max-w-4xl mx-auto text-center py-20">
-            <motion.h1 
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
+            <motion.h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground" initial={{
+            opacity: 0,
+            x: -50
+          }} animate={{
+            opacity: 1,
+            x: 0
+          }} transition={{
+            duration: 0.8
+          }}>
               Bata recorde de faturamento com pacientes certos na sua agenda
             </motion.h1>
-            <motion.p 
-              className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
+            <motion.p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto" initial={{
+            opacity: 0,
+            x: -50
+          }} animate={{
+            opacity: 1,
+            x: 0
+          }} transition={{
+            duration: 0.8,
+            delay: 0.2
+          }}>
               Captação de Leads Qualificados, Vitrine de Autoridade, Google Top 1, Agendamento Profissional (CRC + IA) e CRM inteligente para transformar leads em pacientes.
             </motion.p>
             
-            <motion.div 
-              className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
+            <motion.div className="flex flex-col sm:flex-row gap-4 justify-center mb-8" initial={{
+            opacity: 0,
+            x: -50
+          }} animate={{
+            opacity: 1,
+            x: 0
+          }} transition={{
+            duration: 0.8,
+            delay: 0.4
+          }}>
               <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
                 <Button variant="cta" size="lg" className="text-lg w-full sm:w-auto">
                   Agende uma Apresentação
@@ -110,17 +121,21 @@ const Index = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <a href="/captacao" className="block h-full">
-                <motion.div
-                  whileHover={{ scale: 1.05, y: -8 }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                  className="h-full"
-                >
+                <motion.div whileHover={{
+                scale: 1.05,
+                y: -8
+              }} transition={{
+                duration: 0.3,
+                ease: "easeOut"
+              }} className="h-full">
                   <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                    <motion.div 
-                      className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4"
-                      whileHover={{ rotate: 360, scale: 1.1 }}
-                      transition={{ duration: 0.6, ease: "easeInOut" }}
-                    >
+                    <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
+                    rotate: 360,
+                    scale: 1.1
+                  }} transition={{
+                    duration: 0.6,
+                    ease: "easeInOut"
+                  }}>
                       <Target className="w-6 h-6 text-accent" />
                     </motion.div>
                     <h3 className="text-xl font-bold mb-3">Captação de Leads Qualificados</h3>
@@ -132,17 +147,21 @@ const Index = () => {
               </a>
 
               <a href="/autoridade" className="block h-full">
-                <motion.div
-                  whileHover={{ scale: 1.05, y: -8 }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                  className="h-full"
-                >
+                <motion.div whileHover={{
+                scale: 1.05,
+                y: -8
+              }} transition={{
+                duration: 0.3,
+                ease: "easeOut"
+              }} className="h-full">
                   <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                    <motion.div 
-                      className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4"
-                      whileHover={{ rotate: 360, scale: 1.1 }}
-                      transition={{ duration: 0.6, ease: "easeInOut" }}
-                    >
+                    <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
+                    rotate: 360,
+                    scale: 1.1
+                  }} transition={{
+                    duration: 0.6,
+                    ease: "easeInOut"
+                  }}>
                       <Star className="w-6 h-6 text-accent" />
                     </motion.div>
                     <h3 className="text-xl font-bold mb-3">Vitrine de Autoridade</h3>
@@ -154,17 +173,21 @@ const Index = () => {
               </a>
 
               <a href="/google-top-1" className="block h-full">
-                <motion.div
-                  whileHover={{ scale: 1.05, y: -8 }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                  className="h-full"
-                >
+                <motion.div whileHover={{
+                scale: 1.05,
+                y: -8
+              }} transition={{
+                duration: 0.3,
+                ease: "easeOut"
+              }} className="h-full">
                   <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                    <motion.div 
-                      className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4"
-                      whileHover={{ rotate: 360, scale: 1.1 }}
-                      transition={{ duration: 0.6, ease: "easeInOut" }}
-                    >
+                    <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
+                    rotate: 360,
+                    scale: 1.1
+                  }} transition={{
+                    duration: 0.6,
+                    ease: "easeInOut"
+                  }}>
                       <TrendingUp className="w-6 h-6 text-accent" />
                     </motion.div>
                     <h3 className="text-xl font-bold mb-3">Google Top 1</h3>
@@ -176,17 +199,21 @@ const Index = () => {
               </a>
 
               <a href="/agendamento" className="block h-full">
-                <motion.div
-                  whileHover={{ scale: 1.05, y: -8 }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                  className="h-full"
-                >
+                <motion.div whileHover={{
+                scale: 1.05,
+                y: -8
+              }} transition={{
+                duration: 0.3,
+                ease: "easeOut"
+              }} className="h-full">
                   <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                    <motion.div 
-                      className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4"
-                      whileHover={{ rotate: 360, scale: 1.1 }}
-                      transition={{ duration: 0.6, ease: "easeInOut" }}
-                    >
+                    <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
+                    rotate: 360,
+                    scale: 1.1
+                  }} transition={{
+                    duration: 0.6,
+                    ease: "easeInOut"
+                  }}>
                       <Calendar className="w-6 h-6 text-accent" />
                     </motion.div>
                     <h3 className="text-xl font-bold mb-3">Agendamento Profissional</h3>
@@ -198,17 +225,21 @@ const Index = () => {
               </a>
 
               <a href="/crm" className="block h-full">
-                <motion.div
-                  whileHover={{ scale: 1.05, y: -8 }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                  className="h-full"
-                >
+                <motion.div whileHover={{
+                scale: 1.05,
+                y: -8
+              }} transition={{
+                duration: 0.3,
+                ease: "easeOut"
+              }} className="h-full">
                   <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                    <motion.div 
-                      className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4"
-                      whileHover={{ rotate: 360, scale: 1.1 }}
-                      transition={{ duration: 0.6, ease: "easeInOut" }}
-                    >
+                    <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
+                    rotate: 360,
+                    scale: 1.1
+                  }} transition={{
+                    duration: 0.6,
+                    ease: "easeInOut"
+                  }}>
                       <BarChart3 className="w-6 h-6 text-accent" />
                     </motion.div>
                     <h3 className="text-xl font-bold mb-3">CRM Inteligente</h3>
@@ -241,10 +272,13 @@ const Index = () => {
             </div>
 
             <div className="space-y-6">
-              <motion.div
-                whileHover={{ scale: 1.05, y: -8 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-              >
+              <motion.div whileHover={{
+              scale: 1.05,
+              y: -8
+            }} transition={{
+              duration: 0.3,
+              ease: "easeOut"
+            }}>
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 hover:bg-accent/5">
                   <div className="flex items-start gap-6">
                     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
@@ -260,10 +294,13 @@ const Index = () => {
                 </Card>
               </motion.div>
 
-              <motion.div
-                whileHover={{ scale: 1.05, y: -8 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-              >
+              <motion.div whileHover={{
+              scale: 1.05,
+              y: -8
+            }} transition={{
+              duration: 0.3,
+              ease: "easeOut"
+            }}>
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 hover:bg-accent/5">
                   <div className="flex items-start gap-6">
                     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
@@ -279,10 +316,13 @@ const Index = () => {
                 </Card>
               </motion.div>
 
-              <motion.div
-                whileHover={{ scale: 1.05, y: -8 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-              >
+              <motion.div whileHover={{
+              scale: 1.05,
+              y: -8
+            }} transition={{
+              duration: 0.3,
+              ease: "easeOut"
+            }}>
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 hover:bg-accent/5">
                   <div className="flex items-start gap-6">
                     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
@@ -298,10 +338,13 @@ const Index = () => {
                 </Card>
               </motion.div>
 
-              <motion.div
-                whileHover={{ scale: 1.05, y: -8 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-              >
+              <motion.div whileHover={{
+              scale: 1.05,
+              y: -8
+            }} transition={{
+              duration: 0.3,
+              ease: "easeOut"
+            }}>
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 hover:bg-accent/5">
                   <div className="flex items-start gap-6">
                     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
@@ -339,11 +382,13 @@ const Index = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <motion.div
-                whileHover={{ scale: 1.05, y: -8 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-                className="h-full"
-              >
+              <motion.div whileHover={{
+              scale: 1.05,
+              y: -8
+            }} transition={{
+              duration: 0.3,
+              ease: "easeOut"
+            }} className="h-full">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <MessageSquare className="w-6 h-6 text-accent" />
@@ -355,11 +400,13 @@ const Index = () => {
                 </Card>
               </motion.div>
 
-              <motion.div
-                whileHover={{ scale: 1.05, y: -8 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-                className="h-full"
-              >
+              <motion.div whileHover={{
+              scale: 1.05,
+              y: -8
+            }} transition={{
+              duration: 0.3,
+              ease: "easeOut"
+            }} className="h-full">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <TrendingUp className="w-6 h-6 text-accent" />
@@ -371,11 +418,13 @@ const Index = () => {
                 </Card>
               </motion.div>
 
-              <motion.div
-                whileHover={{ scale: 1.05, y: -8 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-                className="h-full"
-              >
+              <motion.div whileHover={{
+              scale: 1.05,
+              y: -8
+            }} transition={{
+              duration: 0.3,
+              ease: "easeOut"
+            }} className="h-full">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <Target className="w-6 h-6 text-accent" />
@@ -387,11 +436,13 @@ const Index = () => {
                 </Card>
               </motion.div>
 
-              <motion.div
-                whileHover={{ scale: 1.05, y: -8 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-                className="h-full"
-              >
+              <motion.div whileHover={{
+              scale: 1.05,
+              y: -8
+            }} transition={{
+              duration: 0.3,
+              ease: "easeOut"
+            }} className="h-full">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <BarChart3 className="w-6 h-6 text-accent" />
@@ -403,27 +454,29 @@ const Index = () => {
                 </Card>
               </motion.div>
 
-              <motion.div
-                whileHover={{ scale: 1.05, y: -8 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-                className="h-full"
-              >
+              <motion.div whileHover={{
+              scale: 1.05,
+              y: -8
+            }} transition={{
+              duration: 0.3,
+              ease: "easeOut"
+            }} className="h-full">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <Users className="w-6 h-6 text-accent" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">Equipe especializada</h3>
-                  <p className="text-muted-foreground">
-                    Quase 10 anos de experiência com clínicas odontológicas.
-                  </p>
+                  <p className="text-muted-foreground">Mais de 5 anos de experiência com clínicas odontológicas.</p>
                 </Card>
               </motion.div>
 
-              <motion.div
-                whileHover={{ scale: 1.05, y: -8 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-                className="h-full"
-              >
+              <motion.div whileHover={{
+              scale: 1.05,
+              y: -8
+            }} transition={{
+              duration: 0.3,
+              ease: "easeOut"
+            }} className="h-full">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <Zap className="w-6 h-6 text-accent" />
@@ -454,10 +507,13 @@ const Index = () => {
             <div className="space-y-3 mb-8 max-w-2xl mx-auto">
               {/* Leads Gerados - 75% largura */}
               <div className="w-[75%] mx-auto">
-                <motion.div
-                  whileHover={{ scale: 1.05, y: -8 }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                >
+                <motion.div whileHover={{
+                scale: 1.05,
+                y: -8
+              }} transition={{
+                duration: 0.3,
+                ease: "easeOut"
+              }}>
                   <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm hover:shadow-2xl hover:bg-accent/15">
                   <div className="flex items-center justify-between flex-wrap gap-2">
                     <div className="flex items-center gap-2">
@@ -493,10 +549,13 @@ const Index = () => {
 
               {/* Agendamentos - 65% largura */}
               <div className="w-[65%] mx-auto">
-                <motion.div
-                  whileHover={{ scale: 1.05, y: -8 }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                >
+                <motion.div whileHover={{
+                scale: 1.05,
+                y: -8
+              }} transition={{
+                duration: 0.3,
+                ease: "easeOut"
+              }}>
                   <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm hover:shadow-2xl hover:bg-accent/15">
                   <div className="flex items-center justify-between flex-wrap gap-2">
                     <div className="flex items-center gap-2">
@@ -532,10 +591,13 @@ const Index = () => {
 
               {/* Comparecimentos - 55% largura */}
               <div className="w-[55%] mx-auto">
-                <motion.div
-                  whileHover={{ scale: 1.05, y: -8 }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                >
+                <motion.div whileHover={{
+                scale: 1.05,
+                y: -8
+              }} transition={{
+                duration: 0.3,
+                ease: "easeOut"
+              }}>
                   <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm hover:shadow-2xl hover:bg-accent/15">
                   <div className="flex items-center justify-between flex-wrap gap-2">
                     <div className="flex items-center gap-2">
@@ -571,10 +633,13 @@ const Index = () => {
 
               {/* Fechamentos - 45% largura */}
               <div className="w-[45%] mx-auto">
-                <motion.div
-                  whileHover={{ scale: 1.05, y: -8 }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                >
+                <motion.div whileHover={{
+                scale: 1.05,
+                y: -8
+              }} transition={{
+                duration: 0.3,
+                ease: "easeOut"
+              }}>
                   <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm hover:shadow-2xl hover:bg-accent/15">
                   <div className="flex items-center justify-between flex-wrap gap-2">
                     <div className="flex items-center gap-2">
@@ -602,30 +667,39 @@ const Index = () => {
 
             {/* Cards de Métricas - Abaixo do Funil */}
             <div className="grid sm:grid-cols-3 gap-4 mb-8">
-              <motion.div
-                whileHover={{ scale: 1.05, y: -8 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-              >
+              <motion.div whileHover={{
+              scale: 1.05,
+              y: -8
+            }} transition={{
+              duration: 0.3,
+              ease: "easeOut"
+            }}>
                 <Card className="p-4 sm:p-6 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20 hover:shadow-2xl hover:bg-primary/20 transition-all">
                   <p className="text-xs sm:text-sm text-muted-foreground mb-2">Ticket Médio</p>
                   <p className="text-xl sm:text-2xl font-bold text-foreground">R$ 5.000,00</p>
                 </Card>
               </motion.div>
               
-              <motion.div
-                whileHover={{ scale: 1.05, y: -8 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-              >
+              <motion.div whileHover={{
+              scale: 1.05,
+              y: -8
+            }} transition={{
+              duration: 0.3,
+              ease: "easeOut"
+            }}>
                 <Card className="p-4 sm:p-6 text-center bg-gradient-to-br from-accent/20 to-accent/10 border-accent/30 hover:shadow-2xl hover:bg-accent/25 transition-all">
                   <p className="text-xs sm:text-sm text-muted-foreground mb-2">Faturamento</p>
                   <p className="text-xl sm:text-2xl font-bold text-accent">R$ 95.000,00</p>
                 </Card>
               </motion.div>
               
-              <motion.div
-                whileHover={{ scale: 1.05, y: -8 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-              >
+              <motion.div whileHover={{
+              scale: 1.05,
+              y: -8
+            }} transition={{
+              duration: 0.3,
+              ease: "easeOut"
+            }}>
                 <Card className="p-4 sm:p-6 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20 hover:shadow-2xl hover:bg-primary/20 transition-all">
                   <p className="text-xs sm:text-sm text-muted-foreground mb-2">ROI</p>
                   <p className="text-xl sm:text-2xl font-bold text-foreground">9.50x</p>
@@ -662,12 +736,7 @@ const Index = () => {
               <a href="https://blog.odontoresults.com.br/post/metodo-paciente-previsivel-odonto-results" target="_blank" rel="noopener noreferrer" className="block group">
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
-                    <img 
-                      src={blogPost1}
-                      alt="Método Paciente Previsível"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                    />
+                    <img src={blogPost1} alt="Método Paciente Previsível" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
@@ -683,12 +752,7 @@ const Index = () => {
               <a href="https://blog.odontoresults.com.br/post/calculadora-de-marketing-odontologico-como-definir-investimentos" target="_blank" rel="noopener noreferrer" className="block group">
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
-                    <img 
-                      src={blogPost2}
-                      alt="Calculadora de marketing odontológico"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                    />
+                    <img src={blogPost2} alt="Calculadora de marketing odontológico" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
@@ -704,12 +768,7 @@ const Index = () => {
               <a href="https://blog.odontoresults.com.br/post/marketing-odontologico-2025-guia-completo-atrair-pacientes" target="_blank" rel="noopener noreferrer" className="block group">
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
-                    <img 
-                      src={blogPost3}
-                      alt="Marketing Odontológico em 2025"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                    />
+                    <img src={blogPost3} alt="Marketing Odontológico em 2025" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
