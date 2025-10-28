@@ -56,11 +56,6 @@ const Index = () => {
                   <ArrowRight className="ml-2" />
                 </Button>
               </a>
-              <a href="#como-trabalhamos">
-                <Button variant="outline" size="lg" className="text-lg w-full sm:w-auto bg-white/10 border-white/20 hover:bg-white/20 text-foreground">
-                  Ver como funciona
-                </Button>
-              </a>
             </motion.div>
 
             <motion.p 
