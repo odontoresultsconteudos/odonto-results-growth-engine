@@ -824,16 +824,11 @@ const Index = () => {
               Agende uma apresentação e receba um plano claro para os próximos 90 dias.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
                 <Button variant="cta" size="lg" className="text-lg w-full sm:w-auto">
                   Agende uma Apresentação
                   <ArrowRight className="ml-2" />
-                </Button>
-              </a>
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="lg" className="text-lg w-full sm:w-auto">
-                  Falar no WhatsApp
                 </Button>
               </a>
             </div>
