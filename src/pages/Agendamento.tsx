@@ -107,7 +107,7 @@ const Agendamento = () => {
                   <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-accent text-xs">✓</span>
                   </div>
-                  <p className="text-muted-foreground">Qualificação inteligente de leads</p>
+                  <p className="text-muted-foreground">Qualificação inteligente dos leads</p>
                 </div>
                 <div className="flex gap-3">
                   <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
