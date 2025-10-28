@@ -118,6 +118,10 @@ const Autoridade = () => {
                     <div className="text-5xl font-bold text-accent mb-2">10x</div>
                     <p className="text-lg font-semibold">Mais Autoridade</p>
                   </div>
+                  <div>
+                    <div className="text-5xl font-bold text-accent mb-2">10x</div>
+                    <p className="text-lg font-semibold">Mais Qualidade nos Pacientes</p>
+                  </div>
                 </div>
               </div>
             </div>
