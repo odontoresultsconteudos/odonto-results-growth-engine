@@ -71,9 +71,7 @@ const Autoridade = () => {
             <Card className="p-8 border-border/40">
               <Star className="w-12 h-12 text-accent mb-4" />
               <h3 className="text-2xl font-semibold mb-4">Presença Consistente</h3>
-              <p className="text-muted-foreground text-lg">
-                Publicações regulares que mantêm sua clínica sempre visível e relevante.
-              </p>
+              <p className="text-muted-foreground text-lg">Publicações regulares que mantêm sua clínica sempre visível,  relevante e humanizada.</p>
             </Card>
           </div>
         </div>
