@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
-import alexGurraoCeo from "@/assets/alex-gurrao-ceo.png";
-import viniciusRagazziCoo from "@/assets/vinicius-ragazzi-coo.png";
+import alexGurraoCeo from "@/assets/alex-gurrao-ceo.webp";
+import viniciusRagazziCoo from "@/assets/vinicius-ragazzi-coo.webp";
 import Header from "@/components/Header";
 
 const Sobre = () => {
