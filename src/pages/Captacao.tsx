@@ -3,10 +3,8 @@ import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import { Target, TrendingUp, Users, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Captacao = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
@@ -61,9 +59,7 @@ const Captacao = () => {
                 <TrendingUp className="w-6 h-6 text-accent" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Criativos por Tratamento</h3>
-              <p className="text-muted-foreground">
-                Anúncios específicos para implantes, ortodontia, lentes de contato e outros tratamentos de alto valor.
-              </p>
+              <p className="text-muted-foreground">Anúncios específicos para implantes, ortodontia, lentes de contato, HOF e outros tratamentos de alto valor.</p>
             </Card>
 
             <Card className="p-6 border-border/40 hover:border-accent/50 transition-all">
@@ -184,8 +180,6 @@ const Captacao = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Captacao;
