@@ -38,7 +38,7 @@ const GoogleTop1 = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold mb-4">
-              O Método Top 1 do Google
+              Seu maior concorrente está no topo do Google.
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               70% dos pacientes pesquisam no Google antes de escolher um dentista. Estar no topo significa mais pacientes para você.
