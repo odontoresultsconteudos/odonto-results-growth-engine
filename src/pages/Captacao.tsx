@@ -19,9 +19,7 @@ const Captacao = () => {
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               Leads Qualificados que Viram <span className="text-accent">Pacientes</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Anúncios segmentados no Facebook, Instagram e Google que atraem pacientes prontos para contratar seus tratamentos.
-            </p>
+            <p className="text-xl text-muted-foreground mb-8">Anúncios segmentados no Facebook, Instagram e Google que atraem pacientes com intenção de contratar seus tratamentos.</p>
             <a href="#contato">
               <Button variant="cta" size="lg" className="text-lg">
                 Quero Mais Pacientes
