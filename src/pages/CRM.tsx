@@ -3,10 +3,8 @@ import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import { BarChart3, Database, Filter, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const CRM = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
@@ -200,9 +198,7 @@ const CRM = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-5xl font-bold mb-4">
-              Impacto Mensurável
-            </h2>
+            <h2 className="text-3xl lg:text-5xl font-bold mb-4">O Impacto do CRM</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -253,8 +249,6 @@ const CRM = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default CRM;
