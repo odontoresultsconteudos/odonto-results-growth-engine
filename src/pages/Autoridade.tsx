@@ -116,7 +116,7 @@ const Autoridade = () => {
                 <div className="text-center space-y-8">
                   <div>
                     <div className="text-5xl font-bold text-accent mb-2">10x</div>
-                    <p className="text-lg font-semibold">Mais Engajamento</p>
+                    <p className="text-lg font-semibold">Mais Autoridade</p>
                   </div>
                   <div>
                     <div className="text-5xl font-bold text-accent mb-2">+1000</div>
