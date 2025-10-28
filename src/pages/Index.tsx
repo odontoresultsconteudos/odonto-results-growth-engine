@@ -58,14 +58,6 @@ const Index = () => {
               </a>
             </motion.div>
 
-            <motion.p 
-              className="text-sm text-muted-foreground"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              Sem compromisso • Apresentação personalizada • Plano claro para 90 dias
-            </motion.p>
           </div>
         </BeamsBackground>
 
