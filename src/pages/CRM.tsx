@@ -173,28 +173,24 @@ const CRM = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-card border border-border/40 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-accent mb-2">MQL</div>
-              <p className="text-muted-foreground">Marketing Qualified Lead</p>
-              <p className="text-sm text-muted-foreground/80 mt-2">Leads que entraram no funil</p>
+            <div className="bg-card border border-border/40 rounded-xl p-6 text-center hover:border-accent/50 transition-all hover:shadow-lg">
+              <div className="text-3xl font-bold text-accent mb-2">Leads Qualificados</div>
+              <p className="text-sm text-muted-foreground/80 mt-2">Leads que entram no funil</p>
             </div>
 
-            <div className="bg-card border border-border/40 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-accent mb-2">SQL</div>
-              <p className="text-muted-foreground">Sales Qualified Lead</p>
-              <p className="text-sm text-muted-foreground/80 mt-2">Leads qualificados para venda</p>
+            <div className="bg-card border border-border/40 rounded-xl p-6 text-center hover:border-accent/50 transition-all hover:shadow-lg">
+              <div className="text-3xl font-bold text-accent mb-2">Agendamentos</div>
+              <p className="text-sm text-muted-foreground/80 mt-2">Quantidade de leads que marcaram avaliação</p>
             </div>
 
-            <div className="bg-card border border-border/40 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-accent mb-2">Taxa</div>
-              <p className="text-muted-foreground">Conversão</p>
-              <p className="text-sm text-muted-foreground/80 mt-2">% de leads que viraram pacientes</p>
+            <div className="bg-card border border-border/40 rounded-xl p-6 text-center hover:border-accent/50 transition-all hover:shadow-lg">
+              <div className="text-3xl font-bold text-accent mb-2">Comparecimentos</div>
+              <p className="text-sm text-muted-foreground/80 mt-2">Quantos dos agendados realmente compareceram</p>
             </div>
 
-            <div className="bg-card border border-border/40 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-accent mb-2">CAC</div>
-              <p className="text-muted-foreground">Custo de Aquisição</p>
-              <p className="text-sm text-muted-foreground/80 mt-2">Quanto custa cada novo paciente</p>
+            <div className="bg-card border border-border/40 rounded-xl p-6 text-center hover:border-accent/50 transition-all hover:shadow-lg">
+              <div className="text-3xl font-bold text-accent mb-2">Fechamentos</div>
+              <p className="text-sm text-muted-foreground/80 mt-2">Quantos efetivamente realizaram o tratamento</p>
             </div>
           </div>
         </div>
