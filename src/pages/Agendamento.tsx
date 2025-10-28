@@ -19,9 +19,7 @@ const Agendamento = () => {
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               Transforme Leads em <span className="text-accent">Consultas Agendadas</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              CRC profissional + IA 24h no WhatsApp para garantir que nenhum paciente seja perdido.
-            </p>
+            <p className="text-xl text-muted-foreground mb-8">CRC profissional + IA 24h no WhatsApp para aproveitar ao máximo cada paciente captado.</p>
             <a href="#contato">
               <Button variant="cta" size="lg" className="text-lg">
                 Quero Mais Agendamentos
