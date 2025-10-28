@@ -96,7 +96,7 @@ const Captacao = () => {
               </p>
               
               <div className="space-y-6">
-                <div className="flex gap-4">
+                <div className="flex gap-4 p-4 rounded-lg hover:bg-accent/5 transition-all hover:shadow-md">
                   <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
                     <span className="text-accent font-bold">1</span>
                   </div>
@@ -108,7 +108,7 @@ const Captacao = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex gap-4 p-4 rounded-lg hover:bg-accent/5 transition-all hover:shadow-md">
                   <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
                     <span className="text-accent font-bold">2</span>
                   </div>
@@ -120,7 +120,7 @@ const Captacao = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex gap-4 p-4 rounded-lg hover:bg-accent/5 transition-all hover:shadow-md">
                   <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
                     <span className="text-accent font-bold">3</span>
                   </div>
