@@ -80,80 +80,51 @@ const Autoridade = () => {
       {/* O Que Fazemos */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-5xl font-bold mb-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl lg:text-5xl font-bold mb-6">
                 Vitrine de <span className="text-accent">Autoridade</span>
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-lg text-muted-foreground mb-8">
                 Posicionamento estratégico que transforma o seu perfil em referência na odontologia.
               </p>
+              
+              <div className="space-y-6">
+                <div className="border-l-4 border-accent pl-6 py-2">
+                  <h3 className="font-semibold text-xl mb-2">1. Roteiro e Copy Estratégica</h3>
+                  <p className="text-muted-foreground">Textos e falas planejadas para gerar autoridade e despertar o interesse do paciente.</p>
+                </div>
+
+                <div className="border-l-4 border-accent pl-6 py-2">
+                  <h3 className="font-semibold text-xl mb-2">2. Gravação Guiada</h3>
+                  <p className="text-muted-foreground">Orientamos o doutor em vídeos autênticos que mostram técnica, empatia e experiência.</p>
+                </div>
+
+                <div className="border-l-4 border-accent pl-6 py-2">
+                  <h3 className="font-semibold text-xl mb-2">3. Edição Profissional</h3>
+                  <p className="text-muted-foreground">Cortes, legendas e artes que reforçam credibilidade e destacam seus diferenciais.</p>
+                </div>
+
+                <div className="border-l-4 border-accent pl-6 py-2">
+                  <h3 className="font-semibold text-xl mb-2">4. Construção de Autoridade</h3>
+                  <p className="text-muted-foreground">Publicações consistentes que consolidam sua imagem como especialista na área.</p>
+                </div>
+              </div>
             </div>
 
-            <div className="space-y-8">
-              <Card className="p-8 border-border/40">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
-                      <span className="text-accent font-bold text-lg">1</span>
-                    </div>
+            <div className="relative">
+              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 p-8 flex items-center justify-center">
+                <div className="text-center space-y-8">
+                  <div>
+                    <div className="text-5xl font-bold text-accent mb-2">10x</div>
+                    <p className="text-lg font-semibold">Mais Autoridade</p>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-semibold mb-3">Roteiro e Copy Estratégica</h3>
-                    <p className="text-muted-foreground text-lg">
-                      Textos e falas planejadas para gerar autoridade e despertar o interesse do paciente.
-                    </p>
+                    <div className="text-5xl font-bold text-accent mb-2">10x</div>
+                    <p className="text-lg font-semibold">Mais Qualidade nos Pacientes</p>
                   </div>
                 </div>
-              </Card>
-
-              <Card className="p-8 border-border/40">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
-                      <span className="text-accent font-bold text-lg">2</span>
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold mb-3">Gravação Guiada</h3>
-                    <p className="text-muted-foreground text-lg">
-                      Orientamos o doutor em vídeos autênticos que mostram técnica, empatia e experiência.
-                    </p>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-8 border-border/40">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
-                      <span className="text-accent font-bold text-lg">3</span>
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold mb-3">Edição Profissional</h3>
-                    <p className="text-muted-foreground text-lg">
-                      Cortes, legendas e artes que reforçam credibilidade e destacam seus diferenciais.
-                    </p>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-8 border-border/40">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
-                      <span className="text-accent font-bold text-lg">4</span>
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold mb-3">Construção de Autoridade</h3>
-                    <p className="text-muted-foreground text-lg">
-                      Publicações consistentes que consolidam sua imagem como especialista na área.
-                    </p>
-                  </div>
-                </div>
-              </Card>
+              </div>
             </div>
           </div>
         </div>
