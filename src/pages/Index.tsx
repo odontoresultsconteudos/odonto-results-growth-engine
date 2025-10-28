@@ -121,134 +121,64 @@ const Index = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <a href="/captacao" className="block h-full">
-                <motion.div whileHover={{
-                scale: 1.05,
-                y: -8
-              }} transition={{
-                duration: 0.3,
-                ease: "easeOut"
-              }} className="h-full">
-                  <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                    <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
-                    rotate: 360,
-                    scale: 1.1
-                  }} transition={{
-                    duration: 0.6,
-                    ease: "easeInOut"
-                  }}>
-                      <Target className="w-6 h-6 text-accent" />
-                    </motion.div>
-                    <h3 className="text-xl font-bold mb-3">Captação de Leads Qualificados</h3>
-                    <p className="text-muted-foreground">
-                      Anúncios segmentados por tratamento e localização no Facebook, Instagram e Google.
-                    </p>
-                  </Card>
-                </motion.div>
+...
               </a>
 
-              <a href="/autoridade" className="block h-full">
-                <motion.div whileHover={{
-                scale: 1.05,
-                y: -8
-              }} transition={{
-                duration: 0.3,
-                ease: "easeOut"
-              }} className="h-full">
-                  <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                    <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
-                    rotate: 360,
-                    scale: 1.1
+              <div className="lg:col-span-3 flex justify-center">
+                <div className="grid md:grid-cols-2 gap-6 w-full max-w-4xl">
+                  <a href="/agendamento" className="block h-full">
+                    <motion.div whileHover={{
+                    scale: 1.05,
+                    y: -8
                   }} transition={{
-                    duration: 0.6,
-                    ease: "easeInOut"
-                  }}>
-                      <Star className="w-6 h-6 text-accent" />
+                    duration: 0.3,
+                    ease: "easeOut"
+                  }} className="h-full">
+                      <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
+                        <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
+                        rotate: 360,
+                        scale: 1.1
+                      }} transition={{
+                        duration: 0.6,
+                        ease: "easeInOut"
+                      }}>
+                          <Calendar className="w-6 h-6 text-accent" />
+                        </motion.div>
+                        <h3 className="text-xl font-bold mb-3">Agendamento Profissional</h3>
+                        <p className="text-muted-foreground">
+                          CRC treinada + IA 24h no WhatsApp para garantir velocidade e consistência no atendimento.
+                        </p>
+                      </Card>
                     </motion.div>
-                    <h3 className="text-xl font-bold mb-3">Vitrine de Autoridade</h3>
-                    <p className="text-muted-foreground">
-                      Conteúdo estratégico que reduz o risco percebido e aumenta a confiança.
-                    </p>
-                  </Card>
-                </motion.div>
-              </a>
+                  </a>
 
-              <a href="/google-top-1" className="block h-full">
-                <motion.div whileHover={{
-                scale: 1.05,
-                y: -8
-              }} transition={{
-                duration: 0.3,
-                ease: "easeOut"
-              }} className="h-full">
-                  <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                    <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
-                    rotate: 360,
-                    scale: 1.1
+                  <a href="/crm" className="block h-full">
+                    <motion.div whileHover={{
+                    scale: 1.05,
+                    y: -8
                   }} transition={{
-                    duration: 0.6,
-                    ease: "easeInOut"
-                  }}>
-                      <TrendingUp className="w-6 h-6 text-accent" />
+                    duration: 0.3,
+                    ease: "easeOut"
+                  }} className="h-full">
+                      <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
+                        <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
+                        rotate: 360,
+                        scale: 1.1
+                      }} transition={{
+                        duration: 0.6,
+                        ease: "easeInOut"
+                      }}>
+                          <BarChart3 className="w-6 h-6 text-accent" />
+                        </motion.div>
+                        <h3 className="text-xl font-bold mb-3">CRM Inteligente</h3>
+                        <p className="text-muted-foreground">
+                          Funil claro com foco em Agendamento e Comparecimento, tarefas e automações que aumentam aproveitamento.
+                        </p>
+                      </Card>
                     </motion.div>
-                    <h3 className="text-xl font-bold mb-3">Google Top 1</h3>
-                    <p className="text-muted-foreground">
-                      Otimização de Google Maps e SEO local para alcançar o topo das buscas da sua região.
-                    </p>
-                  </Card>
-                </motion.div>
-              </a>
-
-              <a href="/agendamento" className="block h-full lg:col-start-2">
-                <motion.div whileHover={{
-                scale: 1.05,
-                y: -8
-              }} transition={{
-                duration: 0.3,
-                ease: "easeOut"
-              }} className="h-full">
-                  <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                    <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
-                    rotate: 360,
-                    scale: 1.1
-                  }} transition={{
-                    duration: 0.6,
-                    ease: "easeInOut"
-                  }}>
-                      <Calendar className="w-6 h-6 text-accent" />
-                    </motion.div>
-                    <h3 className="text-xl font-bold mb-3">Agendamento Profissional</h3>
-                    <p className="text-muted-foreground">
-                      CRC treinada + IA 24h no WhatsApp para garantir velocidade e consistência no atendimento.
-                    </p>
-                  </Card>
-                </motion.div>
-              </a>
-
-              <a href="/crm" className="block h-full">
-                <motion.div whileHover={{
-                scale: 1.05,
-                y: -8
-              }} transition={{
-                duration: 0.3,
-                ease: "easeOut"
-              }} className="h-full">
-                  <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                    <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
-                    rotate: 360,
-                    scale: 1.1
-                  }} transition={{
-                    duration: 0.6,
-                    ease: "easeInOut"
-                  }}>
-                      <BarChart3 className="w-6 h-6 text-accent" />
-                    </motion.div>
-                    <h3 className="text-xl font-bold mb-3">CRM Inteligente</h3>
-                    <p className="text-muted-foreground">
-                      Funil claro com foco em Agendamento e Comparecimento, tarefas e automações que aumentam aproveitamento.
-                    </p>
-                  </Card>
-                </motion.div>
-              </a>
+                  </a>
+                </div>
+              </div>
             </div>
 
             <div className="text-center mt-12">
