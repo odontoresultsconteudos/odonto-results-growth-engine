@@ -44,7 +44,7 @@ const Autoridade = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <Card className="p-8 border-border/40">
+            <Card className="p-8 border-border/40 hover:border-accent/50 transition-all hover:shadow-lg">
               <Award className="w-12 h-12 text-accent mb-4" />
               <h3 className="text-2xl font-semibold mb-4">Antes x Depois</h3>
               <p className="text-muted-foreground text-lg">
@@ -52,7 +52,7 @@ const Autoridade = () => {
               </p>
             </Card>
 
-            <Card className="p-8 border-border/40">
+            <Card className="p-8 border-border/40 hover:border-accent/50 transition-all hover:shadow-lg">
               <Video className="w-12 h-12 text-accent mb-4" />
               <h3 className="text-2xl font-semibold mb-4">Vídeos Educativos</h3>
               <p className="text-muted-foreground text-lg">
@@ -60,7 +60,7 @@ const Autoridade = () => {
               </p>
             </Card>
 
-            <Card className="p-8 border-border/40">
+            <Card className="p-8 border-border/40 hover:border-accent/50 transition-all hover:shadow-lg">
               <Eye className="w-12 h-12 text-accent mb-4" />
               <h3 className="text-2xl font-semibold mb-4">Depoimentos</h3>
               <p className="text-muted-foreground text-lg">
@@ -68,7 +68,7 @@ const Autoridade = () => {
               </p>
             </Card>
 
-            <Card className="p-8 border-border/40">
+            <Card className="p-8 border-border/40 hover:border-accent/50 transition-all hover:shadow-lg">
               <Star className="w-12 h-12 text-accent mb-4" />
               <h3 className="text-2xl font-semibold mb-4">Presença Consistente</h3>
               <p className="text-muted-foreground text-lg">Publicações regulares que mantêm sua clínica sempre visível,  relevante e humanizada.</p>
