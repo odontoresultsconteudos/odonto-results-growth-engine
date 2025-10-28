@@ -90,7 +90,7 @@ const GoogleTop1 = () => {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-8 border-border/40">
+            <Card className="p-8 border-border/40 hover:border-accent/50 transition-all hover:shadow-lg">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                   <span className="text-accent font-bold text-xl">1</span>
@@ -104,7 +104,7 @@ const GoogleTop1 = () => {
               </div>
             </Card>
 
-            <Card className="p-8 border-border/40">
+            <Card className="p-8 border-border/40 hover:border-accent/50 transition-all hover:shadow-lg">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                   <span className="text-accent font-bold text-xl">2</span>
@@ -118,7 +118,7 @@ const GoogleTop1 = () => {
               </div>
             </Card>
 
-            <Card className="p-8 border-border/40">
+            <Card className="p-8 border-border/40 hover:border-accent/50 transition-all hover:shadow-lg">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                   <span className="text-accent font-bold text-xl">3</span>
