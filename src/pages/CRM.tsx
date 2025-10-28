@@ -111,49 +111,49 @@ const CRM = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="p-6 border-border/40 hover:border-accent/50 transition-all">
               <Database className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Integração Total</h3>
+              <h3 className="text-xl font-semibold mb-3">Integração Completa</h3>
               <p className="text-muted-foreground">
-                RD Station, HubSpot, Google Sheets e WhatsApp em um só lugar.
+                Integração direta entre as campanhas de captação de leads e o CRM. Todo lead que entra pela campanha já cai automático no CRM.
+              </p>
+            </Card>
+
+            <Card className="p-6 border-border/40 hover:border-accent/50 transition-all">
+              <TrendingUp className="w-10 h-10 text-accent mb-4" />
+              <h3 className="text-xl font-semibold mb-3">Visualização Completa do Funil</h3>
+              <p className="text-muted-foreground">
+                Visualize cada paciente potencial em cada etapa: Lead Qualificado → Agendamento → Comparecimento → Fechamento. Você sabe exatamente onde está o dinheiro que pode entrar.
               </p>
             </Card>
 
             <Card className="p-6 border-border/40 hover:border-accent/50 transition-all">
               <Filter className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Qualificação Automática</h3>
+              <h3 className="text-xl font-semibold mb-3">Histórico de Evolução do Lead</h3>
               <p className="text-muted-foreground">
-                Score de leads baseado em comportamento e dados demográficos.
-              </p>
-            </Card>
-
-            <Card className="p-6 border-border/40 hover:border-accent/50 transition-all">
-              <TrendingUp className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Funil Completo</h3>
-              <p className="text-muted-foreground">
-                Visualize cada lead em MQL → Contato → Agendado → Compareceu → Fechou.
+                Acompanhe a evolução de cada lead dentro do CRM: quem pediu informação, quem marcou avaliação, quem compareceu e quem fechou tratamento.
               </p>
             </Card>
 
             <Card className="p-6 border-border/40 hover:border-accent/50 transition-all">
               <BarChart3 className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Dashboards em Tempo Real</h3>
+              <h3 className="text-xl font-semibold mb-3">Automação Inteligente</h3>
               <p className="text-muted-foreground">
-                Métricas de desempenho, custo por lead e ROI atualizados diariamente.
-              </p>
-            </Card>
-
-            <Card className="p-6 border-border/40 hover:border-accent/50 transition-all">
-              <Database className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Histórico Completo</h3>
-              <p className="text-muted-foreground">
-                Todas as interações, mensagens e ligações registradas por paciente.
+                Follow-ups e lembretes configurados para que nenhum lead "esfrie" ou seja esquecido por falta de organização.
               </p>
             </Card>
 
             <Card className="p-6 border-border/40 hover:border-accent/50 transition-all">
               <TrendingUp className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Automações Inteligentes</h3>
+              <h3 className="text-xl font-semibold mb-3">Análise de Dados em Tempo Real</h3>
               <p className="text-muted-foreground">
-                Tarefas, lembretes e follow-ups configurados para não perder nada.
+                Veja o desempenho das campanhas e o aproveitamento dos leads em tempo real, entendendo o que está acontecendo hoje sem depender de planilha ou conversa com a equipe.
+              </p>
+            </Card>
+
+            <Card className="p-6 border-border/40 hover:border-accent/50 transition-all">
+              <Database className="w-10 h-10 text-accent mb-4" />
+              <h3 className="text-xl font-semibold mb-3">Infraestrutura Profissional de CRM</h3>
+              <p className="text-muted-foreground">
+                Operamos dentro do maior CRM do mundo, com uma estrutura que grandes empresas usam e sem custo extra de licença.
               </p>
             </Card>
           </div>
