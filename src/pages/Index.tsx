@@ -169,7 +169,7 @@ const Index = () => {
                     </motion.div>
                     <h3 className="text-xl font-bold mb-3">Google Top 1</h3>
                     <p className="text-muted-foreground">
-                      para alcançar o topo nas buscas da sua região
+                      Otimização de Google Maps e SEO local para alcançar o topo das buscas da sua região.
                     </p>
                   </Card>
                 </motion.div>
