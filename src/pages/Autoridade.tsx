@@ -90,22 +90,22 @@ const Autoridade = () => {
               </p>
               
               <div className="space-y-6">
-                <div className="border-l-4 border-accent pl-6 py-2">
+                <div className="border-l-4 border-accent pl-6 py-2 hover:bg-accent/5 transition-all hover:pl-8">
                   <h3 className="font-semibold text-xl mb-2">1. Roteiro e Copy Estratégica</h3>
                   <p className="text-muted-foreground">Textos e falas planejadas para gerar autoridade e despertar o interesse do paciente.</p>
                 </div>
 
-                <div className="border-l-4 border-accent pl-6 py-2">
+                <div className="border-l-4 border-accent pl-6 py-2 hover:bg-accent/5 transition-all hover:pl-8">
                   <h3 className="font-semibold text-xl mb-2">2. Gravação Guiada</h3>
                   <p className="text-muted-foreground">Orientamos o doutor em vídeos autênticos que mostram técnica, empatia e experiência.</p>
                 </div>
 
-                <div className="border-l-4 border-accent pl-6 py-2">
+                <div className="border-l-4 border-accent pl-6 py-2 hover:bg-accent/5 transition-all hover:pl-8">
                   <h3 className="font-semibold text-xl mb-2">3. Edição Profissional</h3>
                   <p className="text-muted-foreground">Cortes, legendas e artes que reforçam credibilidade e destacam seus diferenciais.</p>
                 </div>
 
-                <div className="border-l-4 border-accent pl-6 py-2">
+                <div className="border-l-4 border-accent pl-6 py-2 hover:bg-accent/5 transition-all hover:pl-8">
                   <h3 className="font-semibold text-xl mb-2">4. Construção de Autoridade</h3>
                   <p className="text-muted-foreground">Publicações consistentes que consolidam sua imagem como especialista na área.</p>
                 </div>
