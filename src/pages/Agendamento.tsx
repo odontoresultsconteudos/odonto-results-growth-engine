@@ -234,7 +234,7 @@ const Agendamento = () => {
             Agendar Diagnóstico Gratuito
           </Button>
           <p className="text-sm text-primary-foreground/80 mt-4">
-            Sem compromisso • Diagnóstico personalizado • Resultados previsíveis
+            1500+ Clínicas atendidas • 500 mil+ Leads gerados • 10 milhões+ Gerenciados em tráfego pago
           </p>
         </div>
       </section>
