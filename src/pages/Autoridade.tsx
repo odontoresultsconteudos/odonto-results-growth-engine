@@ -106,9 +106,7 @@ const Autoridade = () => {
 
                 <div className="border-l-4 border-accent pl-6 py-2">
                   <h3 className="font-semibold text-xl mb-2">Construção de Autoridade</h3>
-                  <p className="text-muted-foreground">
-                    Posicionamento estratégico que estabelece sua clínica como referência e especialista.
-                  </p>
+                  <p className="text-muted-foreground">Posicionamento estratégico que estabelece sua clínica e você como referência e especialista.</p>
                 </div>
               </div>
             </div>
