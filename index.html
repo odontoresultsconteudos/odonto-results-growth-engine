@@ -1,29 +1,18 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <!-- Google Tag Manager - Ultra Lazy Loaded with requestIdleCallback -->
+    <!-- Google Tag Manager - Lazy Loaded -->
     <script>
-    // Defer GTM loading to idle time to minimize TBT impact
-    (function() {
-      var loadGTM = function() {
+    // Defer GTM loading to improve initial page load
+    window.addEventListener('load', function() {
+      setTimeout(function() {
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-P2Q493W');
-      };
-      
-      // Use requestIdleCallback for better performance, fallback to setTimeout
-      if ('requestIdleCallback' in window) {
-        window.addEventListener('load', function() {
-          requestIdleCallback(loadGTM, { timeout: 3000 });
-        });
-      } else {
-        window.addEventListener('load', function() {
-          setTimeout(loadGTM, 3000);
-        });
-      }
-    })();
+      }, 2000);
+    });
     </script>
     <!-- End Google Tag Manager -->
     
@@ -69,11 +58,10 @@
     <meta name="twitter:description" content="Transforme sua clínica odontológica com marketing digital focado em resultados." />
     <meta name="twitter:image" content="https://odontoresults.com.br/og-image.jpg" />
 
-    <!-- DNS prefetch only (avoid preconnect for non-critical resources) -->
-    <link rel="dns-prefetch" href="http://blog.odontoresults.com.br" />
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="http://blog.odontoresults.com.br" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-    <link rel="dns-prefetch" href="https://connect.facebook.net" />
-    <link rel="dns-prefetch" href="https://www.facebook.com" />
   </head>
 
   <body>

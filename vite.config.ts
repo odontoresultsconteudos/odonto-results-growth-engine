@@ -33,23 +33,7 @@ export default defineConfig(({ mode }) => ({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,jpg,jpeg,webp,svg}'],
-        navigateFallback: null,
         runtimeCaching: [
-          // JavaScript and CSS files - aggressive caching
-          {
-            urlPattern: /\.(?:js|css)$/i,
-            handler: 'StaleWhileRevalidate',
-            options: {
-              cacheName: 'static-resources',
-              expiration: {
-                maxEntries: 60,
-                maxAgeSeconds: 60 * 60 * 24 * 30 // 30 days
-              },
-              cacheableResponse: {
-                statuses: [0, 200]
-              }
-            }
-          },
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
             handler: 'StaleWhileRevalidate',
@@ -84,7 +68,7 @@ export default defineConfig(({ mode }) => ({
             options: {
               cacheName: 'images-cache',
               expiration: {
-                maxEntries: 80,
+                maxEntries: 60,
                 maxAgeSeconds: 60 * 60 * 24 * 90 // 90 days
               },
               cacheableResponse: {
@@ -115,11 +99,6 @@ export default defineConfig(({ mode }) => ({
                 maxAgeSeconds: 60 * 60 * 24 * 7 // 7 days
               }
             }
-          },
-          // Block third-party tracking scripts from being cached
-          {
-            urlPattern: /^https:\/\/(connect\.facebook\.net|www\.facebook\.com|www\.googletagmanager\.com)\/.*/i,
-            handler: 'NetworkOnly'
           }
         ]
       }
@@ -133,72 +112,21 @@ export default defineConfig(({ mode }) => ({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: (id) => {
-          // Core React - keep together for better caching
-          if (id.includes('node_modules/react') || 
-              id.includes('node_modules/react-dom') || 
-              id.includes('node_modules/scheduler')) {
-            return 'vendor-react';
-          }
-          
-          // React Router - separate chunk
-          if (id.includes('node_modules/react-router-dom')) {
-            return 'vendor-router';
-          }
-          
-          // Radix UI - split by usage
-          if (id.includes('@radix-ui')) {
-            // Core UI used everywhere
-            if (id.includes('dialog') || id.includes('dropdown-menu') || id.includes('tooltip')) {
-              return 'ui-core';
-            }
-            // Extended UI used occasionally
-            return 'ui-extended';
-          }
-          
-          // Motion library - separate chunk
-          if (id.includes('node_modules/motion')) {
-            return 'motion';
-          }
-          
-          // TanStack Query
-          if (id.includes('@tanstack/react-query')) {
-            return 'query';
-          }
-          
-          // Lucide icons - separate chunk
-          if (id.includes('lucide-react')) {
-            return 'icons';
-          }
-          
-          // Other node_modules
-          if (id.includes('node_modules/')) {
-            return 'vendor-misc';
-          }
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'ui-components': [
+            '@radix-ui/react-accordion',
+            '@radix-ui/react-dialog',
+            '@radix-ui/react-dropdown-menu',
+            '@radix-ui/react-tooltip',
+          ],
+          'motion': ['motion'],
         },
       },
     },
-    chunkSizeWarningLimit: 600,
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-        passes: 2,
-        pure_funcs: ['console.log', 'console.info'],
-        ecma: 2020,
-      },
-      mangle: {
-        safari10: true,
-      },
-      format: {
-        comments: false,
-      },
-    },
+    chunkSizeWarningLimit: 800,
+    minify: 'esbuild',
     cssCodeSplit: true,
-    cssMinify: 'lightningcss',
-    assetsInlineLimit: 2048,
-    reportCompressedSize: false,
-    sourcemap: false,
+    assetsInlineLimit: 4096,
   },
 }));
