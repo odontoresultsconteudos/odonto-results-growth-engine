@@ -827,7 +827,7 @@ const Index = () => {
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-3 gap-12 mb-8">
               <div>
-                <img src={logoSvg} alt="Odonto Results" className="h-10 mb-4" />
+                <img src={logoSvg} alt="Odonto Results" className="h-10 mb-4" width="120" height="40" />
                 <p className="text-sm text-muted-foreground">
                   Transformando clínicas odontológicas através do Método Paciente Previsível.
                 </p>
