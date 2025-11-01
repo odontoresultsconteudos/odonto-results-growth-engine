@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
@@ -8,6 +8,7 @@ interface AnimatedGradientBackgroundProps {
     className?: string;
     children?: React.ReactNode;
     intensity?: "subtle" | "medium" | "strong";
+    disableOnMobile?: boolean;
 }
 
 interface Beam {
@@ -43,11 +44,14 @@ export function BeamsBackground({
     className,
     children,
     intensity = "strong",
+    disableOnMobile = true,
 }: AnimatedGradientBackgroundProps) {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const beamsRef = useRef<Beam[]>([]);
     const animationFrameRef = useRef<number>(0);
-    const MINIMUM_BEAMS = 20;
+    const [isMobile, setIsMobile] = useState(false);
+    const [isLoaded, setIsLoaded] = useState(false);
+    const MINIMUM_BEAMS = 8; // Reduced from 20 to 8
 
     const opacityMap = {
         subtle: 0.7,
@@ -56,6 +60,29 @@ export function BeamsBackground({
     };
 
     useEffect(() => {
+        // Detect mobile
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+
+        // Lazy load animation with delay
+        const loadTimer = setTimeout(() => {
+            setIsLoaded(true);
+        }, 1500); // 1.5s delay to prioritize FCP/LCP
+
+        return () => {
+            window.removeEventListener('resize', checkMobile);
+            clearTimeout(loadTimer);
+        };
+    }, []);
+
+    useEffect(() => {
+        // Don't render animation on mobile if disabled
+        if (disableOnMobile && isMobile) return;
+        if (!isLoaded) return;
+
         const canvas = canvasRef.current;
         if (!canvas) return;
 
@@ -76,9 +103,9 @@ export function BeamsBackground({
             canvas.style.height = `${window.innerHeight}px`;
             ctx.scale(dpr, dpr);
 
-            // Reduce beams on mobile for better performance
-            const isMobile = window.innerWidth < 768;
-            const beamMultiplier = isMobile ? 0.6 : 1.5;
+            // DRASTICALLY reduced beams for performance
+            const isMobileView = window.innerWidth < 768;
+            const beamMultiplier = isMobileView ? 0 : 0.8; // 0 on mobile, 0.8 on desktop (was 1.5)
             const totalBeams = Math.floor(MINIMUM_BEAMS * beamMultiplier);
             beamsRef.current = Array.from({ length: totalBeams }, () =>
                 createBeam(canvas.width, canvas.height)
@@ -144,8 +171,22 @@ export function BeamsBackground({
             ctx.restore();
         }
 
-        function animate() {
+        let lastFrameTime = 0;
+        const targetFPS = 30; // Reduced from 60 to 30 for performance
+        const frameInterval = 1000 / targetFPS;
+
+        function animate(currentTime: number) {
             if (!canvas || !ctx) return;
+
+            const deltaTime = currentTime - lastFrameTime;
+            
+            // Throttle to target FPS
+            if (deltaTime < frameInterval) {
+                animationFrameRef.current = requestAnimationFrame(animate);
+                return;
+            }
+
+            lastFrameTime = currentTime - (deltaTime % frameInterval);
 
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.filter = "blur(35px)";
@@ -166,7 +207,7 @@ export function BeamsBackground({
             animationFrameRef.current = requestAnimationFrame(animate);
         }
 
-        animate();
+        animate(0);
 
         return () => {
             window.removeEventListener("resize", updateCanvasSize);
@@ -174,7 +215,22 @@ export function BeamsBackground({
                 cancelAnimationFrame(animationFrameRef.current);
             }
         };
-    }, [intensity]);
+    }, [intensity, isLoaded, isMobile, disableOnMobile]);
+
+    // Render static gradient on mobile when disabled
+    if (disableOnMobile && isMobile) {
+        return (
+            <div
+                className={cn(
+                    "relative w-full overflow-hidden",
+                    className
+                )}
+            >
+                <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-secondary opacity-100" />
+                {children}
+            </div>
+        );
+    }
 
     return (
         <div
@@ -186,14 +242,16 @@ export function BeamsBackground({
                 contain: "layout style paint",
             }}
         >
-            <canvas
-                ref={canvasRef}
-                className="absolute inset-0"
-                style={{ 
-                    filter: "blur(15px)",
-                    willChange: "transform",
-                }}
-            />
+            {isLoaded && (
+                <canvas
+                    ref={canvasRef}
+                    className="absolute inset-0"
+                    style={{ 
+                        filter: "blur(15px)",
+                        willChange: "transform",
+                    }}
+                />
+            )}
 
             <motion.div
                 className="absolute inset-0 bg-neutral-950/5"
