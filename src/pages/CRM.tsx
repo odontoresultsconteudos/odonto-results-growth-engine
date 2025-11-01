@@ -3,8 +3,33 @@ import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import { BarChart3, Database, Filter, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEO } from "@/components/SEO";
+
 const CRM = () => {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://odontoresults.com.br"
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CRM Inteligente",
+      "item": "https://odontoresults.com.br/crm"
+    }]
+  };
+
   return <div className="min-h-screen bg-background">
+      <SEO 
+        title="CRM Inteligente para Clínicas Odontológicas"
+        description="Gestão inteligente de leads odontológicos com CRM integrado que organiza, prioriza e maximiza o aproveitamento de cada oportunidade de negócio."
+        keywords="CRM odontológico, gestão de leads dentista, funil de vendas clínica, automação marketing odontologia, software gestão pacientes"
+        canonical="https://odontoresults.com.br/crm"
+        structuredData={breadcrumbSchema}
+      />
       <Header />
       
       {/* Hero Section */}

@@ -3,8 +3,33 @@ import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import { Bot, Calendar, Clock, PhoneCall } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEO } from "@/components/SEO";
+
 const Agendamento = () => {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://odontoresults.com.br"
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Agendamento Profissional",
+      "item": "https://odontoresults.com.br/agendamento"
+    }]
+  };
+
   return <div className="min-h-screen bg-background">
+      <SEO 
+        title="Agendamento Profissional com CRC e IA para Clínicas"
+        description="Transforme leads em consultas agendadas com CRC profissional e IA 24h no WhatsApp. Maximize o aproveitamento de cada paciente captado."
+        keywords="agendamento online dentista, CRC odontologia, chatbot WhatsApp clínica, automação agendamento, IA agendamento pacientes"
+        canonical="https://odontoresults.com.br/agendamento"
+        structuredData={breadcrumbSchema}
+      />
       <Header />
       
       {/* Hero Section */}

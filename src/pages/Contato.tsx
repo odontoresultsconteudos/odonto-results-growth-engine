@@ -4,10 +4,41 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Mail, Clock } from "lucide-react";
 import Header from "@/components/Header";
+import { SEO } from "@/components/SEO";
 
 const Contato = () => {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://odontoresults.com.br"
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contato",
+      "item": "https://odontoresults.com.br/contato"
+    }]
+  };
+
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contato - Odonto Results",
+    "description": "Entre em contato com a Odonto Results para impulsionar sua clínica odontológica"
+  };
+
   return (
     <>
+      <SEO 
+        title="Contato - Fale Conosco"
+        description="Entre em contato com a Odonto Results. Estamos prontos para ajudar sua clínica odontológica a crescer e alcançar resultados extraordinários."
+        keywords="contato Odonto Results, falar com consultor odontológico, orçamento marketing dental"
+        canonical="https://odontoresults.com.br/contato"
+        structuredData={[breadcrumbSchema, contactSchema]}
+      />
       <Header />
       
       <main className="min-h-screen">

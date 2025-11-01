@@ -4,10 +4,45 @@ import { ArrowRight } from "lucide-react";
 import alexGurraoCeo from "@/assets/alex-gurrao-ceo.webp";
 import viniciusRagazziCoo from "@/assets/vinicius-ragazzi-coo.webp";
 import Header from "@/components/Header";
+import { SEO } from "@/components/SEO";
 
 const Sobre = () => {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://odontoresults.com.br"
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sobre",
+      "item": "https://odontoresults.com.br/sobre"
+    }]
+  };
+
+  const teamSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Sobre a Odonto Results",
+    "description": "Conheça a equipe por trás da Odonto Results: Dr. Alex Gurrão (CEO) e Vinícius Ragazzi (CMO)",
+    "about": {
+      "@type": "Organization",
+      "name": "Odonto Results"
+    }
+  };
+
   return (
     <>
+      <SEO 
+        title="Sobre a Odonto Results - Nossa Equipe"
+        description="Conheça a equipe por trás da Odonto Results. Dr. Alex Gurrão, dentista e CEO, e Vinícius Ragazzi, especialista em marketing digital como CMO."
+        keywords="equipe Odonto Results, Dr Alex Gurrão, Vinícius Ragazzi, agência marketing odontológico"
+        canonical="https://odontoresults.com.br/sobre"
+        structuredData={[breadcrumbSchema, teamSchema]}
+      />
       <Header />
       
       <main className="min-h-screen">
@@ -30,7 +65,7 @@ const Sobre = () => {
               <Card className="p-8">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-full max-w-sm mb-6 overflow-hidden rounded-lg">
-                    <img src={alexGurraoCeo} alt="Dr Alex Gurrão" className="w-full h-auto object-cover" />
+                    <img src={alexGurraoCeo} alt="Dr Alex Gurrão - CEO da Odonto Results, dentista e especialista em marketing odontológico" className="w-full h-auto object-cover" loading="lazy" />
                   </div>
                   <h2 className="text-2xl font-bold mb-2">Dr Alex Gurrão</h2>
                   <p className="text-accent font-semibold mb-4">CEO</p>
@@ -43,7 +78,7 @@ const Sobre = () => {
               <Card className="p-8">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-full max-w-sm mb-6 overflow-hidden rounded-lg">
-                    <img src={viniciusRagazziCoo} alt="Vinícius Ragazzi" className="w-full h-auto object-cover" />
+                    <img src={viniciusRagazziCoo} alt="Vinícius Ragazzi - CMO da Odonto Results, especialista em marketing digital para clínicas" className="w-full h-auto object-cover" loading="lazy" />
                   </div>
                   <h2 className="text-2xl font-bold mb-2">Vinícius Ragazzi</h2>
                   <p className="text-accent font-semibold mb-4">CMO</p>

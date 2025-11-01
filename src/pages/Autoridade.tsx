@@ -3,8 +3,33 @@ import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import { Award, Eye, Star, Video } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEO } from "@/components/SEO";
+
 const Autoridade = () => {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://odontoresults.com.br"
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Vitrine de Autoridade",
+      "item": "https://odontoresults.com.br/autoridade"
+    }]
+  };
+
   return <div className="min-h-screen bg-background">
+      <SEO 
+        title="Vitrine de Autoridade para Clínicas Odontológicas"
+        description="Torne-se referência na sua região com conteúdos estratégicos que posicionam sua clínica como autoridade e facilitam a decisão do paciente."
+        keywords="autoridade odontológica, marketing de conteúdo dentista, branding clínica, reputação online dentista, vídeos educativos odontologia"
+        canonical="https://odontoresults.com.br/autoridade"
+        structuredData={breadcrumbSchema}
+      />
       <Header />
       
       {/* Hero Section */}

@@ -3,8 +3,45 @@ import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import { Target, TrendingUp, Users, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEO } from "@/components/SEO";
+
 const Captacao = () => {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://odontoresults.com.br"
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Captação de Leads",
+      "item": "https://odontoresults.com.br/captacao"
+    }]
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Captação de Leads para Clínicas Odontológicas",
+    "description": "Anúncios segmentados no Facebook, Instagram e Google que atraem pacientes qualificados com intenção de contratar tratamentos odontológicos",
+    "provider": {
+      "@type": "Organization",
+      "name": "Odonto Results"
+    },
+    "areaServed": "BR"
+  };
+
   return <div className="min-h-screen bg-background">
+      <SEO 
+        title="Captação de Leads Qualificados para Clínicas Odontológicas"
+        description="Atraia pacientes qualificados com anúncios segmentados no Facebook, Instagram e Google. Mais de 500 mil leads gerados para clínicas odontológicas."
+        keywords="captação de pacientes, leads odontológicos, Facebook Ads dentista, Instagram Ads clínica, Google Ads dentista, tráfego pago odontologia"
+        canonical="https://odontoresults.com.br/captacao"
+        structuredData={[breadcrumbSchema, serviceSchema]}
+      />
       <Header />
       
       {/* Hero Section */}

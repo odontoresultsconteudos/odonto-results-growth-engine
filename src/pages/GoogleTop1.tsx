@@ -3,10 +3,34 @@ import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import { MapPin, Search, Star, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEO } from "@/components/SEO";
 
 const GoogleTop1 = () => {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://odontoresults.com.br"
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Google Top 1",
+      "item": "https://odontoresults.com.br/google-top-1"
+    }]
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title="Google Top 1 - Domine o Google Maps na Sua Região"
+        description="Apareça em primeiro lugar no Google Maps quando pacientes procuram dentista perto de mim. Estratégia completa de SEO local para clínicas odontológicas."
+        keywords="Google Maps dentista, SEO local odontologia, dentista perto de mim, Google Meu Negócio clínica, ranqueamento Google dentista"
+        canonical="https://odontoresults.com.br/google-top-1"
+        structuredData={breadcrumbSchema}
+      />
       <Header />
       
       {/* Hero Section */}

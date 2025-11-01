@@ -9,8 +9,111 @@ import Header from "@/components/Header";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { BeamsBackground } from "@/components/ui/beams-background";
 import { motion } from "motion/react";
+import { SEO } from "@/components/SEO";
+
 const Index = () => {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Odonto Results",
+    "url": "https://odontoresults.com.br",
+    "logo": "https://odontoresults.com.br/logo.png",
+    "description": "Marketing digital especializado para clínicas odontológicas com foco em resultados",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Sales",
+      "email": "contato@odontoresults.com.br"
+    },
+    "sameAs": [
+      "http://blog.odontoresults.com.br/"
+    ]
+  };
+
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Odonto Results",
+    "description": "Agência de marketing digital especializada em clínicas odontológicas",
+    "url": "https://odontoresults.com.br",
+    "telephone": "+55-11-XXXX-XXXX",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "1500"
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Em quanto tempo começo a perceber resultados?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Varia por região e tratamento. Na apresentação, mostramos um plano de metas e expectativas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Funciona em cidade pequena ou região rural?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Ajustamos segmentação, raio e linguagem para seu contexto local."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vocês atendem qualquer especialidade?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Atuamos com tratamentos funcionais e estéticos. Adequamos a campanha por prioridade clínica."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quem fala com os leads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CRC treinada e IA 24h no WhatsApp, com protocolo de confirmação para aumentar comparecimento."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como acompanho os resultados?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Relatórios claros com foco em Agendamento e Comparecimento, além de rotinas de otimização."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Posso pausar ou priorizar tratamentos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. O plano é vivo e pode priorizar campanhas por demanda e sazonalidade."
+        }
+      }
+    ]
+  };
+
   return <>
+      <SEO 
+        title="Marketing Digital para Clínicas Odontológicas"
+        description="Bata recorde de faturamento com captação de leads qualificados, vitrine de autoridade, Google Top 1, agendamento profissional e CRM inteligente para sua clínica odontológica."
+        keywords="marketing odontológico, captação de pacientes, Google Ads para dentistas, Instagram para clínicas, CRM odontológico, agendamento online dentista"
+        canonical="https://odontoresults.com.br/"
+        structuredData={[organizationSchema, localBusinessSchema, faqSchema]}
+      />
       <Header />
       
       {/* Mobile Sticky CTA */}
