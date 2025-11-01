@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import { BarChart3, Database, Filter, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SEO } from "@/components/SEO";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const CRM = () => {
   const breadcrumbSchema = {
@@ -31,6 +32,7 @@ const CRM = () => {
         structuredData={breadcrumbSchema}
       />
       <Header />
+      <Breadcrumbs items={[{ label: "CRM Inteligente", href: "/crm" }]} />
       
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">

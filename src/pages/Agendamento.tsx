@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import { Bot, Calendar, Clock, PhoneCall } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SEO } from "@/components/SEO";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const Agendamento = () => {
   const breadcrumbSchema = {
@@ -31,6 +32,7 @@ const Agendamento = () => {
         structuredData={breadcrumbSchema}
       />
       <Header />
+      <Breadcrumbs items={[{ label: "Agendamento Profissional", href: "/agendamento" }]} />
       
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
