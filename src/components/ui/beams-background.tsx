@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
@@ -47,6 +47,8 @@ export function BeamsBackground({
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const beamsRef = useRef<Beam[]>([]);
     const animationFrameRef = useRef<number>(0);
+    const lastFrameTimeRef = useRef<number>(0);
+    const [isLoaded, setIsLoaded] = useState(false);
     const MINIMUM_BEAMS = 20;
 
     const opacityMap = {
@@ -56,6 +58,14 @@ export function BeamsBackground({
     };
 
     useEffect(() => {
+        // Lazy load animation after 1 second to prioritize content loading
+        const loadTimer = setTimeout(() => setIsLoaded(true), 1000);
+        return () => clearTimeout(loadTimer);
+    }, []);
+
+    useEffect(() => {
+        if (!isLoaded) return;
+
         const canvas = canvasRef.current;
         if (!canvas) return;
 
@@ -68,6 +78,8 @@ export function BeamsBackground({
             return; // Don't animate if user prefers reduced motion
         }
 
+        const isMobile = window.innerWidth < 768;
+
         const updateCanvasSize = () => {
             const dpr = window.devicePixelRatio || 1;
             canvas.width = window.innerWidth * dpr;
@@ -76,9 +88,9 @@ export function BeamsBackground({
             canvas.style.height = `${window.innerHeight}px`;
             ctx.scale(dpr, dpr);
 
-            // Reduce beams on mobile for better performance
+            // Drastically reduce beams for better performance
             const isMobile = window.innerWidth < 768;
-            const beamMultiplier = isMobile ? 0.6 : 1.5;
+            const beamMultiplier = isMobile ? 0.25 : 0.5; // 5 beams mobile, 10 desktop
             const totalBeams = Math.floor(MINIMUM_BEAMS * beamMultiplier);
             beamsRef.current = Array.from({ length: totalBeams }, () =>
                 createBeam(canvas.width, canvas.height)
@@ -119,23 +131,15 @@ export function BeamsBackground({
 
             const gradient = ctx.createLinearGradient(0, 0, 0, beam.length);
 
-            // Enhanced gradient with multiple color stops
+            // Simplified gradient for better performance
             gradient.addColorStop(0, `hsla(${beam.hue}, 85%, 65%, 0)`);
             gradient.addColorStop(
-                0.1,
-                `hsla(${beam.hue}, 85%, 65%, ${pulsingOpacity * 0.5})`
-            );
-            gradient.addColorStop(
-                0.4,
+                0.3,
                 `hsla(${beam.hue}, 85%, 65%, ${pulsingOpacity})`
             );
             gradient.addColorStop(
-                0.6,
+                0.7,
                 `hsla(${beam.hue}, 85%, 65%, ${pulsingOpacity})`
-            );
-            gradient.addColorStop(
-                0.9,
-                `hsla(${beam.hue}, 85%, 65%, ${pulsingOpacity * 0.5})`
             );
             gradient.addColorStop(1, `hsla(${beam.hue}, 85%, 65%, 0)`);
 
@@ -144,11 +148,23 @@ export function BeamsBackground({
             ctx.restore();
         }
 
-        function animate() {
+        // FPS throttling: 24fps mobile, 30fps desktop
+        const targetFPS = isMobile ? 24 : 30;
+        const frameInterval = 1000 / targetFPS;
+
+        function animate(currentTime: number) {
             if (!canvas || !ctx) return;
 
+            // Throttle FPS
+            const elapsed = currentTime - lastFrameTimeRef.current;
+            if (elapsed < frameInterval) {
+                animationFrameRef.current = requestAnimationFrame(animate);
+                return;
+            }
+            lastFrameTimeRef.current = currentTime - (elapsed % frameInterval);
+
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.filter = "blur(35px)";
+            ctx.filter = "blur(25px)"; // Reduced blur for better performance
 
             const totalBeams = beamsRef.current.length;
             beamsRef.current.forEach((beam, index) => {
@@ -166,7 +182,17 @@ export function BeamsBackground({
             animationFrameRef.current = requestAnimationFrame(animate);
         }
 
-        animate();
+        // Use requestIdleCallback if available to avoid blocking main thread
+        const startAnimation = () => {
+            lastFrameTimeRef.current = performance.now();
+            animationFrameRef.current = requestAnimationFrame(animate);
+        };
+
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(startAnimation);
+        } else {
+            startAnimation();
+        }
 
         return () => {
             window.removeEventListener("resize", updateCanvasSize);
@@ -174,7 +200,7 @@ export function BeamsBackground({
                 cancelAnimationFrame(animationFrameRef.current);
             }
         };
-    }, [intensity]);
+    }, [intensity, isLoaded]);
 
     return (
         <div
