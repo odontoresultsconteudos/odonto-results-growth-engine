@@ -115,18 +115,8 @@ const Index = () => {
         structuredData={[organizationSchema, localBusinessSchema, faqSchema]}
       />
       <Header />
-      
-      {/* Mobile Sticky CTA */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 p-4 bg-background/95 backdrop-blur border-t border-border/40">
-        <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer" className="block">
-          <Button variant="cta" size="lg" className="w-full">
-            Agende uma Apresentação
-            <ArrowRight className="ml-2" />
-          </Button>
-        </a>
-      </div>
 
-      <main className="min-h-screen pb-20 md:pb-0">
+      <main className="min-h-screen">
         {/* 2) Hero Section - Com Beams Background */}
         <BeamsBackground className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary via-primary to-secondary" intensity="medium">
           <div className="relative z-10 max-w-4xl mx-auto text-center py-20">
