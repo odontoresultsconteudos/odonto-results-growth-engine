@@ -196,6 +196,7 @@ export default defineConfig(({ mode }) => ({
       },
     },
     cssCodeSplit: true,
+    cssMinify: 'lightningcss',
     assetsInlineLimit: 2048,
     reportCompressedSize: false,
     sourcemap: false,

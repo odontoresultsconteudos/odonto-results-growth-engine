@@ -3,6 +3,7 @@ interface ResponsiveImageProps {
   alt: string;
   sizes?: string;
   loading?: "lazy" | "eager";
+  fetchPriority?: "high" | "low" | "auto";
   className?: string;
   width?: number;
   height?: number;
@@ -13,6 +14,7 @@ export const ResponsiveImage = ({
   alt,
   sizes = "(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px",
   loading = "lazy",
+  fetchPriority = "auto",
   className = "",
   width = 800,
   height = 450,
@@ -41,6 +43,7 @@ export const ResponsiveImage = ({
       alt={alt}
       loading={loading}
       decoding="async"
+      fetchPriority={fetchPriority}
       className={className}
       width={width}
       height={height}
