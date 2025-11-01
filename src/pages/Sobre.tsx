@@ -65,7 +65,7 @@ const Sobre = () => {
               <Card className="p-8">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-full max-w-sm mb-6 overflow-hidden rounded-lg">
-                    <img src={alexGurraoCeo} alt="Dr Alex Gurrão - CEO da Odonto Results, dentista e especialista em marketing odontológico" className="w-full h-auto object-cover" loading="lazy" />
+                    <img src={alexGurraoCeo} alt="Dr Alex Gurrão - CEO da Odonto Results, dentista e especialista em marketing odontológico" className="w-full h-auto object-cover" width="400" height="400" loading="lazy" />
                   </div>
                   <h2 className="text-2xl font-bold mb-2">Dr Alex Gurrão</h2>
                   <p className="text-accent font-semibold mb-4">CEO</p>
@@ -78,7 +78,7 @@ const Sobre = () => {
               <Card className="p-8">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-full max-w-sm mb-6 overflow-hidden rounded-lg">
-                    <img src={viniciusRagazziCoo} alt="Vinícius Ragazzi - CMO da Odonto Results, especialista em marketing digital para clínicas" className="w-full h-auto object-cover" loading="lazy" />
+                    <img src={viniciusRagazziCoo} alt="Vinícius Ragazzi - CMO da Odonto Results, especialista em marketing digital para clínicas" className="w-full h-auto object-cover" width="400" height="400" loading="lazy" />
                   </div>
                   <h2 className="text-2xl font-bold mb-2">Vinícius Ragazzi</h2>
                   <p className="text-accent font-semibold mb-4">CMO</p>

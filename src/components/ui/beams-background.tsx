@@ -62,6 +62,12 @@ export function BeamsBackground({
         const ctx = canvas.getContext("2d");
         if (!ctx) return;
 
+        // Check if user prefers reduced motion
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (prefersReducedMotion) {
+            return; // Don't animate if user prefers reduced motion
+        }
+
         const updateCanvasSize = () => {
             const dpr = window.devicePixelRatio || 1;
             canvas.width = window.innerWidth * dpr;
@@ -70,7 +76,10 @@ export function BeamsBackground({
             canvas.style.height = `${window.innerHeight}px`;
             ctx.scale(dpr, dpr);
 
-            const totalBeams = MINIMUM_BEAMS * 1.5;
+            // Reduce beams on mobile for better performance
+            const isMobile = window.innerWidth < 768;
+            const beamMultiplier = isMobile ? 0.6 : 1.5;
+            const totalBeams = Math.floor(MINIMUM_BEAMS * beamMultiplier);
             beamsRef.current = Array.from({ length: totalBeams }, () =>
                 createBeam(canvas.width, canvas.height)
             );
@@ -173,11 +182,17 @@ export function BeamsBackground({
                 "relative w-full overflow-hidden",
                 className
             )}
+            style={{
+                contain: "layout style paint",
+            }}
         >
             <canvas
                 ref={canvasRef}
                 className="absolute inset-0"
-                style={{ filter: "blur(15px)" }}
+                style={{ 
+                    filter: "blur(15px)",
+                    willChange: "transform",
+                }}
             />
 
             <motion.div

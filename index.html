@@ -16,8 +16,12 @@
     <meta name="theme-color" content="#0EA5E9" />
     
     <!-- Preload critical resources -->
-    <link rel="preload" href="/src/assets/logo.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="/src/assets/logo.svg" as="image" type="image/svg+xml" fetchpriority="high" />
     <link rel="modulepreload" href="/src/main.tsx" />
+    
+    <!-- Preconnect to external domains for faster resource loading -->
+    <link rel="preconnect" href="https://form.odontoresults.com.br" crossorigin />
+    <link rel="dns-prefetch" href="https://form.odontoresults.com.br" />
     
     <title>Odonto Results - Marketing Digital para Clínicas Odontológicas</title>
     <meta name="description" content="Transforme sua clínica odontológica com marketing digital focado em resultados. Captação de leads, agendamento estruturado e recordes de faturamento." />
@@ -47,7 +51,6 @@
     <meta name="twitter:image" content="https://odontoresults.com.br/og-image.jpg" />
 
     <!-- Preconnect to external domains -->
-    <link rel="preconnect" href="https://form.odontoresults.com.br" />
     <link rel="preconnect" href="http://blog.odontoresults.com.br" />
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />

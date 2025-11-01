@@ -30,7 +30,9 @@ export default defineConfig(({ mode }) => ({
         },
       },
     },
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 800,
     minify: 'esbuild',
+    cssCodeSplit: true,
+    assetsInlineLimit: 4096,
   },
 }));

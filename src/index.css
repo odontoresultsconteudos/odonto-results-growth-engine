@@ -86,10 +86,18 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   html {
     scroll-behavior: smooth;
+  }
+  
+  /* Optimize font loading */
+  @font-face {
+    font-display: swap;
   }
 }
 
@@ -97,9 +105,27 @@ All colors MUST be HSL.
   /* Performance-optimized hover scale - uses CSS transform instead of JS */
   .hover-scale {
     @apply transition-transform duration-300 ease-out;
+    will-change: transform;
   }
   
   .hover-scale:hover {
     @apply scale-105 -translate-y-2;
+  }
+  
+  /* Disable animations for users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .hover-scale {
+      @apply transition-none;
+    }
+    
+    .hover-scale:hover {
+      @apply scale-100 translate-y-0;
+    }
+    
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
