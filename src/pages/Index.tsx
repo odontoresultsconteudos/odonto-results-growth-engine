@@ -7,15 +7,12 @@ import blogPost2 from "@/assets/blog-post-2.webp";
 import blogPost3 from "@/assets/blog-post-3.webp";
 import Header from "@/components/Header";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { BeamsBackground } from "@/components/ui/beams-background";
 import { SEO } from "@/components/SEO";
 import { ResponsiveImage } from "@/components/ResponsiveImage";
 import { lazy, Suspense } from "react";
 
-// Lazy load motion for animations (reduces initial bundle)
-const motion = {
-  div: lazy(() => import("motion/react").then(m => ({ default: m.motion.div }))),
-};
+// Lazy load heavy components for better initial load
+const BeamsBackground = lazy(() => import("@/components/ui/beams-background").then(m => ({ default: m.BeamsBackground })));
 
 const Index = () => {
   const organizationSchema = {
@@ -124,7 +121,8 @@ const Index = () => {
 
       <main className="min-h-screen">
         {/* 2) Hero Section - Com Beams Background */}
-        <BeamsBackground className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary via-primary to-secondary" intensity="medium">
+        <Suspense fallback={<div className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary via-primary to-secondary"><div className="relative z-10 max-w-4xl mx-auto text-center py-20"><div className="h-96 animate-pulse bg-secondary/20 rounded-lg"></div></div></div>}>
+          <BeamsBackground className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary via-primary to-secondary" intensity="medium">
           <div className="relative z-10 max-w-4xl mx-auto text-center py-20">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground animate-fade-in">
               Bata recorde de faturamento com pacientes certos na sua agenda
@@ -144,6 +142,7 @@ const Index = () => {
 
           </div>
         </BeamsBackground>
+        </Suspense>
 
         {/* 3) Prova Social - Contadores */}
         <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/30">
