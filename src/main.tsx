@@ -4,14 +4,13 @@ import "./index.css";
 
 createRoot(document.getElementById("root")!).render(<App />);
 
-// Register service worker
+// Register service worker with requestIdleCallback for better performance
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
-  window.addEventListener('load', () => {
+  const registerServiceWorker = () => {
     import('virtual:pwa-register').then(({ registerSW }) => {
       registerSW({
         immediate: true,
         onNeedRefresh() {
-          // Auto-update when new content available
           console.log('New content available, updating...');
         },
         onOfflineReady() {
@@ -19,5 +18,16 @@ if ('serviceWorker' in navigator && import.meta.env.PROD) {
         },
       });
     });
-  });
+  };
+
+  // Use requestIdleCallback to avoid blocking main thread
+  const scheduleRegistration = () => {
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(() => registerServiceWorker(), { timeout: 2000 });
+    } else {
+      registerServiceWorker();
+    }
+  };
+
+  window.addEventListener('load', scheduleRegistration);
 }
