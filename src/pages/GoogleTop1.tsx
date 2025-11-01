@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import { MapPin, Search, Star, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SEO } from "@/components/SEO";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const GoogleTop1 = () => {
   const breadcrumbSchema = {
@@ -33,7 +32,6 @@ const GoogleTop1 = () => {
         structuredData={breadcrumbSchema}
       />
       <Header />
-      <Breadcrumbs items={[{ label: "Google Top 1", href: "/google-top-1" }]} />
       
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">

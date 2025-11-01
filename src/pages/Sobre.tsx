@@ -5,7 +5,6 @@ import alexGurraoCeo from "@/assets/alex-gurrao-ceo.webp";
 import viniciusRagazziCoo from "@/assets/vinicius-ragazzi-coo.webp";
 import Header from "@/components/Header";
 import { SEO } from "@/components/SEO";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const Sobre = () => {
   const breadcrumbSchema = {
@@ -45,7 +44,6 @@ const Sobre = () => {
         structuredData={[breadcrumbSchema, teamSchema]}
       />
       <Header />
-      <Breadcrumbs items={[{ label: "Sobre", href: "/sobre" }]} />
       
       <main className="min-h-screen">
         {/* Hero Section */}

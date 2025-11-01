@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import { Target, TrendingUp, Users, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SEO } from "@/components/SEO";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const Captacao = () => {
   const breadcrumbSchema = {
@@ -44,7 +43,6 @@ const Captacao = () => {
         structuredData={[breadcrumbSchema, serviceSchema]}
       />
       <Header />
-      <Breadcrumbs items={[{ label: "Captação de Leads", href: "/captacao" }]} />
       
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">

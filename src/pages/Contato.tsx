@@ -5,7 +5,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Mail, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import { SEO } from "@/components/SEO";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const Contato = () => {
   const breadcrumbSchema = {
@@ -41,7 +40,6 @@ const Contato = () => {
         structuredData={[breadcrumbSchema, contactSchema]}
       />
       <Header />
-      <Breadcrumbs items={[{ label: "Contato", href: "/contato" }]} />
       
       <main className="min-h-screen">
         {/* Hero Section */}

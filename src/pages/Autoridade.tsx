@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import { Award, Eye, Star, Video } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SEO } from "@/components/SEO";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const Autoridade = () => {
   const breadcrumbSchema = {
@@ -32,7 +31,6 @@ const Autoridade = () => {
         structuredData={breadcrumbSchema}
       />
       <Header />
-      <Breadcrumbs items={[{ label: "Vitrine de Autoridade", href: "/autoridade" }]} />
       
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
