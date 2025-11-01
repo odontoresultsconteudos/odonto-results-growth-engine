@@ -1,4 +1,4 @@
-# Otimizações TBT (Total Blocking Time)
+# Otimizações TBT (Total Blocking Time) - Parte 2
 
 ## Problema Identificado
 - **Performance Score: 58/100**
@@ -6,7 +6,7 @@
 - **Speed Index: 8,7s** ❌
 - Facebook Pixel: 124 KiB sem cache apropriado
 
-## Otimizações Implementadas
+## Otimizações Implementadas - Fase 1
 
 ### 1. GTM/Facebook Pixel - requestIdleCallback
 **Arquivo:** `index.html`
@@ -150,18 +150,84 @@ terserOptions: {
 ### 7. Build Config Otimizações
 ```javascript
 chunkSizeWarningLimit: 600,  // Limite menor = chunks menores
-cssMinify: 'lightningcss',   // Minificador CSS mais rápido
 assetsInlineLimit: 2048,     // Inline apenas assets muito pequenos
 reportCompressedSize: false, // Build mais rápido
 sourcemap: false,            // Produção sem sourcemaps
 ```
 
+## Otimizações Implementadas - Fase 2
+
+### 8. OptimizedMotion Component
+**Arquivo:** `src/components/OptimizedMotion.tsx`
+
+**Funcionalidades:**
+- Respeita `prefers-reduced-motion` (acessibilidade)
+- Usa `will-change` para aceleração GPU
+- Simplifica transitions para melhor performance
+- Fallback sem animação quando necessário
+
+**Impacto:**
+- Reduz computação CSS durante animações
+- Respeita preferências de acessibilidade
+- GPU acceleration reduz load da CPU
+
+### 9. Route Prefetching
+**Arquivo:** `src/components/PrefetchLinks.tsx`
+
+**Estratégia:**
+```javascript
+// Prefetch rotas críticas após idle
+if ('requestIdleCallback' in window) {
+  requestIdleCallback(() => {
+    ['/captacao', '/autoridade', '/agendamento', '/crm']
+      .forEach(route => prefetch(route));
+  }, { timeout: 5000 });
+}
+```
+
+**Impacto:**
+- Navegação instantânea para páginas principais
+- Não bloqueia carregamento inicial (usa requestIdleCallback)
+- Reduz TBT em navegações subsequentes
+
+### 10. Reduced Motion Hook
+**Arquivo:** `src/hooks/useReducedMotion.ts`
+
+**Funcionalidade:**
+- Detecta preferência do usuário por animações reduzidas
+- Usado pelo OptimizedMotion para pular animações
+
+**Impacto:**
+- Acessibilidade melhorada
+- Reduz CPU/GPU em dispositivos lentos que desabilitam animações
+
+### 11. Workbox Cache para JS/CSS
+**Arquivo:** `vite.config.ts`
+
+**Nova estratégia:**
+```javascript
+{
+  urlPattern: /\.(?:js|css)$/i,
+  handler: 'StaleWhileRevalidate',
+  cacheName: 'static-resources',
+  expiration: {
+    maxEntries: 60,
+    maxAgeSeconds: 60 * 60 * 24 * 30 // 30 dias
+  }
+}
+```
+
+**Impacto:**
+- Visitas repetidas: parse time reduzido drasticamente
+- Cache inteligente: serve do cache enquanto revalida em background
+- 30 dias de cache para recursos estáticos
+
 ## Resultados Esperados
 
 ### Métricas Alvo
-- **TBT:** De 20.070 ms → **< 300 ms** ⬇️ 98%
-- **Speed Index:** De 8,7s → **< 3,5s** ⬇️ 60%
-- **Performance Score:** De 58 → **85-95** ⬆️ 47-64%
+- **TBT:** De 20.070 ms → **< 200 ms** ⬇️ 99%
+- **Speed Index:** De 8,7s → **< 3,0s** ⬇️ 65%
+- **Performance Score:** De 58 → **90-95** ⬆️ 55-64%
 - **FCP:** Mantém ~1,9s ✅
 - **LCP:** Mantém ~2,3s ✅
 
@@ -179,9 +245,32 @@ sourcemap: false,            // Produção sem sourcemaps
 3. **Service Worker não bloqueia** (-1s)
    - Registro adiado para quando navegador está idle
 
-4. **Cache agressivo em visitas repetidas** (-1s)
+4. **Animações otimizadas** (-0,5s)
+   - OptimizedMotion usa GPU acceleration
+   - Respeita prefers-reduced-motion
+   - Transitions simplificadas
+
+5. **Route prefetching inteligente** (-0,5s em navegações)
+   - Prefetch apenas quando idle
+   - Navegação instantânea para páginas principais
+
+6. **Cache agressivo em visitas repetidas** (-1s)
    - JS/CSS já parseados vem do cache
    - Reduz parse time drasticamente
+
+## Arquivos Criados
+
+### Novos Componentes
+- `src/components/OptimizedMotion.tsx` - Motion otimizado com GPU acceleration
+- `src/components/PrefetchLinks.tsx` - Prefetch inteligente de rotas
+- `src/components/LazyMotion.tsx` - Lazy loading de Motion components
+- `src/hooks/useReducedMotion.ts` - Hook para detectar prefers-reduced-motion
+
+### Arquivos Modificados
+- `index.html` - GTM com requestIdleCallback
+- `src/main.tsx` - Service Worker com requestIdleCallback
+- `vite.config.ts` - Code splitting + Terser + Cache strategies
+- `src/App.tsx` - Integração do PrefetchLinks
 
 ## Próximos Passos
 
@@ -193,12 +282,39 @@ sourcemap: false,            // Produção sem sourcemaps
    - WebPageTest.org
    ```
 
-2. **Se TBT ainda alto (>300ms):**
-   - Considerar remover Motion library (20 KiB + overhead)
-   - Implementar tree-shaking manual de Radix UI
-   - Adiar carregamento de Lucide icons
+2. **Se TBT ainda alto (>200ms):**
+   - Considerar remover Motion library completamente
+   - Substituir por CSS animations puras
+   - Implementar virtual scrolling para listas longas
 
 3. **Monitoramento:**
    - Core Web Vitals no Google Search Console
    - PageSpeed Insights semanal
    - Real User Monitoring (se disponível)
+
+## Próximas Otimizações Possíveis (Se Necessário)
+
+### A. Remover Motion Library Completamente
+- Substituir por CSS animations (0 KB JavaScript)
+- Usar `@keyframes` e `transition` CSS
+- Economia: ~20 KB minificado + overhead de runtime
+
+### B. Lazy Load BeamsBackground
+- Carregar apenas quando visível (Intersection Observer)
+- Economia: ~5 KB + canvas rendering overhead
+
+### C. Font Optimization
+- Usar `font-display: swap`
+- Preload critical font weights
+- Subset fonts para caracteres usados
+
+### D. Critical CSS Extraction
+- Inline CSS crítico no `<head>`
+- Async load do restante do CSS
+- Reduz render blocking
+
+### E. Image Optimization
+- Converter para AVIF (fallback WebP)
+- Lazy loading mais agressivo
+- Blur-up placeholder technique
+
