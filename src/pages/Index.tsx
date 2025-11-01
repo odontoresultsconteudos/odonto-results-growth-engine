@@ -10,6 +10,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { BeamsBackground } from "@/components/ui/beams-background";
 import { motion } from "motion/react";
 import { SEO } from "@/components/SEO";
+import { ResponsiveImage } from "@/components/ResponsiveImage";
 
 const Index = () => {
   const organizationSchema = {
@@ -667,14 +668,14 @@ const Index = () => {
               <a href="https://blog.odontoresults.com.br/post/metodo-paciente-previsivel-odonto-results" target="_blank" rel="noopener noreferrer" className="block group">
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
-                    <img 
+                    <ResponsiveImage 
                       src={blogPost1} 
                       alt="Método Paciente Previsível" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
-                      width="800" 
-                      height="450" 
+                      width={800} 
+                      height={450} 
                       loading="lazy"
-                      decoding="async"
+                      sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px"
                     />
                   </div>
                   <div className="p-6">
@@ -691,14 +692,14 @@ const Index = () => {
               <a href="https://blog.odontoresults.com.br/post/calculadora-de-marketing-odontologico-como-definir-investimentos" target="_blank" rel="noopener noreferrer" className="block group">
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
-                    <img 
+                    <ResponsiveImage 
                       src={blogPost2} 
                       alt="Calculadora de marketing odontológico" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
-                      width="800" 
-                      height="450" 
+                      width={800} 
+                      height={450} 
                       loading="lazy"
-                      decoding="async"
+                      sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px"
                     />
                   </div>
                   <div className="p-6">
@@ -715,14 +716,14 @@ const Index = () => {
               <a href="https://blog.odontoresults.com.br/post/marketing-odontologico-2025-guia-completo-atrair-pacientes" target="_blank" rel="noopener noreferrer" className="block group">
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
-                    <img 
+                    <ResponsiveImage 
                       src={blogPost3} 
                       alt="Marketing Odontológico em 2025" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
-                      width="800" 
-                      height="450" 
+                      width={800} 
+                      height={450} 
                       loading="lazy"
-                      decoding="async"
+                      sizes="(max-width: 640px) 400px, 1200px"
                     />
                   </div>
                   <div className="p-6">
