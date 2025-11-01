@@ -8,9 +8,14 @@ import blogPost3 from "@/assets/blog-post-3.webp";
 import Header from "@/components/Header";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { BeamsBackground } from "@/components/ui/beams-background";
-import { motion } from "motion/react";
 import { SEO } from "@/components/SEO";
 import { ResponsiveImage } from "@/components/ResponsiveImage";
+import { lazy, Suspense } from "react";
+
+// Lazy load motion for animations (reduces initial bundle)
+const motion = {
+  div: lazy(() => import("motion/react").then(m => ({ default: m.motion.div }))),
+};
 
 const Index = () => {
   const organizationSchema = {
@@ -121,47 +126,21 @@ const Index = () => {
         {/* 2) Hero Section - Com Beams Background */}
         <BeamsBackground className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary via-primary to-secondary" intensity="medium">
           <div className="relative z-10 max-w-4xl mx-auto text-center py-20">
-            <motion.h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground" initial={{
-            opacity: 0,
-            x: -50
-          }} animate={{
-            opacity: 1,
-            x: 0
-          }} transition={{
-            duration: 0.8
-          }}>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground animate-fade-in">
               Bata recorde de faturamento com pacientes certos na sua agenda
-            </motion.h1>
-            <motion.p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto" initial={{
-            opacity: 0,
-            x: -50
-          }} animate={{
-            opacity: 1,
-            x: 0
-          }} transition={{
-            duration: 0.8,
-            delay: 0.2
-          }}>
+            </h1>
+            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-fade-in [animation-delay:200ms]">
               Captação de Leads Qualificados, Vitrine de Autoridade, Google Top 1, Agendamento Profissional (CRC + IA) e CRM inteligente para transformar leads em pacientes.
-            </motion.p>
+            </p>
             
-            <motion.div className="flex flex-col sm:flex-row gap-4 justify-center mb-8" initial={{
-            opacity: 0,
-            x: -50
-          }} animate={{
-            opacity: 1,
-            x: 0
-          }} transition={{
-            duration: 0.8,
-            delay: 0.4
-          }}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 animate-fade-in [animation-delay:400ms]">
               <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
                 <Button variant="cta" size="lg" className="text-lg w-full sm:w-auto">
                   Agende uma Apresentação
                   <ArrowRight className="ml-2" />
                 </Button>
               </a>
-            </motion.div>
+            </div>
 
           </div>
         </BeamsBackground>
@@ -374,111 +353,63 @@ const Index = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <motion.div whileHover={{
-              scale: 1.05,
-              y: -8
-            }} transition={{
-              duration: 0.3,
-              ease: "easeOut"
-            }} className="h-full">
-                <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                    <MessageSquare className="w-6 h-6 text-accent" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">CRC + IA 24h</h3>
-                  <p className="text-muted-foreground">
-                    Rapidez e consistência no primeiro contato.
-                  </p>
-                </Card>
-              </motion.div>
+              <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5 hover-scale">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                  <MessageSquare className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">CRC + IA 24h</h3>
+                <p className="text-muted-foreground">
+                  Rapidez e consistência no primeiro contato.
+                </p>
+              </Card>
 
-              <motion.div whileHover={{
-              scale: 1.05,
-              y: -8
-            }} transition={{
-              duration: 0.3,
-              ease: "easeOut"
-            }} className="h-full">
-                <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                    <TrendingUp className="w-6 h-6 text-accent" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">Google Top 1 local</h3>
-                  <p className="text-muted-foreground">
-                    Método focado em buscas da sua região (Top 3, em média).
-                  </p>
-                </Card>
-              </motion.div>
+              <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5 hover-scale">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                  <TrendingUp className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Google Top 1 local</h3>
+                <p className="text-muted-foreground">
+                  Método focado em buscas da sua região (Top 3, em média).
+                </p>
+              </Card>
 
-              <motion.div whileHover={{
-              scale: 1.05,
-              y: -8
-            }} transition={{
-              duration: 0.3,
-              ease: "easeOut"
-            }} className="h-full">
-                <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                    <Target className="w-6 h-6 text-accent" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">Criativos por tratamento</h3>
-                  <p className="text-muted-foreground">
-                    Linguagem e intenção que viram consulta.
-                  </p>
-                </Card>
-              </motion.div>
+              <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5 hover-scale">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                  <Target className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Criativos por tratamento</h3>
+                <p className="text-muted-foreground">
+                  Linguagem e intenção que viram consulta.
+                </p>
+              </Card>
 
-              <motion.div whileHover={{
-              scale: 1.05,
-              y: -8
-            }} transition={{
-              duration: 0.3,
-              ease: "easeOut"
-            }} className="h-full">
-                <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                    <BarChart3 className="w-6 h-6 text-accent" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">Funil operacional</h3>
-                  <p className="text-muted-foreground">
-                    Prioridade por valor/urgência e follow-up estruturado.
-                  </p>
-                </Card>
-              </motion.div>
+              <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5 hover-scale">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                  <BarChart3 className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Funil operacional</h3>
+                <p className="text-muted-foreground">
+                  Prioridade por valor/urgência e follow-up estruturado.
+                </p>
+              </Card>
 
-              <motion.div whileHover={{
-              scale: 1.05,
-              y: -8
-            }} transition={{
-              duration: 0.3,
-              ease: "easeOut"
-            }} className="h-full">
-                <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                    <Users className="w-6 h-6 text-accent" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">Equipe especializada</h3>
-                  <p className="text-muted-foreground">Mais de 5 anos de experiência com clínicas odontológicas.</p>
-                </Card>
-              </motion.div>
+              <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5 hover-scale">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                  <Users className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Equipe especializada</h3>
+                <p className="text-muted-foreground">Mais de 5 anos de experiência com clínicas odontológicas.</p>
+              </Card>
 
-              <motion.div whileHover={{
-              scale: 1.05,
-              y: -8
-            }} transition={{
-              duration: 0.3,
-              ease: "easeOut"
-            }} className="h-full">
-                <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                    <Zap className="w-6 h-6 text-accent" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">Onboarding rápido</h3>
-                  <p className="text-muted-foreground">
-                    Entramos no ar em até 7 dias após o kick-off.
-                  </p>
-                </Card>
-              </motion.div>
+              <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5 hover-scale">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                  <Zap className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Onboarding rápido</h3>
+                <p className="text-muted-foreground">
+                  Entramos no ar em até 7 dias após o kick-off.
+                </p>
+              </Card>
             </div>
           </div>
         </section>
