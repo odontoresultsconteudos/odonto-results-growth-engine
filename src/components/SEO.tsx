@@ -7,7 +7,8 @@ interface SEOProps {
   canonical?: string;
   ogImage?: string;
   ogType?: string;
-  structuredData?: object;
+  structuredData?: object | object[];
+  preloadImages?: string[];
 }
 
 export const SEO = ({ 
@@ -17,7 +18,8 @@ export const SEO = ({
   canonical = 'https://odontoresults.com.br',
   ogImage = 'https://odontoresults.com.br/og-image.jpg',
   ogType = 'website',
-  structuredData
+  structuredData,
+  preloadImages = []
 }: SEOProps) => {
   const fullTitle = `${title} | Odonto Results`;
   
@@ -28,6 +30,17 @@ export const SEO = ({
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={canonical} />
+      
+      {/* Preload critical images */}
+      {preloadImages.map((imageUrl, index) => (
+        <link 
+          key={index}
+          rel="preload" 
+          as="image" 
+          href={imageUrl}
+          fetchPriority={index === 0 ? "high" : "low"}
+        />
+      ))}
       
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
@@ -47,7 +60,7 @@ export const SEO = ({
       {/* Structured Data */}
       {structuredData && (
         <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
+          {JSON.stringify(Array.isArray(structuredData) ? structuredData : structuredData)}
         </script>
       )}
     </Helmet>
