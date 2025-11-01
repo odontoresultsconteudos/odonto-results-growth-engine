@@ -223,134 +223,64 @@ const Index = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <a href="/captacao" className="block h-full">
-                <motion.div whileHover={{
-                scale: 1.05,
-                y: -8
-              }} transition={{
-                duration: 0.3,
-                ease: "easeOut"
-              }} className="h-full">
-                  <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                    <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
-                    rotate: 360,
-                    scale: 1.1
-                  }} transition={{
-                    duration: 0.6,
-                    ease: "easeInOut"
-                  }}>
-                      <Target className="w-6 h-6 text-accent" />
-                    </motion.div>
-                    <h3 className="text-xl font-bold mb-3">Captação de Leads Qualificados</h3>
-                    <p className="text-muted-foreground">
-                      Anúncios segmentados por tratamento e localização no Facebook, Instagram e Google.
-                    </p>
-                  </Card>
-                </motion.div>
+              <a href="/captacao" className="block h-full hover-scale">
+                <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                    <Target className="w-6 h-6 text-accent" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">Captação de Leads Qualificados</h3>
+                  <p className="text-muted-foreground">
+                    Anúncios segmentados por tratamento e localização no Facebook, Instagram e Google.
+                  </p>
+                </Card>
               </a>
 
-              <a href="/autoridade" className="block h-full">
-                <motion.div whileHover={{
-                scale: 1.05,
-                y: -8
-              }} transition={{
-                duration: 0.3,
-                ease: "easeOut"
-              }} className="h-full">
-                  <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                    <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
-                    rotate: 360,
-                    scale: 1.1
-                  }} transition={{
-                    duration: 0.6,
-                    ease: "easeInOut"
-                  }}>
-                      <Star className="w-6 h-6 text-accent" />
-                    </motion.div>
-                    <h3 className="text-xl font-bold mb-3">Vitrine de Autoridade</h3>
-                    <p className="text-muted-foreground">
-                      Conteúdo estratégico que reduz o risco percebido e aumenta a confiança.
-                    </p>
-                  </Card>
-                </motion.div>
+              <a href="/autoridade" className="block h-full hover-scale">
+                <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                    <Star className="w-6 h-6 text-accent" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">Vitrine de Autoridade</h3>
+                  <p className="text-muted-foreground">
+                    Conteúdo estratégico que reduz o risco percebido e aumenta a confiança.
+                  </p>
+                </Card>
               </a>
 
-              <a href="/google-top-1" className="block h-full">
-                <motion.div whileHover={{
-                scale: 1.05,
-                y: -8
-              }} transition={{
-                duration: 0.3,
-                ease: "easeOut"
-              }} className="h-full">
-                  <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                    <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
-                    rotate: 360,
-                    scale: 1.1
-                  }} transition={{
-                    duration: 0.6,
-                    ease: "easeInOut"
-                  }}>
-                      <TrendingUp className="w-6 h-6 text-accent" />
-                    </motion.div>
-                    <h3 className="text-xl font-bold mb-3">Google Top 1</h3>
-                    <p className="text-muted-foreground">
-                      Otimização de Google Maps e SEO local para alcançar o topo das buscas da sua região.
-                    </p>
-                  </Card>
-                </motion.div>
+              <a href="/google-top-1" className="block h-full hover-scale">
+                <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                    <TrendingUp className="w-6 h-6 text-accent" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">Google Top 1</h3>
+                  <p className="text-muted-foreground">
+                    Otimização de Google Maps e SEO local para alcançar o topo das buscas da sua região.
+                  </p>
+                </Card>
               </a>
 
-              <a href="/agendamento" className="block h-full">
-                <motion.div whileHover={{
-                scale: 1.05,
-                y: -8
-              }} transition={{
-                duration: 0.3,
-                ease: "easeOut"
-              }} className="h-full">
-                  <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                    <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
-                    rotate: 360,
-                    scale: 1.1
-                  }} transition={{
-                    duration: 0.6,
-                    ease: "easeInOut"
-                  }}>
-                      <Calendar className="w-6 h-6 text-accent" />
-                    </motion.div>
-                    <h3 className="text-xl font-bold mb-3">Agendamento Profissional</h3>
-                    <p className="text-muted-foreground">
-                      CRC treinada + IA 24h no WhatsApp para garantir velocidade e consistência no atendimento.
-                    </p>
-                  </Card>
-                </motion.div>
+              <a href="/agendamento" className="block h-full hover-scale">
+                <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                    <Calendar className="w-6 h-6 text-accent" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">Agendamento Profissional</h3>
+                  <p className="text-muted-foreground">
+                    CRC treinada + IA 24h no WhatsApp para garantir velocidade e consistência no atendimento.
+                  </p>
+                </Card>
               </a>
 
-              <a href="/crm" className="block h-full">
-                <motion.div whileHover={{
-                scale: 1.05,
-                y: -8
-              }} transition={{
-                duration: 0.3,
-                ease: "easeOut"
-              }} className="h-full">
-                  <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
-                    <motion.div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4" whileHover={{
-                    rotate: 360,
-                    scale: 1.1
-                  }} transition={{
-                    duration: 0.6,
-                    ease: "easeInOut"
-                  }}>
-                      <BarChart3 className="w-6 h-6 text-accent" />
-                    </motion.div>
-                    <h3 className="text-xl font-bold mb-3">CRM Inteligente</h3>
-                    <p className="text-muted-foreground">
-                      Funil claro com foco em Agendamento e Comparecimento, tarefas e automações que aumentam aproveitamento.
-                    </p>
-                  </Card>
-                </motion.div>
+              <a href="/crm" className="block h-full hover-scale">
+                <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                    <BarChart3 className="w-6 h-6 text-accent" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">CRM Inteligente</h3>
+                  <p className="text-muted-foreground">
+                    Funil claro com foco em Agendamento e Comparecimento, tarefas e automações que aumentam aproveitamento.
+                  </p>
+                </Card>
               </a>
             </div>
 
@@ -375,93 +305,61 @@ const Index = () => {
             </div>
 
             <div className="space-y-6">
-              <motion.div whileHover={{
-              scale: 1.05,
-              y: -8
-            }} transition={{
-              duration: 0.3,
-              ease: "easeOut"
-            }}>
-                <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 hover:bg-accent/5">
-                  <div className="flex items-start gap-6">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
-                      1
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold mb-3">Diagnóstico</h3>
-                      <p className="text-muted-foreground text-lg">
-                        Entendemos sua região, metas e tratamentos prioritários.
-                      </p>
-                    </div>
+              <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 hover:bg-accent/5 hover-scale">
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
+                    1
                   </div>
-                </Card>
-              </motion.div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-3">Diagnóstico</h3>
+                    <p className="text-muted-foreground text-lg">
+                      Entendemos sua região, metas e tratamentos prioritários.
+                    </p>
+                  </div>
+                </div>
+              </Card>
 
-              <motion.div whileHover={{
-              scale: 1.05,
-              y: -8
-            }} transition={{
-              duration: 0.3,
-              ease: "easeOut"
-            }}>
-                <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 hover:bg-accent/5">
-                  <div className="flex items-start gap-6">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
-                      2
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold mb-3">Plano de Tráfego e Conteúdo</h3>
-                      <p className="text-muted-foreground text-lg">
-                        Segmentação por tratamento, criativos e calendário editorial.
-                      </p>
-                    </div>
+              <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 hover:bg-accent/5 hover-scale">
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
+                    2
                   </div>
-                </Card>
-              </motion.div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-3">Plano de Tráfego e Conteúdo</h3>
+                    <p className="text-muted-foreground text-lg">
+                      Segmentação por tratamento, criativos e calendário editorial.
+                    </p>
+                  </div>
+                </div>
+              </Card>
 
-              <motion.div whileHover={{
-              scale: 1.05,
-              y: -8
-            }} transition={{
-              duration: 0.3,
-              ease: "easeOut"
-            }}>
-                <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 hover:bg-accent/5">
-                  <div className="flex items-start gap-6">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
-                      3
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold mb-3">Aquisição & Agendamento</h3>
-                      <p className="text-muted-foreground text-lg">
-                        Mídia ativa + CRC e IA 24/7 com protocolo de confirmação.
-                      </p>
-                    </div>
+              <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 hover:bg-accent/5 hover-scale">
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
+                    3
                   </div>
-                </Card>
-              </motion.div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-3">Aquisição & Agendamento</h3>
+                    <p className="text-muted-foreground text-lg">
+                      Mídia ativa + CRC e IA 24/7 com protocolo de confirmação.
+                    </p>
+                  </div>
+                </div>
+              </Card>
 
-              <motion.div whileHover={{
-              scale: 1.05,
-              y: -8
-            }} transition={{
-              duration: 0.3,
-              ease: "easeOut"
-            }}>
-                <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 hover:bg-accent/5">
-                  <div className="flex items-start gap-6">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
-                      4
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold mb-3">Gestão do Funil</h3>
-                      <p className="text-muted-foreground text-lg">
-                        Acompanhamos Agendamento e Comparecimento e otimizamos continuamente.
-                      </p>
-                    </div>
+              <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 hover:bg-accent/5 hover-scale">
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold text-xl">
+                    4
                   </div>
-                </Card>
-              </motion.div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-3">Gestão do Funil</h3>
+                    <p className="text-muted-foreground text-lg">
+                      Acompanhamos Agendamento e Comparecimento e otimizamos continuamente.
+                    </p>
+                  </div>
+                </div>
+              </Card>
             </div>
 
             <div className="text-center mt-12">
@@ -610,14 +508,7 @@ const Index = () => {
             <div className="space-y-3 mb-8 max-w-2xl mx-auto">
               {/* Leads Gerados - 75% largura */}
               <div className="w-[75%] mx-auto">
-                <motion.div whileHover={{
-                scale: 1.05,
-                y: -8
-              }} transition={{
-                duration: 0.3,
-                ease: "easeOut"
-              }}>
-                  <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm hover:shadow-2xl hover:bg-accent/15">
+                <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm hover:shadow-2xl hover:bg-accent/15 transition-all hover-scale">
                   <div className="flex items-center justify-between flex-wrap gap-2">
                     <div className="flex items-center gap-2">
                       <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
@@ -633,12 +524,10 @@ const Index = () => {
                       <p className="text-muted-foreground text-xs">Custo por Lead: R$ 17,00</p>
                     </div>
                   </div>
-                  {/* Barra de progresso completa */}
                   <div className="mt-2 h-1 bg-secondary/30 rounded-full overflow-hidden">
                     <div className="h-full bg-gradient-to-r from-accent to-accent w-full"></div>
                   </div>
                 </Card>
-                </motion.div>
               </div>
 
               {/* Conector */}
@@ -652,14 +541,7 @@ const Index = () => {
 
               {/* Agendamentos - 65% largura */}
               <div className="w-[65%] mx-auto">
-                <motion.div whileHover={{
-                scale: 1.05,
-                y: -8
-              }} transition={{
-                duration: 0.3,
-                ease: "easeOut"
-              }}>
-                  <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm hover:shadow-2xl hover:bg-accent/15">
+                <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm hover:shadow-2xl hover:bg-accent/15 transition-all hover-scale">
                   <div className="flex items-center justify-between flex-wrap gap-2">
                     <div className="flex items-center gap-2">
                       <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
@@ -675,12 +557,10 @@ const Index = () => {
                       <p className="text-muted-foreground text-xs">Custo: R$ 56,82</p>
                     </div>
                   </div>
-                  {/* Barra de progresso 30% */}
                   <div className="mt-2 h-1 bg-secondary/30 rounded-full overflow-hidden">
                     <div className="h-full bg-gradient-to-r from-accent to-accent w-[30%]"></div>
                   </div>
                 </Card>
-                </motion.div>
               </div>
 
               {/* Conector */}
@@ -694,14 +574,7 @@ const Index = () => {
 
               {/* Comparecimentos - 55% largura */}
               <div className="w-[55%] mx-auto">
-                <motion.div whileHover={{
-                scale: 1.05,
-                y: -8
-              }} transition={{
-                duration: 0.3,
-                ease: "easeOut"
-              }}>
-                  <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm hover:shadow-2xl hover:bg-accent/15">
+                <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm hover:shadow-2xl hover:bg-accent/15 transition-all hover-scale">
                   <div className="flex items-center justify-between flex-wrap gap-2">
                     <div className="flex items-center gap-2">
                       <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
@@ -717,12 +590,10 @@ const Index = () => {
                       <p className="text-muted-foreground text-xs">Custo: R$ 172,41</p>
                     </div>
                   </div>
-                  {/* Barra de progresso 33% de 30% = ~10% */}
                   <div className="mt-2 h-1 bg-secondary/30 rounded-full overflow-hidden">
                     <div className="h-full bg-gradient-to-r from-accent to-accent w-[10%]"></div>
                   </div>
                 </Card>
-                </motion.div>
               </div>
 
               {/* Conector */}
@@ -736,14 +607,7 @@ const Index = () => {
 
               {/* Fechamentos - 45% largura */}
               <div className="w-[45%] mx-auto">
-                <motion.div whileHover={{
-                scale: 1.05,
-                y: -8
-              }} transition={{
-                duration: 0.3,
-                ease: "easeOut"
-              }}>
-                  <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm hover:shadow-2xl hover:bg-accent/15">
+                <Card className="p-3 sm:p-4 bg-accent/10 backdrop-blur-sm border-accent/40 shadow-sm hover:shadow-2xl hover:bg-accent/15 transition-all hover-scale">
                   <div className="flex items-center justify-between flex-wrap gap-2">
                     <div className="flex items-center gap-2">
                       <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
@@ -759,55 +623,29 @@ const Index = () => {
                       <p className="text-muted-foreground text-xs">Custo: R$ 526,32</p>
                     </div>
                   </div>
-                  {/* Barra de progresso 33% de 10% = ~3% */}
                   <div className="mt-2 h-1 bg-secondary/30 rounded-full overflow-hidden">
                     <div className="h-full bg-gradient-to-r from-accent to-accent w-[3%]"></div>
                   </div>
                 </Card>
-                </motion.div>
               </div>
             </div>
 
             {/* Cards de Métricas - Abaixo do Funil */}
             <div className="grid sm:grid-cols-3 gap-4 mb-8">
-              <motion.div whileHover={{
-              scale: 1.05,
-              y: -8
-            }} transition={{
-              duration: 0.3,
-              ease: "easeOut"
-            }}>
-                <Card className="p-4 sm:p-6 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20 hover:shadow-2xl hover:bg-primary/20 transition-all">
-                  <p className="text-xs sm:text-sm text-muted-foreground mb-2">Ticket Médio</p>
-                  <p className="text-xl sm:text-2xl font-bold text-foreground">R$ 5.000,00</p>
-                </Card>
-              </motion.div>
+              <Card className="p-4 sm:p-6 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20 hover:shadow-2xl hover:bg-primary/20 transition-all hover-scale">
+                <p className="text-xs sm:text-sm text-muted-foreground mb-2">Ticket Médio</p>
+                <p className="text-xl sm:text-2xl font-bold text-foreground">R$ 5.000,00</p>
+              </Card>
               
-              <motion.div whileHover={{
-              scale: 1.05,
-              y: -8
-            }} transition={{
-              duration: 0.3,
-              ease: "easeOut"
-            }}>
-                <Card className="p-4 sm:p-6 text-center bg-gradient-to-br from-accent/20 to-accent/10 border-accent/30 hover:shadow-2xl hover:bg-accent/25 transition-all">
-                  <p className="text-xs sm:text-sm text-muted-foreground mb-2">Faturamento</p>
-                  <p className="text-xl sm:text-2xl font-bold text-accent">R$ 95.000,00</p>
-                </Card>
-              </motion.div>
+              <Card className="p-4 sm:p-6 text-center bg-gradient-to-br from-accent/20 to-accent/10 border-accent/30 hover:shadow-2xl hover:bg-accent/25 transition-all hover-scale">
+                <p className="text-xs sm:text-sm text-muted-foreground mb-2">Faturamento</p>
+                <p className="text-xl sm:text-2xl font-bold text-accent">R$ 95.000,00</p>
+              </Card>
               
-              <motion.div whileHover={{
-              scale: 1.05,
-              y: -8
-            }} transition={{
-              duration: 0.3,
-              ease: "easeOut"
-            }}>
-                <Card className="p-4 sm:p-6 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20 hover:shadow-2xl hover:bg-primary/20 transition-all">
-                  <p className="text-xs sm:text-sm text-muted-foreground mb-2">ROI</p>
-                  <p className="text-xl sm:text-2xl font-bold text-foreground">9.50x</p>
-                </Card>
-              </motion.div>
+              <Card className="p-4 sm:p-6 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20 hover:shadow-2xl hover:bg-primary/20 transition-all hover-scale">
+                <p className="text-xs sm:text-sm text-muted-foreground mb-2">ROI</p>
+                <p className="text-xl sm:text-2xl font-bold text-foreground">9.50x</p>
+              </Card>
             </div>
 
             <div className="text-center">
