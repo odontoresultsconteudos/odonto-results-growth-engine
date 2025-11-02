@@ -113,9 +113,9 @@ const Index = () => {
 
   return <>
       <SEO 
-        title="Bata Recorde de Faturamento com Pacientes Certos na Cadeira"
-        description="Não só geramos leads — nós atraímos pacientes certos, agendamos, lembramos e acompanhamos até o comparecimento. Método Paciente Previsível completo para sua clínica."
-        keywords="pacientes para clínica odontológica, agendamento inteligente dentista, CRM odontológico, captação de pacientes qualificados, marketing para dentistas com resultados"
+        title="Bata Recorde de Faturamento Recebendo Pacientes Certos na Cadeira"
+        description="Atraímos, respondemos, agendamos e lembramos o paciente até ele sentar na sua cadeira através do Método Paciente Previsível para clínicas odontológicas."
+        keywords="pacientes para clínica odontológica, método paciente previsível, agendamento inteligente dentista, captação de pacientes qualificados, marketing para dentistas"
         canonical="https://odontoresults.com.br/"
         structuredData={[organizationSchema, localBusinessSchema, faqSchema]}
       />
@@ -127,10 +127,10 @@ const Index = () => {
           <BeamsBackground className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary via-primary to-secondary" intensity="medium">
           <div className="relative z-10 max-w-4xl mx-auto text-center py-20">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground animate-fade-in">
-              Bata recorde de faturamento colocando pacientes certos na sua cadeira — não só gerando lead
+              Bata recorde de faturamento recebendo pacientes certos na sua cadeira
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-fade-in [animation-delay:200ms]">
-              Nós atraímos os pacientes certos, respondemos por você, agendamos, lembramos o paciente da consulta e acompanhamos até ele sentar na sua cadeira. Esse é o Método Paciente Previsível: Captação de Leads Qualificados • Vitrine de Autoridade • Google Top 1 • Agendamento Profissional (CRC + IA 24h) • CRM Inteligente.
+              Atraímos, respondemos, agendamos e lembramos o paciente até ele sentar na sua cadeira através do Método Paciente Previsível.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 animate-fade-in [animation-delay:400ms]">
