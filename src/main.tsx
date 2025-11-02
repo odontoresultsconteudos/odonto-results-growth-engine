@@ -11,8 +11,8 @@ if (rootElement.hasChildNodes()) {
   createRoot(rootElement).render(<App />);
 }
 
-// Register service worker
-if ('serviceWorker' in navigator && import.meta.env.PROD) {
+// Register service worker (skip during react-snap)
+if ('serviceWorker' in navigator && import.meta.env.PROD && !navigator.userAgent.includes('ReactSnap')) {
   window.addEventListener('load', () => {
     import('virtual:pwa-register').then(({ registerSW }) => {
       registerSW({
