@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Target, Award, MapPin, Calendar, Database, TrendingUp, Quote } from "lucide-react";
 import alexGurraoCeo from "@/assets/alex-gurrao-ceo.webp";
 import viniciusRagazziCoo from "@/assets/vinicius-ragazzi-coo.webp";
 import Header from "@/components/Header";
@@ -34,14 +34,33 @@ const Sobre = () => {
     }
   };
 
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Odonto Results",
+    "description": "Agência de marketing odontológico especializada em fazer clínicas baterem recorde de faturamento colocando pacientes certos na cadeira",
+    "foundingDate": "2020-02",
+    "url": "https://odontoresults.com.br",
+    "logo": "https://odontoresults.com.br/og-image.jpg",
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "value": "50+"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1500"
+    }
+  };
+
   return (
     <>
       <SEO 
-        title="Sobre a Odonto Results - Nossa Equipe"
-        description="Conheça a equipe por trás da Odonto Results. Dr. Alex Gurrão, dentista e CEO, e Vinícius Ragazzi, especialista em marketing digital como CMO."
-        keywords="equipe Odonto Results, Dr Alex Gurrão, Vinícius Ragazzi, agência marketing odontológico"
+        title="Quem é a Odonto Results - Agência de Marketing Odontológico"
+        description="Conheça a Odonto Results: +1.500 clínicas atendidas, 500 mil leads gerados. Método Paciente Previsível para transformar sua clínica odontológica em máquina de faturamento."
+        keywords="Odonto Results, método paciente previsível, agência marketing odontológico, leads qualificados odontologia, equipe Odonto Results, Dr Alex Gurrão, Vinícius Ragazzi"
         canonical="https://odontoresults.com.br/sobre"
-        structuredData={[breadcrumbSchema, teamSchema]}
+        structuredData={[breadcrumbSchema, teamSchema, organizationSchema]}
       />
       <Header />
       
@@ -55,6 +74,110 @@ const Sobre = () => {
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Nossa equipe combina experiência clínica e expertise em marketing digital para transformar clínicas odontológicas.
             </p>
+          </div>
+        </section>
+
+        {/* Who We Are Section */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-secondary/30 via-background to-secondary/20">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+                Quem é a Odonto Results
+              </h2>
+              <p className="text-xl text-foreground font-semibold mb-4 max-w-4xl mx-auto">
+                Agência de marketing odontológico especializada em fazer clínicas baterem recorde de faturamento colocando pacientes certos na cadeira — não apenas gerando leads.
+              </p>
+              <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+                Criadora do <strong className="text-foreground">Método Paciente Previsível</strong>, a Odonto Results atua de ponta a ponta, conectando todas as etapas que transformam interesse em faturamento real:
+              </p>
+            </div>
+
+            {/* 5 Pillars Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              <Card className="p-6 hover:shadow-lg transition-shadow duration-300">
+                <Target className="w-12 h-12 text-accent mb-4" />
+                <h3 className="text-xl font-bold mb-3">Captação de Leads Qualificados</h3>
+                <p className="text-muted-foreground">
+                  Anúncios segmentados por tratamento e região para atrair pacientes ideais.
+                </p>
+              </Card>
+
+              <Card className="p-6 hover:shadow-lg transition-shadow duration-300">
+                <Award className="w-12 h-12 text-accent mb-4" />
+                <h3 className="text-xl font-bold mb-3">Vitrine de Autoridade</h3>
+                <p className="text-muted-foreground">
+                  Conteúdos que aumentam confiança e reduzem objeções antes do contato.
+                </p>
+              </Card>
+
+              <Card className="p-6 hover:shadow-lg transition-shadow duration-300">
+                <MapPin className="w-12 h-12 text-accent mb-4" />
+                <h3 className="text-xl font-bold mb-3">Google Top 1</h3>
+                <p className="text-muted-foreground">
+                  Otimização de presença local no Google Maps e SEO odontológico.
+                </p>
+              </Card>
+
+              <Card className="p-6 hover:shadow-lg transition-shadow duration-300">
+                <Calendar className="w-12 h-12 text-accent mb-4" />
+                <h3 className="text-xl font-bold mb-3">Agendamento Profissional</h3>
+                <p className="text-muted-foreground">
+                  CRC humana treinada e IA 24h no WhatsApp para conversão máxima.
+                </p>
+              </Card>
+
+              <Card className="p-6 hover:shadow-lg transition-shadow duration-300">
+                <Database className="w-12 h-12 text-accent mb-4" />
+                <h3 className="text-xl font-bold mb-3">CRM Inteligente</h3>
+                <p className="text-muted-foreground">
+                  Organiza, prioriza e acompanha cada contato até o fechamento.
+                </p>
+              </Card>
+
+              <Card className="p-6 bg-gradient-to-br from-accent/10 to-accent/5 border-accent/20 hover:shadow-lg transition-shadow duration-300">
+                <TrendingUp className="w-12 h-12 text-accent mb-4" />
+                <h3 className="text-xl font-bold mb-3">Resultado Comprovado</h3>
+                <p className="text-muted-foreground">
+                  Todas as especialidades: implantes, ortodontia, estética e harmonização facial.
+                </p>
+              </Card>
+            </div>
+
+            {/* Statistics */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div className="text-center">
+                <div className="text-5xl font-bold text-accent mb-2">1.500+</div>
+                <p className="text-muted-foreground text-lg">Clínicas Atendidas</p>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl font-bold text-accent mb-2">500 mil</div>
+                <p className="text-muted-foreground text-lg">Leads Gerados</p>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl font-bold text-accent mb-2">R$ 10M+</div>
+                <p className="text-muted-foreground text-lg">Em Tráfego Gerenciado</p>
+              </div>
+            </div>
+
+            {/* Focus Statement */}
+            <div className="text-center mb-8">
+              <p className="text-lg text-muted-foreground mb-2">
+                Nosso foco não é curtida ou visualização.
+              </p>
+              <p className="text-xl font-semibold text-foreground">
+                Nosso foco é previsibilidade de caixa, agenda cheia e crescimento mensurável para cada clínica.
+              </p>
+            </div>
+
+            {/* Quote */}
+            <Card className="p-8 bg-gradient-to-br from-primary/5 to-accent/5 border-accent/20">
+              <div className="flex items-start gap-4">
+                <Quote className="w-12 h-12 text-accent flex-shrink-0" />
+                <blockquote className="text-xl font-semibold text-foreground italic">
+                  "A Odonto Results não vende leads. A gente entrega pacientes decididos, comparecendo e iniciando tratamento."
+                </blockquote>
+              </div>
+            </Card>
           </div>
         </section>
 
