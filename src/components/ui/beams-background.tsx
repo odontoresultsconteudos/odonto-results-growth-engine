@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 interface AnimatedGradientBackgroundProps {
@@ -221,16 +220,8 @@ export function BeamsBackground({
                 }}
             />
 
-            <motion.div
-                className="absolute inset-0 bg-neutral-950/5"
-                animate={{
-                    opacity: [0.05, 0.15, 0.05],
-                }}
-                transition={{
-                    duration: 10,
-                    ease: "easeInOut",
-                    repeat: Number.POSITIVE_INFINITY,
-                }}
+            <div
+                className="absolute inset-0 bg-neutral-950/5 animate-pulse-slow"
                 style={{
                     backdropFilter: "blur(50px)",
                 }}
