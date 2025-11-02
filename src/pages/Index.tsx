@@ -607,7 +607,7 @@ const Index = () => {
                       width={800} 
                       height={450} 
                       loading="lazy"
-                      sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px"
+                      sizes="(max-width: 640px) 400px, (max-width: 1024px) 600px, 800px"
                     />
                   </div>
                   <div className="p-6">
@@ -631,7 +631,7 @@ const Index = () => {
                       width={800} 
                       height={450} 
                       loading="lazy"
-                      sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px"
+                      sizes="(max-width: 640px) 400px, (max-width: 1024px) 600px, 800px"
                     />
                   </div>
                   <div className="p-6">
@@ -655,7 +655,7 @@ const Index = () => {
                       width={800} 
                       height={450} 
                       loading="lazy"
-                      sizes="(max-width: 640px) 400px, 1200px"
+                      sizes="(max-width: 640px) 400px, (max-width: 1024px) 600px, 800px"
                     />
                   </div>
                   <div className="p-6">

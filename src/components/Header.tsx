@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/sheet";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Menu, ExternalLink } from "lucide-react";
-import logoImage from "@/assets/logo.svg";
+import logoImage from "@/assets/logo.png";
 import { cn } from "@/lib/utils";
 
 const pilares = [
@@ -39,7 +39,15 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <img src={logoImage} alt="Odonto Results" className="h-10 lg:h-12" />
+          <img 
+            src={logoImage} 
+            alt="Odonto Results - Agência de Marketing Digital para Dentistas" 
+            className="h-10 lg:h-12" 
+            width={250}
+            height={90}
+            loading="eager"
+            fetchPriority="high"
+          />
         </Link>
 
         {/* Desktop Navigation */}
