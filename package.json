@@ -8,8 +8,7 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "postbuild": "react-snap"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -84,23 +83,5 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",
     "vite": "^5.4.19"
-  },
-  "reactSnap": {
-  "inlineCss": true,
-  "minifyHtml": {
-    "collapseWhitespace": false,
-    "removeComments": false
-  },
-  "crawl": true,
-  "include": [
-    "/",
-    "/captacao",
-    "/autoridade",
-    "/google-top-1",
-    "/agendamento",
-    "/crm",
-    "/sobre",
-    "/contato"
-  ]
-}
+  }
 }
