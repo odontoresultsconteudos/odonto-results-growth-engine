@@ -120,7 +120,6 @@ export default defineConfig(({ mode }) => ({
             '@radix-ui/react-dropdown-menu',
             '@radix-ui/react-tooltip',
           ],
-          'motion': ['motion'],
         },
       },
     },
