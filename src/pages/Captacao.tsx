@@ -29,9 +29,38 @@ const Captacao = () => {
     "description": "Anúncios segmentados no Facebook, Instagram e Google que atraem pacientes qualificados com intenção de contratar tratamentos odontológicos",
     "provider": {
       "@type": "Organization",
-      "name": "Odonto Results"
+      "name": "Odonto Results",
+      "url": "https://odontoresults.com.br"
     },
-    "areaServed": "BR"
+    "areaServed": "BR",
+    "serviceType": "Marketing Digital Odontológico",
+    "offers": {
+      "@type": "AggregateOffer",
+      "description": "Mais de 500 mil leads gerados para clínicas odontológicas"
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como funciona a captação de leads odontológicos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Criamos anúncios segmentados no Facebook, Instagram e Google direcionados para pessoas na sua região que procuram tratamentos odontológicos específicos"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quantos leads vocês já geraram?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Já geramos mais de 500 mil leads para clínicas odontológicas parceiras em todo o Brasil"
+        }
+      }
+    ]
   };
 
   return <div className="min-h-screen bg-background">
@@ -40,7 +69,7 @@ const Captacao = () => {
         description="Atraia pacientes qualificados com anúncios segmentados no Facebook, Instagram e Google. Mais de 500 mil leads gerados para clínicas odontológicas."
         keywords="captação de pacientes, leads odontológicos, Facebook Ads dentista, Instagram Ads clínica, Google Ads dentista, tráfego pago odontologia"
         canonical="https://odontoresults.com.br/captacao"
-        structuredData={[breadcrumbSchema, serviceSchema]}
+        structuredData={[breadcrumbSchema, serviceSchema, faqSchema]}
       />
       <Header />
       
