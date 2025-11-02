@@ -10,13 +10,6 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  ssgOptions: {
-    script: 'async',
-    formatting: 'minify',
-    crittersOptions: {
-      reduceInlineStyles: false,
-    },
-  },
   plugins: [
     react(), 
     mode === "development" && componentTagger(),
