@@ -69,26 +69,46 @@ const Sobre = () => {
         <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary via-primary to-secondary">
           <div className="relative max-w-4xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Quem está por trás da Odonto Results
+              Conheça a Odonto Results
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Nossa equipe combina experiência clínica e expertise em marketing digital para transformar clínicas odontológicas.
+              A agência de marketing odontológico que transforma clínicas em máquinas de faturamento previsível através do Método Paciente Previsível
             </p>
           </div>
         </section>
 
-        {/* Who We Are Section */}
+        {/* Nossa História Section */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
+              Como Tudo Começou
+            </h2>
+            <div className="space-y-6 text-lg leading-relaxed">
+              <p>
+                A Odonto Results nasceu em <strong className="text-foreground">fevereiro de 2020</strong>, quando o Dr. Alex Gurrão, cirurgião-dentista e especialista em implantes, uniu forças com Vinícius Ragazzi, estrategista digital com mais de uma década de experiência no mercado.
+              </p>
+              <p>
+                Alex enfrentava o desafio diário de muitas clínicas: consultório estruturado, equipe qualificada, mas poucos pacientes. Vinícius, vindo do mundo corporativo e digital, enxergava uma oportunidade enorme de aplicar estratégias de marketing digital que funcionavam em outros setores no universo odontológico.
+              </p>
+              <p>
+                A parceria começou testando anúncios pagos para a própria clínica do Alex. <strong className="text-foreground">Os resultados foram impressionantes:</strong> em poucos meses, a agenda estava cheia e a clínica batendo recordes de faturamento. Foi quando perceberam: se funcionou para uma clínica, poderia funcionar para milhares.
+              </p>
+              <p>
+                E assim nasceu o <strong className="text-foreground">Método Paciente Previsível</strong>, que hoje já transformou a realidade de mais de 1.500 clínicas em todo o Brasil.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* O Método Paciente Previsível Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-secondary/30 via-background to-secondary/20">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-                Quem é a Odonto Results
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+                O Método Paciente Previsível
               </h2>
-              <p className="text-xl text-foreground font-semibold mb-4 max-w-4xl mx-auto">
-                Agência de marketing odontológico especializada em fazer clínicas baterem recorde de faturamento colocando pacientes certos na cadeira — não apenas gerando leads.
-              </p>
-              <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-                Criadora do <strong className="text-foreground">Método Paciente Previsível</strong>, a Odonto Results atua de ponta a ponta, conectando todas as etapas que transformam interesse em faturamento real:
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Uma abordagem completa que conecta todas as etapas do funil, desde a captação até o fechamento do tratamento:
               </p>
             </div>
 
@@ -184,13 +204,22 @@ const Sobre = () => {
         {/* Team Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+                Conheça os Fundadores
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                O Método Paciente Previsível foi desenvolvido pela experiência combinada de um dentista que conhece a dor do consultório e um estrategista digital com mais de uma década de mercado
+              </p>
+            </div>
+            
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               <Card className="p-8">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-full max-w-sm mb-6 overflow-hidden rounded-lg">
                     <img src={alexGurraoCeo} alt="Dr Alex Gurrão - CEO da Odonto Results, dentista e especialista em marketing odontológico" className="w-full h-auto object-cover" width="400" height="400" loading="lazy" />
                   </div>
-                  <h2 className="text-2xl font-bold mb-2">Dr Alex Gurrão</h2>
+                  <h3 className="text-2xl font-bold mb-2">Dr Alex Gurrão</h3>
                   <p className="text-accent font-semibold mb-4">CEO</p>
                   <p className="text-muted-foreground">
                     Dentista e dono de clínica, com vivência de resultado nas suas clínicas próprias. Aplica estratégias validadas na prática para transformar clínicas odontológicas.
@@ -203,7 +232,7 @@ const Sobre = () => {
                   <div className="w-full max-w-sm mb-6 overflow-hidden rounded-lg">
                     <img src={viniciusRagazziCoo} alt="Vinícius Ragazzi - CMO da Odonto Results, especialista em marketing digital para clínicas" className="w-full h-auto object-cover" width="400" height="400" loading="lazy" />
                   </div>
-                  <h2 className="text-2xl font-bold mb-2">Vinícius Ragazzi</h2>
+                  <h3 className="text-2xl font-bold mb-2">Vinícius Ragazzi</h3>
                   <p className="text-accent font-semibold mb-4">CMO</p>
                   <p className="text-muted-foreground">
                     Com 12 anos de experiência em marketing digital, lidera as estratégias de captação e crescimento de clínicas odontológicas em todo Brasil.
@@ -214,38 +243,8 @@ const Sobre = () => {
           </div>
         </section>
 
-        {/* History Section */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/50">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center">
-              Nossa História
-            </h2>
-            <div className="space-y-6 text-lg text-muted-foreground">
-              <p>
-                A Odonto Results foi fundada em <strong className="text-foreground">fevereiro de 2020</strong> por dois amigos 
-                que compartilhavam a visão de transformar o marketing digital odontológico no Brasil.
-              </p>
-              <p>
-                Tudo começou quando Vinícius Ragazzi começou a prestar serviços de marketing digital 
-                para o Dr. Alex Gurrão e suas clínicas. Os resultados foram tão expressivos que 
-                perceberam o potencial de ajudar outros dentistas a alcançarem o mesmo sucesso.
-              </p>
-              <p>
-                Unidos pela experiência prática do Dr. Alex como dentista e dono de clínicas, 
-                e pela expertise de Vinícius com 12 anos em marketing digital, decidiram fundar 
-                a Odonto Results para ajudar outros profissionais a terem resultados reais por meio do digital.
-              </p>
-              <p className="text-center pt-4">
-                <strong className="text-foreground text-xl">
-                  Desde então, já atendemos mais de 1500 clínicas e geramos mais de 500 mil leads qualificados.
-                </strong>
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* Mission Section */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-secondary/30 via-background to-secondary/20">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
               Nossa Missão
