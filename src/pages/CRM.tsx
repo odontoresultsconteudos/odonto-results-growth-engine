@@ -22,54 +22,13 @@ const CRM = () => {
     }]
   };
 
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "CRM Inteligente Odonto Results",
-    "applicationCategory": "BusinessApplication",
-    "description": "Sistema completo de gestão de leads odontológicos que organiza, prioriza e maximiza aproveitamento de cada oportunidade",
-    "offers": {
-      "@type": "Offer",
-      "description": "CRM integrado com automação de follow-ups e análise em tempo real"
-    },
-    "operatingSystem": "Web",
-    "provider": {
-      "@type": "Organization",
-      "name": "Odonto Results",
-      "url": "https://odontoresults.com.br"
-    }
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "O que é CRM odontológico?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "CRM integrado que organiza, prioriza e maximiza o aproveitamento de leads odontológicos, com automação de follow-ups e análise em tempo real"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Quais indicadores o CRM acompanha?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Acompanhamos Leads Qualificados, Agendamentos, Comparecimentos e Fechamentos para uma gestão completa do funil"
-        }
-      }
-    ]
-  };
-
   return <div className="min-h-screen bg-background">
       <SEO 
         title="CRM Inteligente para Clínicas Odontológicas"
         description="Gestão inteligente de leads odontológicos com CRM integrado que organiza, prioriza e maximiza o aproveitamento de cada oportunidade de negócio."
         keywords="CRM odontológico, gestão de leads dentista, funil de vendas clínica, automação marketing odontologia, software gestão pacientes"
         canonical="https://odontoresults.com.br/crm"
-        structuredData={[breadcrumbSchema, serviceSchema, faqSchema]}
+        structuredData={breadcrumbSchema}
       />
       <Header />
       

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 interface SEOProps {
   title: string;
@@ -23,74 +23,46 @@ export const SEO = ({
 }: SEOProps) => {
   const fullTitle = `${title} | Odonto Results`;
   
-  useEffect(() => {
-    // Update document title
-    document.title = fullTitle;
-    
-    // Update or create meta tags
-    const updateMeta = (name: string, content: string, property?: boolean) => {
-      const attribute = property ? 'property' : 'name';
-      let element = document.querySelector(`meta[${attribute}="${name}"]`);
-      if (!element) {
-        element = document.createElement('meta');
-        element.setAttribute(attribute, name);
-        document.head.appendChild(element);
-      }
-      element.setAttribute('content', content);
-    };
-    
-    // Basic meta tags
-    updateMeta('description', description);
-    if (keywords) updateMeta('keywords', keywords);
-    
-    // Open Graph
-    updateMeta('og:title', fullTitle, true);
-    updateMeta('og:description', description, true);
-    updateMeta('og:type', ogType, true);
-    updateMeta('og:url', canonical, true);
-    updateMeta('og:image', ogImage, true);
-    updateMeta('og:site_name', 'Odonto Results', true);
-    updateMeta('og:locale', 'pt_BR', true);
-    
-    // Twitter
-    updateMeta('twitter:card', 'summary_large_image');
-    updateMeta('twitter:title', fullTitle);
-    updateMeta('twitter:description', description);
-    updateMeta('twitter:image', ogImage);
-    
-    // Canonical link
-    let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
-    if (!canonicalLink) {
-      canonicalLink = document.createElement('link');
-      canonicalLink.setAttribute('rel', 'canonical');
-      document.head.appendChild(canonicalLink);
-    }
-    canonicalLink.setAttribute('href', canonical);
-    
-    // Preload images
-    preloadImages.forEach((imageUrl, index) => {
-      let preloadLink = document.querySelector(`link[rel="preload"][href="${imageUrl}"]`) as HTMLLinkElement;
-      if (!preloadLink) {
-        preloadLink = document.createElement('link');
-        preloadLink.setAttribute('rel', 'preload');
-        preloadLink.setAttribute('as', 'image');
-        preloadLink.setAttribute('href', imageUrl);
-        preloadLink.setAttribute('fetchpriority', index === 0 ? 'high' : 'low');
-        document.head.appendChild(preloadLink);
-      }
-    });
-    
-    // Structured data
-    if (structuredData) {
-      let script = document.querySelector('script[type="application/ld+json"]') as HTMLScriptElement;
-      if (!script) {
-        script = document.createElement('script');
-        script.setAttribute('type', 'application/ld+json');
-        document.head.appendChild(script);
-      }
-      script.textContent = JSON.stringify(Array.isArray(structuredData) ? structuredData : structuredData);
-    }
-  }, [fullTitle, description, keywords, canonical, ogImage, ogType, structuredData, preloadImages]);
-  
-  return null;
+  return (
+    <Helmet>
+      {/* Basic Meta Tags */}
+      <title>{fullTitle}</title>
+      <meta name="description" content={description} />
+      {keywords && <meta name="keywords" content={keywords} />}
+      <link rel="canonical" href={canonical} />
+      
+      {/* Preload critical images */}
+      {preloadImages.map((imageUrl, index) => (
+        <link 
+          key={index}
+          rel="preload" 
+          as="image" 
+          href={imageUrl}
+          fetchPriority={index === 0 ? "high" : "low"}
+        />
+      ))}
+      
+      {/* Open Graph */}
+      <meta property="og:title" content={fullTitle} />
+      <meta property="og:description" content={description} />
+      <meta property="og:type" content={ogType} />
+      <meta property="og:url" content={canonical} />
+      <meta property="og:image" content={ogImage} />
+      <meta property="og:site_name" content="Odonto Results" />
+      <meta property="og:locale" content="pt_BR" />
+      
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={fullTitle} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={ogImage} />
+      
+      {/* Structured Data */}
+      {structuredData && (
+        <script type="application/ld+json">
+          {JSON.stringify(Array.isArray(structuredData) ? structuredData : structuredData)}
+        </script>
+      )}
+    </Helmet>
+  );
 };

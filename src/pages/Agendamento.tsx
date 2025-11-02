@@ -22,60 +22,13 @@ const Agendamento = () => {
     }]
   };
 
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Agendamento Profissional para Clínicas Odontológicas",
-    "description": "CRC profissional e IA 24h no WhatsApp que transformam leads em consultas agendadas, maximizando aproveitamento de cada paciente captado",
-    "provider": {
-      "@type": "Organization",
-      "name": "Odonto Results",
-      "url": "https://odontoresults.com.br"
-    },
-    "areaServed": "BR",
-    "serviceType": "Agendamento de Pacientes",
-    "offers": {
-      "@type": "Offer",
-      "description": "Sistema completo de agendamento com CRC humana + IA automatizada"
-    }
-  };
-
-  const howToSchema = {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": "Como Funciona o Agendamento Profissional",
-    "description": "Processo completo de transformação de leads em consultas agendadas",
-    "step": [
-      {
-        "@type": "HowToStep",
-        "name": "Lead Chega",
-        "text": "Paciente demonstra interesse via anúncio, Google ou redes sociais"
-      },
-      {
-        "@type": "HowToStep",
-        "name": "Qualificação",
-        "text": "CRC ou IA identifica o tratamento de interesse e urgência do paciente"
-      },
-      {
-        "@type": "HowToStep",
-        "name": "Agendamento",
-        "text": "Consulta marcada diretamente na agenda da clínica com confirmação"
-      },
-      {
-        "@type": "HowToStep",
-        "name": "Protocolo de Confirmação",
-        "text": "Sistema estruturado de confirmação para reduzir faltas e aumentar o comparecimento"
-      }
-    ]
-  };
-
   return <div className="min-h-screen bg-background">
       <SEO 
         title="Agendamento Profissional com CRC e IA para Clínicas"
         description="Transforme leads em consultas agendadas com CRC profissional e IA 24h no WhatsApp. Maximize o aproveitamento de cada paciente captado."
         keywords="agendamento online dentista, CRC odontologia, chatbot WhatsApp clínica, automação agendamento, IA agendamento pacientes"
         canonical="https://odontoresults.com.br/agendamento"
-        structuredData={[breadcrumbSchema, serviceSchema, howToSchema]}
+        structuredData={breadcrumbSchema}
       />
       <Header />
       
