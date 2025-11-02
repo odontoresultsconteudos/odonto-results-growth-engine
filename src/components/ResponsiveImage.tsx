@@ -43,7 +43,8 @@ export const ResponsiveImage = ({
       alt={alt}
       loading={loading}
       decoding="async"
-      fetchPriority={fetchPriority}
+      // @ts-ignore - fetchpriority is valid HTML but TypeScript doesn't recognize it yet
+      fetchpriority={fetchPriority}
       className={className}
       width={width}
       height={height}
