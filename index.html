@@ -1,57 +1,58 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <!-- Google Tag Manager - Ultra Deferred to Avoid TBT Impact -->
+    <!-- Google Tag Manager - Optimized Loading -->
     <script>
-    // Minimal initialization only
+    // Initialize dataLayer
     window.dataLayer = window.dataLayer || [];
     
-    // Load GTM only after page is fully interactive (45+ seconds OR very significant user engagement)
-    (function() {
+    // Load GTM after page becomes interactive (balanced approach)
+    (function(w,d,s,l,i){
       var gtmLoaded = false;
-      var engagementCount = 0;
       
       function loadGTM() {
         if (gtmLoaded) return;
         gtmLoaded = true;
         
-        // Use requestIdleCallback to load during browser idle time
+        // Use requestIdleCallback for optimal loading
         var actualLoad = function() {
-          window.dataLayer.push({'gtm.start': new Date().getTime(), event:'gtm.js'});
-          
-          var gtmScript = document.createElement('script');
-          gtmScript.async = true;
-          gtmScript.defer = true;
-          gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-P2Q493W';
-          document.head.appendChild(gtmScript);
+          w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+          var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+          j.async=true;
+          j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+          f.parentNode.insertBefore(j,f);
         };
         
         if ('requestIdleCallback' in window) {
-          requestIdleCallback(actualLoad, { timeout: 50000 });
+          requestIdleCallback(actualLoad, { timeout: 8000 });
         } else {
-          setTimeout(actualLoad, 45000);
+          setTimeout(actualLoad, 5000);
         }
       }
       
-      // Only load after VERY significant engagement (5+ interactions) OR 45 seconds
-      var events = ['click', 'keydown', 'touchstart'];
-      var trackEngagement = function() {
-        engagementCount++;
-        if (engagementCount >= 5) {
+      // Load after first meaningful interaction OR 5 seconds
+      var hasInteracted = false;
+      var interactionEvents = ['mousedown', 'touchstart', 'keydown'];
+      
+      function handleInteraction() {
+        if (!hasInteracted) {
+          hasInteracted = true;
           loadGTM();
-          events.forEach(function(event) {
-            window.removeEventListener(event, trackEngagement);
+          interactionEvents.forEach(function(event) {
+            window.removeEventListener(event, handleInteraction);
           });
         }
-      };
+      }
       
-      events.forEach(function(event) {
-        window.addEventListener(event, trackEngagement, { passive: true, once: false });
+      interactionEvents.forEach(function(event) {
+        window.addEventListener(event, handleInteraction, { passive: true, once: true });
       });
       
-      // Fallback: load after 45 seconds if minimal engagement
-      setTimeout(loadGTM, 45000);
-    })();
+      // Fallback: load after 5 seconds if no interaction
+      setTimeout(loadGTM, 5000);
+      
+    })(window,document,'script','dataLayer','GTM-P2Q493W');
     </script>
     <!-- End Google Tag Manager -->
 
