@@ -147,7 +147,7 @@ const Index = () => {
         </GlowBackground>
 
         {/* 3) Prova Social - Contadores */}
-        <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/30">
+        <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/30 min-h-[324px]">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 text-center">
               <div className="flex items-center gap-3">
