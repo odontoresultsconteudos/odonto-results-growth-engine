@@ -16,58 +16,6 @@ export function GlowBackground({
                 className
             )}
         >
-            <style>{`
-                @keyframes beam-drift-1 {
-                    0%, 100% { transform: rotate(-30deg) translateX(0) translateY(0); }
-                    50% { transform: rotate(-30deg) translateX(-3%) translateY(-8%); }
-                }
-                
-                @keyframes beam-drift-2 {
-                    0%, 100% { transform: rotate(-30deg) translateX(0) translateY(0); }
-                    50% { transform: rotate(-30deg) translateX(2%) translateY(-6%); }
-                }
-                
-                @keyframes beam-drift-3 {
-                    0%, 100% { transform: rotate(-30deg) translateX(0) translateY(0); }
-                    50% { transform: rotate(-30deg) translateX(-2%) translateY(-7%); }
-                }
-                
-                @keyframes beam-drift-4 {
-                    0%, 100% { transform: rotate(-30deg) translateX(0) translateY(0); }
-                    50% { transform: rotate(-30deg) translateX(3%) translateY(-5%); }
-                }
-                
-                @keyframes beam-drift-5 {
-                    0%, 100% { transform: rotate(-30deg) translateX(0) translateY(0); }
-                    50% { transform: rotate(-30deg) translateX(-1%) translateY(-9%); }
-                }
-                
-                .beam-1 {
-                    animation: beam-drift-1 20s ease-in-out infinite;
-                }
-                
-                .beam-2 {
-                    animation: beam-drift-2 25s ease-in-out infinite 2s;
-                }
-                
-                .beam-3 {
-                    animation: beam-drift-3 22s ease-in-out infinite 4s;
-                }
-                
-                .beam-4 {
-                    animation: beam-drift-4 28s ease-in-out infinite 1s;
-                }
-                
-                .beam-5 {
-                    animation: beam-drift-5 18s ease-in-out infinite 3s;
-                }
-                
-                @media (prefers-reduced-motion: reduce) {
-                    .beam-1, .beam-2, .beam-3, .beam-4, .beam-5 {
-                        animation: none;
-                    }
-                }
-            `}</style>
             
             {/* Diagonal light beams - varied widths and spacing */}
             <div className="absolute inset-0 opacity-15" style={{ filter: 'blur(50px)' }}>
