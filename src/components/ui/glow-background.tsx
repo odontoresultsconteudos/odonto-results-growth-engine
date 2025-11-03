@@ -15,17 +15,12 @@ export function GlowBackground({
                 "relative w-full overflow-hidden",
                 className
             )}
-            style={{ 
-                contain: 'layout style paint',
-                contentVisibility: 'auto'
-            }}
         >
-            
             {/* Diagonal light beams - varied widths and spacing */}
             <div className="absolute inset-0 opacity-15" style={{ filter: 'blur(50px)' }}>
                 {/* Beam 1 - thin */}
                 <div 
-                    className="beam-1 absolute h-[200%] w-16"
+                    className="absolute h-[200%] w-16"
                     style={{
                         left: '10%',
                         top: '-50%',
@@ -36,7 +31,7 @@ export function GlowBackground({
                 
                 {/* Beam 2 - wide */}
                 <div 
-                    className="beam-2 absolute h-[200%] w-48"
+                    className="absolute h-[200%] w-48"
                     style={{
                         left: '28%',
                         top: '-50%',
@@ -47,7 +42,7 @@ export function GlowBackground({
                 
                 {/* Beam 3 - medium */}
                 <div 
-                    className="beam-3 absolute h-[200%] w-24"
+                    className="absolute h-[200%] w-24"
                     style={{
                         left: '58%',
                         top: '-50%',
@@ -58,7 +53,7 @@ export function GlowBackground({
                 
                 {/* Beam 4 - thin */}
                 <div 
-                    className="beam-4 absolute h-[200%] w-20"
+                    className="absolute h-[200%] w-20"
                     style={{
                         left: '78%',
                         top: '-50%',
@@ -69,7 +64,7 @@ export function GlowBackground({
                 
                 {/* Beam 5 - very thin accent */}
                 <div 
-                    className="beam-5 absolute h-[200%] w-12"
+                    className="absolute h-[200%] w-12"
                     style={{
                         left: '45%',
                         top: '-50%',
