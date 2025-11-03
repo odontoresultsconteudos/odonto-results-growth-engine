@@ -1,19 +1,21 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <!-- Google Tag Manager - Maximum Deferred -->
+    <!-- Google Tag Manager - Extreme Deferred -->
     <script>
-    // Initialize dataLayer immediately but defer GTM loading completely
+    // Minimal initialization only
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({'gtm.start': new Date().getTime(), event:'gtm.js'});
     
-    // Load GTM only after significant user interaction or 10 seconds idle
+    // Load GTM only after 15 seconds OR significant user engagement
     (function() {
       var gtmLoaded = false;
+      var engagementCount = 0;
       
       function loadGTM() {
         if (gtmLoaded) return;
         gtmLoaded = true;
+        
+        window.dataLayer.push({'gtm.start': new Date().getTime(), event:'gtm.js'});
         
         var gtmScript = document.createElement('script');
         gtmScript.async = true;
@@ -22,25 +24,24 @@
         document.head.appendChild(gtmScript);
       }
       
-      // Load on idle with long timeout
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(loadGTM, { timeout: 10000 });
-      } else {
-        setTimeout(loadGTM, 10000);
-      }
-      
-      // Also load on first meaningful user interaction
+      // Only load after significant engagement (2+ interactions) OR 15 seconds
       var events = ['mousedown', 'keydown', 'touchstart', 'scroll'];
-      var loadOnInteraction = function() {
-        loadGTM();
-        events.forEach(function(event) {
-          window.removeEventListener(event, loadOnInteraction);
-        });
+      var trackEngagement = function() {
+        engagementCount++;
+        if (engagementCount >= 2) {
+          loadGTM();
+          events.forEach(function(event) {
+            window.removeEventListener(event, trackEngagement);
+          });
+        }
       };
       
       events.forEach(function(event) {
-        window.addEventListener(event, loadOnInteraction, { passive: true, once: true });
+        window.addEventListener(event, trackEngagement, { passive: true });
       });
+      
+      // Fallback: load after 15 seconds if no engagement
+      setTimeout(loadGTM, 15000);
     })();
     </script>
     <!-- End Google Tag Manager -->
@@ -74,11 +75,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0EA5E9" />
     
-    <!-- Preconnect for critical external resources -->
+    <!-- Critical resource hints -->
     <link rel="preconnect" href="https://form.odontoresults.com.br" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     <link rel="dns-prefetch" href="https://connect.facebook.net" />
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    
+    <!-- Defer non-critical fonts -->
+    <link rel="preload" href="/assets/logo-DI14klTM.svg" as="image" fetchpriority="high" />
     
     <title>Odonto Results - Marketing Digital para Clínicas Odontológicas</title>
     <meta name="description" content="Bata recorde de faturamento recebendo pacientes certos na sua cadeira

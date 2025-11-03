@@ -129,12 +129,20 @@ export default defineConfig(({ mode }) => ({
       compress: {
         drop_console: true,
         drop_debugger: true,
-        pure_funcs: ['console.log'],
+        pure_funcs: ['console.log', 'console.info', 'console.debug'],
+        passes: 2, // Multiple passes for better compression
+      },
+      format: {
+        comments: false, // Remove all comments
       },
     },
     cssCodeSplit: true,
-    cssMinify: true,
+    cssMinify: true, // Use default minifier
     assetsInlineLimit: 4096,
     reportCompressedSize: false,
+    // Optimize chunks for better caching
+    modulePreload: {
+      polyfill: false, // Remove unnecessary polyfill
+    },
   },
 }))
