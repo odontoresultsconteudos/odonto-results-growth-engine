@@ -16,56 +16,66 @@ export function GlowBackground({
                 className
             )}
         >
-            {/* Glow effect layers */}
-            <div className="absolute inset-0">
-                {/* Main center glow */}
+            {/* Diagonal light beams */}
+            <div className="absolute inset-0 opacity-30" style={{ filter: 'blur(40px)' }}>
+                {/* Beam 1 */}
                 <div 
-                    className="absolute inset-0 opacity-40"
+                    className="absolute h-[200%] w-32"
+                    style={{
+                        left: '15%',
+                        top: '-50%',
+                        transform: 'rotate(-30deg)',
+                        background: 'linear-gradient(90deg, transparent 0%, hsl(200, 85%, 60%) 50%, transparent 100%)',
+                    }}
+                />
+                
+                {/* Beam 2 */}
+                <div 
+                    className="absolute h-[200%] w-24"
+                    style={{
+                        left: '35%',
+                        top: '-50%',
+                        transform: 'rotate(-30deg)',
+                        background: 'linear-gradient(90deg, transparent 0%, hsl(210, 80%, 55%) 50%, transparent 100%)',
+                    }}
+                />
+                
+                {/* Beam 3 */}
+                <div 
+                    className="absolute h-[200%] w-40"
+                    style={{
+                        left: '55%',
+                        top: '-50%',
+                        transform: 'rotate(-30deg)',
+                        background: 'linear-gradient(90deg, transparent 0%, hsl(220, 75%, 58%) 50%, transparent 100%)',
+                    }}
+                />
+                
+                {/* Beam 4 */}
+                <div 
+                    className="absolute h-[200%] w-28"
+                    style={{
+                        left: '75%',
+                        top: '-50%',
+                        transform: 'rotate(-30deg)',
+                        background: 'linear-gradient(90deg, transparent 0%, hsl(230, 70%, 53%) 50%, transparent 100%)',
+                    }}
+                />
+            </div>
+
+            {/* Ambient glow underneath */}
+            <div className="absolute inset-0 opacity-20">
+                <div 
                     style={{
                         background: `
                             radial-gradient(
                                 circle at 50% 40%,
-                                hsl(200, 80%, 50%) 0%,
-                                hsl(220, 70%, 40%) 20%,
+                                hsl(210, 80%, 55%) 0%,
                                 transparent 60%
                             )
                         `,
-                    }}
-                />
-                
-                {/* Secondary ambient glow */}
-                <div 
-                    className="absolute inset-0 opacity-25"
-                    style={{
-                        background: `
-                            radial-gradient(
-                                ellipse at 30% 60%,
-                                hsl(240, 60%, 35%) 0%,
-                                transparent 50%
-                            ),
-                            radial-gradient(
-                                ellipse at 70% 50%,
-                                hsl(190, 65%, 40%) 0%,
-                                transparent 50%
-                            )
-                        `,
-                    }}
-                />
-
-                {/* Subtle texture overlay */}
-                <div 
-                    className="absolute inset-0 opacity-10 mix-blend-overlay"
-                    style={{
-                        backgroundImage: `
-                            repeating-linear-gradient(
-                                0deg,
-                                transparent,
-                                transparent 2px,
-                                hsl(220, 70%, 50%) 2px,
-                                hsl(220, 70%, 50%) 4px
-                            )
-                        `,
-                        backgroundSize: '100% 4px',
+                        height: '100%',
+                        width: '100%',
                     }}
                 />
             </div>
