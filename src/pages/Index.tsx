@@ -10,6 +10,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { SEO } from "@/components/SEO";
 import { ResponsiveImage } from "@/components/ResponsiveImage";
 import { lazy, Suspense } from "react";
+import { UtmLink } from "@/components/UtmLink";
+import { UtmExternalLink } from "@/components/UtmExternalLink";
 
 // Lazy load heavy components for better initial load
 const BeamsBackground = lazy(() => import("@/components/ui/beams-background").then(m => ({ default: m.BeamsBackground })));
@@ -134,12 +136,12 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 animate-fade-in [animation-delay:400ms]">
-              <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
+              <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
                 <Button variant="cta" size="lg" className="text-lg w-full sm:w-auto">
                   Agende uma Apresentação
                   <ArrowRight className="ml-2" />
                 </Button>
-              </a>
+              </UtmExternalLink>
             </div>
 
           </div>
@@ -194,7 +196,7 @@ const Index = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <a href="/captacao" className="block h-full hover-scale">
+              <UtmLink to="/captacao" className="block h-full hover-scale">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <Target className="w-6 h-6 text-accent" />
@@ -204,9 +206,9 @@ const Index = () => {
                     Anúncios segmentados por tratamento e localização no Facebook, Instagram e Google.
                   </p>
                 </Card>
-              </a>
+              </UtmLink>
 
-              <a href="/autoridade" className="block h-full hover-scale">
+              <UtmLink to="/autoridade" className="block h-full hover-scale">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <Star className="w-6 h-6 text-accent" />
@@ -216,9 +218,9 @@ const Index = () => {
                     Conteúdo estratégico que reduz o risco percebido e aumenta a confiança.
                   </p>
                 </Card>
-              </a>
+              </UtmLink>
 
-              <a href="/google-top-1" className="block h-full hover-scale">
+              <UtmLink to="/google-top-1" className="block h-full hover-scale">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <TrendingUp className="w-6 h-6 text-accent" />
@@ -228,9 +230,9 @@ const Index = () => {
                     Otimização de Google Maps e SEO local para alcançar o topo das buscas da sua região.
                   </p>
                 </Card>
-              </a>
+              </UtmLink>
 
-              <a href="/agendamento" className="block h-full hover-scale">
+              <UtmLink to="/agendamento" className="block h-full hover-scale">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <Calendar className="w-6 h-6 text-accent" />
@@ -240,9 +242,9 @@ const Index = () => {
                     CRC treinada + IA 24h no WhatsApp para garantir velocidade e consistência no atendimento.
                   </p>
                 </Card>
-              </a>
+              </UtmLink>
 
-              <a href="/crm" className="block h-full hover-scale">
+              <UtmLink to="/crm" className="block h-full hover-scale">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <BarChart3 className="w-6 h-6 text-accent" />
@@ -252,16 +254,16 @@ const Index = () => {
                     Funil claro com foco em Agendamento e Comparecimento, tarefas e automações que aumentam aproveitamento.
                   </p>
                 </Card>
-              </a>
+              </UtmLink>
             </div>
 
             <div className="text-center mt-12">
-              <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
+              <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
                 <Button variant="cta" size="lg">
                   Conhecer o Método
                   <ArrowRight className="ml-2" />
                 </Button>
-              </a>
+              </UtmExternalLink>
             </div>
           </div>
         </section>
@@ -334,12 +336,12 @@ const Index = () => {
             </div>
 
             <div className="text-center mt-12">
-              <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
+              <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
                 <Button variant="cta" size="lg">
                   Agende uma Apresentação
                   <ArrowRight className="ml-2" />
                 </Button>
-              </a>
+              </UtmExternalLink>
             </div>
           </div>
         </section>
@@ -573,12 +575,12 @@ const Index = () => {
 
             <div className="text-center">
               <p className="text-xs sm:text-sm text-muted-foreground mb-6">*Projeção baseada em dados de clientes em fases avançadas. Resultados podem variar.</p>
-              <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
+              <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
                 <Button variant="cta" size="lg" className="w-full sm:w-auto">
                   Quero resultados como esses
                   <ArrowRight className="ml-2" />
                 </Button>
-              </a>
+              </UtmExternalLink>
             </div>
           </div>
         </section>
@@ -759,12 +761,12 @@ const Index = () => {
             </p>
             
             <div className="flex justify-center">
-              <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
+              <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
                 <Button variant="cta" size="lg" className="text-lg w-full sm:w-auto">
                   Agende uma Apresentação
                   <ArrowRight className="ml-2" />
                 </Button>
-              </a>
+              </UtmExternalLink>
             </div>
           </div>
         </section>
@@ -784,14 +786,14 @@ const Index = () => {
                 <h4 className="font-bold mb-4">Navegação</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li><a href="/#metodo" className="hover:text-accent transition-colors">Método</a></li>
-                  <li><a href="/captacao" className="hover:text-accent transition-colors">Captação de Leads</a></li>
-                  <li><a href="/autoridade" className="hover:text-accent transition-colors">Vitrine de Autoridade</a></li>
-                  <li><a href="/google-top-1" className="hover:text-accent transition-colors">Google Top 1</a></li>
-                  <li><a href="/agendamento" className="hover:text-accent transition-colors">Agendamento</a></li>
-                  <li><a href="/crm" className="hover:text-accent transition-colors">CRM</a></li>
-                  <li><a href="/sobre" className="hover:text-accent transition-colors">Sobre</a></li>
-                  <li><a href="http://blog.odontoresults.com.br/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Blog</a></li>
-                  <li><a href="/contato" className="hover:text-accent transition-colors">Contato</a></li>
+                  <li><UtmLink to="/captacao" className="hover:text-accent transition-colors">Captação de Leads</UtmLink></li>
+                  <li><UtmLink to="/autoridade" className="hover:text-accent transition-colors">Vitrine de Autoridade</UtmLink></li>
+                  <li><UtmLink to="/google-top-1" className="hover:text-accent transition-colors">Google Top 1</UtmLink></li>
+                  <li><UtmLink to="/agendamento" className="hover:text-accent transition-colors">Agendamento</UtmLink></li>
+                  <li><UtmLink to="/crm" className="hover:text-accent transition-colors">CRM</UtmLink></li>
+                  <li><UtmLink to="/sobre" className="hover:text-accent transition-colors">Sobre</UtmLink></li>
+                  <li><UtmExternalLink href="http://blog.odontoresults.com.br/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Blog</UtmExternalLink></li>
+                  <li><UtmLink to="/contato" className="hover:text-accent transition-colors">Contato</UtmLink></li>
                 </ul>
               </div>
 

@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { UtmLink } from "@/components/UtmLink";
+import { UtmExternalLink } from "@/components/UtmExternalLink";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -38,13 +40,13 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-7xl mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
+        <UtmLink to="/" className="flex items-center gap-2">
           <img src={logoImage} alt="Odonto Results" className="h-10 lg:h-12" />
-        </Link>
+        </UtmLink>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
-          <Link
+          <UtmLink
             to="/"
             className={cn(
               "text-sm font-medium transition-colors hover:text-accent",
@@ -52,7 +54,7 @@ const Header = () => {
             )}
           >
             Início
-          </Link>
+          </UtmLink>
 
           <NavigationMenu>
             <NavigationMenuList>
@@ -65,7 +67,7 @@ const Header = () => {
                     {pilares.map((pilar) => (
                       <li key={pilar.href}>
                         <NavigationMenuLink asChild>
-                          <Link
+                          <UtmLink
                             to={pilar.href}
                             className={cn(
                               "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent focus:bg-accent/10 focus:text-accent",
@@ -76,7 +78,7 @@ const Header = () => {
                             <p className="line-clamp-2 text-xs leading-snug text-muted-foreground">
                               {pilar.description}
                             </p>
-                          </Link>
+                          </UtmLink>
                         </NavigationMenuLink>
                       </li>
                     ))}
@@ -86,7 +88,7 @@ const Header = () => {
             </NavigationMenuList>
           </NavigationMenu>
 
-          <a
+          <UtmExternalLink
             href="http://blog.odontoresults.com.br/"
             target="_blank"
             rel="noopener noreferrer"
@@ -94,9 +96,9 @@ const Header = () => {
           >
             Blog
             <ExternalLink className="h-3 w-3" />
-          </a>
+          </UtmExternalLink>
 
-          <Link
+          <UtmLink
             to="/sobre"
             className={cn(
               "text-sm font-medium transition-colors hover:text-accent",
@@ -104,9 +106,9 @@ const Header = () => {
             )}
           >
             Sobre
-          </Link>
+          </UtmLink>
 
-          <Link
+          <UtmLink
             to="/contato"
             className={cn(
               "text-sm font-medium transition-colors hover:text-accent",
@@ -114,16 +116,16 @@ const Header = () => {
             )}
           >
             Contato
-          </Link>
+          </UtmLink>
         </nav>
 
         {/* CTA Desktop */}
         <div className="hidden md:block">
-          <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
+          <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
             <Button variant="cta" size="sm">
               Agende uma Apresentação
             </Button>
-          </a>
+          </UtmExternalLink>
         </div>
 
         {/* Mobile Menu */}
@@ -139,7 +141,7 @@ const Header = () => {
               <SheetTitle>Menu</SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col gap-4 mt-8">
-              <Link
+              <UtmLink
                 to="/"
                 onClick={() => setMobileOpen(false)}
                 className={cn(
@@ -148,7 +150,7 @@ const Header = () => {
                 )}
               >
                 Início
-              </Link>
+              </UtmLink>
 
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="metodo" className="border-b-0">
@@ -158,7 +160,7 @@ const Header = () => {
                   <AccordionContent>
                     <div className="flex flex-col gap-2 pl-4">
                       {pilares.map((pilar) => (
-                        <Link
+                        <UtmLink
                           key={pilar.href}
                           to={pilar.href}
                           onClick={() => setMobileOpen(false)}
@@ -168,14 +170,14 @@ const Header = () => {
                           )}
                         >
                           {pilar.title}
-                        </Link>
+                        </UtmLink>
                       ))}
                     </div>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
 
-              <a
+              <UtmExternalLink
                 href="http://blog.odontoresults.com.br/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -183,9 +185,9 @@ const Header = () => {
               >
                 Blog
                 <ExternalLink className="h-4 w-4" />
-              </a>
+              </UtmExternalLink>
 
-              <Link
+              <UtmLink
                 to="/sobre"
                 onClick={() => setMobileOpen(false)}
                 className={cn(
@@ -194,9 +196,9 @@ const Header = () => {
                 )}
               >
                 Sobre
-              </Link>
+              </UtmLink>
 
-              <Link
+              <UtmLink
                 to="/contato"
                 onClick={() => setMobileOpen(false)}
                 className={cn(
@@ -205,13 +207,13 @@ const Header = () => {
                 )}
               >
                 Contato
-              </Link>
+              </UtmLink>
 
-              <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)} className="mt-4">
+              <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)} className="mt-4">
                 <Button variant="cta" className="w-full">
                   Agende uma Apresentação
                 </Button>
-              </a>
+              </UtmExternalLink>
             </nav>
           </SheetContent>
         </Sheet>
