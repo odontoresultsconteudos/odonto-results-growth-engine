@@ -16,49 +16,60 @@ export function GlowBackground({
                 className
             )}
         >
-            {/* Diagonal light beams */}
-            <div className="absolute inset-0 opacity-30" style={{ filter: 'blur(40px)' }}>
-                {/* Beam 1 */}
+            {/* Diagonal light beams - varied widths and spacing */}
+            <div className="absolute inset-0 opacity-15" style={{ filter: 'blur(50px)' }}>
+                {/* Beam 1 - thin */}
                 <div 
-                    className="absolute h-[200%] w-32"
+                    className="absolute h-[200%] w-16"
                     style={{
-                        left: '15%',
+                        left: '10%',
                         top: '-50%',
                         transform: 'rotate(-30deg)',
-                        background: 'linear-gradient(90deg, transparent 0%, hsl(200, 85%, 60%) 50%, transparent 100%)',
+                        background: 'linear-gradient(90deg, transparent 0%, hsl(200, 80%, 55%) 50%, transparent 100%)',
                     }}
                 />
                 
-                {/* Beam 2 */}
+                {/* Beam 2 - wide */}
+                <div 
+                    className="absolute h-[200%] w-48"
+                    style={{
+                        left: '28%',
+                        top: '-50%',
+                        transform: 'rotate(-30deg)',
+                        background: 'linear-gradient(90deg, transparent 0%, hsl(210, 75%, 52%) 50%, transparent 100%)',
+                    }}
+                />
+                
+                {/* Beam 3 - medium */}
                 <div 
                     className="absolute h-[200%] w-24"
                     style={{
-                        left: '35%',
+                        left: '58%',
                         top: '-50%',
                         transform: 'rotate(-30deg)',
-                        background: 'linear-gradient(90deg, transparent 0%, hsl(210, 80%, 55%) 50%, transparent 100%)',
+                        background: 'linear-gradient(90deg, transparent 0%, hsl(220, 70%, 50%) 50%, transparent 100%)',
                     }}
                 />
                 
-                {/* Beam 3 */}
+                {/* Beam 4 - thin */}
                 <div 
-                    className="absolute h-[200%] w-40"
+                    className="absolute h-[200%] w-20"
                     style={{
-                        left: '55%',
+                        left: '78%',
                         top: '-50%',
                         transform: 'rotate(-30deg)',
-                        background: 'linear-gradient(90deg, transparent 0%, hsl(220, 75%, 58%) 50%, transparent 100%)',
+                        background: 'linear-gradient(90deg, transparent 0%, hsl(230, 65%, 48%) 50%, transparent 100%)',
                     }}
                 />
                 
-                {/* Beam 4 */}
+                {/* Beam 5 - very thin accent */}
                 <div 
-                    className="absolute h-[200%] w-28"
+                    className="absolute h-[200%] w-12"
                     style={{
-                        left: '75%',
+                        left: '45%',
                         top: '-50%',
                         transform: 'rotate(-30deg)',
-                        background: 'linear-gradient(90deg, transparent 0%, hsl(230, 70%, 53%) 50%, transparent 100%)',
+                        background: 'linear-gradient(90deg, transparent 0%, hsl(215, 72%, 53%) 50%, transparent 100%)',
                     }}
                 />
             </div>
