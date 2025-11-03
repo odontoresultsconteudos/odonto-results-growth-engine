@@ -17,34 +17,49 @@ export function GlowBackground({
             )}
         >
             <style>{`
-                @keyframes beam-drift {
-                    0%, 100% { transform: rotate(-30deg) translateY(0); }
-                    50% { transform: rotate(-30deg) translateY(-5%); }
+                @keyframes beam-drift-1 {
+                    0%, 100% { transform: rotate(-30deg) translateX(0) translateY(0); }
+                    50% { transform: rotate(-30deg) translateX(-3%) translateY(-8%); }
                 }
                 
-                @keyframes beam-pulse {
-                    0%, 100% { opacity: 0.12; }
-                    50% { opacity: 0.18; }
+                @keyframes beam-drift-2 {
+                    0%, 100% { transform: rotate(-30deg) translateX(0) translateY(0); }
+                    50% { transform: rotate(-30deg) translateX(2%) translateY(-6%); }
+                }
+                
+                @keyframes beam-drift-3 {
+                    0%, 100% { transform: rotate(-30deg) translateX(0) translateY(0); }
+                    50% { transform: rotate(-30deg) translateX(-2%) translateY(-7%); }
+                }
+                
+                @keyframes beam-drift-4 {
+                    0%, 100% { transform: rotate(-30deg) translateX(0) translateY(0); }
+                    50% { transform: rotate(-30deg) translateX(3%) translateY(-5%); }
+                }
+                
+                @keyframes beam-drift-5 {
+                    0%, 100% { transform: rotate(-30deg) translateX(0) translateY(0); }
+                    50% { transform: rotate(-30deg) translateX(-1%) translateY(-9%); }
                 }
                 
                 .beam-1 {
-                    animation: beam-drift 25s ease-in-out infinite, beam-pulse 8s ease-in-out infinite;
+                    animation: beam-drift-1 20s ease-in-out infinite;
                 }
                 
                 .beam-2 {
-                    animation: beam-drift 30s ease-in-out infinite 2s, beam-pulse 10s ease-in-out infinite 2s;
+                    animation: beam-drift-2 25s ease-in-out infinite 2s;
                 }
                 
                 .beam-3 {
-                    animation: beam-drift 28s ease-in-out infinite 4s, beam-pulse 9s ease-in-out infinite 4s;
+                    animation: beam-drift-3 22s ease-in-out infinite 4s;
                 }
                 
                 .beam-4 {
-                    animation: beam-drift 32s ease-in-out infinite 1s, beam-pulse 11s ease-in-out infinite 1s;
+                    animation: beam-drift-4 28s ease-in-out infinite 1s;
                 }
                 
                 .beam-5 {
-                    animation: beam-drift 26s ease-in-out infinite 3s, beam-pulse 8.5s ease-in-out infinite 3s;
+                    animation: beam-drift-5 18s ease-in-out infinite 3s;
                 }
                 
                 @media (prefers-reduced-motion: reduce) {
