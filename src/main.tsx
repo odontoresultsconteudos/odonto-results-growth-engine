@@ -18,10 +18,14 @@ const renderApp = () => {
 // Start rendering immediately
 renderApp();
 
-// Register service worker with maximum deferral to not block TTI
+// Extreme deferral of service worker to avoid blocking critical path
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
-  // Defer SW registration until page is fully interactive and idle
+  let swRegistered = false;
+  
   const registerServiceWorker = () => {
+    if (swRegistered) return;
+    swRegistered = true;
+    
     import('virtual:pwa-register').then(({ registerSW }) => {
       registerSW({
         immediate: false,
@@ -35,10 +39,28 @@ if ('serviceWorker' in navigator && import.meta.env.PROD) {
     });
   };
   
-  // Only register after significant delay to not impact TTI
+  // Register only after significant user engagement OR very long delay
+  let interactionCount = 0;
+  const events = ['click', 'keydown', 'touchstart', 'scroll'];
+  
+  const trackInteraction = () => {
+    interactionCount++;
+    if (interactionCount >= 3) {
+      registerServiceWorker();
+      events.forEach(event => {
+        window.removeEventListener(event, trackInteraction);
+      });
+    }
+  };
+  
+  events.forEach(event => {
+    window.addEventListener(event, trackInteraction, { passive: true, once: false });
+  });
+  
+  // Fallback: register after 20 seconds if no engagement
   if ('requestIdleCallback' in window) {
-    requestIdleCallback(registerServiceWorker, { timeout: 5000 });
+    requestIdleCallback(registerServiceWorker, { timeout: 20000 });
   } else {
-    setTimeout(registerServiceWorker, 5000);
+    setTimeout(registerServiceWorker, 20000);
   }
 }
