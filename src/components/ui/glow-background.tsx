@@ -15,6 +15,10 @@ export function GlowBackground({
                 "relative w-full overflow-hidden",
                 className
             )}
+            style={{ 
+                contain: 'layout style paint',
+                contentVisibility: 'auto'
+            }}
         >
             
             {/* Diagonal light beams - varied widths and spacing */}

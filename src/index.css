@@ -136,6 +136,12 @@ All colors MUST be HSL.
     }
   }
 
+  /* Performance optimizations to prevent forced reflows */
+  [class*="beam-"] {
+    contain: layout style paint;
+    transform: translateZ(0);
+  }
+
   /* Glow Background Beam Animations - Optimized for performance */
   @keyframes beam-drift-1 {
     0%, 100% { 
