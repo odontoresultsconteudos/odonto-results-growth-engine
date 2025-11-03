@@ -18,49 +18,17 @@ const renderApp = () => {
 // Start rendering immediately
 renderApp();
 
-// Extreme deferral of service worker to avoid blocking critical path
-if ('serviceWorker' in navigator && import.meta.env.PROD) {
-  let swRegistered = false;
-  
-  const registerServiceWorker = () => {
-    if (swRegistered) return;
-    swRegistered = true;
-    
-    import('virtual:pwa-register').then(({ registerSW }) => {
-      registerSW({
-        immediate: false,
-        onNeedRefresh() {
-          console.log('New content available');
-        },
-        onOfflineReady() {
-          console.log('App ready offline');
-        },
-      });
-    });
-  };
-  
-  // Register only after significant user engagement OR very long delay
-  let interactionCount = 0;
-  const events = ['click', 'keydown', 'touchstart', 'scroll'];
-  
-  const trackInteraction = () => {
-    interactionCount++;
-    if (interactionCount >= 3) {
+// Extreme deferral of service worker - load after page becomes interactive
+if ('requestIdleCallback' in window) {
+  requestIdleCallback(() => {
+    import('./lib/sw-register').then(({ registerServiceWorker }) => {
       registerServiceWorker();
-      events.forEach(event => {
-        window.removeEventListener(event, trackInteraction);
-      });
-    }
-  };
-  
-  events.forEach(event => {
-    window.addEventListener(event, trackInteraction, { passive: true, once: false });
-  });
-  
-  // Fallback: register after 20 seconds if no engagement
-  if ('requestIdleCallback' in window) {
-    requestIdleCallback(registerServiceWorker, { timeout: 20000 });
-  } else {
-    setTimeout(registerServiceWorker, 20000);
-  }
+    });
+  }, { timeout: 30000 });
+} else {
+  setTimeout(() => {
+    import('./lib/sw-register').then(({ registerServiceWorker }) => {
+      registerServiceWorker();
+    });
+  }, 30000);
 }
