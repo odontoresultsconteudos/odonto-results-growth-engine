@@ -13,8 +13,8 @@ import { lazy, Suspense } from "react";
 import { UtmLink } from "@/components/UtmLink";
 import { UtmExternalLink } from "@/components/UtmExternalLink";
 
-// Lazy load heavy components for better initial load
-const BeamsBackground = lazy(() => import("@/components/ui/beams-background").then(m => ({ default: m.BeamsBackground })));
+// Import lightweight glow background
+import { GlowBackground } from "@/components/ui/glow-background";
 
 // Move schemas outside component to avoid recreation on every render
 const organizationSchema = {
@@ -124,10 +124,9 @@ const Index = () => {
       <Header />
 
       <main className="min-h-screen">
-        {/* 2) Hero Section - Com Beams Background */}
-        <Suspense fallback={<div className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary via-primary to-secondary"><div className="relative z-10 max-w-4xl mx-auto text-center py-20"><div className="h-96 animate-pulse bg-secondary/20 rounded-lg"></div></div></div>}>
-          <BeamsBackground className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary via-primary to-secondary" intensity="medium">
-          <div className="relative z-10 max-w-4xl mx-auto text-center py-20">
+        {/* 2) Hero Section - Com Glow Background */}
+        <GlowBackground className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary via-primary to-secondary">
+          <div className="max-w-4xl mx-auto text-center py-20">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground animate-fade-in">
               Bata recorde de faturamento recebendo pacientes certos na sua cadeira
             </h1>
@@ -145,8 +144,7 @@ const Index = () => {
             </div>
 
           </div>
-        </BeamsBackground>
-        </Suspense>
+        </GlowBackground>
 
         {/* 3) Prova Social - Contadores */}
         <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/30">
