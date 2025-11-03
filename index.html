@@ -25,9 +25,9 @@
         };
         
         if ('requestIdleCallback' in window) {
-          requestIdleCallback(actualLoad, { timeout: 8000 });
+          requestIdleCallback(actualLoad, { timeout: 2000 });
         } else {
-          setTimeout(actualLoad, 5000);
+          setTimeout(actualLoad, 1000);
         }
       }
       
@@ -49,8 +49,8 @@
         window.addEventListener(event, handleInteraction, { passive: true, once: true });
       });
       
-      // Fallback: load after 5 seconds if no interaction
-      setTimeout(loadGTM, 5000);
+      // Fallback: load after 1 second if no interaction
+      setTimeout(loadGTM, 1000);
       
     })(window,document,'script','dataLayer','GTM-P2Q493W');
     </script>
