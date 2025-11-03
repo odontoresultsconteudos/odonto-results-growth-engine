@@ -124,8 +124,17 @@ export default defineConfig(({ mode }) => ({
       },
     },
     chunkSizeWarningLimit: 800,
-    minify: 'esbuild',
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+        pure_funcs: ['console.log'],
+      },
+    },
     cssCodeSplit: true,
+    cssMinify: true,
     assetsInlineLimit: 4096,
+    reportCompressedSize: false,
   },
-}));
+}))

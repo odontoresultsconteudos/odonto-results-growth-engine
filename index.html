@@ -1,25 +1,32 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <!-- Google Tag Manager - Deferred -->
+    <!-- Google Tag Manager - Ultra Deferred -->
     <script>
-    // Defer GTM to not block critical rendering path
-    (function() {
-      var gtmScript = document.createElement('script');
-      gtmScript.async = true;
-      gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-P2Q493W';
-      
-      if (document.readyState === 'complete') {
-        setTimeout(function() { document.head.appendChild(gtmScript); }, 5000);
-      } else {
-        window.addEventListener('load', function() {
-          setTimeout(function() { document.head.appendChild(gtmScript); }, 5000);
-        });
-      }
-      
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({'gtm.start': new Date().getTime(), event:'gtm.js'});
-    })();
+    // Defer GTM even more aggressively to improve performance
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+    
+    // Load GTM only after page is fully interactive
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(function() {
+        setTimeout(function() {
+          var gtmScript = document.createElement('script');
+          gtmScript.async = true;
+          gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-P2Q493W';
+          document.head.appendChild(gtmScript);
+        }, 3000);
+      }, { timeout: 5000 });
+    } else {
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var gtmScript = document.createElement('script');
+          gtmScript.async = true;
+          gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-P2Q493W';
+          document.head.appendChild(gtmScript);
+        }, 3000);
+      });
+    }
     </script>
     <!-- End Google Tag Manager -->
 
