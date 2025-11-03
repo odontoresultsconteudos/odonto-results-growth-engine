@@ -11,14 +11,14 @@ if (rootElement.hasChildNodes()) {
   createRoot(rootElement).render(<App />);
 }
 
-// Register service worker
+// Register service worker with lower priority
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
-  window.addEventListener('load', () => {
+  // Use requestIdleCallback to defer SW registration
+  const registerServiceWorker = () => {
     import('virtual:pwa-register').then(({ registerSW }) => {
       registerSW({
-        immediate: true,
+        immediate: false, // Don't register immediately
         onNeedRefresh() {
-          // Auto-update when new content available
           console.log('New content available, updating...');
         },
         onOfflineReady() {
@@ -26,5 +26,11 @@ if ('serviceWorker' in navigator && import.meta.env.PROD) {
         },
       });
     });
-  });
+  };
+  
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(registerServiceWorker, { timeout: 3000 });
+  } else {
+    setTimeout(registerServiceWorker, 2000);
+  }
 }

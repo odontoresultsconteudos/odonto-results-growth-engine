@@ -1,32 +1,47 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <!-- Google Tag Manager - Ultra Deferred -->
+    <!-- Google Tag Manager - Maximum Deferred -->
     <script>
-    // Defer GTM even more aggressively to improve performance
+    // Initialize dataLayer immediately but defer GTM loading completely
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({'gtm.start': new Date().getTime(), event:'gtm.js'});
     
-    // Load GTM only after page is fully interactive
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(function() {
-        setTimeout(function() {
-          var gtmScript = document.createElement('script');
-          gtmScript.async = true;
-          gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-P2Q493W';
-          document.head.appendChild(gtmScript);
-        }, 3000);
-      }, { timeout: 5000 });
-    } else {
-      window.addEventListener('load', function() {
-        setTimeout(function() {
-          var gtmScript = document.createElement('script');
-          gtmScript.async = true;
-          gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-P2Q493W';
-          document.head.appendChild(gtmScript);
-        }, 3000);
+    // Load GTM only after significant user interaction or 10 seconds idle
+    (function() {
+      var gtmLoaded = false;
+      
+      function loadGTM() {
+        if (gtmLoaded) return;
+        gtmLoaded = true;
+        
+        var gtmScript = document.createElement('script');
+        gtmScript.async = true;
+        gtmScript.defer = true;
+        gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-P2Q493W';
+        document.head.appendChild(gtmScript);
+      }
+      
+      // Load on idle with long timeout
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGTM, { timeout: 10000 });
+      } else {
+        setTimeout(loadGTM, 10000);
+      }
+      
+      // Also load on first meaningful user interaction
+      var events = ['mousedown', 'keydown', 'touchstart', 'scroll'];
+      var loadOnInteraction = function() {
+        loadGTM();
+        events.forEach(function(event) {
+          window.removeEventListener(event, loadOnInteraction);
+        });
+      };
+      
+      events.forEach(function(event) {
+        window.addEventListener(event, loadOnInteraction, { passive: true, once: true });
       });
-    }
+    })();
     </script>
     <!-- End Google Tag Manager -->
 
@@ -59,9 +74,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0EA5E9" />
     
-    <!-- DNS prefetch and preconnect for external domains -->
+    <!-- Preconnect for critical external resources -->
     <link rel="preconnect" href="https://form.odontoresults.com.br" crossorigin />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://connect.facebook.net" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
     
     <title>Odonto Results - Marketing Digital para Clínicas Odontológicas</title>
     <meta name="description" content="Bata recorde de faturamento recebendo pacientes certos na sua cadeira
