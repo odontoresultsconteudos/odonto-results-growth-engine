@@ -15,19 +15,35 @@ export default defineConfig(({ mode }) => ({
     mode === "development" && componentTagger(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.jpg', 'og-image.jpg', 'robots.txt', 'sitemap.xml'],
+      includeAssets: [
+        'favicon.ico',
+        'favicon-16x16.png',
+        'favicon-32x32.png',
+        'apple-touch-icon.png',
+        'android-chrome-192x192.png',
+        'android-chrome-512x512.png',
+        'site.webmanifest',
+        'og-image.jpg',
+        'robots.txt',
+        'sitemap.xml'
+      ],
       manifest: {
         name: 'Odonto Results',
         short_name: 'OdontoResults',
         description: 'Marketing digital especializado para clínicas odontológicas',
-        theme_color: '#0ea5e9',
+        theme_color: '#4267B2',
         background_color: '#ffffff',
         display: 'standalone',
         icons: [
           {
-            src: '/favicon.jpg',
+            src: '/android-chrome-192x192.png',
             sizes: '192x192',
-            type: 'image/jpeg'
+            type: 'image/png'
+          },
+          {
+            src: '/android-chrome-512x512.png',
+            sizes: '512x512',
+            type: 'image/png'
           }
         ]
       },
