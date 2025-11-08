@@ -57,8 +57,8 @@ const Sobre = () => {
   return (
     <>
       <SEO 
-        title="Quem é a Odonto Results - Agência de Marketing Odontológico"
-        description="Conheça a Odonto Results: +1.500 clínicas atendidas, 500 mil leads gerados. Método Paciente Previsível para transformar sua clínica odontológica em máquina de faturamento."
+        title="Sobre Nós - Odonto Results | Dr. Alex Gurrão e Vinícius Ragazzi"
+        description="Fundada em 2020 por Dr. Alex Gurrão e Vinícius Ragazzi. 1.500+ clínicas atendidas, 500 mil leads gerados. Conheça o Método Paciente Previsível e nossa equipe."
         keywords="Odonto Results, método paciente previsível, agência marketing odontológico, leads qualificados odontologia, equipe Odonto Results, Dr Alex Gurrão, Vinícius Ragazzi"
         canonical="https://odontoresults.com.br/sobre"
         structuredData={[breadcrumbSchema, teamSchema, organizationSchema]}

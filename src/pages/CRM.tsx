@@ -24,8 +24,8 @@ const CRM = () => {
 
   return <div className="min-h-screen bg-background">
       <SEO 
-        title="CRM Inteligente para Clínicas Odontológicas"
-        description="Gestão inteligente de leads odontológicos com CRM integrado que organiza, prioriza e maximiza o aproveitamento de cada oportunidade de negócio."
+        title="CRM Odontológico - Gestão de Leads e Funil de Vendas"
+        description="Organize e priorize leads com CRM integrado para dentistas. Acompanhe funil completo: qualificação → agendamento → comparecimento → fechamento. +45% aproveitamento."
         keywords="CRM odontológico, gestão de leads dentista, funil de vendas clínica, automação marketing odontologia, software gestão pacientes"
         canonical="https://odontoresults.com.br/crm"
         structuredData={breadcrumbSchema}

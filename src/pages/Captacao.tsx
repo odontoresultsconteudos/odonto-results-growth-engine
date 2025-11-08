@@ -36,8 +36,8 @@ const Captacao = () => {
 
   return <div className="min-h-screen bg-background">
       <SEO 
-        title="Captação de Leads Qualificados para Clínicas Odontológicas"
-        description="Atraia pacientes qualificados com anúncios segmentados no Facebook, Instagram e Google. Mais de 500 mil leads gerados para clínicas odontológicas."
+        title="Captação de Leads Qualificados - Anúncios para Dentistas"
+        description="Anúncios segmentados no Facebook, Instagram e Google que atraem pacientes prontos para contratar. +500 mil leads gerados para 1.500+ clínicas odontológicas."
         keywords="captação de pacientes, leads odontológicos, Facebook Ads dentista, Instagram Ads clínica, Google Ads dentista, tráfego pago odontologia"
         canonical="https://odontoresults.com.br/captacao"
         structuredData={[breadcrumbSchema, serviceSchema]}

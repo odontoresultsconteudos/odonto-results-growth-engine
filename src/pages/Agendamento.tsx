@@ -24,8 +24,8 @@ const Agendamento = () => {
 
   return <div className="min-h-screen bg-background">
       <SEO 
-        title="Agendamento Profissional com CRC e IA para Clínicas"
-        description="Transforme leads em consultas agendadas com CRC profissional e IA 24h no WhatsApp. Maximize o aproveitamento de cada paciente captado."
+        title="Sistema de Agendamento Inteligente - CRC + IA WhatsApp 24h"
+        description="Converta leads em consultas com CRC treinada + IA 24h no WhatsApp. Sistema profissional de agendamento que aumenta taxa de comparecimento em +85%."
         keywords="agendamento online dentista, CRC odontologia, chatbot WhatsApp clínica, automação agendamento, IA agendamento pacientes"
         canonical="https://odontoresults.com.br/agendamento"
         structuredData={breadcrumbSchema}

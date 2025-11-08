@@ -115,8 +115,8 @@ const Index = () => {
 
   return <>
       <SEO 
-        title="Bata Recorde de Faturamento Recebendo Pacientes Certos na Cadeira"
-        description="Atraímos, respondemos, agendamos e lembramos o paciente até ele sentar na sua cadeira através do Método Paciente Previsível para clínicas odontológicas."
+        title="Marketing para Dentistas - Método Paciente Previsível | Odonto Results"
+        description="Atraímos, agendamos e lembramos pacientes até sentarem na sua cadeira. Método completo: captação + CRM + IA WhatsApp. 1.500+ clínicas, 500 mil leads gerados."
         keywords="pacientes para clínica odontológica, método paciente previsível, agendamento inteligente dentista, captação de pacientes qualificados, marketing para dentistas"
         canonical="https://odontoresults.com.br/"
         structuredData={[organizationSchema, localBusinessSchema, faqSchema]}

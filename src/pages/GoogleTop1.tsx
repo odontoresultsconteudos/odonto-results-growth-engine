@@ -25,8 +25,8 @@ const GoogleTop1 = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO 
-        title="Google Top 1 - Domine o Google Maps na Sua Região"
-        description="Apareça em primeiro lugar no Google Maps quando pacientes procuram dentista perto de mim. Estratégia completa de SEO local para clínicas odontológicas."
+        title="Google Top 1 para Dentistas - SEO Local e Google Maps"
+        description="Apareça no topo quando pacientes buscam 'dentista perto de mim'. Estratégia SEO local, otimização Google Maps e gestão de avaliações. Média de ranqueamento Top 3."
         keywords="Google Maps dentista, SEO local odontologia, dentista perto de mim, Google Meu Negócio clínica, ranqueamento Google dentista"
         canonical="https://odontoresults.com.br/google-top-1"
         structuredData={breadcrumbSchema}

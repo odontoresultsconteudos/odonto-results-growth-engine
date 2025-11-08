@@ -24,8 +24,8 @@ const Autoridade = () => {
 
   return <div className="min-h-screen bg-background">
       <SEO 
-        title="Vitrine de Autoridade para Clínicas Odontológicas"
-        description="Torne-se referência na sua região com conteúdos estratégicos que posicionam sua clínica como autoridade e facilitam a decisão do paciente."
+        title="Vitrine de Autoridade - Construa Reputação Digital para Dentistas"
+        description="Construa autoridade digital com conteúdos estratégicos: vídeos educativos, casos antes/depois e depoimentos que convertem pacientes. Marketing de conteúdo odontológico."
         keywords="autoridade odontológica, marketing de conteúdo dentista, branding clínica, reputação online dentista, vídeos educativos odontologia"
         canonical="https://odontoresults.com.br/autoridade"
         structuredData={breadcrumbSchema}

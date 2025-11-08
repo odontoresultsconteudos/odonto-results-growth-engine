@@ -34,8 +34,8 @@ const Contato = () => {
   return (
     <>
       <SEO 
-        title="Contato - Fale Conosco"
-        description="Entre em contato com a Odonto Results. Estamos prontos para ajudar sua clínica odontológica a crescer e alcançar resultados extraordinários."
+        title="Contato Odonto Results - Agende Apresentação Gratuita"
+        description="Fale com nossa equipe e receba diagnóstico gratuito para sua clínica. Atendimento seg-sex 9h-18h. Bandeirantes, PR. faleconosco@odontoresults.com.br"
         keywords="contato Odonto Results, falar com consultor odontológico, orçamento marketing dental"
         canonical="https://odontoresults.com.br/contato"
         structuredData={[breadcrumbSchema, contactSchema]}
