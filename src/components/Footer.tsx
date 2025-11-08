@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-8">
           <div>
             <img src={logoSvg} alt="Odonto Results" className="h-10 mb-4" width="120" height="40" />
-            <p className="text-sm text-muted-foreground">Fazendo Clínicas Odontológicas Baterem recorde de faturamento recebendo pacientes certos na cadeira através do Método Paciente Previsível.</p>
+            <p className="text-sm text-muted-foreground">A Odonto Results ajuda Clínicas Odontológicas a baterem Recorde de Faturamento através do Método Paciente Previsível, com 5 pilares: Captação de Leads Qualificados, Vitrine de Autoridade, Google Top 1, Agendamento Profissional, CRM Inteligente.</p>
           </div>
 
           <div>
