@@ -15,7 +15,7 @@ export default defineConfig(({ mode }) => ({
     mode === "development" && componentTagger(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.jpg', 'og-image.jpg', 'robots.txt'],
+      includeAssets: ['favicon.jpg', 'og-image.jpg', 'robots.txt', 'sitemap.xml'],
       manifest: {
         name: 'Odonto Results',
         short_name: 'OdontoResults',
