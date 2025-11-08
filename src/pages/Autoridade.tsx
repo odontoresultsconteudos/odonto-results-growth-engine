@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import { Award, Eye, Star, Video } from "lucide-react";
-import { Link } from "react-router-dom";
 import { SEO } from "@/components/SEO";
+import { Footer } from "@/components/Footer";
 
 const Autoridade = () => {
   const breadcrumbSchema = {
@@ -173,19 +173,7 @@ const Autoridade = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 border-t border-border/40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-muted-foreground text-sm">
-              © 2025 Odonto Results. Todos os direitos reservados.
-            </p>
-            <Link to="/" className="text-accent hover:text-accent/80 transition-colors text-sm font-medium">
-              ← Voltar para Home
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>;
 };
 export default Autoridade;

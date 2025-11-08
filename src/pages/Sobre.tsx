@@ -5,6 +5,7 @@ import alexGurraoCeo from "@/assets/alex-gurrao-ceo.webp";
 import viniciusRagazziCoo from "@/assets/vinicius-ragazzi-coo.webp";
 import Header from "@/components/Header";
 import { SEO } from "@/components/SEO";
+import { Footer } from "@/components/Footer";
 
 const Sobre = () => {
   const breadcrumbSchema = {
@@ -276,6 +277,7 @@ const Sobre = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 };

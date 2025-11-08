@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Mail, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import { SEO } from "@/components/SEO";
+import { Footer } from "@/components/Footer";
 
 const Contato = () => {
   const breadcrumbSchema = {
@@ -135,6 +136,7 @@ const Contato = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 };
