@@ -132,7 +132,8 @@ export default defineConfig(({ mode }) => ({
       '@radix-ui/react-dialog',
       '@radix-ui/react-dropdown-menu',
       '@radix-ui/react-tooltip',
-      'lucide-react'
+      'lucide-react',
+      'sonner'
     ],
   },
   build: {
