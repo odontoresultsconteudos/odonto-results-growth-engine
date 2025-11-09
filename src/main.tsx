@@ -1,22 +1,22 @@
 import { createRoot, hydrateRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App.tsx";
 import "./index.css";
 
 const rootElement = document.getElementById("root")!;
 
-// Optimize initial render by using concurrent features
-const renderApp = () => {
-  // Use hydration for pre-rendered content, otherwise use createRoot
-  if (rootElement.hasChildNodes()) {
-    hydrateRoot(rootElement, <App />);
-  } else {
-    const root = createRoot(rootElement);
-    root.render(<App />);
-  }
-};
+const app = (
+  <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <App />
+  </BrowserRouter>
+);
 
-// Start rendering immediately
-renderApp();
+// Use hydration for SSG in production, createRoot in development
+if (import.meta.env.PROD) {
+  hydrateRoot(rootElement, app);
+} else {
+  createRoot(rootElement).render(app);
+}
 
 // Extreme deferral of service worker - load after page becomes interactive
 if ('requestIdleCallback' in window) {
