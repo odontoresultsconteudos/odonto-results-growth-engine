@@ -125,25 +125,6 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  ssr: {
-    noExternal: [
-      'react-helmet-async',
-      '@radix-ui/react-accordion',
-      '@radix-ui/react-dialog',
-      '@radix-ui/react-dropdown-menu',
-      '@radix-ui/react-tooltip',
-      '@radix-ui/react-navigation-menu',
-      '@radix-ui/react-separator',
-      '@radix-ui/react-slot',
-      '@radix-ui/react-toast',
-      'lucide-react',
-      'sonner',
-      'class-variance-authority',
-      'clsx',
-      'tailwind-merge',
-      'cmdk'
-    ],
-  },
   build: {
     rollupOptions: {
       output: {

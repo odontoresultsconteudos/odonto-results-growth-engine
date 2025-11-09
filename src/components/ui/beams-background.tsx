@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -55,17 +57,12 @@ export function BeamsBackground({
     };
 
     useEffect(() => {
-        // SSR guard
-        if (typeof window === 'undefined') return;
-        
         // Lazy load animation after 1 second to prioritize content loading
         const loadTimer = setTimeout(() => setIsLoaded(true), 1000);
         return () => clearTimeout(loadTimer);
     }, []);
 
     useEffect(() => {
-        // SSR guard
-        if (typeof window === 'undefined') return;
         if (!isLoaded) return;
 
         const canvas = canvasRef.current;

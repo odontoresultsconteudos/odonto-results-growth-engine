@@ -20,9 +20,6 @@ export const useUtmParams = () => {
   const [utmString, setUtmString] = useState<string>('');
 
   useEffect(() => {
-    // SSR guard
-    if (typeof window === 'undefined') return;
-    
     // Captura UTMs da URL atual
     const captureUtms = () => {
       const searchParams = new URLSearchParams(window.location.search);
@@ -53,8 +50,6 @@ export const useUtmParams = () => {
 
   // Função helper para adicionar UTMs a uma URL
   const addUtmsToUrl = (url: string): string => {
-    // SSR guard
-    if (typeof window === 'undefined') return url;
     if (!utmString) return url;
 
     try {
