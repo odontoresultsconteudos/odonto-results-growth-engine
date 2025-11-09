@@ -1,6 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Target, Star, TrendingUp, Calendar, BarChart3, MessageSquare, Users, Zap, Clock, CheckCircle, TrendingDown, FileText, Shield } from "lucide-react";
+import {
+  ArrowRight,
+  Target,
+  Star,
+  TrendingUp,
+  Calendar,
+  BarChart3,
+  MessageSquare,
+  Users,
+  Zap,
+  Clock,
+  CheckCircle,
+  TrendingDown,
+  FileText,
+  Shield,
+} from "lucide-react";
 import blogPost1 from "@/assets/blog-post-1.webp";
 import blogPost2 from "@/assets/blog-post-2.webp";
 import blogPost3 from "@/assets/blog-post-3.webp";
@@ -20,102 +35,100 @@ import { GlowBackground } from "@/components/ui/glow-background";
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Odonto Results",
-  "url": "https://odontoresults.com.br",
-  "logo": "https://odontoresults.com.br/logo.png",
-  "description": "Marketing digital especializado para clínicas odontológicas com foco em resultados",
-  "address": {
+  name: "Odonto Results",
+  url: "https://odontoresults.com.br",
+  logo: "https://odontoresults.com.br/logo.png",
+  description: "Marketing digital especializado para clínicas odontológicas com foco em resultados",
+  address: {
     "@type": "PostalAddress",
-    "addressCountry": "BR"
+    addressCountry: "BR",
   },
-  "contactPoint": {
+  contactPoint: {
     "@type": "ContactPoint",
-    "contactType": "Sales",
-    "email": "contato@odontoresults.com.br"
+    contactType: "Sales",
+    email: "contato@odontoresults.com.br",
   },
-  "sameAs": [
-    "http://blog.odontoresults.com.br/"
-  ]
+  sameAs: ["http://blog.odontoresults.com.br/"],
 };
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Odonto Results",
-  "description": "Agência de marketing digital especializada em clínicas odontológicas",
-  "url": "https://odontoresults.com.br",
-  "telephone": "+55-11-XXXX-XXXX",
-  "address": {
+  name: "Odonto Results",
+  description: "Agência de marketing digital especializada em clínicas odontológicas",
+  url: "https://odontoresults.com.br",
+  telephone: "+55-11-XXXX-XXXX",
+  address: {
     "@type": "PostalAddress",
-    "addressCountry": "BR"
+    addressCountry: "BR",
   },
-  "aggregateRating": {
+  aggregateRating: {
     "@type": "AggregateRating",
-    "ratingValue": "5",
-    "reviewCount": "1500"
-  }
+    ratingValue: "5",
+    reviewCount: "1500",
+  },
 };
 
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [
+  mainEntity: [
     {
       "@type": "Question",
-      "name": "Em quanto tempo começo a perceber resultados?",
-      "acceptedAnswer": {
+      name: "Em quanto tempo começo a perceber resultados?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Varia por região e tratamento. Na apresentação, mostramos um plano de metas e expectativas."
-      }
+        text: "Varia por região e tratamento. Na apresentação, mostramos um plano de metas e expectativas.",
+      },
     },
     {
       "@type": "Question",
-      "name": "Funciona em cidade pequena ou região rural?",
-      "acceptedAnswer": {
+      name: "Funciona em cidade pequena ou região rural?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Sim. Ajustamos segmentação, raio e linguagem para seu contexto local."
-      }
+        text: "Sim. Ajustamos segmentação, raio e linguagem para seu contexto local.",
+      },
     },
     {
       "@type": "Question",
-      "name": "Vocês atendem qualquer especialidade?",
-      "acceptedAnswer": {
+      name: "Vocês atendem qualquer especialidade?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Atuamos com tratamentos funcionais e estéticos. Adequamos a campanha por prioridade clínica."
-      }
+        text: "Atuamos com tratamentos funcionais e estéticos. Adequamos a campanha por prioridade clínica.",
+      },
     },
     {
       "@type": "Question",
-      "name": "Quem fala com os leads?",
-      "acceptedAnswer": {
+      name: "Quem fala com os leads?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "CRC treinada e IA 24h no WhatsApp, com protocolo de confirmação para aumentar comparecimento."
-      }
+        text: "CRC treinada e IA 24h no WhatsApp, com protocolo de confirmação para aumentar comparecimento.",
+      },
     },
     {
       "@type": "Question",
-      "name": "Como acompanho os resultados?",
-      "acceptedAnswer": {
+      name: "Como acompanho os resultados?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Relatórios claros com foco em Agendamento e Comparecimento, além de rotinas de otimização."
-      }
+        text: "Relatórios claros com foco em Agendamento e Comparecimento, além de rotinas de otimização.",
+      },
     },
     {
       "@type": "Question",
-      "name": "Posso pausar ou priorizar tratamentos?",
-      "acceptedAnswer": {
+      name: "Posso pausar ou priorizar tratamentos?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Sim. O plano é vivo e pode priorizar campanhas por demanda e sazonalidade."
-      }
-    }
-  ]
+        text: "Sim. O plano é vivo e pode priorizar campanhas por demanda e sazonalidade.",
+      },
+    },
+  ],
 };
 
 const Index = () => {
-
-  return <>
-      <SEO 
-        title="Marketing para Dentistas - Método Paciente Previsível | Odonto Results"
+  return (
+    <>
+      <SEO
+        title="Marketing Odontológico - Método Paciente Previsível"
         description="Atraímos, agendamos e lembramos pacientes até sentarem na sua cadeira. Método completo: captação + CRM + IA WhatsApp. 1.500+ clínicas, 500 mil leads gerados."
         keywords="pacientes para clínica odontológica, método paciente previsível, agendamento inteligente dentista, captação de pacientes qualificados, marketing para dentistas"
         canonical="https://odontoresults.com.br/"
@@ -131,18 +144,22 @@ const Index = () => {
               Bata recorde de faturamento recebendo pacientes certos na sua cadeira
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-fade-in [animation-delay:200ms]">
-              Atraímos, respondemos, agendamos e lembramos o paciente até ele sentar na sua cadeira através do Método Paciente Previsível.
+              Atraímos, respondemos, agendamos e lembramos o paciente até ele sentar na sua cadeira através do Método
+              Paciente Previsível.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 animate-fade-in [animation-delay:400ms]">
-              <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
+              <UtmExternalLink
+                href="https://form.odontoresults.com.br/dLTRVKuI"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button variant="cta" size="lg" className="text-lg w-full sm:w-auto">
                   Agende uma Apresentação
                   <ArrowRight className="ml-2" />
                 </Button>
               </UtmExternalLink>
             </div>
-
           </div>
         </GlowBackground>
 
@@ -180,14 +197,11 @@ const Index = () => {
           </div>
         </section>
 
-
         {/* 4) O Método - 5 Pilares (SEM IMAGENS) */}
         <section id="metodo" className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-                O método Paciente Previsível
-              </h2>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">O método Paciente Previsível</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Estratégia ponta a ponta — do anúncio ao comparecimento — para transformar leads em pacientes.
               </p>
@@ -249,14 +263,19 @@ const Index = () => {
                   </div>
                   <h3 className="text-xl font-bold mb-3">CRM Inteligente</h3>
                   <p className="text-muted-foreground">
-                    Funil claro com foco em Agendamento e Comparecimento, tarefas e automações que aumentam aproveitamento.
+                    Funil claro com foco em Agendamento e Comparecimento, tarefas e automações que aumentam
+                    aproveitamento.
                   </p>
                 </Card>
               </UtmLink>
             </div>
 
             <div className="text-center mt-12">
-              <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
+              <UtmExternalLink
+                href="https://form.odontoresults.com.br/dLTRVKuI"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button variant="cta" size="lg">
                   Conhecer o Método
                   <ArrowRight className="ml-2" />
@@ -334,7 +353,11 @@ const Index = () => {
             </div>
 
             <div className="text-center mt-12">
-              <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
+              <UtmExternalLink
+                href="https://form.odontoresults.com.br/dLTRVKuI"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button variant="cta" size="lg">
                   Agende uma Apresentação
                   <ArrowRight className="ml-2" />
@@ -348,9 +371,7 @@ const Index = () => {
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-                O que nos diferencia
-              </h2>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">O que nos diferencia</h2>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -359,9 +380,7 @@ const Index = () => {
                   <MessageSquare className="w-6 h-6 text-accent" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">CRC + IA 24h</h3>
-                <p className="text-muted-foreground">
-                  Rapidez e consistência no primeiro contato.
-                </p>
+                <p className="text-muted-foreground">Rapidez e consistência no primeiro contato.</p>
               </Card>
 
               <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5 hover-scale">
@@ -369,9 +388,7 @@ const Index = () => {
                   <TrendingUp className="w-6 h-6 text-accent" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Google Top 1 local</h3>
-                <p className="text-muted-foreground">
-                  Método focado em buscas da sua região (Top 3, em média).
-                </p>
+                <p className="text-muted-foreground">Método focado em buscas da sua região (Top 3, em média).</p>
               </Card>
 
               <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5 hover-scale">
@@ -379,9 +396,7 @@ const Index = () => {
                   <Target className="w-6 h-6 text-accent" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Criativos por tratamento</h3>
-                <p className="text-muted-foreground">
-                  Linguagem e intenção que viram consulta.
-                </p>
+                <p className="text-muted-foreground">Linguagem e intenção que viram consulta.</p>
               </Card>
 
               <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5 hover-scale">
@@ -389,9 +404,7 @@ const Index = () => {
                   <BarChart3 className="w-6 h-6 text-accent" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Funil operacional</h3>
-                <p className="text-muted-foreground">
-                  Prioridade por valor/urgência e follow-up estruturado.
-                </p>
+                <p className="text-muted-foreground">Prioridade por valor/urgência e follow-up estruturado.</p>
               </Card>
 
               <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5 hover-scale">
@@ -407,9 +420,7 @@ const Index = () => {
                   <Zap className="w-6 h-6 text-accent" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Onboarding rápido</h3>
-                <p className="text-muted-foreground">
-                  Entramos no ar em até 7 dias após o kick-off.
-                </p>
+                <p className="text-muted-foreground">Entramos no ar em até 7 dias após o kick-off.</p>
               </Card>
             </div>
           </div>
@@ -419,9 +430,7 @@ const Index = () => {
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-secondary/20">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-                Projeção de Resultados
-              </h2>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Projeção de Resultados</h2>
               <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
                 Exemplo de resultado possível em fases mais avançadas do projeto
               </p>
@@ -559,12 +568,12 @@ const Index = () => {
                 <p className="text-xs sm:text-sm text-muted-foreground mb-2">Ticket Médio</p>
                 <p className="text-xl sm:text-2xl font-bold text-foreground">R$ 5.000,00</p>
               </Card>
-              
+
               <Card className="p-4 sm:p-6 text-center bg-gradient-to-br from-accent/20 to-accent/10 border-accent/30 hover:shadow-2xl hover:bg-accent/25 transition-all hover-scale">
                 <p className="text-xs sm:text-sm text-muted-foreground mb-2">Faturamento</p>
                 <p className="text-xl sm:text-2xl font-bold text-accent">R$ 95.000,00</p>
               </Card>
-              
+
               <Card className="p-4 sm:p-6 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20 hover:shadow-2xl hover:bg-primary/20 transition-all hover-scale">
                 <p className="text-xs sm:text-sm text-muted-foreground mb-2">ROI</p>
                 <p className="text-xl sm:text-2xl font-bold text-foreground">9.50x</p>
@@ -572,8 +581,14 @@ const Index = () => {
             </div>
 
             <div className="text-center">
-              <p className="text-xs sm:text-sm text-muted-foreground mb-6">*Projeção baseada em dados de clientes em fases avançadas. Resultados podem variar.</p>
-              <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
+              <p className="text-xs sm:text-sm text-muted-foreground mb-6">
+                *Projeção baseada em dados de clientes em fases avançadas. Resultados podem variar.
+              </p>
+              <UtmExternalLink
+                href="https://form.odontoresults.com.br/dLTRVKuI"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button variant="cta" size="lg" className="w-full sm:w-auto">
                   Quero resultados como esses
                   <ArrowRight className="ml-2" />
@@ -583,29 +598,32 @@ const Index = () => {
           </div>
         </section>
 
-
         {/* Últimos Posts do Blog */}
         <section id="ultimos-posts" className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-                Blog da Odonto Results
-              </h2>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Blog da Odonto Results</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Confira nossas dicas, estratégias e insights para clínicas odontológicas crescerem mais com marketing digital.
+                Confira nossas dicas, estratégias e insights para clínicas odontológicas crescerem mais com marketing
+                digital.
               </p>
             </div>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <a href="https://blog.odontoresults.com.br/post/metodo-paciente-previsivel-odonto-results" target="_blank" rel="noopener noreferrer" className="block group">
+              <a
+                href="https://blog.odontoresults.com.br/post/metodo-paciente-previsivel-odonto-results"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group"
+              >
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
-                    <ResponsiveImage 
-                      src={blogPost1} 
-                      alt="Método Paciente Previsível" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
-                      width={800} 
-                      height={450} 
+                    <ResponsiveImage
+                      src={blogPost1}
+                      alt="Método Paciente Previsível"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      width={800}
+                      height={450}
                       loading="lazy"
                       sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px"
                     />
@@ -615,21 +633,27 @@ const Index = () => {
                       Conheça o Método Paciente Previsível da Odonto Results
                     </h3>
                     <p className="text-muted-foreground">
-                      Descubra como o Método Paciente Previsível da Odonto Results potencializa captação, agendamento e faturamento em clínicas.
+                      Descubra como o Método Paciente Previsível da Odonto Results potencializa captação, agendamento e
+                      faturamento em clínicas.
                     </p>
                   </div>
                 </Card>
               </a>
 
-              <a href="https://blog.odontoresults.com.br/post/calculadora-de-marketing-odontologico-como-definir-investimentos" target="_blank" rel="noopener noreferrer" className="block group">
+              <a
+                href="https://blog.odontoresults.com.br/post/calculadora-de-marketing-odontologico-como-definir-investimentos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group"
+              >
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
-                    <ResponsiveImage 
-                      src={blogPost2} 
-                      alt="Calculadora de marketing odontológico" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
-                      width={800} 
-                      height={450} 
+                    <ResponsiveImage
+                      src={blogPost2}
+                      alt="Calculadora de marketing odontológico"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      width={800}
+                      height={450}
                       loading="lazy"
                       sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px"
                     />
@@ -639,21 +663,27 @@ const Index = () => {
                       Calculadora de marketing odontológico: como definir investimentos?
                     </h3>
                     <p className="text-muted-foreground">
-                      Use a calculadora de marketing odontológico para estimar leads, conversões e investimentos ideais para sua clínica dental.
+                      Use a calculadora de marketing odontológico para estimar leads, conversões e investimentos ideais
+                      para sua clínica dental.
                     </p>
                   </div>
                 </Card>
               </a>
 
-              <a href="https://blog.odontoresults.com.br/post/marketing-odontologico-2025-guia-completo-atrair-pacientes" target="_blank" rel="noopener noreferrer" className="block group">
+              <a
+                href="https://blog.odontoresults.com.br/post/marketing-odontologico-2025-guia-completo-atrair-pacientes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group"
+              >
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 overflow-hidden">
-                    <ResponsiveImage 
-                      src={blogPost3} 
-                      alt="Marketing Odontológico em 2025" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
-                      width={800} 
-                      height={450} 
+                    <ResponsiveImage
+                      src={blogPost3}
+                      alt="Marketing Odontológico em 2025"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      width={800}
+                      height={450}
                       loading="lazy"
                       sizes="(max-width: 640px) 400px, 1200px"
                     />
@@ -663,7 +693,8 @@ const Index = () => {
                       Marketing Odontológico em 2025: Guia Completo para Atrair Pacientes
                     </h3>
                     <p className="text-muted-foreground">
-                      Entenda as estratégias, regras do CFO, SEO Local, inbound e automação para crescer sua clínica odontológica em 2025.
+                      Entenda as estratégias, regras do CFO, SEO Local, inbound e automação para crescer sua clínica
+                      odontológica em 2025.
                     </p>
                   </div>
                 </Card>
@@ -685,9 +716,7 @@ const Index = () => {
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/50">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-                Perguntas frequentes
-              </h2>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Perguntas frequentes</h2>
             </div>
 
             <Accordion type="single" collapsible className="space-y-4">
@@ -757,9 +786,13 @@ const Index = () => {
             <p className="text-xl text-muted-foreground mb-8">
               Agende uma apresentação e receba um plano claro para os próximos 90 dias.
             </p>
-            
+
             <div className="flex justify-center">
-              <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
+              <UtmExternalLink
+                href="https://form.odontoresults.com.br/dLTRVKuI"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button variant="cta" size="lg" className="text-lg w-full sm:w-auto">
                   Agende uma Apresentação
                   <ArrowRight className="ml-2" />
@@ -771,6 +804,7 @@ const Index = () => {
 
         <Footer />
       </main>
-    </>;
+    </>
+  );
 };
 export default Index;
