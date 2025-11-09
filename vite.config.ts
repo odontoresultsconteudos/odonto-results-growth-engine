@@ -132,8 +132,14 @@ export default defineConfig(({ mode }) => ({
       '@radix-ui/react-dialog',
       '@radix-ui/react-dropdown-menu',
       '@radix-ui/react-tooltip',
+      '@radix-ui/react-navigation-menu',
+      '@radix-ui/react-separator',
+      '@radix-ui/react-slot',
       'lucide-react',
-      'sonner'
+      'sonner',
+      'class-variance-authority',
+      'clsx',
+      'tailwind-merge'
     ],
   },
   build: {
