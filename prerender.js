@@ -28,12 +28,17 @@ try {
   process.exit(1);
 }
 
-const routesToPrerender = fs
-  .readdirSync(toAbsolute('src/pages'))
-  .map((file) => {
-    const name = file.replace(/\.tsx$/, '').toLowerCase()
-    return name === 'index' ? '/' : `/${name}`
-  })
+// Define routes explicitly to match App.server.tsx
+const routesToPrerender = [
+  '/',
+  '/captacao',
+  '/autoridade',
+  '/google-top-1',
+  '/agendamento',
+  '/crm',
+  '/sobre',
+  '/contato'
+]
 
 console.log('🚀 Starting pre-rendering of', routesToPrerender.length, 'routes...');
 
@@ -45,7 +50,15 @@ console.log('🚀 Starting pre-rendering of', routesToPrerender.length, 'routes.
       const html = template.replace('<!--app-html-->', appHtml)
 
       const filePath = `dist${url === '/' ? '/index' : url}.html`
-      fs.writeFileSync(toAbsolute(filePath), html)
+      const fullPath = toAbsolute(filePath)
+      const dir = path.dirname(fullPath)
+      
+      // Ensure directory exists
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true })
+      }
+      
+      fs.writeFileSync(fullPath, html)
       console.log('✅ Pre-rendered:', filePath)
     } catch (error) {
       console.error('❌ Error rendering', url, ':', error);
