@@ -46,7 +46,7 @@ console.log('🚀 Starting pre-rendering of', routesToPrerender.length, 'routes.
   for (const url of routesToPrerender) {
     try {
       console.log('📄 Rendering:', url);
-      const appHtml = render(url);
+      const { html: appHtml } = render(url);
       const html = template.replace('<!--app-html-->', appHtml)
 
       const filePath = `dist${url === '/' ? '/index' : url}.html`

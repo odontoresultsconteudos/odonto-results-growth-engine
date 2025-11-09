@@ -7,12 +7,12 @@ export function render(url: string) {
   const helmetContext = {};
   
   const html = ReactDOMServer.renderToString(
-    <HelmetProvider context={helmetContext}>
-      <StaticRouter location={url}>
+    <StaticRouter location={url}>
+      <HelmetProvider context={helmetContext}>
         <AppServer />
-      </StaticRouter>
-    </HelmetProvider>
+      </HelmetProvider>
+    </StaticRouter>
   );
   
-  return html;
+  return { html, helmetContext };
 }
