@@ -8,7 +8,6 @@ import Header from "@/components/Header";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { SEO } from "@/components/SEO";
 import { ResponsiveImage } from "@/components/ResponsiveImage";
-import { lazy, Suspense } from "react";
 import { UtmLink } from "@/components/UtmLink";
 import { UtmExternalLink } from "@/components/UtmExternalLink";
 import { Footer } from "@/components/Footer";

@@ -135,11 +135,13 @@ export default defineConfig(({ mode }) => ({
       '@radix-ui/react-navigation-menu',
       '@radix-ui/react-separator',
       '@radix-ui/react-slot',
+      '@radix-ui/react-toast',
       'lucide-react',
       'sonner',
       'class-variance-authority',
       'clsx',
-      'tailwind-merge'
+      'tailwind-merge',
+      'cmdk'
     ],
   },
   build: {
