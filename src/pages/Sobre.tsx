@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Target, Award, MapPin, Calendar, Database, TrendingUp, Quote } from "lucide-react";
+import { ArrowRight, Target, Award, MapPin, Calendar, Database, TrendingUp, Quote, Linkedin, Instagram, Youtube } from "lucide-react";
 import alexGurraoCeo from "@/assets/alex-gurrao-ceo.webp";
 import viniciusRagazziCoo from "@/assets/vinicius-ragazzi-coo.webp";
 import Header from "@/components/Header";
@@ -235,9 +235,20 @@ const Sobre = () => {
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Vinícius Ragazzi</h3>
                   <p className="text-accent font-semibold mb-4">CMO</p>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground mb-6">
                     Engenheiro de Produção, com MBA em Gestão de Tráfego Pago e em Gestão de Agência de Marketing. Há 12 anos atua no marketing digital e hoje ajuda clínicas odontológicas a baterem recordes de faturamento através do Método Paciente Previsível.
                   </p>
+                  <div className="flex justify-center gap-4">
+                    <a href="https://br.linkedin.com/in/viniciusragazzi" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+                      <Linkedin className="w-6 h-6" />
+                    </a>
+                    <a href="https://www.instagram.com/euviniciusragazzi/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+                      <Instagram className="w-6 h-6" />
+                    </a>
+                    <a href="https://www.youtube.com/@viniciusragazzi" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+                      <Youtube className="w-6 h-6" />
+                    </a>
+                  </div>
                 </div>
               </Card>
             </div>
