@@ -236,7 +236,7 @@ const Sobre = () => {
                   <h3 className="text-2xl font-bold mb-2">Vinícius Ragazzi</h3>
                   <p className="text-accent font-semibold mb-4">CMO</p>
                   <p className="text-muted-foreground">
-                    Com 12 anos de experiência em marketing digital, lidera as estratégias de captação e crescimento de clínicas odontológicas em todo Brasil.
+                    Engenheiro de Produção, com MBA em Gestão de Tráfego Pago e em Gestão de Agência de Marketing. Há 12 anos atua no marketing digital e hoje ajuda clínicas odontológicas a baterem recordes de faturamento através do Método Paciente Previsível.
                   </p>
                 </div>
               </Card>
