@@ -20,7 +20,7 @@ export const Footer = () => {
               <li><UtmLink to="/agendamento" className="hover:text-accent transition-colors">Agendamento</UtmLink></li>
               <li><UtmLink to="/crm" className="hover:text-accent transition-colors">CRM</UtmLink></li>
               <li><UtmLink to="/sobre" className="hover:text-accent transition-colors">Sobre</UtmLink></li>
-              <li><UtmExternalLink href="http://blog.odontoresults.com.br/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Blog</UtmExternalLink></li>
+              <li><UtmExternalLink href="https://blog.odontoresults.com.br/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Blog</UtmExternalLink></li>
               <li><UtmLink to="/contato" className="hover:text-accent transition-colors">Contato</UtmLink></li>
             </ul>
           </div>

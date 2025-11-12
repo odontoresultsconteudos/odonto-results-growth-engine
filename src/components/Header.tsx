@@ -89,7 +89,7 @@ const Header = () => {
           </NavigationMenu>
 
           <UtmExternalLink
-            href="http://blog.odontoresults.com.br/"
+            href="https://blog.odontoresults.com.br/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium transition-colors hover:text-accent flex items-center gap-1"
@@ -178,7 +178,7 @@ const Header = () => {
               </Accordion>
 
               <UtmExternalLink
-                href="http://blog.odontoresults.com.br/"
+                href="https://blog.odontoresults.com.br/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm font-medium transition-colors hover:text-accent py-2 flex items-center gap-2"

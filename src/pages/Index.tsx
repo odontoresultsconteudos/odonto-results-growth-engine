@@ -48,7 +48,7 @@ const organizationSchema = {
     contactType: "Sales",
     email: "contato@odontoresults.com.br",
   },
-  sameAs: ["http://blog.odontoresults.com.br/"],
+  sameAs: ["https://blog.odontoresults.com.br/"],
 };
 
 const localBusinessSchema = {
