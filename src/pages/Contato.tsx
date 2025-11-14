@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Mail, Clock } from "lucide-react";
+import { MapPin, Mail, Clock, MessageCircle } from "lucide-react";
 import Header from "@/components/Header";
 import { SEO } from "@/components/SEO";
 import { Footer } from "@/components/Footer";
@@ -70,6 +70,20 @@ const Contato = () => {
                 </p>
 
                 <div className="space-y-6">
+                  <Card className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 rounded-lg bg-accent/10">
+                        <MessageCircle className="h-6 w-6 text-accent" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-1">WhatsApp</h3>
+                        <a href="https://wa.me/5543991781922" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+                          (43) 99178-1922
+                        </a>
+                      </div>
+                    </div>
+                  </Card>
+
                   <Card className="p-6">
                     <div className="flex items-start gap-4">
                       <div className="p-3 rounded-lg bg-accent/10">
