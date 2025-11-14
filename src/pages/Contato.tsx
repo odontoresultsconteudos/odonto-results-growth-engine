@@ -119,6 +119,32 @@ const Contato = () => {
           </div>
         </section>
 
+        {/* Google Maps Section */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">
+                Visite Nosso Escritório
+              </h2>
+              <p className="text-muted-foreground">
+                Estamos localizados em Bandeirantes, PR. Venha nos visitar!
+              </p>
+            </div>
+            <div className="max-w-5xl mx-auto">
+              <div className="relative w-full rounded-lg overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%' }}>
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.839692017769!2d-50.374760599999995!3d-23.1029635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eac11f764ac38d%3A0x56aaa6971da4b3f!2sOdonto%20Results!5e0!3m2!1spt-BR!2sbr!4v1763098239225!5m2!1spt-BR!2sbr" 
+                  className="absolute top-0 left-0 w-full h-full border-0"
+                  allowFullScreen
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Localização Odonto Results"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/50">
           <div className="max-w-4xl mx-auto text-center">
