@@ -19,6 +19,9 @@ import {
 import blogPost1 from "@/assets/blog-post-1.webp";
 import blogPost2 from "@/assets/blog-post-2.webp";
 import blogPost3 from "@/assets/blog-post-3.webp";
+import metaBadge from "@/assets/meta-partner-badge.webp";
+import googleBadge from "@/assets/google-partner-badge.webp";
+import manychatBadge from "@/assets/manychat-badge.webp";
 import Header from "@/components/Header";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { SEO } from "@/components/SEO";
@@ -594,6 +597,65 @@ const Index = () => {
                   <ArrowRight className="ml-2" />
                 </Button>
               </UtmExternalLink>
+            </div>
+          </div>
+        </section>
+
+        {/* Nossos Selos Oficiais */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Nossos Selos Oficiais</h2>
+              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+                Credibilidade, certificações oficiais e domínio técnico para gerar resultados reais para clínicas odontológicas.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Meta Business Partner */}
+              <Card className="p-6 hover:shadow-2xl transition-all hover-scale">
+                <div className="flex justify-center mb-6">
+                  <img 
+                    src={metaBadge} 
+                    alt="Meta Business Partner" 
+                    className="h-24 w-auto object-contain"
+                  />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-center">Meta Business Partner</h3>
+                <p className="text-muted-foreground text-center">
+                  Fazer parte do programa oficial da Meta significa que seguimos padrões elevados de qualidade nas campanhas do Facebook e Instagram. Na prática, isso garante anúncios mais eficientes, melhor performance e estratégias alinhadas diretamente às recomendações da plataforma — o que se traduz em mais pacientes certos chegando até sua clínica.
+                </p>
+              </Card>
+
+              {/* Google Partner */}
+              <Card className="p-6 hover:shadow-2xl transition-all hover-scale">
+                <div className="flex justify-center mb-6">
+                  <img 
+                    src={googleBadge} 
+                    alt="Google Partner" 
+                    className="h-24 w-auto object-contain"
+                  />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-center">Google Partner</h3>
+                <p className="text-muted-foreground text-center">
+                  Integrar o programa Google Partners nos permite acessar treinamentos, recursos e orientações oficiais diretamente do Google. Isso significa campanhas mais inteligentes, melhor posicionamento no Google Maps e Pesquisa, redução de custos e maior geração de oportunidades qualificadas para sua clínica.
+                </p>
+              </Card>
+
+              {/* Manychat Messenger Marketing Expert */}
+              <Card className="p-6 hover:shadow-2xl transition-all hover-scale">
+                <div className="flex justify-center mb-6">
+                  <img 
+                    src={manychatBadge} 
+                    alt="Manychat Messenger Marketing Expert" 
+                    className="h-24 w-auto object-contain"
+                  />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-center">Manychat Messenger Marketing Expert</h3>
+                <p className="text-muted-foreground text-center">
+                  Essa certificação comprova nossa capacidade de criar automações que aceleram o atendimento e aumentam as chances de conversão. Com expertise em WhatsApp, Instagram e Messenger, garantimos respostas rápidas, fluxos otimizados e maior volume de pacientes avançando no funil de agendamento.
+                </p>
+              </Card>
             </div>
           </div>
         </section>
