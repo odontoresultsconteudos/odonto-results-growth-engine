@@ -26,6 +26,10 @@ import mbaTrafegoPago from "@/assets/mba-gestao-trafego-pago.webp";
 import mbaAgenciaMarketing from "@/assets/mba-gestao-agencia-marketing.webp";
 import certMetaAds from "@/assets/certificado-meta-ads.webp";
 import certGoogleAds from "@/assets/certificado-google-ads.webp";
+import mbaTrafegopagoThumb from "@/assets/mba-gestao-trafego-pago-thumb.webp";
+import mbaAgenciaMarketingThumb from "@/assets/mba-gestao-agencia-marketing-thumb.webp";
+import certMetaAdsThumb from "@/assets/certificado-meta-ads-thumb.webp";
+import certGoogleAdsThumb from "@/assets/certificado-google-ads-thumb.webp";
 import Header from "@/components/Header";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
@@ -682,7 +686,7 @@ const Index = () => {
                   <Card className="p-6 hover:shadow-2xl transition-all hover-scale cursor-pointer">
                     <div className="flex justify-center mb-4">
                       <img 
-                        src={mbaTrafegoPago} 
+                        src={mbaTrafegopagoThumb} 
                         alt="MBA em Gestão de Tráfego Pago" 
                         className="w-full h-auto object-contain rounded-lg max-h-64"
                         loading="lazy"
@@ -709,7 +713,7 @@ const Index = () => {
                   <Card className="p-6 hover:shadow-2xl transition-all hover-scale cursor-pointer">
                     <div className="flex justify-center mb-4">
                       <img 
-                        src={mbaAgenciaMarketing} 
+                        src={mbaAgenciaMarketingThumb} 
                         alt="MBA em Gestão de Agência de Marketing" 
                         className="w-full h-auto object-contain rounded-lg max-h-64"
                         loading="lazy"
@@ -736,7 +740,7 @@ const Index = () => {
                   <Card className="p-6 hover:shadow-2xl transition-all hover-scale cursor-pointer">
                     <div className="flex justify-center mb-4">
                       <img 
-                        src={certMetaAds} 
+                        src={certMetaAdsThumb} 
                         alt="Certificado de Tráfego Pago - Meta Ads" 
                         className="w-full h-auto object-contain rounded-lg max-h-64"
                         loading="lazy"
@@ -763,7 +767,7 @@ const Index = () => {
                   <Card className="p-6 hover:shadow-2xl transition-all hover-scale cursor-pointer">
                     <div className="flex justify-center mb-4">
                       <img 
-                        src={certGoogleAds} 
+                        src={certGoogleAdsThumb} 
                         alt="Certificado de Tráfego Pago - Google Ads" 
                         className="w-full h-auto object-contain rounded-lg max-h-64"
                         loading="lazy"
