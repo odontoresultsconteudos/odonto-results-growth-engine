@@ -22,8 +22,13 @@ import blogPost3 from "@/assets/blog-post-3.webp";
 import metaBadge from "@/assets/meta-partner-badge.webp";
 import googleBadge from "@/assets/google-partner-badge.webp";
 import manychatBadge from "@/assets/manychat-badge.webp";
+import mbaTrafegoPago from "@/assets/mba-gestao-trafego-pago.webp";
+import mbaAgenciaMarketing from "@/assets/mba-gestao-agencia-marketing.webp";
+import certMetaAds from "@/assets/certificado-meta-ads.webp";
+import certGoogleAds from "@/assets/certificado-google-ads.webp";
 import Header from "@/components/Header";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { SEO } from "@/components/SEO";
 import { ResponsiveImage } from "@/components/ResponsiveImage";
 import { lazy, Suspense } from "react";
@@ -656,6 +661,116 @@ const Index = () => {
                   Essa certificação comprova nossa capacidade de criar automações que aceleram o atendimento e aumentam as chances de conversão. Com expertise em WhatsApp, Instagram e Messenger, garantimos respostas rápidas, fluxos otimizados e maior volume de pacientes avançando no funil de agendamento.
                 </p>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Formação e Certificações do Especialista */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Formação e Certificações do Especialista</h2>
+              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+                Além dos selos oficiais das plataformas, nosso especialista em tráfego possui certificações avançadas e MBAs focados em performance e gestão de marketing.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              {/* MBA Gestão de Tráfego Pago */}
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Card className="p-6 hover:shadow-2xl transition-all hover-scale cursor-pointer">
+                    <div className="flex justify-center mb-4">
+                      <img 
+                        src={mbaTrafegoPago} 
+                        alt="MBA em Gestão de Tráfego Pago" 
+                        className="w-full h-auto object-contain rounded-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-bold text-center">MBA em Gestão de Tráfego Pago</h3>
+                    <p className="text-sm text-muted-foreground text-center mt-2">Clique para ampliar</p>
+                  </Card>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
+                  <img 
+                    src={mbaTrafegoPago} 
+                    alt="MBA em Gestão de Tráfego Pago" 
+                    className="w-full h-auto"
+                  />
+                </DialogContent>
+              </Dialog>
+
+              {/* MBA Gestão de Agência de Marketing */}
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Card className="p-6 hover:shadow-2xl transition-all hover-scale cursor-pointer">
+                    <div className="flex justify-center mb-4">
+                      <img 
+                        src={mbaAgenciaMarketing} 
+                        alt="MBA em Gestão de Agência de Marketing" 
+                        className="w-full h-auto object-contain rounded-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-bold text-center">MBA em Gestão de Agência de Marketing</h3>
+                    <p className="text-sm text-muted-foreground text-center mt-2">Clique para ampliar</p>
+                  </Card>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
+                  <img 
+                    src={mbaAgenciaMarketing} 
+                    alt="MBA em Gestão de Agência de Marketing" 
+                    className="w-full h-auto"
+                  />
+                </DialogContent>
+              </Dialog>
+
+              {/* Certificado Meta Ads */}
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Card className="p-6 hover:shadow-2xl transition-all hover-scale cursor-pointer">
+                    <div className="flex justify-center mb-4">
+                      <img 
+                        src={certMetaAds} 
+                        alt="Certificado de Tráfego Pago - Meta Ads" 
+                        className="w-full h-auto object-contain rounded-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-bold text-center">Certificação Subido de Tráfego - Meta Ads</h3>
+                    <p className="text-sm text-muted-foreground text-center mt-2">Clique para ampliar</p>
+                  </Card>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
+                  <img 
+                    src={certMetaAds} 
+                    alt="Certificado de Tráfego Pago - Meta Ads" 
+                    className="w-full h-auto"
+                  />
+                </DialogContent>
+              </Dialog>
+
+              {/* Certificado Google Ads */}
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Card className="p-6 hover:shadow-2xl transition-all hover-scale cursor-pointer">
+                    <div className="flex justify-center mb-4">
+                      <img 
+                        src={certGoogleAds} 
+                        alt="Certificado de Tráfego Pago - Google Ads" 
+                        className="w-full h-auto object-contain rounded-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-bold text-center">Certificação Subido de Tráfego - Google Ads</h3>
+                    <p className="text-sm text-muted-foreground text-center mt-2">Clique para ampliar</p>
+                  </Card>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
+                  <img 
+                    src={certGoogleAds} 
+                    alt="Certificado de Tráfego Pago - Google Ads" 
+                    className="w-full h-auto"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
         </section>
