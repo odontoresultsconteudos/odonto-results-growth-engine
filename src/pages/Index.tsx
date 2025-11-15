@@ -684,7 +684,9 @@ const Index = () => {
                       <img 
                         src={mbaTrafegoPago} 
                         alt="MBA em Gestão de Tráfego Pago" 
-                        className="w-full h-auto object-contain rounded-lg"
+                        className="w-full h-auto object-contain rounded-lg max-h-64"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <h3 className="text-xl font-bold text-center">MBA em Gestão de Tráfego Pago</h3>
@@ -694,8 +696,9 @@ const Index = () => {
                 <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
                   <img 
                     src={mbaTrafegoPago} 
-                    alt="MBA em Gestão de Tráfego Pago" 
+                    alt="MBA em Gestão de Tráfego Pago - Vinícius Ragazzi de Moraes" 
                     className="w-full h-auto"
+                    loading="eager"
                   />
                 </DialogContent>
               </Dialog>
@@ -708,7 +711,9 @@ const Index = () => {
                       <img 
                         src={mbaAgenciaMarketing} 
                         alt="MBA em Gestão de Agência de Marketing" 
-                        className="w-full h-auto object-contain rounded-lg"
+                        className="w-full h-auto object-contain rounded-lg max-h-64"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <h3 className="text-xl font-bold text-center">MBA em Gestão de Agência de Marketing</h3>
@@ -718,8 +723,9 @@ const Index = () => {
                 <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
                   <img 
                     src={mbaAgenciaMarketing} 
-                    alt="MBA em Gestão de Agência de Marketing" 
+                    alt="MBA em Gestão de Agência de Marketing - Vinícius Ragazzi de Moraes" 
                     className="w-full h-auto"
+                    loading="eager"
                   />
                 </DialogContent>
               </Dialog>
@@ -732,7 +738,9 @@ const Index = () => {
                       <img 
                         src={certMetaAds} 
                         alt="Certificado de Tráfego Pago - Meta Ads" 
-                        className="w-full h-auto object-contain rounded-lg"
+                        className="w-full h-auto object-contain rounded-lg max-h-64"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <h3 className="text-xl font-bold text-center">Certificação Subido de Tráfego - Meta Ads</h3>
@@ -742,8 +750,9 @@ const Index = () => {
                 <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
                   <img 
                     src={certMetaAds} 
-                    alt="Certificado de Tráfego Pago - Meta Ads" 
+                    alt="Certificado Subido de Tráfego Pago - Meta Ads - Vinícius Ragazzi de Moraes" 
                     className="w-full h-auto"
+                    loading="eager"
                   />
                 </DialogContent>
               </Dialog>
@@ -756,7 +765,9 @@ const Index = () => {
                       <img 
                         src={certGoogleAds} 
                         alt="Certificado de Tráfego Pago - Google Ads" 
-                        className="w-full h-auto object-contain rounded-lg"
+                        className="w-full h-auto object-contain rounded-lg max-h-64"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <h3 className="text-xl font-bold text-center">Certificação Subido de Tráfego - Google Ads</h3>
@@ -766,8 +777,9 @@ const Index = () => {
                 <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
                   <img 
                     src={certGoogleAds} 
-                    alt="Certificado de Tráfego Pago - Google Ads" 
+                    alt="Certificado Subido de Tráfego Pago - Google Ads - Vinícius Ragazzi de Moraes" 
                     className="w-full h-auto"
+                    loading="eager"
                   />
                 </DialogContent>
               </Dialog>
