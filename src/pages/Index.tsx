@@ -669,9 +669,9 @@ const Index = () => {
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Formação e Certificações do Especialista</h2>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Certificações e Formação Executiva</h2>
               <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-                Além dos selos oficiais das plataformas, nosso especialista em tráfego possui certificações avançadas e MBAs focados em performance e gestão de marketing.
+                Certificações avançadas e formação executiva que fortalecem a estratégia por trás do Método Paciente Previsível, unindo tráfego pago, gestão de marketing e visão de negócio para gerar crescimento previsível.
               </p>
             </div>
 
