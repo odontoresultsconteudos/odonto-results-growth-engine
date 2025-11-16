@@ -602,24 +602,9 @@ const Metodo = () => {
             Pronto para Resultados Previsíveis?
           </h2>
           
-          <p className="text-xl text-muted-foreground mb-8">
-            Agende uma apresentação e descubra como o método pode transformar sua clínica
+          <p className="text-xl text-muted-foreground mb-10">
+            Agende uma apresentação do método para sua clínica
           </p>
-          
-          <div className="flex flex-col items-center gap-6 mb-10">
-            <div className="flex items-center gap-3">
-              <Check className="text-accent" />
-              <span>Análise personalizada da sua clínica</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <Check className="text-accent" />
-              <span>Projeção de resultados baseada em dados</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <Check className="text-accent" />
-              <span>Sem compromisso, 100% consultivo</span>
-            </div>
-          </div>
           
           <Button variant="cta" size="lg" asChild>
             <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI">
