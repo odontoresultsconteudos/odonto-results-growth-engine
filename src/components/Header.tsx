@@ -63,7 +63,7 @@ const Header = () => {
                   Método
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[500px] gap-3 p-4 bg-background border border-border/40">
+                  <ul className="grid w-[500px] gap-3 p-4 bg-background border border-border/40 shadow-lg z-50">
                     <li>
                       <NavigationMenuLink asChild>
                         <UtmLink
@@ -174,6 +174,13 @@ const Header = () => {
                   </AccordionTrigger>
                   <AccordionContent>
                     <div className="flex flex-col gap-2 pl-4">
+                      <UtmLink
+                        to="/metodo"
+                        onClick={() => setMobileOpen(false)}
+                        className="text-sm py-2 transition-colors hover:text-accent font-semibold flex items-center gap-1 border-b border-border pb-3 mb-1"
+                      >
+                        🎯 Método Completo
+                      </UtmLink>
                       {pilares.map((pilar) => (
                         <UtmLink
                           key={pilar.href}
