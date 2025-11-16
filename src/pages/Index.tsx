@@ -220,7 +220,7 @@ const Index = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <UtmLink to="/captacao" className="block h-full hover-scale">
+              <UtmLink to="/captacao-leads-qualificados" className="block h-full hover-scale">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <Target className="w-6 h-6 text-accent" />
@@ -232,7 +232,7 @@ const Index = () => {
                 </Card>
               </UtmLink>
 
-              <UtmLink to="/autoridade" className="block h-full hover-scale">
+              <UtmLink to="/vitrine-autoridade-digital" className="block h-full hover-scale">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <Star className="w-6 h-6 text-accent" />
@@ -244,7 +244,7 @@ const Index = () => {
                 </Card>
               </UtmLink>
 
-              <UtmLink to="/google-top-1" className="block h-full hover-scale">
+              <UtmLink to="/google-top-1-seo-local" className="block h-full hover-scale">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <TrendingUp className="w-6 h-6 text-accent" />
@@ -256,7 +256,7 @@ const Index = () => {
                 </Card>
               </UtmLink>
 
-              <UtmLink to="/agendamento" className="block h-full hover-scale">
+              <UtmLink to="/agendamento-inteligente" className="block h-full hover-scale">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <Calendar className="w-6 h-6 text-accent" />
@@ -268,7 +268,7 @@ const Index = () => {
                 </Card>
               </UtmLink>
 
-              <UtmLink to="/crm" className="block h-full hover-scale">
+              <UtmLink to="/crm-inteligente" className="block h-full hover-scale">
                 <Card className="p-8 hover:shadow-2xl transition-all hover:border-accent/70 h-full hover:bg-accent/5">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                     <BarChart3 className="w-6 h-6 text-accent" />

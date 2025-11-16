@@ -93,7 +93,7 @@ const Metodo = () => {
         "name": "Preciso mudar meu sistema de gestão atual?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Não necessariamente. O método se integra com diversos sistemas de gestão odontológica existentes. Avaliamos sua infraestrutura atual no diagnóstico gratuito e identificamos as melhores formas de integração."
+          "text": "Não necessariamente. O método se integra com diversos sistemas existentes. Na apresentação, avaliamos sua infraestrutura e identificamos as melhores formas de integração."
         }
       },
       {
@@ -101,7 +101,7 @@ const Metodo = () => {
         "name": "Qual o primeiro passo para aplicar o método na minha clínica?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "O primeiro passo é agendar um diagnóstico gratuito onde analisamos sua situação atual de marketing, identificamos oportunidades específicas e mostramos como o método pode ser aplicado especificamente para sua realidade e objetivos."
+          "text": "Agende uma apresentação onde analisamos sua situação atual, identificamos oportunidades e mostramos como o método pode ser aplicado na sua realidade. Sem compromisso, apenas insights valiosos."
         }
       },
       {
@@ -169,7 +169,7 @@ const Metodo = () => {
         "Leads qualificados prontos para o processo de agendamento"
       ],
       estatistica: "+500 mil leads qualificados gerados",
-      link: "/captacao"
+      link: "/captacao-leads-qualificados"
     },
     {
       numero: "02",
@@ -184,7 +184,7 @@ const Metodo = () => {
         "Presença digital consistente que nutre relacionamento",
         "Redução de objeções e aumento da taxa de conversão"
       ],
-      link: "/autoridade"
+      link: "/vitrine-autoridade-digital"
     },
     {
       numero: "03",
@@ -201,7 +201,7 @@ const Metodo = () => {
       ],
       estatistica: "78% das buscas no Google Maps resultam em contato",
       estatistica2: "70% dos pacientes pesquisam no Google antes de escolher",
-      link: "/google-top-1"
+      link: "/google-top-1-seo-local"
     },
     {
       numero: "04",
@@ -214,7 +214,7 @@ const Metodo = () => {
         "Follow-up automatizado que reduz perda de oportunidades",
         "Confirmações e lembretes que aumentam a taxa de comparecimento"
       ],
-      link: "/agendamento"
+      link: "/agendamento-inteligente"
     },
     {
       numero: "05",
@@ -227,7 +227,7 @@ const Metodo = () => {
         "Automações que economizam tempo da equipe",
         "Insights data-driven para otimização contínua"
       ],
-      link: "/crm"
+      link: "/crm-inteligente"
     }
   ];
 
@@ -244,16 +244,6 @@ const Metodo = () => {
       <Header />
       
       <main>
-        {/* Breadcrumbs */}
-        <div className="container mx-auto px-4 pt-24">
-          <Breadcrumbs 
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'Método Paciente Previsível', href: '/metodo' }
-            ]} 
-          />
-        </div>
-
         {/* Hero Section */}
         <section className="py-16 md:py-24 container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
@@ -274,8 +264,8 @@ const Metodo = () => {
             </p>
             
             <Button size="lg" variant="default" asChild className="text-lg px-8 py-6 mb-12">
-              <UtmExternalLink href="https://wa.me/5511999999999?text=Quero%20conhecer%20o%20M%C3%A9todo%20Paciente%20Previs%C3%ADvel">
-                Agendar Diagnóstico Gratuito
+              <UtmExternalLink href="https://wa.me/5511999999999?text=Quero%20agendar%20uma%20apresenta%C3%A7%C3%A3o%20do%20M%C3%A9todo">
+                Agendar uma Apresentação
                 <ArrowRight className="ml-2 h-5 w-5" />
               </UtmExternalLink>
             </Button>

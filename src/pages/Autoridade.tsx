@@ -19,7 +19,7 @@ const Autoridade = () => {
       "@type": "ListItem",
       "position": 2,
       "name": "Vitrine de Autoridade",
-      "item": "https://odontoresults.com.br/autoridade"
+      "item": "https://odontoresults.com.br/vitrine-autoridade-digital"
     }]
   };
 
@@ -28,7 +28,7 @@ const Autoridade = () => {
         title="Vitrine de Autoridade - Construa Reputação Digital para Dentistas"
         description="Construa autoridade digital com conteúdos estratégicos: vídeos educativos, casos antes/depois e depoimentos que convertem pacientes. Marketing de conteúdo odontológico."
         keywords="autoridade odontológica, marketing de conteúdo dentista, branding clínica, reputação online dentista, vídeos educativos odontologia"
-        canonical="https://odontoresults.com.br/autoridade"
+        canonical="https://odontoresults.com.br/vitrine-autoridade-digital"
         structuredData={breadcrumbSchema}
       />
       <Header />
@@ -166,7 +166,7 @@ const Autoridade = () => {
             Transforme sua presença digital em uma máquina de captação de pacientes qualificados.
           </p>
           <Button variant="cta" size="lg" className="text-lg">
-            Agendar Diagnóstico Gratuito
+            Agendar uma Apresentação
           </Button>
           <p className="text-sm text-primary-foreground/80 mt-4">
             1500+ Clínicas atendidas • 500 mil+ Leads gerados • 10 milhões+ Gerenciados em tráfego pago

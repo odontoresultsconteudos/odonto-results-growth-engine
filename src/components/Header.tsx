@@ -24,11 +24,11 @@ import logoImage from "@/assets/logo.svg";
 import { cn } from "@/lib/utils";
 
 const pilares = [
-  { title: "Captação de Leads", href: "/captacao", description: "Anúncios segmentados para gerar volume qualificado" },
-  { title: "Vitrine de Autoridade", href: "/autoridade", description: "Conteúdo estratégico que prova competência" },
-  { title: "Google Top 1", href: "/google-top-1", description: "Dominância nas buscas locais do Google Maps" },
-  { title: "Agendamento Estruturado", href: "/agendamento", description: "CRC + IA para converter leads em consultas" },
-  { title: "CRM Inteligente", href: "/crm", description: "Gestão profissional para maximizar conversão" },
+  { title: "Captação de Leads", href: "/captacao-leads-qualificados", description: "Anúncios segmentados para gerar volume qualificado" },
+  { title: "Vitrine de Autoridade", href: "/vitrine-autoridade-digital", description: "Conteúdo estratégico que prova competência" },
+  { title: "Google Top 1", href: "/google-top-1-seo-local", description: "Dominância nas buscas locais do Google Maps" },
+  { title: "Agendamento Estruturado", href: "/agendamento-inteligente", description: "CRC + IA para converter leads em consultas" },
+  { title: "CRM Inteligente", href: "/crm-inteligente", description: "Gestão profissional para maximizar conversão" },
 ];
 
 const Header = () => {

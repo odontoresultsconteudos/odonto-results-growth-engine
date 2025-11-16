@@ -19,7 +19,7 @@ const CRM = () => {
       "@type": "ListItem",
       "position": 2,
       "name": "CRM Inteligente",
-      "item": "https://odontoresults.com.br/crm"
+      "item": "https://odontoresults.com.br/crm-inteligente"
     }]
   };
 
@@ -28,7 +28,7 @@ const CRM = () => {
         title="CRM Odontológico - Gestão de Leads e Funil de Vendas"
         description="Organize e priorize leads com CRM integrado para dentistas. Acompanhe funil completo: qualificação → agendamento → comparecimento → fechamento. +45% aproveitamento."
         keywords="CRM odontológico, gestão de leads dentista, funil de vendas clínica, automação marketing odontologia, software gestão pacientes"
-        canonical="https://odontoresults.com.br/crm"
+        canonical="https://odontoresults.com.br/crm-inteligente"
         structuredData={breadcrumbSchema}
       />
       <Header />
@@ -254,7 +254,7 @@ const CRM = () => {
             Tenha controle total sobre seus leads e transforme mais contatos em pacientes pagantes.
           </p>
           <Button variant="cta" size="lg" className="text-lg">
-            Agendar Diagnóstico Gratuito
+            Agendar uma Apresentação
           </Button>
           <p className="text-sm text-primary-foreground/80 mt-4">
             1500+ Clínicas atendidas • 500 mil+ Leads gerados • 10 milhões+ Gerenciados em tráfego pago
