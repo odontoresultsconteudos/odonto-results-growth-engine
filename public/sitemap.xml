@@ -7,32 +7,38 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://odontoresults.com.br/captacao</loc>
-    <lastmod>2025-11-02</lastmod>
+    <loc>https://odontoresults.com.br/metodo</loc>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://odontoresults.com.br/captacao-leads-qualificados</loc>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odontoresults.com.br/autoridade</loc>
-    <lastmod>2025-11-02</lastmod>
+    <loc>https://odontoresults.com.br/vitrine-autoridade-digital</loc>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odontoresults.com.br/google-top-1</loc>
-    <lastmod>2025-11-02</lastmod>
+    <loc>https://odontoresults.com.br/google-top-1-seo-local</loc>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odontoresults.com.br/agendamento</loc>
-    <lastmod>2025-11-02</lastmod>
+    <loc>https://odontoresults.com.br/agendamento-inteligente</loc>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odontoresults.com.br/crm</loc>
-    <lastmod>2025-11-02</lastmod>
+    <loc>https://odontoresults.com.br/crm-inteligente</loc>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
