@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 import { LegacyRedirect } from "@/components/LegacyRedirect";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import Metodo from "./pages/Metodo";
 import Captacao from "./pages/Captacao";
@@ -34,6 +35,7 @@ const App = () => {
           <Toaster />
           <Sonner />
           <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+            <ScrollToTop />
             <LegacyRedirect />
             <Routes>
               <Route path="/" element={<Index />} />
