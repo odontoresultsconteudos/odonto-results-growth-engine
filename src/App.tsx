@@ -37,7 +37,7 @@ const App = () => {
             <LegacyRedirect />
             <Routes>
               <Route path="/" element={<Index />} />
-              <Route path="/metodo" element={<Metodo />} />
+              <Route path="/metodo-paciente-previsivel" element={<Metodo />} />
               <Route path="/captacao-leads-qualificados" element={<Captacao />} />
               <Route path="/vitrine-autoridade-digital" element={<Autoridade />} />
               <Route path="/google-top-1-seo-local" element={<GoogleTop1 />} />
