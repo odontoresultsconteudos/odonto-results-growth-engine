@@ -64,6 +64,21 @@ const Header = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[500px] gap-3 p-4 bg-background border border-border/40">
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <UtmLink
+                          to="/metodo"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground font-semibold border-b border-border mb-2"
+                        >
+                          <div className="text-sm font-bold leading-none mb-1">
+                            🎯 Conheça o Método Completo
+                          </div>
+                          <p className="line-clamp-2 text-xs leading-snug text-muted-foreground font-normal">
+                            Entenda como os 5 pilares trabalham juntos
+                          </p>
+                        </UtmLink>
+                      </NavigationMenuLink>
+                    </li>
                     {pilares.map((pilar) => (
                       <li key={pilar.href}>
                         <NavigationMenuLink asChild>
