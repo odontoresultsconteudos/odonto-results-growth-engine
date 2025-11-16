@@ -42,7 +42,7 @@ const Metodo = () => {
         "@type": "ListItem",
         "position": 2,
         "name": "Método Paciente Previsível",
-        "item": "https://odontoresults.com.br/metodo"
+        "item": "https://odontoresults.com.br/metodo-paciente-previsivel"
       }
     ]
   };
@@ -234,16 +234,23 @@ const Metodo = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO 
-        title="Método Paciente Previsível - Sistema Completo de Marketing Odontológico"
-        description="Sistema integrado de marketing para clínicas odontológicas com 5 pilares: Captação de Leads, Autoridade Digital, Google Top 1, Agendamento Inteligente e CRM. Mais de 500 mil leads gerados para 1.500+ clínicas."
-        keywords="método paciente previsível, marketing odontológico completo, captação pacientes odontologia, sistema marketing dentistas, marketing integrado clínicas, marketing para dentistas"
-        canonical="https://odontoresults.com.br/metodo"
-        structuredData={[breadcrumbSchema, serviceSchema, faqSchema, howToSchema]}
+        title="Método Paciente Previsível"
+        description="Sistema integrado de marketing odontológico com 5 pilares que gera pacientes de forma previsível para clínicas. Conheça captação, autoridade, SEO local, agendamento e CRM."
+        keywords="método marketing odontológico, pacientes previsíveis, sistema integrado clínica, captação leads odonto, CRM odontológico"
+        canonical="https://odontoresults.com.br/metodo-paciente-previsivel"
+        structuredData={[breadcrumbSchema, serviceSchema, faqSchema]}
       />
       
       <Header />
       
-      <main>
+      <main className="pt-20">
+        <Breadcrumbs 
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Método Paciente Previsível", href: "/metodo-paciente-previsivel" }
+          ]}
+        />
+
         {/* Hero Section */}
         <section className="py-16 md:py-24 container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">

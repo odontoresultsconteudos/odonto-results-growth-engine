@@ -67,7 +67,7 @@ const Header = () => {
                     <li>
                       <NavigationMenuLink asChild>
                         <UtmLink
-                          to="/metodo"
+                          to="/metodo-paciente-previsivel"
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground font-semibold border-b border-border mb-2"
                         >
                           <div className="text-sm font-bold leading-none mb-1">
@@ -175,7 +175,7 @@ const Header = () => {
                   <AccordionContent>
                     <div className="flex flex-col gap-2 pl-4">
                       <UtmLink
-                        to="/metodo"
+                        to="/metodo-paciente-previsivel"
                         onClick={() => setMobileOpen(false)}
                         className="text-sm py-2 transition-colors hover:text-accent font-semibold flex items-center gap-1 border-b border-border pb-3 mb-1"
                       >

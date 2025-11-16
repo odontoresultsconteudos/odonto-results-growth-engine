@@ -293,7 +293,7 @@ const Index = () => {
                   Entenda o sistema integrado que torna a geração de pacientes previsível e escalável
                 </p>
                 <Button variant="default" size="lg" asChild className="gap-2">
-                  <UtmLink to="/metodo">
+                  <UtmLink to="/metodo-paciente-previsivel">
                     Ver Método Completo
                     <ArrowRight className="h-5 w-5" />
                   </UtmLink>

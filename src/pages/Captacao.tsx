@@ -211,7 +211,7 @@ const Captacao = () => {
             Veja como todos os pilares trabalham juntos em um sistema integrado para gerar resultados previsíveis
           </p>
           <Button variant="default" size="lg" asChild className="gap-2">
-            <UtmLink to="/metodo">
+            <UtmLink to="/metodo-paciente-previsivel">
               <Eye className="h-4 w-4" />
               Conheça o Método Completo
             </UtmLink>
