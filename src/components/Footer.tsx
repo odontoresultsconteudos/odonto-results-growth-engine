@@ -30,8 +30,10 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <strong>Endereço:</strong><br />
-                R. João Francisco Ferreira, 259<br />
-                Bandeirantes, PR, 86362-003
+                <a href="https://share.google/uPLLtTlAr3D5w0M0C" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                  R. João Francisco Ferreira, 259<br />
+                  Bandeirantes, PR, 86362-003
+                </a>
               </li>
               <li>
                 <strong>Telefone:</strong><br />
