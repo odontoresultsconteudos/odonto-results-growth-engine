@@ -71,10 +71,10 @@ const Metodo = () => {
       },
       {
         "@type": "Question",
-        "name": "Funciona para todas as especialidades?",
+        "name": "Funciona para tratamentos high ticket?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sim, adaptamos para ortodontia, implantodontia, odontopediatria, estética e todas as demais especialidades."
+          "text": "Sim, o método é especialmente eficaz para tratamentos de alto valor como implantes, harmonização orofacial, lentes de contato dentais, ortodontia invisível e procedimentos estéticos."
         }
       },
       {
@@ -558,10 +558,10 @@ const Metodo = () => {
             
             <AccordionItem value="item-2">
               <AccordionTrigger>
-                Funciona para todas as especialidades?
+                Funciona para tratamentos high ticket?
               </AccordionTrigger>
               <AccordionContent>
-                Sim, adaptamos para ortodontia, implantodontia, odontopediatria, estética e todas as demais especialidades.
+                Sim, o método é especialmente eficaz para tratamentos de alto valor como implantes, harmonização orofacial, lentes de contato dentais, ortodontia invisível e procedimentos estéticos.
               </AccordionContent>
             </AccordionItem>
             
