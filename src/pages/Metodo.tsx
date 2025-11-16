@@ -448,6 +448,10 @@ const Metodo = () => {
             Por Que o Método Funciona
           </h2>
           
+          <p className="text-center text-muted-foreground text-lg mb-12 max-w-3xl mx-auto">
+            Não são apenas números: são resultados alcançados por clínicas que seguem nosso método completo e estruturado.
+          </p>
+          
           <div className="grid md:grid-cols-4 gap-6 mb-12">
             <Card className="p-6 text-center border-accent/20">
               <Users className="w-10 h-10 text-accent mx-auto mb-4" />
