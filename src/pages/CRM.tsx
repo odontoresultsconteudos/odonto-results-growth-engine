@@ -5,7 +5,6 @@ import { BarChart3, Database, Filter, TrendingUp, Eye } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { Footer } from "@/components/Footer";
 import { UtmLink } from "@/components/UtmLink";
-
 const CRM = () => {
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -22,15 +21,8 @@ const CRM = () => {
       "item": "https://odontoresults.com.br/crm-inteligente"
     }]
   };
-
   return <div className="min-h-screen bg-background">
-      <SEO 
-        title="CRM Odontológico - Gestão de Leads e Funil de Vendas"
-        description="Organize e priorize leads com CRM integrado para dentistas. Acompanhe funil completo: qualificação → agendamento → comparecimento → fechamento. +45% aproveitamento."
-        keywords="CRM odontológico, gestão de leads dentista, funil de vendas clínica, automação marketing odontologia, software gestão pacientes"
-        canonical="https://odontoresults.com.br/crm-inteligente"
-        structuredData={breadcrumbSchema}
-      />
+      <SEO title="CRM Odontológico - Gestão de Leads e Funil de Vendas" description="Organize e priorize leads com CRM integrado para dentistas. Acompanhe funil completo: qualificação → agendamento → comparecimento → fechamento. +45% aproveitamento." keywords="CRM odontológico, gestão de leads dentista, funil de vendas clínica, automação marketing odontologia, software gestão pacientes" canonical="https://odontoresults.com.br/crm-inteligente" structuredData={breadcrumbSchema} />
       <Header />
       
       {/* Hero Section */}
@@ -40,7 +32,7 @@ const CRM = () => {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 mb-6">
               <Database className="w-4 h-4 text-accent" />
-              <span className="text-sm font-medium text-accent">Pilar 5: CRM</span>
+              <span className="text-sm font-medium text-accent">Pilar 5: CRM Inteligente</span>
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               Gestão Inteligente de <span className="text-accent">Todos os Leads</span>
