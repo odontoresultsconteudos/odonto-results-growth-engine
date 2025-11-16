@@ -6,7 +6,6 @@ import { MapPin, Mail, Clock, MessageCircle } from "lucide-react";
 import Header from "@/components/Header";
 import { SEO } from "@/components/SEO";
 import { Footer } from "@/components/Footer";
-
 const Contato = () => {
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -23,23 +22,14 @@ const Contato = () => {
       "item": "https://odontoresults.com.br/contato"
     }]
   };
-
   const contactSchema = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "name": "Contato - Odonto Results",
     "description": "Entre em contato com a Odonto Results para impulsionar sua clínica odontológica"
   };
-
-  return (
-    <>
-      <SEO 
-        title="Contato Odonto Results - Agende Apresentação Gratuita"
-        description="Fale com nossa equipe e agende uma apresentação para sua clínica. Atendimento seg-sex 9h-18h. Bandeirantes, PR. faleconosco@odontoresults.com.br"
-        keywords="contato Odonto Results, falar com consultor odontológico, orçamento marketing dental"
-        canonical="https://odontoresults.com.br/contato"
-        structuredData={[breadcrumbSchema, contactSchema]}
-      />
+  return <>
+      <SEO title="Contato Odonto Results - Agende Apresentação Gratuita" description="Fale com nossa equipe e agende uma apresentação para sua clínica. Atendimento seg-sex 9h-18h. Bandeirantes, PR. faleconosco@odontoresults.com.br" keywords="contato Odonto Results, falar com consultor odontológico, orçamento marketing dental" canonical="https://odontoresults.com.br/contato" structuredData={[breadcrumbSchema, contactSchema]} />
       <Header />
       
       <main className="min-h-screen">
@@ -145,15 +135,10 @@ const Contato = () => {
               </p>
             </div>
             <div className="max-w-5xl mx-auto">
-              <div className="relative w-full rounded-lg overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%' }}>
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.839692017769!2d-50.374760599999995!3d-23.1029635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eac11f764ac38d%3A0x56aaa6971da4b3f!2sOdonto%20Results!5e0!3m2!1spt-BR!2sbr!4v1763098239225!5m2!1spt-BR!2sbr" 
-                  className="absolute top-0 left-0 w-full h-full border-0"
-                  allowFullScreen
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Localização Odonto Results"
-                />
+              <div className="relative w-full rounded-lg overflow-hidden shadow-lg" style={{
+              paddingBottom: '56.25%'
+            }}>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.839692017769!2d-50.374760599999995!3d-23.1029635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eac11f764ac38d%3A0x56aaa6971da4b3f!2sOdonto%20Results!5e0!3m2!1spt-BR!2sbr!4v1763098239225!5m2!1spt-BR!2sbr" className="absolute top-0 left-0 w-full h-full border-0" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Localização Odonto Results" />
               </div>
             </div>
           </div>
@@ -169,16 +154,12 @@ const Contato = () => {
               Agende uma apresentação sem compromisso e descubra como podemos ajudar sua clínica a crescer.
             </p>
             <a href="https://form.odontoresults.com.br/dLTRVKuI" target="_blank" rel="noopener noreferrer">
-              <Button variant="cta" size="lg" className="text-lg">
-                Agende uma Apresentação Gratuita
-              </Button>
+              <Button variant="cta" size="lg" className="text-lg">Agende uma Apresentação</Button>
             </a>
           </div>
         </section>
       </main>
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default Contato;
