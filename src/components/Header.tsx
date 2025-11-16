@@ -27,7 +27,7 @@ const pilares = [
   { title: "Captação de Leads", href: "/captacao-leads-qualificados", description: "Anúncios segmentados para gerar volume qualificado" },
   { title: "Vitrine de Autoridade", href: "/vitrine-autoridade-digital", description: "Conteúdo estratégico que prova competência" },
   { title: "Google Top 1", href: "/google-top-1-seo-local", description: "Dominância nas buscas locais do Google Maps" },
-  { title: "Agendamento Estruturado", href: "/agendamento-inteligente", description: "CRC + IA para converter leads em consultas" },
+  { title: "Agendamento Profissional", href: "/agendamento-profissional", description: "CRC + IA para converter leads em consultas" },
   { title: "CRM Inteligente", href: "/crm-inteligente", description: "Gestão profissional para maximizar conversão" },
 ];
 
