@@ -46,7 +46,7 @@ const Captacao = () => {
               <span className="text-sm font-medium text-accent">Pilar 1: Captação de Leads Qualificados</span>
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-              Leads Qualificados que Viram <span className="text-accent">Pacientes</span>
+              Captação de Leads Qualificados que Viram <span className="text-accent">Pacientes</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">Anúncios segmentados no Facebook, Instagram e Google que atraem pacientes com intenção de contratar seus tratamentos.</p>
             <a href="#contato">
