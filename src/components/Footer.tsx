@@ -54,9 +54,10 @@ export const Footer = () => {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
             <p>© 2025 Odonto Results. Todos os direitos reservados.</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-accent transition-colors">Política de Privacidade</a>
-              <a href="#" className="hover:text-accent transition-colors">Termos de Uso</a>
+            <div className="flex flex-wrap gap-4 md:gap-6">
+              <a href="/politica-privacidade.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Política de Privacidade</a>
+              <a href="/termos-de-uso.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Termos de Uso</a>
+              <a href="/politica-de-cookies.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Política de Cookies</a>
             </div>
           </div>
         </div>
