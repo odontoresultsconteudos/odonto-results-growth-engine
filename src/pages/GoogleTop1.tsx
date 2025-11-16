@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
-import { MapPin, Search, Star, TrendingUp } from "lucide-react";
+import { MapPin, Search, Star, TrendingUp, Eye } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { Footer } from "@/components/Footer";
+import { UtmLink } from "@/components/UtmLink";
 
 const GoogleTop1 = () => {
   const breadcrumbSchema = {
@@ -200,6 +201,24 @@ const GoogleTop1 = () => {
           <p className="text-sm text-primary-foreground/80 mt-4">
             1500+ Clínicas atendidas • 500 mil+ Leads gerados • 10 milhões+ Gerenciados em tráfego pago
           </p>
+        </div>
+      </section>
+
+      {/* Link para o Método Completo */}
+      <section className="py-16 bg-accent/5">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Este é um dos 5 Pilares do Método Paciente Previsível
+          </h2>
+          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto text-lg">
+            Veja como todos os pilares trabalham juntos em um sistema integrado para gerar resultados previsíveis
+          </p>
+          <Button variant="default" size="lg" asChild className="gap-2">
+            <UtmLink to="/metodo">
+              <Eye className="h-4 w-4" />
+              Conheça o Método Completo
+            </UtmLink>
+          </Button>
         </div>
       </section>
 

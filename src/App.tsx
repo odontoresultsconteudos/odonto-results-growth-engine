@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 import Index from "./pages/Index";
+import Metodo from "./pages/Metodo";
 import Captacao from "./pages/Captacao";
 import Autoridade from "./pages/Autoridade";
 import GoogleTop1 from "./pages/GoogleTop1";
@@ -34,6 +35,7 @@ const App = () => {
           <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/metodo" element={<Metodo />} />
               <Route path="/captacao" element={<Captacao />} />
               <Route path="/autoridade" element={<Autoridade />} />
               <Route path="/google-top-1" element={<GoogleTop1 />} />
