@@ -7,6 +7,7 @@ module.exports = {
     '/google-top-1',
     '/agendamento',
     '/crm',
+    '/metodo-paciente-previsivel',
     '/sobre',
     '/contato'
   ],
