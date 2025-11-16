@@ -95,14 +95,6 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Funciona em cidade pequena ou região rural?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Sim. Ajustamos segmentação, raio e linguagem para seu contexto local.",
-      },
-    },
-    {
-      "@type": "Question",
       name: "Vocês atendem qualquer especialidade?",
       acceptedAnswer: {
         "@type": "Answer",
@@ -915,15 +907,6 @@ const Index = () => {
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
                   Varia por região e tratamento. Na apresentação, mostramos um plano de metas e expectativas.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-2" className="bg-card border border-border rounded-lg px-6">
-                <AccordionTrigger className="text-lg font-semibold hover:no-underline">
-                  Funciona em cidade pequena ou região rural?
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
-                  Sim. Ajustamos segmentação, raio e linguagem para seu contexto local.
                 </AccordionContent>
               </AccordionItem>
 
