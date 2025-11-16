@@ -2,11 +2,11 @@ module.exports = {
   // Include all routes for pre-rendering
   include: [
     '/',
-    '/captacao',
-    '/autoridade',
-    '/google-top-1',
-    '/agendamento',
-    '/crm',
+    '/captacao-leads-qualificados',
+    '/vitrine-autoridade-digital',
+    '/google-top-1-seo-local',
+    '/agendamento-profissional',
+    '/crm-inteligente',
     '/metodo-paciente-previsivel',
     '/sobre',
     '/contato'
