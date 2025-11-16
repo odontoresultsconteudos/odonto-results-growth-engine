@@ -114,31 +114,31 @@ const Metodo = () => {
         "@type": "HowToStep",
         "position": 1,
         "name": "Captação de Leads Qualificados",
-        "text": "Geração de leads através de anúncios segmentados em múltiplas plataformas digitais"
+        "text": "Anúncios segmentados no Facebook, Instagram e Google que atraem pacientes com intenção de contratar"
       },
       {
         "@type": "HowToStep",
         "position": 2,
         "name": "Vitrine de Autoridade",
-        "text": "Construção de credibilidade através de conteúdo estratégico e provas sociais"
+        "text": "Conteúdos estratégicos que posicionam sua clínica como autoridade e reduzem resistência"
       },
       {
         "@type": "HowToStep",
         "position": 3,
         "name": "Google Top 1",
-        "text": "Posicionamento orgânico no Google Maps e Pesquisa Local"
+        "text": "Apareça no topo quando pacientes procuram dentista perto de mim no Google Maps"
       },
       {
         "@type": "HowToStep",
         "position": 4,
         "name": "Agendamento Inteligente",
-        "text": "Conversão de leads em consultas agendadas através de CRC profissional e IA"
+        "text": "CRC profissional + IA 24h no WhatsApp para converter leads em consultas agendadas"
       },
       {
         "@type": "HowToStep",
         "position": 5,
         "name": "CRM Inteligente",
-        "text": "Gestão e otimização contínua data-driven baseada em dados reais"
+        "text": "Organize, priorize e maximize o aproveitamento de cada oportunidade de negócio"
       }
     ]
   };
@@ -169,75 +169,75 @@ const Metodo = () => {
       numero: "01",
       titulo: "Captação de Leads Qualificados",
       icon: Target,
-      frase: "Atraímos pessoas realmente interessadas através de campanhas segmentadas em múltiplas plataformas.",
+      frase: "Anúncios segmentados no Facebook, Instagram e Google que atraem pacientes com intenção de contratar seus tratamentos.",
       beneficios: [
-        "Segmentação por tratamento e perfil ideal",
-        "Campanhas em Google, Meta e LinkedIn simultaneamente",
-        "Otimização contínua baseada em dados",
-        "Leads qualificados prontos para agendamento"
+        "Segmentação precisa por tratamento",
+        "Criativos impactantes validados",
+        "Gestão profissional de orçamento",
+        "Otimização contínua de performance"
       ],
       numeroDestaque: "+500 mil",
-      subtexto: "leads qualificados gerados",
+      subtexto: "leads gerados para 1.500+ clínicas",
       link: "/captacao"
     },
     {
       numero: "02",
       titulo: "Vitrine de Autoridade Digital",
       icon: Award,
-      frase: "Construímos sua reputação online através de conteúdo estratégico que educa e converte.",
+      frase: "Conteúdos estratégicos que posicionam sua clínica como autoridade e reduzem a resistência na hora da decisão.",
       beneficios: [
-        "Conteúdo estratégico educativo e comercial",
-        "Gestão completa de redes sociais",
-        "Construção de reputação e credibilidade",
-        "Prova social que acelera decisões"
+        "Casos antes/depois reais",
+        "Vídeos educativos do dentista",
+        "Depoimentos autênticos de pacientes",
+        "Presença consistente nas redes sociais"
       ],
-      numeroDestaque: "+18 mil",
-      subtexto: "posts publicados com estratégia",
+      numeroDestaque: "Clínica",
+      subtexto: "referência da sua região",
       link: "/autoridade"
     },
     {
       numero: "03",
       titulo: "Google Top 1 (SEO Local)",
       icon: Search,
-      frase: "Posicionamos sua clínica no topo das buscas locais do Google, onde pacientes procuram ativamente.",
+      frase: "Apareça em primeiro lugar quando pacientes procuram \"dentista perto de mim\" e tratamentos odontológicos na sua cidade.",
       beneficios: [
-        "Otimização completa do Google Meu Negócio",
+        "Otimização completa Google Meu Negócio",
         "SEO técnico e de conteúdo local",
         "Gestão estratégica de avaliações",
-        "Visibilidade máxima em pesquisas locais"
+        "78% das buscas resultam em contato"
       ],
-      numeroDestaque: "Top 3",
-      subtexto: "posição média no Google local",
+      numeroDestaque: "5x",
+      subtexto: "mais visibilidade que concorrentes",
       link: "/google-top-1"
     },
     {
       numero: "04",
       titulo: "Agendamento Inteligente",
       icon: Calendar,
-      frase: "Automatizamos o agendamento com CRC + IA, convertendo leads em consultas sem esforço manual.",
+      frase: "CRC profissional + IA 24h no WhatsApp para aproveitar ao máximo cada paciente captado.",
       beneficios: [
-        "CRC especializada + assistente IA",
-        "Atendimento 24/7 sem perder oportunidades",
-        "Qualificação automática de leads",
-        "Redução drástica de no-shows"
+        "CRC treinada com scripts validados",
+        "IA 24h respondendo no WhatsApp",
+        "Qualificação e nutrição de leads",
+        "Lembretes automáticos de consultas"
       ],
-      numeroDestaque: "78%",
-      subtexto: "taxa de conversão média lead → consulta",
+      numeroDestaque: "+85%",
+      subtexto: "taxa de comparecimento",
       link: "/agendamento"
     },
     {
       numero: "05",
       titulo: "CRM Inteligente",
       icon: Database,
-      frase: "Centralizamos e otimizamos toda a jornada do paciente com análise de dados em tempo real.",
+      frase: "CRM integrado que organiza, prioriza e maximiza o aproveitamento de cada oportunidade de negócio.",
       beneficios: [
-        "Dashboard completo com todas as métricas",
-        "Automações de nutrição e recuperação",
-        "Análise preditiva de comportamento",
-        "ROI transparente de cada ação"
+        "Todos os leads em um só lugar",
+        "Priorização por potencial de conversão",
+        "Automações de follow-up",
+        "Recuperação de leads inativos"
       ],
-      numeroDestaque: "360°",
-      subtexto: "visão completa da jornada do paciente",
+      numeroDestaque: "+45%",
+      subtexto: "aproveitamento de leads",
       link: "/crm"
     }
   ];
@@ -340,7 +340,7 @@ const Metodo = () => {
                 <div className="bg-accent/10 p-4 rounded-lg mb-2">
                   <Target className="w-8 h-8 text-accent mx-auto" />
                 </div>
-                <div className="font-semibold text-sm">LEADS</div>
+                <div className="font-semibold text-sm">CAPTAÇÃO</div>
                 <div className="text-xs text-muted-foreground">Anúncios</div>
               </div>
               
@@ -351,7 +351,7 @@ const Metodo = () => {
                   <Award className="w-8 h-8 text-accent mx-auto" />
                 </div>
                 <div className="font-semibold text-sm">AUTORIDADE</div>
-                <div className="text-xs text-muted-foreground">Conteúdo</div>
+                <div className="text-xs text-muted-foreground">Confiança</div>
               </div>
               
               <ArrowRight className="text-accent" />
@@ -361,7 +361,7 @@ const Metodo = () => {
                   <Search className="w-8 h-8 text-accent mx-auto" />
                 </div>
                 <div className="font-semibold text-sm">GOOGLE TOP 1</div>
-                <div className="text-xs text-muted-foreground">SEO Local</div>
+                <div className="text-xs text-muted-foreground">Visibilidade</div>
               </div>
               
               <ArrowRight className="text-accent" />
@@ -371,7 +371,7 @@ const Metodo = () => {
                   <Calendar className="w-8 h-8 text-accent mx-auto" />
                 </div>
                 <div className="font-semibold text-sm">AGENDAMENTO</div>
-                <div className="text-xs text-muted-foreground">CRC + IA</div>
+                <div className="text-xs text-muted-foreground">Conversão</div>
               </div>
               
               <ArrowRight className="text-accent" />
@@ -391,7 +391,7 @@ const Metodo = () => {
                 <div className="bg-accent/10 p-4 rounded-lg mb-2 inline-block">
                   <Target className="w-8 h-8 text-accent" />
                 </div>
-                <div className="font-semibold text-sm">LEADS</div>
+                <div className="font-semibold text-sm">CAPTAÇÃO</div>
                 <div className="text-xs text-muted-foreground">Anúncios</div>
                 <ArrowRight className="text-accent mx-auto mt-2 rotate-90" />
               </div>
@@ -401,7 +401,7 @@ const Metodo = () => {
                   <Award className="w-8 h-8 text-accent" />
                 </div>
                 <div className="font-semibold text-sm">AUTORIDADE</div>
-                <div className="text-xs text-muted-foreground">Conteúdo</div>
+                <div className="text-xs text-muted-foreground">Confiança</div>
                 <ArrowRight className="text-accent mx-auto mt-2 rotate-90" />
               </div>
               
@@ -410,7 +410,7 @@ const Metodo = () => {
                   <Search className="w-8 h-8 text-accent" />
                 </div>
                 <div className="font-semibold text-sm">GOOGLE TOP 1</div>
-                <div className="text-xs text-muted-foreground">SEO Local</div>
+                <div className="text-xs text-muted-foreground">Visibilidade</div>
                 <ArrowRight className="text-accent mx-auto mt-2 rotate-90" />
               </div>
               
@@ -419,7 +419,7 @@ const Metodo = () => {
                   <Calendar className="w-8 h-8 text-accent" />
                 </div>
                 <div className="font-semibold text-sm">AGENDAMENTO</div>
-                <div className="text-xs text-muted-foreground">CRC + IA</div>
+                <div className="text-xs text-muted-foreground">Conversão</div>
                 <ArrowRight className="text-accent mx-auto mt-2 rotate-90" />
               </div>
               
@@ -461,14 +461,14 @@ const Metodo = () => {
             
             <Card className="p-6 text-center border-accent/20">
               <TrendingUp className="w-10 h-10 text-accent mx-auto mb-4" />
-              <div className="text-4xl font-bold text-accent mb-2">78%</div>
-              <div className="text-sm text-muted-foreground">Taxa de Conversão</div>
+              <div className="text-4xl font-bold text-accent mb-2">+85%</div>
+              <div className="text-sm text-muted-foreground">Taxa Comparecimento</div>
             </Card>
             
             <Card className="p-6 text-center border-accent/20">
               <BarChart3 className="w-10 h-10 text-accent mx-auto mb-4" />
-              <div className="text-4xl font-bold text-accent mb-2">100%</div>
-              <div className="text-sm text-muted-foreground">Data-Driven</div>
+              <div className="text-4xl font-bold text-accent mb-2">+45%</div>
+              <div className="text-sm text-muted-foreground">Aproveitamento Leads</div>
             </Card>
           </div>
           
