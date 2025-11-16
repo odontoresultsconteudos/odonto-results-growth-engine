@@ -5,7 +5,6 @@ import { Target, TrendingUp, Users, Zap, Eye } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { Footer } from "@/components/Footer";
 import { UtmLink } from "@/components/UtmLink";
-
 const Captacao = () => {
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -22,7 +21,6 @@ const Captacao = () => {
       "item": "https://odontoresults.com.br/captacao-leads-qualificados"
     }]
   };
-
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -34,15 +32,8 @@ const Captacao = () => {
     },
     "areaServed": "BR"
   };
-
   return <div className="min-h-screen bg-background">
-      <SEO 
-        title="Captação de Leads Qualificados - Anúncios para Dentistas"
-        description="Anúncios segmentados no Facebook, Instagram e Google que atraem pacientes prontos para contratar. +500 mil leads gerados para 1.500+ clínicas odontológicas."
-        keywords="captação de pacientes, leads odontológicos, Facebook Ads dentista, Instagram Ads clínica, Google Ads dentista, tráfego pago odontologia"
-        canonical="https://odontoresults.com.br/captacao-leads-qualificados"
-        structuredData={[breadcrumbSchema, serviceSchema]}
-      />
+      <SEO title="Captação de Leads Qualificados - Anúncios para Dentistas" description="Anúncios segmentados no Facebook, Instagram e Google que atraem pacientes prontos para contratar. +500 mil leads gerados para 1.500+ clínicas odontológicas." keywords="captação de pacientes, leads odontológicos, Facebook Ads dentista, Instagram Ads clínica, Google Ads dentista, tráfego pago odontologia" canonical="https://odontoresults.com.br/captacao-leads-qualificados" structuredData={[breadcrumbSchema, serviceSchema]} />
       <Header />
       
       {/* Hero Section */}
@@ -52,7 +43,7 @@ const Captacao = () => {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 mb-6">
               <Zap className="w-4 h-4 text-accent" />
-              <span className="text-sm font-medium text-accent">Pilar 1: Captação</span>
+              <span className="text-sm font-medium text-accent">Pilar 1: Captação de Leads Qualificados</span>
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               Leads Qualificados que Viram <span className="text-accent">Pacientes</span>
