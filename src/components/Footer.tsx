@@ -13,12 +13,12 @@ export const Footer = () => {
           <div>
             <h4 className="font-bold mb-4">Navegação</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="/#metodo" className="hover:text-accent transition-colors">Método</a></li>
-              <li><UtmLink to="/captacao-leads-qualificados" className="hover:text-accent transition-colors">Captação de Leads</UtmLink></li>
-              <li><UtmLink to="/vitrine-autoridade-digital" className="hover:text-accent transition-colors">Vitrine de Autoridade</UtmLink></li>
-              <li><UtmLink to="/google-top-1-seo-local" className="hover:text-accent transition-colors">Google Top 1</UtmLink></li>
-              <li><UtmLink to="/agendamento-inteligente" className="hover:text-accent transition-colors">Agendamento</UtmLink></li>
-              <li><UtmLink to="/crm-inteligente" className="hover:text-accent transition-colors">CRM</UtmLink></li>
+              <li><UtmLink to="/metodo-paciente-previsivel" className="hover:text-accent transition-colors">Método</UtmLink></li>
+              <li><UtmLink to="/captacao" className="hover:text-accent transition-colors">Captação de Leads</UtmLink></li>
+              <li><UtmLink to="/autoridade" className="hover:text-accent transition-colors">Vitrine de Autoridade</UtmLink></li>
+              <li><UtmLink to="/google-top-1" className="hover:text-accent transition-colors">Google Top 1</UtmLink></li>
+              <li><UtmLink to="/agendamento" className="hover:text-accent transition-colors">Agendamento</UtmLink></li>
+              <li><UtmLink to="/crm" className="hover:text-accent transition-colors">CRM</UtmLink></li>
               <li><UtmLink to="/sobre" className="hover:text-accent transition-colors">Sobre</UtmLink></li>
               <li><UtmExternalLink href="https://blog.odontoresults.com.br/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Blog</UtmExternalLink></li>
               <li><UtmLink to="/contato" className="hover:text-accent transition-colors">Contato</UtmLink></li>
