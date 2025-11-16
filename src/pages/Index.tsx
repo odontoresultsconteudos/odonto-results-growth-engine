@@ -283,16 +283,12 @@ const Index = () => {
             </div>
 
             <div className="text-center mt-12">
-              <UtmExternalLink
-                href="https://form.odontoresults.com.br/dLTRVKuI"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button variant="cta" size="lg">
-                  Conhecer o Método
+              <Button variant="cta" size="lg" asChild>
+                <UtmLink to="/metodo-paciente-previsivel">
+                  Conheça Como o Método Funciona
                   <ArrowRight className="ml-2" />
-                </Button>
-              </UtmExternalLink>
+                </UtmLink>
+              </Button>
             </div>
           </div>
         </section>
