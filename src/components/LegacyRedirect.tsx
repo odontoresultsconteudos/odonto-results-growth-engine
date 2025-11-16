@@ -6,7 +6,8 @@ const redirectMap: Record<string, string> = {
   '/captacao': '/captacao-leads-qualificados',
   '/autoridade': '/vitrine-autoridade-digital',
   '/google-top-1': '/google-top-1-seo-local',
-  '/agendamento': '/agendamento-inteligente',
+  '/agendamento': '/agendamento-profissional',
+  '/agendamento-inteligente': '/agendamento-profissional',
   '/crm': '/crm-inteligente',
 };
 

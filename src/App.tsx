@@ -41,7 +41,7 @@ const App = () => {
               <Route path="/captacao-leads-qualificados" element={<Captacao />} />
               <Route path="/vitrine-autoridade-digital" element={<Autoridade />} />
               <Route path="/google-top-1-seo-local" element={<GoogleTop1 />} />
-              <Route path="/agendamento-inteligente" element={<Agendamento />} />
+              <Route path="/agendamento-profissional" element={<Agendamento />} />
               <Route path="/crm-inteligente" element={<CRM />} />
               <Route path="/sobre" element={<Sobre />} />
               <Route path="/contato" element={<Contato />} />

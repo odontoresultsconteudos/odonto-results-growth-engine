@@ -40,7 +40,7 @@ const Agendamento = () => {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 mb-6">
               <Calendar className="w-4 h-4 text-accent" />
-              <span className="text-sm font-medium text-accent">Pilar 4: Agendamento</span>
+              <span className="text-sm font-medium text-accent">Pilar 4: Agendamento Profissional</span>
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               Transforme Leads em <span className="text-accent">Consultas Agendadas</span>
