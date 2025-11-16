@@ -282,25 +282,6 @@ const Index = () => {
               </UtmLink>
             </div>
 
-            {/* Link para Método Completo */}
-            <div className="text-center mt-12 mb-8">
-              <Card className="p-8 max-w-3xl mx-auto bg-gradient-to-br from-primary/5 to-accent/5 border-2 border-primary/20">
-                <div className="flex items-center justify-center gap-2 mb-4">
-                  <Zap className="w-6 h-6 text-primary" />
-                  <h3 className="text-2xl font-bold">Como os 5 Pilares Trabalham Juntos</h3>
-                </div>
-                <p className="text-muted-foreground mb-6 text-lg">
-                  Entenda o sistema integrado que torna a geração de pacientes previsível e escalável
-                </p>
-                <Button variant="default" size="lg" asChild className="gap-2">
-                  <UtmLink to="/metodo-paciente-previsivel">
-                    Ver Método Completo
-                    <ArrowRight className="h-5 w-5" />
-                  </UtmLink>
-                </Button>
-              </Card>
-            </div>
-
             <div className="text-center mt-12">
               <UtmExternalLink
                 href="https://form.odontoresults.com.br/dLTRVKuI"
