@@ -191,8 +191,8 @@ const Metodo = () => {
         "Depoimentos autênticos de pacientes",
         "Presença consistente nas redes sociais"
       ],
-      numeroDestaque: "Clínica",
-      subtexto: "referência da sua região",
+      numeroDestaque: "10x",
+      subtexto: "Mais Qualidade nos Pacientes",
       link: "/autoridade"
     },
     {
