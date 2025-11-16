@@ -762,19 +762,19 @@ const Metodo = () => {
               <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8 text-left">
                 <div className="flex items-start gap-3">
                   <Check className="h-6 w-6 flex-shrink-0 mt-0.5" />
-                  <span>Análise do seu marketing atual</span>
+                  <span>Descubra como ter pacientes previsíveis</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="h-6 w-6 flex-shrink-0 mt-0.5" />
-                  <span>Oportunidades específicas</span>
+                  <span>Conheça os 5 pilares integrados</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="h-6 w-6 flex-shrink-0 mt-0.5" />
-                  <span>Plano personalizado</span>
+                  <span>Veja resultados de outras clínicas</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="h-6 w-6 flex-shrink-0 mt-0.5" />
-                  <span>Sem compromisso</span>
+                  <span>Tire suas dúvidas ao vivo</span>
                 </div>
               </div>
 
