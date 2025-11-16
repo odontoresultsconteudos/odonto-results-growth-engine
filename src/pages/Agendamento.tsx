@@ -19,7 +19,7 @@ const Agendamento = () => {
       "@type": "ListItem",
       "position": 2,
       "name": "Agendamento Profissional",
-      "item": "https://odontoresults.com.br/agendamento"
+      "item": "https://odontoresults.com.br/agendamento-inteligente"
     }]
   };
 
@@ -28,7 +28,7 @@ const Agendamento = () => {
         title="Sistema de Agendamento Inteligente - CRC + IA WhatsApp 24h"
         description="Converta leads em consultas com CRC treinada + IA 24h no WhatsApp. Sistema profissional de agendamento que aumenta taxa de comparecimento em +85%."
         keywords="agendamento online dentista, CRC odontologia, chatbot WhatsApp clínica, automação agendamento, IA agendamento pacientes"
-        canonical="https://odontoresults.com.br/agendamento"
+        canonical="https://odontoresults.com.br/agendamento-inteligente"
         structuredData={breadcrumbSchema}
       />
       <Header />
@@ -257,7 +257,7 @@ const Agendamento = () => {
             Tenha uma máquina de agendamento profissional trabalhando 24/7 para sua clínica.
           </p>
           <Button variant="cta" size="lg" className="text-lg">
-            Agendar Diagnóstico Gratuito
+            Agendar uma Apresentação
           </Button>
           <p className="text-sm text-primary-foreground/80 mt-4">
             1500+ Clínicas atendidas • 500 mil+ Leads gerados • 10 milhões+ Gerenciados em tráfego pago

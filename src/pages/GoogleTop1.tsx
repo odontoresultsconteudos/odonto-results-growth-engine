@@ -19,7 +19,7 @@ const GoogleTop1 = () => {
       "@type": "ListItem",
       "position": 2,
       "name": "Google Top 1",
-      "item": "https://odontoresults.com.br/google-top-1"
+      "item": "https://odontoresults.com.br/google-top-1-seo-local"
     }]
   };
 
@@ -29,7 +29,7 @@ const GoogleTop1 = () => {
         title="Google Top 1 para Dentistas - SEO Local e Google Maps"
         description="Apareça no topo quando pacientes buscam 'dentista perto de mim'. Estratégia SEO local, otimização Google Maps e gestão de avaliações. Média de ranqueamento Top 3."
         keywords="Google Maps dentista, SEO local odontologia, dentista perto de mim, Google Meu Negócio clínica, ranqueamento Google dentista"
-        canonical="https://odontoresults.com.br/google-top-1"
+        canonical="https://odontoresults.com.br/google-top-1-seo-local"
         structuredData={breadcrumbSchema}
       />
       <Header />
@@ -196,7 +196,7 @@ const GoogleTop1 = () => {
             Faça sua clínica aparecer em primeiro lugar quando pacientes procuram tratamentos na sua região.
           </p>
           <Button variant="cta" size="lg" className="text-lg">
-            Agendar Diagnóstico Gratuito
+            Agendar uma Apresentação
           </Button>
           <p className="text-sm text-primary-foreground/80 mt-4">
             1500+ Clínicas atendidas • 500 mil+ Leads gerados • 10 milhões+ Gerenciados em tráfego pago

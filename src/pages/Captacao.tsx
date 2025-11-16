@@ -19,7 +19,7 @@ const Captacao = () => {
       "@type": "ListItem",
       "position": 2,
       "name": "Captação de Leads",
-      "item": "https://odontoresults.com.br/captacao"
+      "item": "https://odontoresults.com.br/captacao-leads-qualificados"
     }]
   };
 
@@ -40,7 +40,7 @@ const Captacao = () => {
         title="Captação de Leads Qualificados - Anúncios para Dentistas"
         description="Anúncios segmentados no Facebook, Instagram e Google que atraem pacientes prontos para contratar. +500 mil leads gerados para 1.500+ clínicas odontológicas."
         keywords="captação de pacientes, leads odontológicos, Facebook Ads dentista, Instagram Ads clínica, Google Ads dentista, tráfego pago odontologia"
-        canonical="https://odontoresults.com.br/captacao"
+        canonical="https://odontoresults.com.br/captacao-leads-qualificados"
         structuredData={[breadcrumbSchema, serviceSchema]}
       />
       <Header />
@@ -193,7 +193,7 @@ const Captacao = () => {
           </h2>
           
           <Button variant="cta" size="lg" className="text-lg">
-            Agendar Diagnóstico Gratuito
+            Agendar uma Apresentação
           </Button>
           <p className="text-sm text-primary-foreground/80 mt-4">
             1500+ Clínicas atendidas • 500 mil+ Leads gerados • 10 milhões+ Gerenciados em tráfego pago

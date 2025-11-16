@@ -36,11 +36,11 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/metodo" element={<Metodo />} />
-              <Route path="/captacao" element={<Captacao />} />
-              <Route path="/autoridade" element={<Autoridade />} />
-              <Route path="/google-top-1" element={<GoogleTop1 />} />
-              <Route path="/agendamento" element={<Agendamento />} />
-              <Route path="/crm" element={<CRM />} />
+              <Route path="/captacao-leads-qualificados" element={<Captacao />} />
+              <Route path="/vitrine-autoridade-digital" element={<Autoridade />} />
+              <Route path="/google-top-1-seo-local" element={<GoogleTop1 />} />
+              <Route path="/agendamento-inteligente" element={<Agendamento />} />
+              <Route path="/crm-inteligente" element={<CRM />} />
               <Route path="/sobre" element={<Sobre />} />
               <Route path="/contato" element={<Contato />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
