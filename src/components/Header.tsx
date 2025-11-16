@@ -68,7 +68,7 @@ const Header = () => {
                       <NavigationMenuLink asChild>
                         <UtmLink
                           to="/metodo-paciente-previsivel"
-                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground font-semibold border-b border-border mb-2"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent focus:bg-accent/10 focus:text-accent font-semibold border-b border-border mb-2"
                         >
                           <div className="text-sm font-bold leading-none mb-1">
                             🎯 Conheça o Método Completo
