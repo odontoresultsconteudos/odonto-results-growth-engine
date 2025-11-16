@@ -18,7 +18,8 @@ import {
   BarChart3,
   Users,
   TrendingUp,
-  X
+  X,
+  Zap
 } from "lucide-react";
 import metaPartnerBadge from "@/assets/meta-partner-badge.webp";
 import googlePartnerBadge from "@/assets/google-partner-badge.webp";
@@ -254,25 +255,26 @@ const Metodo = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4">
-        <div className="container max-w-4xl text-center">
-          <Badge variant="outline" className="mb-4">
-            Método Completo
-          </Badge>
-          
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Método Paciente Previsível
-          </h1>
-          
-          <p className="text-xl text-muted-foreground mb-8">
-            5 pilares integrados que geram pacientes de forma previsível para sua clínica
-          </p>
-          
-          <Button variant="cta" size="lg" asChild>
-            <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI">
-              Agendar Apresentação <ArrowRight className="ml-2" />
-            </UtmExternalLink>
-          </Button>
+      <section className="relative py-20 lg:py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-background" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 mb-6">
+              <Zap className="w-4 h-4 text-accent" />
+              <span className="text-sm font-medium text-accent">Método Completo</span>
+            </div>
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+              Método Paciente <span className="text-accent">Previsível</span>
+            </h1>
+            <p className="text-xl text-muted-foreground mb-8">
+              5 pilares integrados que geram pacientes de forma previsível para sua clínica
+            </p>
+            <Button variant="cta" size="lg" asChild>
+              <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI">
+                Agendar Apresentação <ArrowRight className="ml-2" />
+              </UtmExternalLink>
+            </Button>
+          </div>
         </div>
       </section>
 
