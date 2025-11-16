@@ -46,6 +46,14 @@
   RewriteEngine On
   RewriteBase /
   
+  # Force HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  
+  # Force www to non-www (or vice-versa)
+  RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+  
   # 301 Redirects for pillar pages (old URLs to new slugs)
   RewriteRule ^captacao/?$ /captacao-leads-qualificados [R=301,L]
   RewriteRule ^autoridade/?$ /vitrine-autoridade-digital [R=301,L]
