@@ -71,7 +71,7 @@ const Header = () => {
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent focus:bg-accent/10 focus:text-accent font-semibold border-b border-border mb-2"
                         >
                           <div className="text-sm font-bold leading-none mb-1">
-                            🎯 Conheça o Método Completo
+                            🎯 Conheça o Método Paciente Previsível
                           </div>
                           <p className="line-clamp-2 text-xs leading-snug text-muted-foreground font-normal">
                             Entenda como os 5 pilares trabalham juntos
@@ -179,7 +179,7 @@ const Header = () => {
                         onClick={() => setMobileOpen(false)}
                         className="text-sm py-2 transition-colors hover:text-accent font-semibold flex items-center gap-1 border-b border-border pb-3 mb-1"
                       >
-                        🎯 Método Completo
+                        🎯 Método Paciente Previsível
                       </UtmLink>
                       {pilares.map((pilar) => (
                         <UtmLink
