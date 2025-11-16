@@ -14,8 +14,8 @@ export const Footer = () => {
             <h4 className="font-bold mb-4">Navegação</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><UtmLink to="/metodo-paciente-previsivel" className="hover:text-accent transition-colors">Método Paciente Previsível</UtmLink></li>
-              <li><UtmLink to="/captacao" className="hover:text-accent transition-colors">Captação de Leads</UtmLink></li>
-              <li><UtmLink to="/autoridade" className="hover:text-accent transition-colors">Vitrine de Autoridade</UtmLink></li>
+              <li><UtmLink to="/captacao-leads-qualificados" className="hover:text-accent transition-colors">Captação de Leads Qualificados</UtmLink></li>
+              <li><UtmLink to="/vitrine-autoridade-digital" className="hover:text-accent transition-colors">Vitrine de Autoridade</UtmLink></li>
               <li><UtmLink to="/google-top-1" className="hover:text-accent transition-colors">Google Top 1</UtmLink></li>
               <li><UtmLink to="/agendamento" className="hover:text-accent transition-colors">Agendamento</UtmLink></li>
               <li><UtmLink to="/crm" className="hover:text-accent transition-colors">CRM</UtmLink></li>

@@ -24,7 +24,7 @@ import logoImage from "@/assets/logo.svg";
 import { cn } from "@/lib/utils";
 
 const pilares = [
-  { title: "Captação de Leads", href: "/captacao-leads-qualificados", description: "Anúncios segmentados para gerar volume qualificado" },
+  { title: "Captação de Leads Qualificados", href: "/captacao-leads-qualificados", description: "Anúncios segmentados para gerar volume qualificado" },
   { title: "Vitrine de Autoridade", href: "/vitrine-autoridade-digital", description: "Conteúdo estratégico que prova competência" },
   { title: "Google Top 1", href: "/google-top-1-seo-local", description: "Dominância nas buscas locais do Google Maps" },
   { title: "Agendamento Profissional", href: "/agendamento-profissional", description: "CRC + IA para converter leads em consultas" },
