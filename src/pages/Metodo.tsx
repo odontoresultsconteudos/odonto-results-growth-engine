@@ -207,9 +207,7 @@ const Metodo = () => {
       numero: "04",
       titulo: "Agendamento Inteligente",
       icon: Calendar,
-      descricao: "O agendamento é o pilar que transforma leads em consultas confirmadas. É o ponto crítico onde muitas clínicas perdem oportunidades - ter leads não significa ter pacientes, é preciso um processo estruturado de conversão.",
-      descricao2: "Combinamos CRC (Central de Relacionamento com o Cliente) profissional com IA de agendamento via WhatsApp. A CRC faz o primeiro contato humanizado, qualifica o lead e oferece horários. A IA mantém o relacionamento, envia lembretes e reduz o no-show.",
-      descricao3: "Este pilar é alimentado pelos leads da Captação e pela autoridade construída nos pilares anteriores. Um lead que já viu seu conteúdo e suas avaliações no Google converte muito mais fácil no agendamento. É onde todo o trabalho anterior se materializa em receita real.",
+      descricao: "CRC profissional + IA no WhatsApp que transforma leads em consultas confirmadas. Atendimento humanizado, follow-up automatizado e lembretes que reduzem no-show. Ponto crítico onde leads viram pacientes e geram receita real.",
       beneficios: [
         "CRC profissional especializada em atendimento odontológico",
         "IA de agendamento 24/7 via WhatsApp para respostas imediatas",
@@ -222,9 +220,7 @@ const Metodo = () => {
       numero: "05",
       titulo: "CRM Inteligente",
       icon: Database,
-      descricao: "O CRM é o pilar que fecha o ciclo e torna todo o sistema verdadeiramente previsível. É aqui que coletamos, organizamos e analisamos todos os dados de cada pilar para identificar o que está funcionando e o que precisa ser otimizado.",
-      descricao2: "Visualizamos todo o funil de vendas - quantos leads entraram, quantos foram qualificados, quantos agendaram, quantos compareceram, quanto foi investido em cada etapa. Essa visibilidade permite otimizações baseadas em dados reais, não em achismos.",
-      descricao3: "O CRM alimenta todos os outros pilares com inteligência. Identificamos quais campanhas de captação geram leads que mais convertem, quais conteúdos de autoridade têm melhor engajamento, quais horários de agendamento têm menor no-show. É a otimização contínua data-driven que torna os resultados previsíveis e escaláveis.",
+      descricao: "Dashboard completo com todas as métricas - leads, agendamentos, conversões, ROI por campanha. Identifica o que funciona e otimiza continuamente. Transforma dados em decisões e torna resultados previsíveis e escaláveis.",
       beneficios: [
         "Dashboard centralizado com todas as métricas do método",
         "Análise de ROI detalhada por campanha e tratamento",
@@ -709,7 +705,7 @@ const Metodo = () => {
                     Posso começar com apenas um pilar ou preciso implementar todos de uma vez?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Embora o método funcione melhor de forma integrada, é possível começar com os pilares mais adequados para a situação atual da clínica e expandir gradualmente conforme as necessidades e objetivos específicos. No diagnóstico gratuito, analisamos sua realidade e recomendamos o melhor caminho de implementação.
+                    Embora o método funcione melhor integrado, você pode começar com os pilares mais adequados para sua situação atual e expandir gradualmente. Na apresentação, analisamos sua realidade e recomendamos o melhor caminho.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -736,7 +732,7 @@ const Metodo = () => {
                     Preciso mudar meu sistema de gestão atual?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Não necessariamente. O método se integra com diversos sistemas de gestão odontológica existentes. Avaliamos sua infraestrutura atual no diagnóstico gratuito e identificamos as melhores formas de integração para garantir que tudo funcione em harmonia.
+                    Não necessariamente. O método se integra com diversos sistemas existentes. Na apresentação, avaliamos sua infraestrutura e identificamos as melhores formas de integração.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -745,7 +741,7 @@ const Metodo = () => {
                     Qual o primeiro passo para aplicar o método na minha clínica?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    O primeiro passo é agendar um diagnóstico gratuito onde analisamos sua situação atual de marketing, identificamos oportunidades específicas e mostramos como o método pode ser aplicado especificamente para sua realidade e objetivos. É uma análise sem compromisso que já traz insights valiosos.
+                    Agende uma apresentação onde analisamos sua situação atual, identificamos oportunidades e mostramos como o método pode ser aplicado na sua realidade. Sem compromisso, apenas insights valiosos.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -763,39 +759,39 @@ const Metodo = () => {
         </section>
 
         {/* CTA Final */}
-        <section className="py-16 bg-primary text-primary-foreground">
+        <section className="py-16 bg-accent text-accent-foreground">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Pronto para Ter Pacientes de Forma Previsível?
               </h2>
               <p className="text-xl mb-8 opacity-90">
-                Agende um diagnóstico gratuito e descubra como aplicar o Método Paciente Previsível na sua clínica
+                Agende uma apresentação e descubra como aplicar o método na sua clínica
               </p>
 
               <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8 text-left">
                 <div className="flex items-start gap-3">
                   <Check className="h-6 w-6 flex-shrink-0 mt-0.5" />
-                  <span>Análise completa do seu marketing atual</span>
+                  <span>Análise do seu marketing atual</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="h-6 w-6 flex-shrink-0 mt-0.5" />
-                  <span>Identificação de oportunidades específicas</span>
+                  <span>Oportunidades específicas</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="h-6 w-6 flex-shrink-0 mt-0.5" />
-                  <span>Plano personalizado baseado no método</span>
+                  <span>Plano personalizado</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check className="h-6 w-6 flex-shrink-0 mt-0.5" />
-                  <span>Sem compromisso, apenas insights valiosos</span>
+                  <span>Sem compromisso</span>
                 </div>
               </div>
 
               <Button size="lg" variant="secondary" asChild className="text-lg px-10 py-7">
-                <UtmExternalLink href="https://wa.me/5511999999999?text=Quero%20agendar%20um%20diagn%C3%B3stico%20gratuito%20do%20M%C3%A9todo%20Paciente%20Previs%C3%ADvel">
+                <UtmExternalLink href="https://wa.me/5511999999999?text=Quero%20agendar%20uma%20apresenta%C3%A7%C3%A3o%20do%20M%C3%A9todo">
                   <Clock className="mr-2 h-5 w-5" />
-                  Agendar Diagnóstico Gratuito
+                  Agendar Apresentação
                 </UtmExternalLink>
               </Button>
             </div>
