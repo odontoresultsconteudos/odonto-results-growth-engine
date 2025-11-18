@@ -11,11 +11,24 @@ const redirectMap: Record<string, string> = {
   '/crm': '/crm-inteligente',
 };
 
+// External redirects
+const externalRedirectMap: Record<string, string> = {
+  '/saiba-mais': 'https://form.odontoresults.com.br/dLTRVKuI/?utm_source=ig&utm_medium=link_na_bio&utm_campaign=link_na_bio&utm_term=link_na_bio&utm_content=link_na_bio',
+};
+
 export const LegacyRedirect = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
+    // Check for external redirects first
+    const externalUrl = externalRedirectMap[location.pathname];
+    if (externalUrl) {
+      window.location.replace(externalUrl);
+      return;
+    }
+    
+    // Check for internal redirects
     const newPath = redirectMap[location.pathname];
     if (newPath) {
       // Use replace to avoid adding to browser history
