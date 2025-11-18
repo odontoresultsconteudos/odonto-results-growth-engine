@@ -1,13 +1,43 @@
 import logoSvg from "@/assets/logo.svg";
 import { UtmLink } from "@/components/UtmLink";
 import { UtmExternalLink } from "@/components/UtmExternalLink";
+import { Instagram, Youtube, Linkedin } from "lucide-react";
 export const Footer = () => {
   return <footer className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary/50 border-t border-border">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-12 mb-8">
           <div>
             <img src={logoSvg} alt="Odonto Results" className="h-10 mb-4" width="120" height="40" />
-            <p className="text-sm text-muted-foreground">A Odonto Results ajuda Clínicas Odontológicas a baterem Recorde de Faturamento através do Método Paciente Previsível, com 5 pilares: Captação de Leads Qualificados, Vitrine de Autoridade, Google Top 1, Agendamento Profissional, CRM Inteligente.</p>
+            <p className="text-sm text-muted-foreground mb-4">A Odonto Results ajuda Clínicas Odontológicas a baterem Recorde de Faturamento através do Método Paciente Previsível, com 5 pilares: Captação de Leads Qualificados, Vitrine de Autoridade, Google Top 1, Agendamento Profissional, CRM Inteligente.</p>
+            <div className="flex gap-4">
+              <UtmExternalLink 
+                href="https://instagram.com/odontoresults" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-accent transition-colors"
+                aria-label="Instagram da Odonto Results"
+              >
+                <Instagram className="w-5 h-5" />
+              </UtmExternalLink>
+              <UtmExternalLink 
+                href="https://youtube.com/@odontoresults" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-accent transition-colors"
+                aria-label="YouTube da Odonto Results"
+              >
+                <Youtube className="w-5 h-5" />
+              </UtmExternalLink>
+              <UtmExternalLink 
+                href="https://linkedin.com/company/odontoresults" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-accent transition-colors"
+                aria-label="LinkedIn da Odonto Results"
+              >
+                <Linkedin className="w-5 h-5" />
+              </UtmExternalLink>
+            </div>
           </div>
 
           <div>
