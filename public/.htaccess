@@ -61,6 +61,9 @@
   RewriteRule ^agendamento/?$ /agendamento-inteligente [R=301,L]
   RewriteRule ^crm/?$ /crm-inteligente [R=301,L]
   
+  # External redirect for saiba-mais
+  RewriteRule ^saiba-mais/?$ https://form.odontoresults.com.br/dLTRVKuI/?utm_source=ig&utm_medium=link_na_bio&utm_campaign=link_na_bio&utm_term=link_na_bio&utm_content=link_na_bio [R=301,L]
+  
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
