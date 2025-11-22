@@ -3,7 +3,7 @@
  * https://www.indexnow.org/
  */
 
-const INDEXNOW_KEY = 'a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6';
+const INDEXNOW_KEY = '12a08b7a0b904a8c9d89ae68517fc343';
 const INDEXNOW_HOST = 'odontoresults.com.br';
 const INDEXNOW_KEY_LOCATION = `https://${INDEXNOW_HOST}/${INDEXNOW_KEY}.txt`;
 
