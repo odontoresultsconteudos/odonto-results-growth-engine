@@ -4,8 +4,8 @@ IndexNow está configurado no site para notificar automaticamente motores de bus
 
 ## Arquivos Configurados
 
-- **Chave API**: `a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6`
-- **Arquivo de verificação**: `/public/a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6.txt`
+- **Chave API**: `12a08b7a0b904a8c9d89ae68517fc343`
+- **Arquivo de verificação**: `/public/12a08b7a0b904a8c9d89ae68517fc343.txt`
 - **Helper functions**: `/src/lib/indexnow.ts`
 
 ## Como Usar
@@ -46,8 +46,8 @@ await submitAllPagesToIndexNow();
 
 Para verificar se o IndexNow está configurado corretamente:
 
-1. Acesse: https://odontoresults.com.br/a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6.txt
-2. Deve exibir apenas: `a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6`
+1. Acesse: https://odontoresults.com.br/12a08b7a0b904a8c9d89ae68517fc343.txt
+2. Deve exibir apenas: `12a08b7a0b904a8c9d89ae68517fc343`
 
 ## Ferramentas de Verificação
 
