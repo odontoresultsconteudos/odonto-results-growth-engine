@@ -1,0 +1,72 @@
+# IndexNow - Configuração
+
+IndexNow está configurado no site para notificar automaticamente motores de busca (Bing, Yandex, etc.) sobre atualizações de conteúdo.
+
+## Arquivos Configurados
+
+- **Chave API**: `a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6`
+- **Arquivo de verificação**: `/public/a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6.txt`
+- **Helper functions**: `/src/lib/indexnow.ts`
+
+## Como Usar
+
+### 1. Submeter uma URL única
+
+```typescript
+import { submitUrlToIndexNow } from '@/lib/indexnow';
+
+// Quando você publica ou atualiza uma página
+await submitUrlToIndexNow('https://odontoresults.com.br/nova-pagina');
+```
+
+### 2. Submeter múltiplas URLs
+
+```typescript
+import { submitToIndexNow } from '@/lib/indexnow';
+
+const urls = [
+  'https://odontoresults.com.br/pagina1',
+  'https://odontoresults.com.br/pagina2',
+  'https://odontoresults.com.br/pagina3',
+];
+
+await submitToIndexNow(urls);
+```
+
+### 3. Submeter todas as páginas principais
+
+```typescript
+import { submitAllPagesToIndexNow } from '@/lib/indexnow';
+
+// Útil após grandes atualizações no site
+await submitAllPagesToIndexNow();
+```
+
+## Verificação
+
+Para verificar se o IndexNow está configurado corretamente:
+
+1. Acesse: https://odontoresults.com.br/a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6.txt
+2. Deve exibir apenas: `a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6`
+
+## Ferramentas de Verificação
+
+- **Bing Webmaster Tools**: https://www.bing.com/webmasters
+- **IndexNow Checker**: https://www.indexnow.org/
+
+## Quando Usar
+
+Use IndexNow para notificar motores de busca quando:
+- Publicar novo conteúdo
+- Atualizar páginas existentes
+- Remover páginas (usar com status code apropriado)
+- Fazer mudanças significativas no site
+
+## Suporte
+
+IndexNow é suportado por:
+- Bing
+- Yandex
+- Seznam.cz
+- Naver
+- E outros motores de busca
