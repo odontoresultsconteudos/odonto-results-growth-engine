@@ -82,3 +82,12 @@ export const submitAllPagesToIndexNow = async (): Promise<boolean> => {
 
   return submitToIndexNow(urls);
 };
+
+// Expose to window for easy testing in console
+if (typeof window !== 'undefined') {
+  (window as any).indexNow = {
+    submitUrl: submitUrlToIndexNow,
+    submitUrls: submitToIndexNow,
+    submitAll: submitAllPagesToIndexNow,
+  };
+}

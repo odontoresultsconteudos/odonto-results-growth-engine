@@ -10,6 +10,24 @@ IndexNow está configurado no site para notificar automaticamente motores de bus
 
 ## Como Usar
 
+### No Console do Navegador (Teste Rápido)
+
+Abra o console do navegador (F12) e digite:
+
+```javascript
+// Submeter a página home
+await window.indexNow.submitUrl('https://odontoresults.com.br/');
+
+// Submeter múltiplas URLs
+await window.indexNow.submitUrls([
+  'https://odontoresults.com.br/',
+  'https://odontoresults.com.br/sobre'
+]);
+
+// Submeter todas as páginas principais
+await window.indexNow.submitAll();
+```
+
 ### 1. Submeter uma URL única
 
 ```typescript

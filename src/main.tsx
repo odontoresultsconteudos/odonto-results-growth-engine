@@ -1,6 +1,7 @@
 import { createRoot, hydrateRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
+import './lib/indexnow'; // Make IndexNow functions available in console
 
 const rootElement = document.getElementById("root")!;
 
