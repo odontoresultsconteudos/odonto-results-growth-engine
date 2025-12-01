@@ -5,6 +5,7 @@ import { MapPin, Search, Star, TrendingUp, Eye } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { Footer } from "@/components/Footer";
 import { UtmLink } from "@/components/UtmLink";
+import { UtmExternalLink } from "@/components/UtmExternalLink";
 
 const GoogleTop1 = () => {
   const breadcrumbSchema = {
@@ -49,11 +50,11 @@ const GoogleTop1 = () => {
             <p className="text-xl text-muted-foreground mb-8">
               Apareça em primeiro lugar quando pacientes procuram "dentista perto de mim" e tratamentos odontológicos na sua cidade.
             </p>
-            <a href="#contato">
+            <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI">
               <Button variant="cta" size="lg" className="text-lg">
                 Quero Estar no Topo
               </Button>
-            </a>
+            </UtmExternalLink>
           </div>
         </div>
       </section>
@@ -195,9 +196,11 @@ const GoogleTop1 = () => {
           <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
             Faça sua clínica aparecer em primeiro lugar quando pacientes procuram tratamentos na sua região.
           </p>
-          <Button variant="cta" size="lg" className="text-lg">
-            Agendar uma Apresentação
-          </Button>
+          <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI">
+            <Button variant="cta" size="lg" className="text-lg">
+              Agendar uma Apresentação
+            </Button>
+          </UtmExternalLink>
           <p className="text-sm text-primary-foreground/80 mt-4">
             1500+ Clínicas atendidas • 500 mil+ Leads gerados • 10 milhões+ Gerenciados em tráfego pago
           </p>
