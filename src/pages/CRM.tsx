@@ -5,6 +5,7 @@ import { BarChart3, Database, Filter, TrendingUp, Eye } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { Footer } from "@/components/Footer";
 import { UtmLink } from "@/components/UtmLink";
+import { UtmExternalLink } from "@/components/UtmExternalLink";
 const CRM = () => {
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -40,11 +41,11 @@ const CRM = () => {
             <p className="text-xl text-muted-foreground mb-8">
               CRM integrado que organiza, prioriza e maximiza o aproveitamento de cada oportunidade de negócio.
             </p>
-            <a href="#contato">
+            <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI">
               <Button variant="cta" size="lg" className="text-lg">
                 Quero Organizar Meus Leads
               </Button>
-            </a>
+            </UtmExternalLink>
           </div>
         </div>
       </section>
@@ -245,9 +246,11 @@ const CRM = () => {
           <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
             Tenha controle total sobre seus leads e transforme mais contatos em pacientes pagantes.
           </p>
-          <Button variant="cta" size="lg" className="text-lg">
-            Agendar uma Apresentação
-          </Button>
+          <UtmExternalLink href="https://form.odontoresults.com.br/dLTRVKuI">
+            <Button variant="cta" size="lg" className="text-lg">
+              Agendar uma Apresentação
+            </Button>
+          </UtmExternalLink>
           <p className="text-sm text-primary-foreground/80 mt-4">
             1500+ Clínicas atendidas • 500 mil+ Leads gerados • 10 milhões+ Gerenciados em tráfego pago
           </p>
